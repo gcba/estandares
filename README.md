@@ -1,3 +1,10 @@
+| :exclamation:  Este contenido está en desarrollo. |
+|---------------------------------------------------|
+
+
+  
+</p>
+
 # Estándares de experiencia digital
 
 Documentación de los estándares para de experiencia digital del GCBA.
