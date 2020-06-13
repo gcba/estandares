@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/estandares`,
   siteMetadata: {
-    title: `Estándares de experiencia digitals`,
+    title: `Estándares de experiencia digital`,
     description: `Linieamientos y estándares para la creación de productos digitales del GCBA.`,
     author: `@gcba`,
   },
