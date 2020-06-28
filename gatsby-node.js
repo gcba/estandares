@@ -6,14 +6,13 @@
 
 // You can delete this file if you're not using it
 
-const path = require(`path`);
-const { createFilePath } = require("gatsby-source-filesystem");
+const path = require(`path`)
+const { createFilePath } = require("gatsby-source-filesystem")
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === "Mdx") {
-
-    const url = createFilePath({ node, getNode });
+    const url = createFilePath({ node, getNode })
     createNodeField({ node, name: "url", value: url })
   }
 }
@@ -27,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
         allMdx {
           nodes {
             frontmatter {
+              menu
               title
               description
               position
@@ -55,14 +55,12 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
-exports.onCreateWebpackConfig = ({
-  actions,
-}) => {
-  const { setWebpackConfig } = actions;
+exports.onCreateWebpackConfig = ({ actions }) => {
+  const { setWebpackConfig } = actions
   setWebpackConfig({
     externals: {
-      jquery: 'jQuery',
-      bootstrap: 'bootstrap',
-    }
+      jquery: "jQuery",
+      bootstrap: "bootstrap",
+    },
   })
 }
