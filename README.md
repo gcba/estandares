@@ -1,5 +1,5 @@
-| :exclamation:  Este contenido está en desarrollo. |
-|---------------------------------------------------|
+| :exclamation: Este contenido está en desarrollo. |
+| ------------------------------------------------ |
 
 
 # Estándares de experiencia digital
@@ -29,7 +29,7 @@ Para el caso del ejemplo anterior debería ser:
     componentes.mdx
     /componentes
       web.mdx
-``` 
+```
 
 ### Metadatos
 
@@ -37,18 +37,19 @@ Cada página tiene en las primeras líneas una sección que define los metadatos
 
 Los metadas son:
 
-| nombre      | tipo         | ejemplo                                       | notas                                                                                           |
-|-------------|--------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------|
-| title       | texto        | Web                                           | Es el nombre utilizado en el encabezado de la página, la navegación y el título de la pestaña.  |
-| description | texto        | Sistema de componentes para aplicaciones web. | Es la descripción que se muestra debajo del título y al mostrar resultados en un buscador.      |
-| position    | número       | 1                                             | Es el número de posición que debe tener ese elemento respecto de sus hermanos en la navegación. |
-
+| nombre      | tipo   | ejemplo                                       | notas                                                                                           |
+| ----------- | ------ | --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| menu        | texto  | Web                                           | Es el nombre utilizado en la navegación.                                                        |
+| title       | texto  | Componentes para Web                          | Es el nombre utilizado en el encabezado de la página y el título de la pestaña.                 |
+| description | texto  | Sistema de componentes para aplicaciones web. | Es la descripción que se muestra debajo del título y al mostrar resultados en un buscador.      |
+| position    | número | 1                                             | Es el número de posición que debe tener ese elemento respecto de sus hermanos en la navegación. |
 
 Siguiendo con el ejemplo de la página de componentes para web, los metadatos deberían ser:
 
 ```
 ---
-title: Web
+menu: Web
+title: Componentes para web
 description: Sistema de componentes para aplicaciones web.
 position: 1
 ---
@@ -65,7 +66,6 @@ Si se quiere trabajar en contenidos no finales, deber crearse una nueva rama con
 
 Una vez que se quieren publicar esos contenidos, debe _mergearse_ esa rama en `master` por medio de un _pull request_.
 
-
 ## Desarrollo
 
 para instalar el proyecto localmente, primero debemos clonarlo y correr los siguientes comandos:
@@ -76,4 +76,4 @@ npm install
 
 # Iniciar el proyecto
 npm start
-````
+```
