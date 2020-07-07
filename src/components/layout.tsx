@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 import "bootstrap/dist/css/bootstrap.css"
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -53,7 +54,7 @@ const Layout = props => {
               <h1 className="h2">{page.title}</h1>
               <p>{page.description}</p>
               <hr className="my-4" />
-              {children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}
+              <MdxContent>{children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}</MdxContent>
             </div>
           </div>
         </div>
@@ -63,3 +64,16 @@ const Layout = props => {
 }
 
 export default Layout
+
+const MdxContent = (props: any) => {
+  return (
+    <MDXProvider
+      components={{
+        img: (props: any) => <img {...props} className="img-fluid" />,
+        table: (props: any) => <table {...props} className="table table-bordered table-responsive-md" />,
+      }}
+    >
+      {props.children}
+    </MDXProvider>
+  )
+}
