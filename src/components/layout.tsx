@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 import "bootstrap/dist/css/bootstrap.css"
@@ -69,7 +69,7 @@ const MdxContent = (props: any) => {
   return (
     <MDXProvider
       components={{
-        img: (props: any) => <img {...props} className="img-fluid" />,
+        img: (props: any) => <img {...props} src={withPrefix(props.src)} className="img-fluid" />,
         table: (props: any) => <table {...props} className="table table-bordered table-responsive-md" />,
       }}
     >
