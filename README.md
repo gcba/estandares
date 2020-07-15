@@ -46,7 +46,7 @@ Los metadas son:
 
 Siguiendo con el ejemplo de la página de componentes para web, los metadatos deberían ser:
 
-```
+```markdown
 ---
 menu: Web
 title: Componentes para web
@@ -57,6 +57,26 @@ position: 1
 { Contenido de la documentación en formato markdown }
 
 ```
+
+> **Importante**: El contenido de las páginas de la documentación no puede estar vacío, siempre es necesario que estén presentes todos los metadatos y por lo menos una línea de texto en el contenido. 
+
+### Imágenes y archivos
+
+Si se quieren incrustar imágenes o enlazar archivos, por ejemplo un PDF o ZIP, se deben agregar en la carpeta `static`. Dentro de esa carpeta, se pueden crear las que quieran para organizar los archivos y se respeta en la url.
+
+Por ejemplo, para agregar una imagen que se agregó en la carpeta `static/pautas/accesibilidad` y que tiene el nombre `barreras.png`, se debe usar el formato markdown de esta forma:
+
+```markdown
+![texto alternativo](/pautas/accesibilidad/barreras.png)
+```
+
+Para enlazar otro tipo de archivos que no sean imágenes, se debe uzar un hipervínculo de esta forma:
+
+```markdown
+Para comenzar a trabajar, [descargá el UI kit](/pautas/diseño/ui-kit.zip).
+```
+
+> **Importante**: Las imágenes o archivos PDF deben ser recursos accesorios que den soporte a la documentación. No es recomendable utilizar imágenes con texto como parte principal del contenido, ni vincular a archivos externos que tengan toda la información.
 
 ## Publicación
 
@@ -70,7 +90,7 @@ Una vez que se quieren publicar esos contenidos, debe _mergearse_ esa rama en `m
 
 para instalar el proyecto localmente, primero debemos clonarlo y correr los siguientes comandos:
 
-```
+```bash
 # Instalar las dependencias
 npm install
 
