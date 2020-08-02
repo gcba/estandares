@@ -4,7 +4,7 @@
 
 # Estándares de experiencia digital
 
-Documentación de los estándares para de experiencia digital del GCBA.
+Documentación de los estándares para la experiencia digital del GCBA.
 El proyecto utiliza [Gatsby](https://www.gatsbyjs.org/) como base para generar páginas estáticas en base a archivos markdown.
 
 ## Modificación de la documentación
