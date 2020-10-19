@@ -27,7 +27,7 @@ export const Sidebar = (props: SidebarProps) => {
   return (
     <aside>
       <div>
-        <img src="/obelisco.svg" />
+        <img src={withPrefix("/obelisco.svg")} />
         <nav className="nav flex-column nav-first-level">
           {navigation.map((node: Node) => (
             <React.Fragment key={node.url}>{renderItem(node, 0)}</React.Fragment>

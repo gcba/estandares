@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 
 interface NavigatorProps {
   prev: {
@@ -18,14 +19,14 @@ export const Navigator = (props: NavigatorProps) => {
       <div className="row">
         <div className="col-6">
           {prev && (
-            <a className="navigator-prev" href={prev.url}>
+            <a className="navigator-prev" href={withPrefix(prev.url)}>
               <i className="bx bxs-chevron-left"></i> {prev.title}
             </a>
           )}
         </div>
         <div className="col-6 text-right">
           {next && (
-            <a className="navigator-next" href={next.url}>
+            <a className="navigator-next" href={withPrefix(next.url)}>
               {next.title} <i className="bx bxs-chevron-right"></i>
             </a>
           )}
