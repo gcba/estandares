@@ -1,3 +1,6 @@
+const emoji = require(`remark-emoji`);
+const slug = require('remark-slug');
+
 module.exports = {
   pathPrefix: `/estandares`,
   siteMetadata: {
@@ -11,8 +14,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        name: `articles`,
+        path: `${__dirname}/src/articles/`,
       },
     },
     {
@@ -42,6 +45,24 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve(`./src/components/layout.tsx`),
         },
+        remarkPlugins: [emoji, slug],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-custom-blocks",
+            options: {
+              blocks: {
+                si: {
+                  classes: "do",
+                  title: "optional"
+                },
+                no: {
+                  classes: "dont",
+                  title: "optional"
+                }
+              },
+            },
+          }
+        ]
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,113 +1,68 @@
-import { Link, useStaticQuery, graphql, withPrefix } from "gatsby"
-import { Navbar, Nav } from "react-bootstrap"
 import React from "react"
-import * as _ from "lodash"
+import { withPrefix } from "gatsby"
+import { Node } from "../../utils/navigation"
 
 interface SidebarProps {
+  navigation: Node[];
   current: string
 }
 
-interface Data {
-  allMdx: {
-    nodes: Array<{
-      frontmatter: {
-        menu: string
-        title: string
-        description: string
-        position: number
-      }
-      fields: {
-        url: string
-      }
-    }>
-  }
-}
-
-interface Node {
-  menu: string
-  title: string
-  description: string
-  url: string
-  position: number
-  children?: Node[]
-}
-
-const Sidebar = (props: SidebarProps) => {
-  const data: Data = useStaticQuery(graphql`
-    query {
-      allMdx(sort: { fields: frontmatter___position, order: ASC }, filter: { fields: { url: { ne: "/404/" } } }) {
-        nodes {
-          frontmatter {
-            menu
-            title
-            description
-            position
-          }
-          fields {
-            url
-          }
-        }
-      }
-    }
-  `)
-
-  const isIndex = node => node.fields.url === "/"
-  const nodes = _.cloneDeep(data.allMdx.nodes)
-  const indexData = nodes.find(isIndex)
-  const index: Node = { ...indexData.frontmatter, ...indexData.fields }
-  const navigation = {}
-  _.remove(nodes, isIndex)
-
-  nodes.forEach(node => {
-    const path = node.fields.url.replace(/^\/|\/$/g, "").replace(/\//g, ".children.")
-    const children = _.get(navigation, `${path}.children`)
-    _.set(navigation, path, { ...node.frontmatter, ...node.fields, children })
-  })
+export const Sidebar = (props: SidebarProps) => {
+  const { navigation, current} = props;
 
   const renderItem = (node: Node, depth: number) => {
     const children = node.children ? Object.values(node.children) : []
+    const hasChildren = !!children.length;
+    const showAsActive = current.indexOf(node.url) === 0 && depth === 0;
     return (
       <React.Fragment key={node.url}>
-        <Item menu={node.menu} url={node.url} child={depth > 0} current={props.current} />
-        {children.length > 0 && (props.current.indexOf(node.url) === 0 || depth < 1) && (
-          <nav className="nav nav-pills flex-column ml-3">
-            {_.sortBy(children, "position").map(node => renderItem(node, depth + 1))}
-          </nav>
+        <Item node={node} current={current} depth={depth} active={showAsActive} />
+        {hasChildren && (current.indexOf(node.url) === 0) && (
+          <nav className="nav nav-pills flex-column">
+            {children.map(node => renderItem(node, depth + 1))}
+          </nav>  
         )}
       </React.Fragment>
     )
   }
 
-  return (
-    <nav className="nav flex-column nav-pills">
-      {renderItem(index, 0)}
-      {_.sortBy(Object.values(navigation), "position").map((node: Node) => (
-        <React.Fragment key={node.url}>
-          <hr className="w-100 my-3" />
-          {renderItem(node, 0)}
-        </React.Fragment>
-      ))}
-    </nav>
-  )
+  return (<aside>
+    <div>
+      <img src="/obelisco.svg" />
+      <nav className="nav flex-column nav-first-level">
+        {navigation.map((node: Node) => (
+          <React.Fragment key={node.url}>
+            {renderItem(node, 0)}
+          </React.Fragment>
+        ))}
+      </nav>
+    </div>
+  </aside>)
 }
 
 interface ItemProps {
-  menu: string
-  child: boolean
-  url: string
+  node: Node
+  depth: number
   current: string
+  active?: boolean
 }
 
 const Item = (props: ItemProps) => {
+  const { node, depth, current, active } = props;
+  const hasChildren = node.children?.length > 0;
   let className = "nav-link"
-  if (props.url === props.current) className += " active"
-  className += props.child ? " py-1" : ""
+  let link = node.url;
+
+  if (depth === 0 ) {
+    link = hasChildren ? node.children[0].url : node.url;
+  } else {
+    if (node.url === current || active) className += " active";
+  }
+  
 
   return (
-    <a className={className} href={withPrefix(props.url)}>
-      {props.menu}
+    <a className={className} href={withPrefix(link)}>
+      {node.menu}
     </a>
   )
 }
-
-export default Sidebar

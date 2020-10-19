@@ -35,6 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
               url
             }
             body
+            tableOfContents(maxDepth: 2)
           }
         }
       }
@@ -47,6 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
             ...node.frontmatter,
             ...node.fields,
             body: node.body,
+            tableOfContents: node.tableOfContents
           },
         })
       })

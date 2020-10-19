@@ -1,0 +1,187 @@
+// @import "~bootstrap/dist/css/bootstrap.css";
+@import "~@gcba/obelisco/src/scss/obelisco.scss";
+@import "~boxicons/css/boxicons.min.css";
+
+
+$sidebar-min-height: 100vh;
+$logo-max-width: spaceUnits(60);
+
+$container-space-y: spaceUnits(16);
+$container-space-x: 0;
+
+$section-space-bottom: spaceUnits(12);
+
+$sidebar-offset-left: spaceUnits(32);
+$sidebar-offset-right: spaceUnits(16);
+
+aside {
+  min-height: $sidebar-min-height;
+  height: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $grisulado-10;
+    z-index: -1;
+    padding-right: $sidebar-offset-left - 1rem;
+    padding-left: $sidebar-offset-right;
+    box-sizing: content-box;
+    left: $sidebar-offset-left * -1;
+  }
+
+  > div {
+    padding: $container-space-y $container-space-x;
+  }
+
+  img {
+    max-width: $logo-max-width;
+    margin-bottom: spaceUnits(8);
+  }
+
+  .nav-first-level > .nav-link {
+    font-size: 1.125rem;
+  }
+}
+
+main {
+  padding: $container-space-y $container-space-x;
+
+  header {
+    margin-bottom: $section-space-bottom;
+  }
+
+  .contents {
+    margin-bottom: $section-space-bottom;
+
+    .contents-title {
+      @extend h4;
+      padding-bottom: spaceUnits(2);
+      border-bottom: 2px solid $border-color;
+    }
+    ul li {
+      margin-top: spaceUnits(2);
+    }
+  }
+
+  article {
+    @for $i from 2 to 6 {
+      h#{$i} {
+        margin-top: spaceUnits(16 - $i * 2);
+        margin-bottom: spaceUnits(4);
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .card-row {
+      margin: $section-space-bottom 0;
+
+      .docs-card {
+        margin-bottom: $section-space-bottom;
+
+        i {
+          font-size: 3rem;
+        }
+        h3 {
+          margin-top: spaceUnits(2);
+        }
+
+      }
+
+      > .col-6:last-of-type .docs-card {
+        margin-bottom: 0;
+      }
+      > .col-6:nth-last-child(2) .docs-card {
+        margin-bottom: 0;
+      }
+    }
+
+    hr {
+      margin-top: $section-space-bottom;
+      margin-bottom: $section-space-bottom;
+    }
+
+    .content-do, .content-dont {
+      float: left;
+      margin-right: spaceUnits(1);
+      vertical-align: text-bottom;
+      font-size: 1.4rem;
+    }
+
+    .custom-block {
+      margin-bottom: spaceUnits(4);
+
+      &::before {
+        @extend %box-icon;
+        font-size: 1.4rem;
+        display: inline;
+        vertical-align: text-bottom;
+        margin-right: spaceUnits(1);
+      }
+      .custom-block-heading {
+        display: inline;
+      }
+      &.do::before {
+        content: "\ea13";
+        color: $success;
+      }
+      &.dont::before {
+        content: "\ec4f";
+        color: $danger;
+      }
+    }
+  }
+
+  .navigator {
+    padding-top: spaceUnits(6);
+    padding-bottom: spaceUnits(4);
+    border-bottom: 1px solid $border-color;
+
+    a {
+      font-size: .825rem;
+
+      i {
+        font-size: 1.2rem;
+        vertical-align: text-bottom;
+      }
+    }    
+  }
+
+  footer {
+    .footer-container {
+      padding: spaceUnits(6) 0 spaceUnits(4);
+      margin-bottom: spaceUnits(6);
+      border-bottom: 1px solid $border-color;
+    }
+
+    i {
+      font-size: 1.4rem;
+      vertical-align: text-bottom;
+      margin-right: spaceUnits(1);
+    }
+
+    small.text-secondary {
+      display: block;
+      line-height: 1rem;
+    }
+  }
+}
+
+
+%box-icon {
+  font-family: 'boxicons'!important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,64 +1,54 @@
 import React from "react"
-import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
-import "bootstrap/dist/css/bootstrap.css"
-// import 'bootstrap/dist/js/bootstrap.bundle.min';
+import * as _ from "lodash"
+import "../styles/main.scss";
 
-import Header from "./includes/header"
-import Sidebar from "./includes/sidebar"
+import { Sidebar } from "./includes/Sidebar"
+import { TableOfContents } from "./includes/TableOfContent"
+import { Footer } from "./includes/Footer"
+import { Navigator } from "./includes/Navigator"
 import Seo from "./seo"
+import { Img, Table, Lead } from "./markdown";
+import { getNavigation, getPrevAndNext } from "../utils/navigation"
 
-const Layout = props => {
+const Layout = (props: any) => {
   const { pageContext, children } = props
   const page = pageContext.frontmatter || pageContext
-  const data = useStaticQuery(
-    graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+  const pageContent = pageContext.tableOfContents?.items;
   const path = decodeURI(props.path)
+  const isIndex = page.url === "/";
+  const navigation = getNavigation();
+
+  const prevAndNext = getPrevAndNext(navigation, path);
 
   return (
     <>
       <Seo title={page.title} description={page.description} />
-      <Header title={data.site.siteMetadata.title} current={page.url} />
-      <main>
-        <div className="container-xl py-4">
-          <div className="row">
-            <div className="col d-none d-sm-block" style={{ maxWidth: 250 }}>
-              <Sidebar current={path} />
-            </div>
-            <div className="col-12 d-sm-none">
-              <button
-                className="btn btn-light btn-block mb-4"
-                type="button"
-                data-toggle="collapse"
-                data-target="#sidebarCollapse"
-                aria-expanded="false"
-                aria-controls="sidebarCollapse"
-              >
-                Menú de navegación
-              </button>
-              <div className="collapse pb-4" id="sidebarCollapse">
-                <Sidebar current={path} />
-              </div>
-            </div>
-            <div className="col ml-lg-4">
-              <h1 className="h2">{page.title}</h1>
-              <p>{page.description}</p>
-              <hr className="my-4" />
-              <MdxContent>{children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}</MdxContent>
-            </div>
+      <a href="#content" className="sr-only sr-only-focusable">Pasar al contenido principal</a>
+      <div className="container">
+        <div className="row">
+          <div className="col-3">
+            <Sidebar current={path} navigation={navigation} />
+          </div>
+          <div className="col-8 offset-1">
+            <main id="#content">
+              <header>
+                <h1>{page.title}</h1>
+                <Lead>{page.description}</Lead>
+              </header>
+              {!isIndex && !!pageContent && <TableOfContents items={pageContent} />}
+              
+              <article>
+                <MdxContent>{children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}</MdxContent>
+              </article>
+
+              <Navigator {...prevAndNext} />
+              <Footer />
+            </main>
           </div>
         </div>
-      </main>
+      </div>
     </>
   )
 }
@@ -69,8 +59,10 @@ const MdxContent = (props: any) => {
   return (
     <MDXProvider
       components={{
-        img: (props: any) => <img {...props} src={withPrefix(props.src)} className="img-fluid" />,
-        table: (props: any) => <table {...props} className="table table-bordered table-responsive-md" />,
+        img: Img,
+        table: Table,
+        Lead,
+        Navigator,
       }}
     >
       {props.children}
