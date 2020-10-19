@@ -19,7 +19,7 @@ export const Navigator = (props: NavigatorProps) => {
       <div className="row">
         <div className="col-6">
           {prev && (
-            <Link to={next.url} className="navigator-prev">
+            <Link to={prev.url} className="navigator-prev">
               <i className="bx bxs-chevron-left"></i> {prev.title}
             </Link>
           )}
