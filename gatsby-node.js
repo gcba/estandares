@@ -48,7 +48,7 @@ exports.createPages = ({ graphql, actions }) => {
             ...node.frontmatter,
             ...node.fields,
             body: node.body,
-            tableOfContents: node.tableOfContents
+            tableOfContents: node.tableOfContents,
           },
         })
       })

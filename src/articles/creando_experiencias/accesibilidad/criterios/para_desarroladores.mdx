@@ -7,68 +7,60 @@ position: 2
 
 ## Criterios de Accesibilidad para Desarrolladores
 
-| ---------------------     | Criterio | Nivel | Descripciòn                                                        |
-| ------------     | ----------------------- | ------------------ | --------------------------------------          |
-| **Código válido**         |                                                                                       |
-|                           | [4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing)    |  A    |  Procesamiento y código limpio                                     |
-| **Estrcutura la información de forma semántica** |                                                                |
-|                           | [1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)    |   A   |  Información y relaciones                                          |
-|                           | [1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence)    |   A   |  Secuencia significativa                                           |
-|                           | [3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions)    |   A   |  Etiquetas o instrucciones                                         |
-|                           | [1.4.13](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus)   |   AA  |  Contenido en hover o focus                                        |
-|                           | [4.1.3](https://www.w3.org/WAI/WCAG21/Understanding/status-messages)    |   AA  |  Mensajes de estado                                                |
-|**Identifica los controles y su propósito**   |                                                                    |
-|                           | [4.1.2](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)    |  A    |  Nombre, función y valor                                           |
-|                           | [2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context)    |  A    |  Propósito de los enlaces (en contexto)                            |
-|                           | [2.5.3](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name)    |  A    |  Etiqueta en el nombre                                             |
-|                           | [1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose)    |  AA   |  Identificación del propósito del campo                            |
-|                           | [1.3.6](https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose)    |  AAA  |  Identificación del propósito                                      |
-|                           | [2.4.9](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only)    |  AAA  |  Propósito de los enlaces (sólo enlaces)                           |
-| **Separa el contenido de la presentación**   |                                                                    |  
-|                           | [1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content)    |  A    |  Contenido no textual                                              |
-|                           | [1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text)    |  AA   |  Imágenes de texto                                                 |
-|                           | [1.4.9](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception)    |  AAA  |  Imágenes de texto (sin excepciones)                               |
-| **Uso mediante teclado**    |                                                                                     |
-|                           | [2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/keyboard)    |  A    |  Teclado                                                           |
-|                           | [2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap)    |  A    |  Sin trampas para el foco del teclado                              |
-|                           | [2.1.4](https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts)    |  A    |  Atajos de teclado                                                 |
-|                           | [2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order)    |  A    |  Orden del foco                                                    | 
-|                           | [2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible)    |  AA   |  Foco visible                                                      |
-|                           | [2.1.3](https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception)    |  AAA  |  Teclado (sin excepciones)                                         |
-| **Facilitar la navegación**           |                                                                           |
-|                           | [2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks)    |  A    |  Evitar bloques                                                    |
-|                           | [2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled)    |  A    |  Titulado de páginas                                               |
-|                           | [2.4.8](https://www.w3.org/WAI/WCAG21/Understanding/location)    |  AAA  |  Ubicación                                                         |
-|**Idioma**        |                                                                                                |
-|                           | [3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page)    |  A    |  Idioma de la página                                               |
-|                           | [3.1.2](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts)    |  AA   |  Idioma de las partes de la página                                 |
-| **Ayuda a rellenar formularios**                                                                                  |
-|                           | [3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification)    |  A    |  Identificación de errores                                         |
-|                           | [3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions)    |  A    |  Etiquetas o instrucciones                                         |
-|                           | [3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion)    |  AA   |  Sugerencias ante errores                                          |
-|                           | [3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification)    |  AA   |  Identificación consistente                                        |
-| **No incomodar al usuarios**         |                                                                            |
-|                           | [2.2.4](https://www.w3.org/WAI/WCAG21/Understanding/interruptions)    |  AAA  |  Interrupciones                                                    |
-|                           | [2.2.5](https://www.w3.org/WAI/WCAG21/Understanding/re-authenticating)    |  AAA  |  Re-autentificación                                                |
-|                           | [2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable)    |  A    |  Tiempo ajustable                                                  |
-| **Sin agobios de tiempo**            |                                                                            |
-|                           | [2.2.3](https://www.w3.org/WAI/WCAG21/Understanding/no-timing)    |  AAA  |  Sin tiempo                                                        |
-|                           | [2.2.6](https://www.w3.org/WAI/WCAG21/Understanding/timeouts)    |  AAA  |  Límites de tiempo                                                 |
-| **Maqueta para diferentes tamaños**          |                                                                    |
-|                           | [1.3.4](https://www.w3.org/WAI/WCAG21/Understanding/orientation)    |  AA   |  Orientación de la pantalla                                        |
-|                           | [1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text)    |  AA   |  Cambio de tamaño del texto                                        |
-|                           | [1.4.10](https://www.w3.org/WAI/WCAG21/Understanding/reflow)   |  AA   |  Reajuste de elementos                                             |
-|                           | [1.4.12](https://www.w3.org/WAI/WCAG21/Understanding/text-spacing)   |  AA   |  Espaciado del texto                                               |
-
-
-
-
-
-
-
-
+| ---------------------                            | Criterio                                                                         | Nivel | Descripciòn                             |
+| ------------------------------------------------ | -------------------------------------------------------------------------------- | ----- | --------------------------------------- |
+| **Código válido**                                |                                                                                  |
+|                                                  | [4.1.1](https://www.w3.org/WAI/WCAG21/Understanding/parsing)                     | A     | Procesamiento y código limpio           |
+| **Estrcutura la información de forma semántica** |                                                                                  |
+|                                                  | [1.3.1](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)      | A     | Información y relaciones                |
+|                                                  | [1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence)         | A     | Secuencia significativa                 |
+|                                                  | [3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions)      | A     | Etiquetas o instrucciones               |
+|                                                  | [1.4.13](https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus)  | AA    | Contenido en hover o focus              |
+|                                                  | [4.1.3](https://www.w3.org/WAI/WCAG21/Understanding/status-messages)             | AA    | Mensajes de estado                      |
+| **Identifica los controles y su propósito**      |                                                                                  |
+|                                                  | [4.1.2](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)             | A     | Nombre, función y valor                 |
+|                                                  | [2.4.4](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context)     | A     | Propósito de los enlaces (en contexto)  |
+|                                                  | [2.5.3](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name)               | A     | Etiqueta en el nombre                   |
+|                                                  | [1.3.5](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose)      | AA    | Identificación del propósito del campo  |
+|                                                  | [1.3.6](https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose)            | AAA   | Identificación del propósito            |
+|                                                  | [2.4.9](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only)      | AAA   | Propósito de los enlaces (sólo enlaces) |
+| **Separa el contenido de la presentación**       |                                                                                  |
+|                                                  | [1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content)            | A     | Contenido no textual                    |
+|                                                  | [1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text)              | AA    | Imágenes de texto                       |
+|                                                  | [1.4.9](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception) | AAA   | Imágenes de texto (sin excepciones)     |
+| **Uso mediante teclado**                         |                                                                                  |
+|                                                  | [2.1.1](https://www.w3.org/WAI/WCAG21/Understanding/keyboard)                    | A     | Teclado                                 |
+|                                                  | [2.1.2](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap)            | A     | Sin trampas para el foco del teclado    |
+|                                                  | [2.1.4](https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts)     | A     | Atajos de teclado                       |
+|                                                  | [2.4.3](https://www.w3.org/WAI/WCAG21/Understanding/focus-order)                 | A     | Orden del foco                          |
+|                                                  | [2.4.7](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible)               | AA    | Foco visible                            |
+|                                                  | [2.1.3](https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception)       | AAA   | Teclado (sin excepciones)               |
+| **Facilitar la navegación**                      |                                                                                  |
+|                                                  | [2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks)               | A     | Evitar bloques                          |
+|                                                  | [2.4.2](https://www.w3.org/WAI/WCAG21/Understanding/page-titled)                 | A     | Titulado de páginas                     |
+|                                                  | [2.4.8](https://www.w3.org/WAI/WCAG21/Understanding/location)                    | AAA   | Ubicación                               |
+| **Idioma**                                       |                                                                                  |
+|                                                  | [3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page)            | A     | Idioma de la página                     |
+|                                                  | [3.1.2](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts)           | AA    | Idioma de las partes de la página       |
+| **Ayuda a rellenar formularios**                 |
+|                                                  | [3.3.1](https://www.w3.org/WAI/WCAG21/Understanding/error-identification)        | A     | Identificación de errores               |
+|                                                  | [3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions)      | A     | Etiquetas o instrucciones               |
+|                                                  | [3.3.3](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion)            | AA    | Sugerencias ante errores                |
+|                                                  | [3.2.4](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification)   | AA    | Identificación consistente              |
+| **No incomodar al usuarios**                     |                                                                                  |
+|                                                  | [2.2.4](https://www.w3.org/WAI/WCAG21/Understanding/interruptions)               | AAA   | Interrupciones                          |
+|                                                  | [2.2.5](https://www.w3.org/WAI/WCAG21/Understanding/re-authenticating)           | AAA   | Re-autentificación                      |
+|                                                  | [2.2.1](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable)           | A     | Tiempo ajustable                        |
+| **Sin agobios de tiempo**                        |                                                                                  |
+|                                                  | [2.2.3](https://www.w3.org/WAI/WCAG21/Understanding/no-timing)                   | AAA   | Sin tiempo                              |
+|                                                  | [2.2.6](https://www.w3.org/WAI/WCAG21/Understanding/timeouts)                    | AAA   | Límites de tiempo                       |
+| **Maqueta para diferentes tamaños**              |                                                                                  |
+|                                                  | [1.3.4](https://www.w3.org/WAI/WCAG21/Understanding/orientation)                 | AA    | Orientación de la pantalla              |
+|                                                  | [1.4.4](https://www.w3.org/WAI/WCAG21/Understanding/resize-text)                 | AA    | Cambio de tamaño del texto              |
+|                                                  | [1.4.10](https://www.w3.org/WAI/WCAG21/Understanding/reflow)                     | AA    | Reajuste de elementos                   |
+|                                                  | [1.4.12](https://www.w3.org/WAI/WCAG21/Understanding/text-spacing)               | AA    | Espaciado del texto                     |
 
 --
 
-> Fuente: Accesibilidad Web. WCAG 2.1 de forma sencilla// 
-Autoras: Olga Revilla Muñoz y Olga Carreras Montoto
+> Fuente: Accesibilidad Web. WCAG 2.1 de forma sencilla//
+> Autoras: Olga Revilla Muñoz y Olga Carreras Montoto

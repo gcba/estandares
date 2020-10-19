@@ -1,5 +1,5 @@
-const emoji = require(`remark-emoji`);
-const slug = require('remark-slug');
+const emoji = require(`remark-emoji`)
+const slug = require("remark-slug")
 
 module.exports = {
   pathPrefix: `/estandares`,
@@ -53,16 +53,16 @@ module.exports = {
               blocks: {
                 si: {
                   classes: "do",
-                  title: "optional"
+                  title: "optional",
                 },
                 no: {
                   classes: "dont",
-                  title: "optional"
-                }
+                  title: "optional",
+                },
               },
             },
-          }
-        ]
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

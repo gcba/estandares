@@ -55,10 +55,9 @@ position: 1
 ---
 
 { Contenido de la documentación en formato markdown }
-
 ```
 
-> **Importante**: El contenido de las páginas de la documentación no puede estar vacío, siempre es necesario que estén presentes todos los metadatos y por lo menos una línea de texto en el contenido. 
+> **Importante**: El contenido de las páginas de la documentación no puede estar vacío, siempre es necesario que estén presentes todos los metadatos y por lo menos una línea de texto en el contenido.
 
 ### Imágenes y archivos
 
