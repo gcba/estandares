@@ -1,4 +1,5 @@
 import * as React from "react"
+import { withPrefix } from "gatsby"
 
 interface CardProps {
   title: string
@@ -16,6 +17,6 @@ export const Card = (props: CardProps) => (
     {props.icon && <i className={`bx ${props.icon.name}`} style={{ color: props.icon.color }}></i>}
     <h3>{props.title}</h3>
     <p>{props.description}</p>
-    <a href={props.linkUrl}>{props.linkText}</a>
+    <a href={withPrefix(props.linkUrl)}>{props.linkText} <i className='bx bx-right-arrow-alt' ></i></a>
   </div>
 )

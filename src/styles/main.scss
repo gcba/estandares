@@ -84,11 +84,16 @@ main {
       .docs-card {
         margin-bottom: $section-space-bottom;
 
-        i {
+        > i {
           font-size: 3rem;
         }
         h3 {
           margin-top: spaceUnits(2);
+        }
+
+        a i {
+          font-size: 1.6rem;
+          vertical-align: middle;
         }
 
       }
