@@ -45,7 +45,7 @@ const Layout = (props: any) => {
                 <MdxContent>{children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}</MdxContent>
               </article>
 
-              <Navigator {...prevAndNext} />
+              {!isIndex && <Navigator {...prevAndNext} />}
               <Footer />
             </main>
           </div>

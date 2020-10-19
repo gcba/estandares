@@ -67,6 +67,8 @@ main {
   }
 
   article {
+    margin-bottom: $section-space-bottom;
+    
     @for $i from 2 to 6 {
       h#{$i} {
         margin-top: spaceUnits(16 - $i * 2);
