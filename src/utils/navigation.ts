@@ -53,7 +53,7 @@ export const getNavigation = () => {
   }
 
   nodes.push(
-    fakeNode(1, "Creando experiencias", "/creamos_experiencias"),
+    fakeNode(1, "Creamos experiencias", "/creamos_experiencias"),
     fakeNode(2, "Guía de estilos", "/guías_de_estilos"),
     fakeNode(3, "Componentes", "/componentes"),
     fakeNode(4, "Contenido", "/contenido"),
