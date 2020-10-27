@@ -44,7 +44,7 @@
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
+    "lint": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

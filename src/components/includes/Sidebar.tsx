@@ -27,7 +27,7 @@ export const Sidebar = (props: SidebarProps) => {
   return (
     <aside>
       <div>
-        <img src={withPrefix("/obelisco.svg")} />
+        <img src={withPrefix("/obelisco.svg")} alt="Logo del sistema de diseño Obelisco" />
         <nav className="nav flex-column nav-first-level">
           {navigation.map((node: Node) => (
             <React.Fragment key={node.url}>{renderItem(node, 0)}</React.Fragment>
