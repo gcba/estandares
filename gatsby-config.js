@@ -59,6 +59,10 @@ module.exports = {
                   classes: "dont",
                   title: "optional",
                 },
+                pie: {
+                  classes: "source",
+                  title: "optional",
+                },
               },
             },
           },

@@ -121,25 +121,35 @@ main {
     }
 
     .custom-block {
-      margin-bottom: spaceUnits(4);
+      &.do, &.dont {
+        margin-bottom: spaceUnits(4);
 
-      &::before {
-        @extend %box-icon;
-        font-size: 1.4rem;
-        display: inline;
-        vertical-align: text-bottom;
-        margin-right: spaceUnits(1);
+        &::before {
+          @extend %box-icon;
+          font-size: 1.4rem;
+          display: inline;
+          vertical-align: text-bottom;
+          margin-right: spaceUnits(1);
+        }
+        .custom-block-heading {
+          display: inline;
+        }
+        &.do::before {
+          content: "\ea13";
+          color: $success;
+        }
+        &.dont::before {
+          content: "\ec4f";
+          color: $danger;
+        }
       }
-      .custom-block-heading {
-        display: inline;
-      }
-      &.do::before {
-        content: "\ea13";
-        color: $success;
-      }
-      &.dont::before {
-        content: "\ec4f";
-        color: $danger;
+      
+      &.source {
+        font-size: $font-size-sm;
+        color: $text-muted;
+        margin-top: $section-space-bottom;
+        padding-top: $section-space-bottom;
+        border-top: 1px solid $border-color;
       }
     }
   }
