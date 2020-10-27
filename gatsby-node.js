@@ -30,6 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
               title
               description
               position
+              draft
             }
             fields {
               url

@@ -9,6 +9,7 @@ export interface Data {
         title: string
         description: string
         position: number
+        draft?: boolean
       }
       fields: {
         url: string
@@ -36,6 +37,7 @@ export const getNavigation = () => {
             title
             description
             position
+            draft
           }
           fields {
             url
@@ -60,11 +62,13 @@ export const getNavigation = () => {
     fakeNode(5, "Herramientas y recursos", "/herramientas_y_recursos")
   )
 
-  nodes.forEach(node => {
-    const path = node.fields.url.replace(/^\/|\/$/g, "").replace(/\//g, ".children.")
-    const children = _.get(navAsObject, `${path}.children`)
-    _.set(navAsObject, path, { ...node.frontmatter, ...node.fields, children })
-  })
+  nodes
+    .filter(node => !node.frontmatter.draft)
+    .forEach(node => {
+      const path = node.fields.url.replace(/^\/|\/$/g, "").replace(/\//g, ".children.")
+      const children = _.get(navAsObject, `${path}.children`)
+      _.set(navAsObject, path, { ...node.frontmatter, ...node.fields, children })
+    })
 
   const navigationToArrays = nav => {
     return _.sortBy(Object.values(nav), "position").map((node: Node) => ({
