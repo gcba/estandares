@@ -2,7 +2,6 @@
 @import "~@gcba/obelisco/src/scss/obelisco.scss";
 @import "~boxicons/css/boxicons.min.css";
 
-
 $sidebar-min-height: 100vh;
 $logo-max-width: spaceUnits(60);
 
@@ -13,6 +12,8 @@ $section-space-bottom: spaceUnits(12);
 
 $sidebar-offset-left: spaceUnits(32);
 $sidebar-offset-right: spaceUnits(16);
+
+$separation-border: 1px solid $border-color;
 
 aside {
   min-height: $sidebar-min-height;
@@ -149,7 +150,19 @@ main {
         color: $text-muted;
         margin-top: $section-space-bottom;
         padding-top: $section-space-bottom;
-        border-top: 1px solid $border-color;
+        border-top: $separation-border;
+      }
+    }
+
+    blockquote {
+      @extend .lead;
+      padding: $section-space-bottom / 2 0;
+      margin: $section-space-bottom 0;
+      border-top: $separation-border;
+      border-bottom: $separation-border;
+
+      p:last-child {
+        margin-bottom: 0;
       }
     }
   }
@@ -157,7 +170,7 @@ main {
   .navigator {
     padding-top: spaceUnits(6);
     padding-bottom: spaceUnits(4);
-    border-bottom: 1px solid $border-color;
+    border-bottom: $separation-border;
 
     a {
       font-size: .825rem;
@@ -173,7 +186,7 @@ main {
     .footer-container {
       padding: spaceUnits(6) 0 spaceUnits(4);
       margin-bottom: spaceUnits(6);
-      border-bottom: 1px solid $border-color;
+      border-bottom: $separation-border;
     }
 
     i {
