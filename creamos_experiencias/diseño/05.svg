@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="387" height="309" viewBox="0 0 387 309">
+  <defs>
+    <clipPath id="clip-Mesa_de_trabajo_6">
+      <rect width="387" height="309"/>
+    </clipPath>
+  </defs>
+  <g id="Mesa_de_trabajo_6" data-name="Mesa de trabajo – 6" clip-path="url(#clip-Mesa_de_trabajo_6)">
+    <rect width="387" height="309" fill="#fff"/>
+    <g id="Grupo_17916" data-name="Grupo 17916">
+      <rect id="Rectángulo_9093" data-name="Rectángulo 9093" width="101.996" height="101.996" rx="20" transform="translate(90.339 31.569)" fill="none" stroke="#38485c" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Trazado_24646" data-name="Trazado 24646" d="M176.337,948.567a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(0 -865.999)" fill="#38485c"/>
+      <rect id="Rectángulo_9094" data-name="Rectángulo 9094" width="101.995" height="101.996" rx="20" transform="translate(212.335 31.569)" fill="none" stroke="#38485c" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Trazado_24647" data-name="Trazado 24647" d="M298.332,948.567a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(0 -865.999)" fill="#38485c"/>
+      <rect id="Rectángulo_9095" data-name="Rectángulo 9095" width="101.995" height="101.996" rx="20" transform="translate(212.335 154.826)" fill="none" stroke="#38485c" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Trazado_24648" data-name="Trazado 24648" d="M298.332,1071.823a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(0 -865.999)" fill="#38485c"/>
+      <path id="Trazado_24658" data-name="Trazado 24658" d="M172.335,1122.821h-62a20,20,0,0,1-20-20v-62a20,20,0,0,1,20-20h62a20,20,0,0,1,20,20v62a20,20,0,0,1-20,20" transform="translate(0 -865.999)" fill="#38485c"/>
+      <path id="Trazado_24659" data-name="Trazado 24659" d="M176.337,1071.823a35,35,0,1,1-35-35,35,35,0,0,1,35,35" transform="translate(0 -865.999)" fill="#f3f6f9"/>
+      <circle id="Elipse_800" data-name="Elipse 800" cx="35" cy="35" r="35" transform="translate(106.337 170.824)" fill="none" stroke="#383838" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
