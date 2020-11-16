@@ -30,11 +30,11 @@ const Layout = (props: any) => {
       </a>
       <div className="container">
         <div className="row">
-          <div className="col-3">
+          <div className="col-md-3">
             <Sidebar current={path} navigation={navigation} />
           </div>
-          <div className="col-8 offset-1">
-            <main id="#content">
+          <div className="col-md-8 offset-md-1">
+            <main id="content">
               <header>
                 <h1>{page.title}</h1>
                 <Lead>{page.description}</Lead>

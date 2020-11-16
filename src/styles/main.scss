@@ -31,6 +31,11 @@ aside {
     padding-left: $sidebar-offset-right;
     box-sizing: content-box;
     left: $sidebar-offset-left * -1;
+
+    @include media-breakpoint-down(md) {
+      padding: 0 spaceUnits(2);
+      left: -#{spaceUnits(2)};
+    }
   }
 
   > div {
@@ -75,6 +80,10 @@ main {
         margin-top: spaceUnits(16 - $i * 2);
         margin-bottom: spaceUnits(4);
       }
+    }
+
+    h1, h2 {
+      word-break: break-word;
     }
 
     img {
@@ -164,6 +173,11 @@ main {
       p:last-child {
         margin-bottom: 0;
       }
+    }
+
+    table tr td img {
+      max-width: 90px;
+      display: block;
     }
   }
 
