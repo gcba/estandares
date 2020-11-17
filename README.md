@@ -15,15 +15,17 @@ MDX está basado en [Mark Down](https://www.markdownguide.org/), pero también p
 
 ### Estructura de archivos
 
-Las páginas se encuentran en el directorio `src/pages` y mantienen la estructura de carpetas definidas por la navegación.
-Por ejemplo, la página de la documentación `/recursos/componentes/web` debe ser `/src/pages/recursos/compoentes/web.mdx`.
+Las páginas se encuentran en el directorio `src/articles` y mantienen la estructura de carpetas definidas por la navegación.
+Por ejemplo, la página de la documentación `/recursos/componentes/web` debe ser `/src/articles/recursos/compoentes/web.mdx`.
 
 Cada carpeta que se genere debe tener un archivo con el mismo nombre, y al mismo nivel, que va a definir el contenido de esa sección.
+
+> Tanto para las carpetas como para los archivos, **debe evitarse usar caracteres especiales y espacios**. Usar palabras en minúscula separadas por guión medio; las tildes y las eñes sí están permitidas. Por ejemplo: `arquitectura-de-información.mdx`.
 
 Para el caso del ejemplo anterior debería ser:
 
 ```
-/pages
+/articles
   recursos.mdx
   /recursos
     componentes.mdx
