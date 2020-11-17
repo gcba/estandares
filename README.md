@@ -37,12 +37,13 @@ Cada página tiene en las primeras líneas una sección que define los metadatos
 
 Los metadas son:
 
-| nombre      | tipo   | ejemplo                                       | notas                                                                                           |
-| ----------- | ------ | --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| menu        | texto  | Web                                           | Es el nombre utilizado en la navegación.                                                        |
-| title       | texto  | Componentes para Web                          | Es el nombre utilizado en el encabezado de la página y el título de la pestaña.                 |
-| description | texto  | Sistema de componentes para aplicaciones web. | Es la descripción que se muestra debajo del título y al mostrar resultados en un buscador.      |
-| position    | número | 1                                             | Es el número de posición que debe tener ese elemento respecto de sus hermanos en la navegación. |
+| nombre      | tipo     | ejemplo                                       | notas                                                                                           |
+| ----------- | -------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| menu        | texto    | Web                                           | Es el nombre utilizado en la navegación.                                                        |
+| title       | texto    | Componentes para Web                          | Es el nombre utilizado en el encabezado de la página y el título de la pestaña.                 |
+| description | texto    | Sistema de componentes para aplicaciones web. | Es la descripción que se muestra debajo del título y al mostrar resultados en un buscador.      |
+| position    | número   | 1                                             | Es el número de posición que debe tener ese elemento respecto de sus hermanos en la navegación. |
+| draft       | booleano | true                                          | Si este parámetro está en `true`, el artículo se toma como borrador y no va a aparecer en el menú lateral. Para que sí se muestre puede definirse como `false` o simplemente no poner el parámetro. |
 
 Siguiendo con el ejemplo de la página de componentes para web, los metadatos deberían ser:
 
@@ -52,6 +53,7 @@ menu: Web
 title: Componentes para web
 description: Sistema de componentes para aplicaciones web.
 position: 1
+draft: false
 ---
 
 { Contenido de la documentación en formato markdown }
