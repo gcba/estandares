@@ -32,7 +32,7 @@ aside {
     box-sizing: content-box;
     left: $sidebar-offset-left * -1;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       padding: 0 spaceUnits(2);
       left: -#{spaceUnits(2)};
     }
@@ -88,6 +88,14 @@ main {
 
     img {
       max-width: 100%;
+    }
+
+    .row .col {
+      margin-top: 2.5rem;
+      
+      h3 {
+        margin-top: 0;
+      }
     }
 
     .card-row {

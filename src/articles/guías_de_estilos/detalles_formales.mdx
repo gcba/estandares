@@ -1,8 +1,95 @@
 ---
 menu: Detalles formales
 title: Detalles formales
-description: Guía de estilo disponibles para utilizar en productos oficiales.
+description: Enncontramos ciertas características que están presentes en las piezas que componen Obelisco, esto ayuda a percibirlo como sistema.
 position: 1
 ---
 
-{desarrolar}
+import { Row, Col2, Col3 } from "../../components/docs/Layout" 
+
+## Bordes redondeados
+
+<Row><Col2>
+
+### Contenedores en general
+Estos tipos de borde se pueden utilizar en cards, modales e imágenes. Cuanto más grande sea el elemento a implementar el borde, más grande va a ser el redondeado.
+
+</Col2><Col2>
+
+![Bordes redondeados para contenedores en general](/guía-de-estilos/detalles-formales/borde-redondeado-1.svg)
+
+</Col2></Row>
+
+<Row><Col2>
+
+### Contenedores primitivos
+Estos tipos de borde se pueden utilizar en botones, campos de formulario y tooltips. Al ser elementos más pequeños se utiliza un borde redondeado que se complemente.
+
+</Col2><Col2>
+
+![Bordes redondeado para contenedores primitivos](/guía-de-estilos/detalles-formales/borde-redondeado-2.svg)
+
+</Col2></Row>
+
+## Elevación
+
+<Row><Col2>
+
+![Comlpetar](/guía-de-estilos/detalles-formales/contenedor-1.svg)
+
+1. Desenfoque: 3px 
+2. Desplazamiento en eje X: 0px 
+3. Desplazamiento en eje Y: 1px 
+4. Color de sombra: #38485C 
+5. Opacidad de sombra: 20%
+
+</Col2><Col2>
+
+![Comlpetar](/guía-de-estilos/detalles-formales/contenedor-2.svg)
+
+1. Desenfoque: 24px 
+2. Desplazamiento en eje X: 0px 
+3. Desplazamiento en eje Y: 0px 
+4. Color de sombra: #38485C 
+5. Opacidad de sombra: 20%
+
+</Col2></Row>
+
+## Proporción de la imagen
+
+Las áreas de vista de las imágnes dentro de tarjetas pueden tener cualquiera de estas relaciones.
+
+El tamaño de vista previa predeterminado recomendado es 2: 1 o 1: 2 para las tarjetas horizontales.
+
+![Comlpetar](/guía-de-estilos/detalles-formales/imágenes.svg)
+
+## Misceláneas
+
+### Divisores fondo blanco
+
+<Row><Col2>
+
+![Comlpetar](/guía-de-estilos/detalles-formales/misceláneas-1.svg)
+
+1. Contorno: 1px
+2. Color de contorno: Grisulado 5
+
+</Col2><Col2>
+
+![Comlpetar](/guía-de-estilos/detalles-formales/misceláneas-2.svg)
+
+1. Contorno: 1px
+2. Color de contorno: Grisulado 5
+
+</Col2></Row>
+
+## Primer plano
+
+### Modales
+
+Ciertos contenedores pueden requerir una visualización en primer plano para destacar información. La manera de llevar adelante esta acción es aislar el contenedor separándolo del fondo mediante un plano oscuro en transparencia.
+
+![Comlpetar](/guía-de-estilos/detalles-formales/modales.svg)
+
+1. Color de fondo: #000000
+2. Opacidad de fondo: 35%

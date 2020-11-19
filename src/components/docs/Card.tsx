@@ -12,7 +12,7 @@ interface CardProps {
   }
 }
 
-export const Card = (props: CardProps) => (
+export const Card = (props: React.PropsWithChildren<CardProps>) => (
   <div className="docs-card">
     {props.icon && <i className={`bx ${props.icon.name}`} style={{ color: props.icon.color }}></i>}
     <h3>{props.title}</h3>
