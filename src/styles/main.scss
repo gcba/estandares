@@ -90,7 +90,7 @@ main {
       max-width: 100%;
     }
 
-    .row .col {
+    .row [class^=col] {
       margin-top: 2.5rem;
       
       h3 {

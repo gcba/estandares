@@ -10,6 +10,7 @@ import { Footer } from "./includes/Footer"
 import { Navigator } from "./includes/Navigator"
 import Seo from "./seo"
 import { Img, Table, Lead } from "./markdown"
+import { Row, Col2, Col3 } from "./docs/Layout"
 import { getNavigation, getPrevAndNext } from "../utils/navigation"
 
 const Layout = (props: any) => {
@@ -65,6 +66,9 @@ const MdxContent = (props: any) => {
         table: Table,
         Lead,
         Navigator,
+        Row,
+        Col2,
+        Col3
       }}
     >
       {props.children}
