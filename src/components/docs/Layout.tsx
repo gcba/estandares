@@ -6,14 +6,8 @@ export const Row = (props: React.PropsWithChildren<{}>) => (
   </div>
 )
 
-export const Col2 = (props: React.PropsWithChildren<{}>) => (
-  <div className="col-xs-12 col-md-6">
-    {props.children}
-  </div>
-)
-
-export const Col3 = (props: React.PropsWithChildren<{}>) => (
-  <div className="col-xs-12">
+export const Col = (props: React.PropsWithChildren<{items: number}>) => (
+  <div className={`col-xs-12 col-md-${12 / props.items}`}>
     {props.children}
   </div>
 )

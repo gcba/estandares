@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="row footer-container">
         <div className="col-md-6 h4">Formá parte de la comunidad</div>
         <div className="col-md-2">
-          <a href="mailto:alguien@buenosaires.gob.ar">
+          <a href="mailto:experienciadigital@buenosaires.gob.ar">
             <i className="bx bx-mail-send"></i>
             Correo
           </a>

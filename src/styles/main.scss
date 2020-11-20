@@ -237,3 +237,59 @@ main {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/* === Color component === */
+
+.docs-color {
+  border-radius: $border-radius;
+  border: 1px solid $grisulado-50;
+  overflow: hidden;
+
+  .docs-color-bg {
+    height: spaceUnits(20);
+    padding: spaceUnits(3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: 1px solid $grisulado-50;
+  }
+
+  .docs-color-name {
+    margin: spaceUnits(2) spaceUnits(3) 0;
+    font-weight: 600;
+    font-size: .8rem;
+  }
+  .docs-color-description {
+    margin: 0 spaceUnits(3);
+    font-size: .7rem;
+  }
+
+  .docs-color-specs {
+    margin: spaceUnits(2) spaceUnits(3);
+    padding-top: spaceUnits(2);
+    border-top: 1px solid $grisulado-50;
+    line-height: 100%;
+
+    dt, dd {
+      display: inline-block;
+      margin: 0;
+      box-sizing: border-box;
+      font-size: .7rem;
+    }
+
+    dt {
+      width: 30%;
+      font-weight: 600;
+    }
+    
+    dd {
+      width: 70%;
+      text-align: right;
+    }
+  }
+
+  &.docs-color-light .docs-color-bg {
+    color: $white;
+  }
+}
