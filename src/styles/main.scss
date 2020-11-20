@@ -241,6 +241,18 @@ main {
 
 /* === Color component === */
 
+.docs-example {
+  background: $grisulado-10;
+  border-radius: $border-radius-container;
+  padding: spaceUnits(6) spaceUnits(8);
+
+  > * {
+    margin: spaceUnits(2) 0;
+  }
+}
+
+/* === Color component === */
+
 .docs-color {
   border-radius: $border-radius;
   border: 1px solid $grisulado-50;
@@ -293,3 +305,4 @@ main {
     color: $white;
   }
 }
+

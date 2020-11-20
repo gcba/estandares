@@ -11,3 +11,12 @@ export const Col = (props: React.PropsWithChildren<{items: number}>) => (
     {props.children}
   </div>
 )
+
+export const Example = (props: React.PropsWithChildren<{align?: string}>) => {
+  const style: { [key:string]: any} = {};
+  if(props.align) style.textAlign = props.align;
+  
+  return <div className="docs-example" style={style}>
+    {props.children}
+  </div>;
+}
