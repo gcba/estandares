@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="843" height="407" viewBox="0 0 843 407">
+  <defs>
+    <clipPath id="clip-proximidad">
+      <rect width="843" height="407"/>
+    </clipPath>
+  </defs>
+  <g id="proximidad" clip-path="url(#clip-proximidad)">
+    <rect width="843" height="407" fill="#fff"/>
+    <g id="Grupo_17829" data-name="Grupo 17829">
+      <rect id="Rectángulo_8906" data-name="Rectángulo 8906" width="95" height="26" rx="13" transform="translate(72 214)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8920" data-name="Rectángulo 8920" width="95" height="26" rx="13" transform="translate(435 269)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8913" data-name="Rectángulo 8913" width="95" height="26" rx="13" transform="translate(172 214)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8921" data-name="Rectángulo 8921" width="95" height="26" rx="13" transform="translate(535 269)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8905" data-name="Rectángulo 8905" width="255" height="19" rx="9.5" transform="translate(72 114)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8917" data-name="Rectángulo 8917" width="255" height="19" rx="9.5" transform="translate(435 144)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8912" data-name="Rectángulo 8912" width="213" height="18" rx="9" transform="translate(72 174)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8919" data-name="Rectángulo 8919" width="213" height="18" rx="9" transform="translate(435 204)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8911" data-name="Rectángulo 8911" width="286" height="18" rx="9" transform="translate(72 144)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8918" data-name="Rectángulo 8918" width="286" height="18" rx="9" transform="translate(435 174)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8910" data-name="Rectángulo 8910" width="69" height="8" rx="4" transform="translate(72 89)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8916" data-name="Rectángulo 8916" width="69" height="8" rx="4" transform="translate(435 89)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8914" data-name="Rectángulo 8914" width="218" height="8" rx="4" transform="translate(72 272)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8922" data-name="Rectángulo 8922" width="218" height="8" rx="4" transform="translate(435 327)" fill="#e6ebf0"/>
+      <g id="Rectángulo_8909" data-name="Rectángulo 8909" transform="translate(49 57)" fill="none" stroke="#38485c" stroke-width="2" stroke-dasharray="4 8">
+        <rect width="349" height="255" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="347" height="253" rx="11" fill="none"/>
+      </g>
+      <g id="Rectángulo_8915" data-name="Rectángulo 8915" transform="translate(412 57)" fill="none" stroke="#38485c" stroke-width="2" stroke-dasharray="4 8">
+        <rect width="349" height="57" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="347" height="55" rx="11" fill="none"/>
+      </g>
+      <g id="Rectángulo_8924" data-name="Rectángulo 8924" transform="translate(412 252)" fill="none" stroke="#38485c" stroke-width="2" stroke-dasharray="4 8">
+        <rect width="349" height="100" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="347" height="98" rx="11" fill="none"/>
+      </g>
+      <g id="Rectángulo_8923" data-name="Rectángulo 8923" transform="translate(412 126)" fill="none" stroke="#38485c" stroke-width="2" stroke-dasharray="4 7">
+        <rect width="349" height="114" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="347" height="112" rx="11" fill="none"/>
+      </g>
+      <line id="Línea_345" data-name="Línea 345" x2="285.756" transform="translate(72.415 256.264)" fill="none" stroke="#e6ebf0" stroke-width="1"/>
+      <line id="Línea_346" data-name="Línea 346" x2="285.756" transform="translate(435.583 311.264)" fill="none" stroke="#e6ebf0" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

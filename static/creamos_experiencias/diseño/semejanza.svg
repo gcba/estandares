@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="825" height="381" viewBox="0 0 825 381">
+  <defs>
+    <clipPath id="clip-semejanza">
+      <rect width="825" height="381"/>
+    </clipPath>
+  </defs>
+  <g id="semejanza" clip-path="url(#clip-semejanza)">
+    <rect width="825" height="381" fill="#fff"/>
+    <g id="Grupo_17828" data-name="Grupo 17828">
+      <rect id="Rectángulo_8881" data-name="Rectángulo 8881" width="127" height="127" rx="12" transform="translate(58 114)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8884" data-name="Rectángulo 8884" width="110" height="19" rx="9.5" transform="translate(58 82)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8904" data-name="Rectángulo 8904" width="110" height="19" rx="9.5" transform="translate(531 82)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8890" data-name="Rectángulo 8890" width="110" height="8" rx="4" transform="translate(58 251)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8895" data-name="Rectángulo 8895" width="110" height="8" rx="4" transform="translate(198 251)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8897" data-name="Rectángulo 8897" width="110" height="8" rx="4" transform="translate(340 251)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8893" data-name="Rectángulo 8893" width="77" height="9" rx="4.5" transform="translate(58 265)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8894" data-name="Rectángulo 8894" width="77" height="9" rx="4.5" transform="translate(198 265)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8896" data-name="Rectángulo 8896" width="77" height="9" rx="4.5" transform="translate(340 265)" fill="#e6ebf0"/>
+      <rect id="Rectángulo_8882" data-name="Rectángulo 8882" width="127" height="127" rx="12" transform="translate(198 114)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8883" data-name="Rectángulo 8883" width="128" height="127" rx="12" transform="translate(338 114)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8886" data-name="Rectángulo 8886" width="139" height="40" rx="12" transform="translate(581 126)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8887" data-name="Rectángulo 8887" width="139" height="40" rx="12" transform="translate(581 192)" fill="#9eaab8"/>
+      <rect id="Rectángulo_8888" data-name="Rectángulo 8888" width="139" height="39" rx="12" transform="translate(581 259)" fill="#9eaab8"/>
+      <g id="Rectángulo_8902" data-name="Rectángulo 8902" transform="translate(37 57)" fill="none" stroke="#38485c" stroke-width="2" stroke-dasharray="4 8">
+        <rect width="449" height="267" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="447" height="265" rx="11" fill="none"/>
+      </g>
+      <g id="Rectángulo_8903" data-name="Rectángulo 8903" transform="translate(502 57)" fill="none" stroke="#38485c" stroke-width="2" stroke-dasharray="4 8">
+        <rect width="247" height="267" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="245" height="265" rx="11" fill="none"/>
+      </g>
+      <circle id="Elipse_1" data-name="Elipse 1" cx="21" cy="21" r="21" transform="translate(531 125)" fill="#9eaab8"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="21" cy="21" r="21" transform="translate(531 191)" fill="#9eaab8"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="21" cy="21" r="21" transform="translate(531 257)" fill="#9eaab8"/>
+    </g>
+  </g>
+</svg>
