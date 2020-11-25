@@ -86,7 +86,7 @@ main {
       word-break: break-word;
     }
 
-    > img {
+    .img-fluid {
       max-width: 100%;
     }
 
@@ -96,6 +96,10 @@ main {
       h3, h4 {
         margin-top: 0;
       }
+    }
+
+    .card {
+      margin-bottom: $section-space-bottom / 2;
     }
 
     .card-row {
@@ -252,6 +256,9 @@ main {
 
   > * {
     margin: spaceUnits(2) 0;
+  }
+  .row [class^=col] {
+    margin-top: 0;
   }
 }
 

@@ -1,0 +1,176 @@
+---
+menu: Tarjetas
+title: Tarjetas
+description: Las tarjetas agrupan información y actúan como punto de entrada que permite introducir un tema en específico.
+position: 3
+---
+
+## Anatomía
+
+![completar](/componentes/card/anatomía.svg)
+
+1. El área preliminar puede estar conformada por imágenes o iconos. 
+2. El área de títulos esta conformado por títulos y subtítulos. 
+3. El área descriptiva es una bajada que introduce contenido que se encontrará luego. 
+4. El área de cierre es una información extra que puede ser de interés.
+
+## Opciones de tarjetas
+
+### Tarjetas verticales u horizontales
+
+Las tarjetas con imágenes se pueden colocar verticalmente u horizontalmente. En caso de no tener “área preliminar” el ancho máximo de las tarjetas son 6 columnas.
+
+<Example align="center">
+  
+  <div className="row">
+    <div className="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+      <button className="card">
+        <img src="/componentes/card/paseobajo.png" className="card-img-top" />
+        <div className="card-body">
+          <h4 className="card-title">Título Tarjeta</h4>
+          <p className="card-text">
+            Recomendamos en este espacio no utilizar más de 3 líneas, para generar una lectura óptima.
+          </p>
+        </div>
+      </button>
+    </div>
+    <div className="col-xs-12 col-lg-10 offset-lg-1">
+      <button className="card card-horizontal">
+        <img src="/componentes/card/paseobajo-wide.png" className="card-img-left" width={168} />
+        <div className="card-body">
+          <h4 className="card-title">Título Tarjeta</h4>
+          <p className="card-text">
+            Recomendamos en este espacio no utilizar más de 3 líneas, para generar una lectura óptima.
+          </p>
+        </div>
+      </button>
+    </div>
+  </div>
+
+</Example>
+
+### Tarjetas personalizables
+
+El diseño de una tarjeta dependerá de la información que se deba mostrar. Cada elemento que se muestra en la sección anatomía es opcional, pero debe respetar la ubicación en que se usa.
+
+<Row>
+<Col items={2}>
+
+  <a className="card" href="#">
+    <div className="card-body">
+      <i className="bx bx-news card-icon text-info"></i>
+      <h4 className="card-title">Noticias</h4>
+      <p className="card-subtitle"> Más noticias de la Ciudad </p>
+    </div>
+  </a>
+
+  <button className="card">
+    <img src="/componentes/card/paseobajo.png" className="card-img-top" />
+    <div className="card-body">
+      <h4 className="card-title">Consejos para cuidarnos</h4>
+      <p className="card-text">
+        Recomendaciones y cuidados para prevenir el contagio del Covid-19.
+      </p>
+    </div>
+  </button>
+
+</Col>
+<Col items={2}>
+
+  <a className="card" href="#">
+    <img src="/componentes/card/paseobajo.png" className="card-img-top" />
+    <div className="card-body">
+      <h4 className="card-title">Caminá Buenos Aires</h4>
+      <p className="card-text">
+        15 recorridos gratuitos con mapas y audioguías de la Ciudad Autónoma de Buenos Aires.
+      </p>
+    </div>
+    <div className="card-footer text-right">
+      <small>Este evento está disponible todo el año</small>
+    </div>
+  </a>
+
+  <a className="card" href="#">
+    <div className="card-body">
+      <h4 className="card-title">Permisos para ubicar mesas y sillas en espacios públicos</h4>
+    </div>
+  </a>
+
+</Col>
+</Row>
+
+### Tarjetas sin contenedor
+
+Las tarjetas sin contenedor se diferencian del resto por tener más espacio para su “area de títulos” y “área descriptiva”. Además esta tarjeta no es accionable, sino que al final tendrá un enlace que marcará la acción que se realizará.
+
+<Row>
+<Col items={2}>
+
+<div className="card card-simple">
+  <div className="card-body">
+    <i className="bx bx-message-square-edit card-icon text-danger"></i>
+    <h4 className="card-title">Comunidad Educativa Conectada</h4>
+    <p className="card-text">
+      Recibí ayuda personalizada llamando al 0800-333-3382 de lunes a viernes de 8 a 20 h
+    </p>
+    <a href="tel:123456789" className="link-arrow">Llamar al CEC</a>
+  </div>
+</div>
+
+</Col>
+<Col items={2}>
+
+<div className="card card-simple">
+  <div className="card-body">
+    <i className="bx bx-bot card-icon text-success"></i>
+    <h4 className="card-title">BOTI</h4>
+    <p className="card-text">
+      Resolvé todas tus dudas sobre el proceso de inscripción escolar.
+    </p>
+    <a href="tel:123456789" className="link-arrow">Chatear con BOTI</a>
+  </div>
+</div>
+
+</Col>
+</Row>
+
+## Diseño y estructura
+
+### Ancho de tarjetas
+
+Al pensar como ubicar las tarjetas en la composición debemos considerar que queremos comunicar, usando textos simples y directos. En el caso de utilizar cuatro tarjetas en una misma fila, estas mismas no pueden llevar descripción, solo podrán tener un “Área preliminar” y un “Área de títulos” ya que el espacio no es optimo para insertar una descripción. Por eso se debe elegir muy bien que título van a llevar estas tarjetas.
+
+![completar](/componentes/card/estructura-1.svg)
+
+Para tarjetas con un “Área descriptiva” van a ser tres la cantidad máxima a utilizar por fila.
+
+![completar](/componentes/card/estructura-2.svg)
+
+### Espaciados
+
+![completar](/componentes/card/estructura-3.svg)
+
+## Usabilidad
+
+**No usar tarjetas solo para decoración**. El componente de tarjetas es para tarjetas, no para cualquier tipo de contenido que necesite un borde alrededor.
+
+**Las tarjetas son accionables**. Se utilizan como un resumen de información más detallada, cualquier tarjeta individual debe vincularse a esa información.
+
+**No incluir contenido redundante**. Las tarjetas tienen que comunicar lo que vas a encontrar una vez que el usuario acciona.
+
+**Simpleza**. Se tiene que evitar todo tipo de elemento que distraiga al usuario de la acción que quiere realizar.
+
+**Versatilidad**. Se dispone de varios elementos para componer una tarjeta, por eso usarlos en el orden establecido es necesario.
+
+### Tipografía
+
+| Tipografía | Tamaño                       | Variable       | Color   |
+|------------|------------------------------|----------------|---------|
+| Nunito     | 21px / 1,3125 rem Títulos    | Semibold / 600 | #38485C |
+| Open Sans  | 19px / 1,1875 rem Subtítulos | Regular / 500  | #38485C |
+| Open Sans  | 16px / 1 rem Descripciones   | Regular / 500  | #38485C |
+| Open Sans  | 11,7px / 0,73125 rem Caption | Regular / 500  | #38485C |
+
+Usar **mayúsculas para dar estilo** a las oraciones. Estas se usan en la primera palabra de una frase; en nombres propios; en términos como “Ciudad”, “Gobierno” o “Comuna”; en nombre de programas y/o para escribir siglas.
+
+Es importante nunca escribir TODO EN MAYÚSCULAS ya que **dificulta la lectura** y por convención web equivaldría a gritar o levantar la voz.
