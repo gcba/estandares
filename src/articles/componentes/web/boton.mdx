@@ -2,7 +2,7 @@
 menu: Botón
 title: Botón
 description: Los botones se usan para establecer una interacción con el usuario. El texto que incluyamos en ellos es fundamental para indicarle la acción específica que queremos que realice en nuestro sitio o aplicación.
-position: 3
+position: 1
 ---
 
 import { Button } from "@gcba/obelisco"
@@ -16,6 +16,7 @@ import "./boton.scss"
 <Row><Col items={2}>
 
 #### Padding derecho e izquierdo
+
 Se utiliza un padding automático variable de 24 px / 1.5 rem según el tamaño de texo.
 
 </Col><Col items={2}>
@@ -27,6 +28,7 @@ Se utiliza un padding automático variable de 24 px / 1.5 rem según el tamaño 
 <Row><Col items={2}>
 
 #### Padding superior e inferior
+
 Padding superior e inferior
 
 </Col><Col items={2}>
@@ -38,6 +40,7 @@ Padding superior e inferior
 <Row><Col items={2}>
 
 #### Radio de vértice
+
 Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
 
 </Col><Col items={2}>
@@ -51,6 +54,7 @@ Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
 <Row><Col items={2}>
 
 #### Padding derecho e izquierdo
+
 Se utiliza un padding automático variable de 16 px / 1 rem según el tamaño de texo.
 
 </Col><Col items={2}>
@@ -62,6 +66,7 @@ Se utiliza un padding automático variable de 16 px / 1 rem según el tamaño de
 <Row><Col items={2}>
 
 #### Padding superior e inferior
+
 Se utiliza un padding fijo de 6 px / 0,375 rem.
 
 </Col><Col items={2}>
@@ -73,6 +78,7 @@ Se utiliza un padding fijo de 6 px / 0,375 rem.
 <Row><Col items={2}>
 
 #### Radio de vértice
+
 Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
 
 </Col><Col items={2}>
@@ -213,10 +219,18 @@ Paso previo a una acción irreversible o en Modales de confirmación
 ## Tipos de botones
 
 <div className="buttons-showcase">
-  <Button type="primary" size="small">Primario</Button>
-  <Button type="secondary" size="small">Secundario</Button>
-  <Button type="success" size="small">Éxito</Button>
-  <Button type="danger" size="small">Peligro</Button>
+  <Button type="primary" size="small">
+    Primario
+  </Button>
+  <Button type="secondary" size="small">
+    Secundario
+  </Button>
+  <Button type="success" size="small">
+    Éxito
+  </Button>
+  <Button type="danger" size="small">
+    Peligro
+  </Button>
 </div>
 
 ### ¿Cómo se usan?
@@ -226,6 +240,7 @@ Los botones pequeños respetan los mismos estados que los botones grandes, su ú
 <Row><Col items={2}>
 
 ### ¿Dónde los uso?
+
 Se utiliza en modales alineando los botones a la derecha de la caja de texto. En los casos de necesitar un botón secundario este acompaña a la izquierda.
 
 </Col><Col items={2}>

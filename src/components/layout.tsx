@@ -70,7 +70,7 @@ const MdxContent = (props: any) => {
         Row,
         Col,
         Color,
-        Example
+        Example,
       }}
     >
       {props.children}
