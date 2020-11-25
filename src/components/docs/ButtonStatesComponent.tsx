@@ -1,20 +1,20 @@
 import * as React from "react"
-import { Button, ButtonProps } from "react-bootstrap"
+import { Button, ButtonType } from "@gcba/obelisco"
 
-export const ButtonStates = (props: { variant: ButtonProps["variant"] }) => (
-  <>
-    <Button variant={props.variant}>Default</Button>
-    <Button variant={props.variant} className="hover">
+export const ButtonStates = (props: { variant: ButtonType }) => (
+  <div className="buttons-showcase">
+    <Button type={props.variant}>Default</Button>
+    <Button type={props.variant} className="active">
       Hover
     </Button>
-    <Button variant={props.variant} className="active">
+    <Button type={props.variant} className="active focus">
       Activo
     </Button>
-    <Button variant={props.variant} className="focus">
+    <Button type={props.variant} className="focus">
       con foco
     </Button>
-    <Button variant={props.variant} disabled={true}>
+    <Button type={props.variant} disabled={true}>
       Deshabilitado
     </Button>
-  </>
+  </div>
 )

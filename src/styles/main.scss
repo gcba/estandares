@@ -93,7 +93,7 @@ main {
     .row [class^=col] {
       margin-top: 2.5rem;
       
-      h3 {
+      h3, h4 {
         margin-top: 0;
       }
     }
@@ -183,10 +183,14 @@ main {
       }
     }
 
-    table tr td img {
-      max-width: 90px;
-      display: block;
-    }
+    table.table {
+      margin-bottom: spaceUnits(8);
+
+      tr td img {
+        max-width: 90px;
+        display: block;
+      }
+    } 
   }
 
   .navigator {

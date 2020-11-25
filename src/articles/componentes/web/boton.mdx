@@ -1,149 +1,260 @@
 ---
 menu: Botón
 title: Botón
-description: Los botones se usan para iniciar una acción. El texto de los botones refiere qué acción ocurrirá cuando el usuario inreactúa con él.
+description: Los botones se usan para establecer una interacción con el usuario. El texto que incluyamos en ellos es fundamental para indicarle la acción específica que queremos que realice en nuestro sitio o aplicación.
 position: 3
 ---
 
-import { Button } from "react-bootstrap"
+import { Button } from "@gcba/obelisco"
 import { ButtonStates } from "../../../components/docs/ButtonStatesComponent"
 import "./boton.scss"
 
+## Anatomía
+
+### Botón grande
+
+<Row><Col items={2}>
+
+#### Padding derecho e izquierdo
+Se utiliza un padding automático variable de 24 px / 1.5 rem según el tamaño de texo.
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/anatomía-1.svg)
+
+</Col></Row>
+
+<Row><Col items={2}>
+
+#### Padding superior e inferior
+Padding superior e inferior
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/anatomía-2.svg)
+
+</Col></Row>
+
+<Row><Col items={2}>
+
+#### Radio de vértice
+Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/anatomía-3.svg)
+
+</Col></Row>
+
+### Botón pequeño
+
+<Row><Col items={2}>
+
+#### Padding derecho e izquierdo
+Se utiliza un padding automático variable de 16 px / 1 rem según el tamaño de texo.
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/anatomía-4.svg)
+
+</Col></Row>
+
+<Row><Col items={2}>
+
+#### Padding superior e inferior
+Se utiliza un padding fijo de 6 px / 0,375 rem.
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/anatomía-5.svg)
+
+</Col></Row>
+
+<Row><Col items={2}>
+
+#### Radio de vértice
+Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/anatomía-6.svg)
+
+</Col></Row>
+
+---
+
 ## Botón primario
-
-<Button variant="primary">Botón</Button>
-
-```html
-<button type="button" class="btn btn-primary">Botón</button>
-```
-
-### ¿Cómo funciona?
-
-- Los botones primarios se usan principalmente para acciones principales.
-- El texto de los botones deben indicar claramente la acción del botón. Use verbos activos, como **Agregar** o **Guardar**. Es posible que deba incluir más o diferentes palabras para describir mejor la acción. Por ejemplo, 'Agregar otra dirección' y 'Guardar cambios'. En este tipo de casos la recomendación es de no exceder las tres palabras.
-
-> Verbos para indicar una acción principal:
->
-> Aplicar, Actualizar, Adjuntar, Agregar, Aprender, Buscar, Cerrar, Copiar, Crear, Comenzar, Compartir, Continuar, Confirmar, Descargar, Editar, Enviar' Exportar, Filtrar, Finalizar, Guardar, Importar, Iniciar, Insertar, Imprimir, Mover, Ordenar, Registrar, Replicar, Restaurar, Seleccionar, Ver, etc...
-
-### ¿Cómo se usan?
-
-- Evite usar varios botones primarios en una sola página, Tener más de un llamado a la acción principal reduce su impacto y dificulta que los usuarios sepan qué hater a continuación.
-- No deben haber varios botones primarios en un mismo grupo de botones, Cualquier llamada a la acción restante debe representarse como botones secundarios
-- No use botones como elementos de navegación. En su lugar, use **enlaces** cuando la acción deseada sea llevar al usuario a una nueva página.
-- Para conjuntos de botones, **use textos específicos**, Por ejemplo en el caso de un formulario: Volver (secundario) y Siguiente (primario)
-
-### Orden
-
-- Los botones primarios siempre aparecen a la derecha, Los botones secundarios aparecen a la izquierda del botón primario. Mantener esta consistencia en los productos es crucial para el usuario. Esta es la orientación requerida y debe seguirse en todo momento.
-
-### Alineación
-
-- Cuando la acción principal implica un paso de navegación hacia adelante, como en un formularia **justifique los botones a la derecha**, ya sea individuales o grupos de botones (secundarios / primarios). Esta posición transmite la intención del "siguiente paso",
 
 ### Estados del botón
 
 <ButtonStates variant="primary" />
 
----
+### ¿Para qué sirven?
 
-## Botón secundario
+Los botones primarios se usan generalmente para **acciones principales**, también llamados _“**Call to action**”_. Por ejemplo, enviar un formulario.
 
-<Button variant="secondary">Botón</Button>
+Normalmente, los usamos para **acciones** denotadas como “**positivas**”.
 
-```html
-<button type="button" class="btn btn-secondary">Botón</button>
-```
+El texto de los botones debe indicar claramente la acción. Usá verbos activos, como Enviar o Guardar. Si necesitás incluir más palabras para describir mejor dicha acción te recomendamos que no superes las tres palabras. Por ejemplo, “Enviar formulario” o “Guardar cambios”.
+
+Más ejemplos de verbos para indicar una acción principal:
+
+Aplicar, Actualizar, Adjuntar, Agregar, Aprender, Buscar, Cerrar, Copiar, Crear, Comenzar, Compartir, Continuar, Confirmar, Descargar, Editar, Enviar, Exportar, Filtrar, Finalizar, Guardar, Importar, Iniciar, Insertar, Imprimir, Mostrar, Mover, Ordenar, Registrar, Replicar, Restaurar, Seleccionar, Ver, etc.
 
 ### ¿Cómo se usan?
 
-- Use botones secundarias para llamadas secundarias a la acción en una página.
-- Las páginas con demasiadas llamadas a la acción dificultan que los usuarios sepan qué hacer a continuación. Antes de agregar muchos botones secundarios, intente simplificar la página 0 dividir el contenido en varias páginas,
-- Puede usar botones secundarios en combinación ton botones predeterminados,
+En lo posible, tratamos de usar un único botón primario por página. Si usamos varios tenemos que tener en cuenta que más de un llamado a la acción principal reduce su impacto y dificulta que los usuarios entiendan qué hacer luego.
+
+En un mismo grupo de botones debe haber un único botón primario. El resto de los llamados a acción debe representarse como botones secundarios.
+
+No usamos botones como elementos de navegación. Cuando la acción deseada es llevar al usuario a una nueva página usamos enlaces.
+
+Para conjuntos de botones usamos textos específicos. Por ejemplo, en el caso de un formulario: “Siguiente” sería el texto primario y “Volver” el secundario.
+
+### ¿Orden y alineación?
+
+Respetar este punto es muy importante a la hora de pensar en la consistencia de nuestros productos digitales. Si mantenemos bien el orden y la alineación de los botones el usuario lo va a saber apreciar.
+
+### En formularios y modales
+
+**Orden**: Los botones primarios siempre aparecen a la derecha. Si hay botones secundarios aparecen a la izquierda del botón primario.
+
+**Alineación**: Cuando la acción principal implica un paso de navegación hacia adelante, cómo en un formulario justifique los botones a la derecha, ya sea individuales o grupos de botones (secundarios / primarios). Esta posición transmite la intención del “siguiente paso”.
+
+<Row><Col items={2}>
+
+![completar](/componentes/botón/alineación-1.svg)
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/alineación-2.svg)
+
+</Col></Row>
+<Row><Col items={2}>
+
+![completar](/componentes/botón/alineación-3.svg)
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/alineación-4.svg)
+
+</Col></Row>
+
+### En bloque de texto
+
+**Orden**: Los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario.
+
+**Alineación**: Cuando la acción principal está dentro de un bloque de texto se deben justificar los botones a la izquierda respetando el orden de lectura.
+
+<Row><Col items={2}>
+
+![completar](/componentes/botón/alineación-5.svg)
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/alineación-6.svg)
+
+</Col></Row>
+
+---
+
+## Botón Secundario
 
 ### Estados del botón
 
 <ButtonStates variant="secondary" />
 
----
-
-## Enlaces tipo botón
-
-<Button variant="link">Enlace</Button>
-
-```html
-<button type="button" class="btn btn-link">Enlace</button>
-```
-
 ### ¿Cómo se usan?
 
-- Los enlates se usan como **elementos de navegación**. Demasiados enlaces saturarán una página y dificultarán a los usuarios la identificación de sus próximos pasos. Deben usarse con moderación.
-- Use enlaces cuando la acción deseada sea llevar al usuario a una nueva página. Cuando la página es externa siempre se usa el ícono acompañando el enlace, indicando que se abrirá en una nueva pestaña.
+Los botones secundarios se usan para llamadas a la **acción secundarias** en una página.
 
-### Estados del botón
+Las páginas con demasiadas llamadas a la acción dificultan que los usuarios deduzcan qué tienen que hacer después. Antes de agregar varios botones secundarios, intentá simplificar la página o dividir el contenido en varias páginas.
 
-<ButtonStates variant="link" />
+Si hay más de 4 botones se debe considerar utilizar una lista con enlaces.
 
----
-
-## Botón de peligro
-
-<Button variant="danger">Botón</Button>
-
-```html
-<button type="button" class="btn btn-danger">Botón</button>
-```
-
-### ¿Cómo se usan?
-
-- Los botones de peligro tienen un estilo visual diferente ya que están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son **acciones permanentes y destructivas** que no pueden deshacerse,
-- Al permitir que los usuarios realicen acciones como esta, se debe incluir un paso adicional que les pida confirmación. Por ejemplo. se puede crear un botón de "Elminar cuenta" pero cuando el usuario haga clic alli se abrirá un modal de confirmación en el que aparecerá el botón de peligro.
-- El estilo de botón para la llamada inicial a la acción puede ser primario ó secundario y el botón de **advertencia final** para la confirmación es el botón de peligro.
-
-### ¿Dónde los uso?
-
-- Modales de confirmación
-
-### Estados del botón
-
-<ButtonStates variant="danger" />
+Se pueden usar, también, en combinación con botones predeterminados.
 
 ---
 
 ## Botón de éxito
 
-<Button variant="success">Botón</Button>
-
-```html
-<button type="button" class="btn btn-success">Botón</button>
-```
-
-### ¿Cómo se usan?
-
-- Los botones de éxito tienen un estilo visual diferente para avisarle al usuario que esta en el último paso antes de recibir una respuesta por parte del sistema 0 completar una navegación.
-
-### ¿Dónde los uso?
-
-- Último paso de un formulario
-- Finalización de un registro
-
 ### Estados del botón
 
 <ButtonStates variant="success" />
+
+### ¿Cómo se usan?
+
+·Los botones de éxito tienen un estilo visual distintivo para avisarle al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
+
+### ¿Dónde los uso?
+
+Último paso de un formulario o en la finalización de un registro.
+
+---
+
+## Botón de peligro
+
+### Estados del botón
+
+<ButtonStates variant="danger" />
+
+### ¿Cómo se usan?
+
+Los botones de peligro tienen un estilo visual distintivo ya que están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son acciones permanentes e irreversibles que no pueden deshacerse.
+
+Al permitir que los usuarios realicen acciones como estas, se debe incluir un paso adicional que les pida confirmación. Por ejemplo, se puede crear un botón de “Eliminar cuenta” y cuando el usuario haga clic allí se abrirá un modal de confirmación en el que aparecerá nuevamente el botón de peligro para confirmar la operación.
+
+### ¿Dónde los uso?
+
+Paso previo a una acción irreversible o en Modales de confirmación
+
+---
+
+## Tipos de botones
+
+<div className="buttons-showcase">
+  <Button type="primary" size="small">Primario</Button>
+  <Button type="secondary" size="small">Secundario</Button>
+  <Button type="success" size="small">Éxito</Button>
+  <Button type="danger" size="small">Peligro</Button>
+</div>
+
+### ¿Cómo se usan?
+
+Los botones pequeños respetan los mismos estados que los botones grandes, su única diferencia aparte de su tamaño es el lugar de implementación.
+
+<Row><Col items={2}>
+
+### ¿Dónde los uso?
+Se utiliza en modales alineando los botones a la derecha de la caja de texto. En los casos de necesitar un botón secundario este acompaña a la izquierda.
+
+</Col><Col items={2}>
+
+![completar](/componentes/botón/pequeño.svg)
+
+</Col></Row>
 
 ---
 
 ## Consideraciones de accesibilidad
 
-- Las interacciones de los botones en el sistema de diseño de Obelisco se implementan utilizando la etiqueta de `<button>` como elemento sobre el HTML5.
-- Los elementos interactivos como se incluyen en el orden de tabulación. Cuando un botón tiene el foco, tanto la **Barra Espaciadora** y el **Enter** activarán el botón (a menos que esté deshabilitado).
-- La etiqueta de un botón puede estar escrita como ¿buttons o proporcionada por los atributos `aria-label`, o `aria-labelledby`. El atributo `aria-describedby` puede proporcionar información adicional sobre el botón. Usar la propiedad `aria-disabled` para marcar como desabilitado el estado del botón. Esto previene que sea interactivo y transmite su estado inactivo a tecnologías de asistencia.
-- El contraste de color en los botones está diseñado para que siempre sea mayor a `4.5.1` cumpliendo con los requerimientos para entes gubernamentales.
+Las interacciones de los botones en el sistema de diseño de Obelisco se implementan utilizando la etiqueta de `<button>` como elemento sobre el HTML5.
+
+Los elementos interactivos como se incluyen en el orden de tabulación. Cuando un botón tiene el foco, tanto la **Barra Espaciadora** y el **Enter** activarán el botón (a menos que esté deshabilitado).
+
+La etiqueta de un botón puede estar escrita como ¿buttons o proporcionada por los atributos `aria-label`, o `aria-labelledby`. El atributo `aria-describedby` puede proporcionar información adicional sobre el botón. Usar la propiedad `aria-disabled` para marcar como desabilitado el estado del botón. Esto previene que sea interactivo y transmite su estado inactivo a tecnologías de asistencia.
+
+El contraste de color en los botones está diseñado para que siempre sea mayor a `4.5.1` cumpliendo con los requerimientos para entes gubernamentales.
 
 ---
 
 ## Tipografía
 
-| Tipografía | Tamaño          | Variable       | Color   |
-| ---------- | --------------- | -------------- | ------- |
-| Open sans  | 18px / 1.125rem | Semibold / 600 | #38485C |
+| Tamaño  | Tipografía | Tamaño          | Variable       | Color   |
+| ------- | ---------- | --------------- | -------------- | ------- |
+| Grande  | Open sans  | 18px / 1.125rem | Semibold / 600 | #38485C |
+| Pequeño | Open sans  | 16px / 1rem     | Semibold / 600 | #38485C |
+
+Usar **mayúsculas** para **dar estilo** a las oraciones. Estas se usan en la primera palabra de una frase; en nombres propios; en términos como “Ciudad”, “Gobierno” o “Comuna”; en nombre de programas y/o para escribir siglas.
+
+Es importante nunca escribir TODO EN MAYÚSCULAS ya que **dificulta la lectura** y por convención web equivaldría a gritar o levantar la voz.
