@@ -76,7 +76,7 @@ main {
     margin-bottom: $section-space-bottom;
     
     @for $i from 2 to 6 {
-      h#{$i} {
+      > h#{$i} {
         margin-top: spaceUnits(16 - $i * 2);
         margin-bottom: spaceUnits(4);
       }
