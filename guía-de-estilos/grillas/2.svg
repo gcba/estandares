@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="712" height="200" viewBox="0 0 712 200"><defs><style>.a{fill:#f3f6f9;}.b,.c{fill:#38485c;}.b{font-size:16px;font-family:OpenSans-Regular, Open Sans;}.c{font-size:21px;font-family:Nunito-SemiBold, Nunito;font-weight:600;letter-spacing:-0.001em;}.d,.e{fill:#505e70;}.e,.f{stroke:#f3f6f9;}.f{fill:#d1d8e0;}.g{stroke:none;}.h{fill:none;}</style></defs><g transform="translate(-513 -1062)"><rect class="a" width="712" height="200" rx="4" transform="translate(513 1062)"/><g transform="translate(45 66)"><text class="b" transform="translate(574 1150)"><tspan x="0" y="0">4 px</tspan></text><text class="c" transform="translate(574 1122)"><tspan x="0" y="0">Unidad mínima</tspan></text><rect class="d" width="18" height="18" transform="translate(575 1093) rotate(-90)"/></g><g transform="translate(-35 66)"><text class="b" transform="translate(1009 1150)"><tspan x="0" y="0">32 px</tspan></text><text class="c" transform="translate(1009 1122)"><tspan x="0" y="0">Ancho medianil</tspan></text><g class="e" transform="translate(1009 1093) rotate(-90)"><rect class="g" width="35" height="35"/><rect class="h" x="0.5" y="0.5" width="34" height="34"/></g><g class="f" transform="translate(1044 1093) rotate(-90)"><rect class="g" width="35" height="35"/><rect class="h" x="0.5" y="0.5" width="34" height="34"/></g><g class="f" transform="translate(1079 1093) rotate(-90)"><rect class="g" width="35" height="35"/><rect class="h" x="0.5" y="0.5" width="34" height="34"/></g><g class="f" transform="translate(1114 1093) rotate(-90)"><rect class="g" width="35" height="35"/><rect class="h" x="0.5" y="0.5" width="34" height="34"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="200" viewBox="0 0 712 200">
+  <g id="Grupo_18088" data-name="Grupo 18088" transform="translate(-513 -1070)">
+    <path id="Trazado_23784" data-name="Trazado 23784" d="M4,0H708a4,4,0,0,1,4,4V196a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(513 1070)" fill="#f3f6f9"/>
+    <g id="Grupo_17914" data-name="Grupo 17914" transform="translate(45 74)">
+      <text id="_4_px" data-name="4 px" transform="translate(574 1150)" fill="#38485c" font-size="16" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="0">4 px</tspan></text>
+      <text id="Unidad_mínima" data-name="Unidad mínima" transform="translate(574 1122)" fill="#38485c" font-size="21" font-family="Nunito-SemiBold, Nunito" font-weight="600" letter-spacing="-0.001em"><tspan x="0" y="0">Unidad mínima</tspan></text>
+      <rect id="Rectángulo_4808" data-name="Rectángulo 4808" width="18" height="18" transform="translate(575 1093) rotate(-90)" fill="#505e70"/>
+    </g>
+    <g id="Grupo_17913" data-name="Grupo 17913" transform="translate(-35 74)">
+      <text id="_32_px" data-name="32 px" transform="translate(1009 1150)" fill="#38485c" font-size="16" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="0">32 px</tspan></text>
+      <text id="Ancho_medianil" data-name="Ancho medianil" transform="translate(1009 1122)" fill="#38485c" font-size="21" font-family="Nunito-SemiBold, Nunito" font-weight="600" letter-spacing="-0.001em"><tspan x="0" y="0">Ancho medianil</tspan></text>
+      <g id="Rectángulo_4810" data-name="Rectángulo 4810" transform="translate(1009 1093) rotate(-90)" fill="#505e70" stroke="#f3f6f9" stroke-width="1">
+        <rect width="35" height="35" stroke="none"/>
+        <rect x="0.5" y="0.5" width="34" height="34" fill="none"/>
+      </g>
+      <g id="Rectángulo_4811" data-name="Rectángulo 4811" transform="translate(1044 1093) rotate(-90)" fill="#d1d8e0" stroke="#f3f6f9" stroke-width="1">
+        <rect width="35" height="35" stroke="none"/>
+        <rect x="0.5" y="0.5" width="34" height="34" fill="none"/>
+      </g>
+      <g id="Rectángulo_8873" data-name="Rectángulo 8873" transform="translate(1079 1093) rotate(-90)" fill="#d1d8e0" stroke="#f3f6f9" stroke-width="1">
+        <rect width="35" height="35" stroke="none"/>
+        <rect x="0.5" y="0.5" width="34" height="34" fill="none"/>
+      </g>
+      <g id="Rectángulo_8874" data-name="Rectángulo 8874" transform="translate(1114 1093) rotate(-90)" fill="#d1d8e0" stroke="#f3f6f9" stroke-width="1">
+        <rect width="35" height="35" stroke="none"/>
+        <rect x="0.5" y="0.5" width="34" height="34" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
