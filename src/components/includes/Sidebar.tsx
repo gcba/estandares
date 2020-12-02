@@ -28,10 +28,17 @@ export const Sidebar = (props: SidebarProps) => {
     <aside>
       <div>
         <img src={withPrefix("/obelisco.svg")} alt="Logo del sistema de diseño Obelisco" />
-        <nav className="nav flex-column nav-first-level">
-          {navigation.map((node: Node) => (
-            <React.Fragment key={node.url}>{renderItem(node, 0)}</React.Fragment>
-          ))}
+        <nav>
+          <a className="nav-link nav-mobile-trigger collapsed" data-toggle="collapse" href="#sidebar-nav">
+            Acerca de Obelisco
+          </a>
+          <div className="nav-responsive collapse" id="sidebar-nav">
+            <ul className="nav nav-lg flex-column">
+              {navigation.map((node: Node) => (
+                <React.Fragment key={node.url}>{renderItem(node, 0)}</React.Fragment>
+              ))}
+            </ul>
+          </div>
         </nav>
       </div>
     </aside>
@@ -58,8 +65,10 @@ const Item = (props: ItemProps) => {
   }
 
   return (
-    <a className={className} href={withPrefix(link)}>
-      {node.menu}
-    </a>
+    <li className="nav-item">
+      <a className={className} href={withPrefix(link)}>
+        {node.menu}
+      </a>
+    </li>
   )
 }
