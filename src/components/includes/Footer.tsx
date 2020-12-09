@@ -19,7 +19,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="col-md-2">
-          <a href="//dribbble.com/Baux">
+          <a href="//dribbble.com/ExperieniciadigitalBA">
             <i className="bx bxl-dribbble"></i>
             Dribbble
           </a>
