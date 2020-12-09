@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="760" height="380" viewBox="0 0 760 380">
   <defs>
     <clipPath id="clip-path">
-      <path id="Rectángulo_6574" data-name="Rectángulo 6574" d="M8,0H752a8,8,0,0,1,8,8V380a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V8A8,8,0,0,1,8,0Z" transform="translate(476 173)" fill="#f3f3f3"/>
+      <rect id="Rectángulo_6574" data-name="Rectángulo 6574" width="760" height="380" transform="translate(476 173)" fill="#f3f3f3"/>
     </clipPath>
   </defs>
   <g id="Enmascarar_grupo_49" data-name="Enmascarar grupo 49" transform="translate(-476 -173)" clip-path="url(#clip-path)">
     <g id="Grupo_17864" data-name="Grupo 17864" transform="translate(315.355 43.352)">
-      <path id="Rectángulo_6564" data-name="Rectángulo 6564" d="M8,0H752a8,8,0,0,1,8,8V380a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V8A8,8,0,0,1,8,0Z" transform="translate(160.645 129.648)" fill="#f3f6f9"/>
+      <rect id="Rectángulo_6564" data-name="Rectángulo 6564" width="760" height="380" transform="translate(160.645 129.648)" fill="#f3f6f9"/>
       <g id="Children_preparing_their_backpack-cuate_1_" data-name="Children preparing their backpack-cuate (1)" transform="translate(0)">
         <g id="freepik--Shadow--inject-65" transform="translate(0 377.736)" opacity="0.3">
           <ellipse id="Elipse_3" data-name="Elipse 3" cx="539.537" cy="107.855" rx="539.537" ry="107.855" fill="#ebebeb"/>
