@@ -11,212 +11,44 @@ import "./boton.scss"
 
 ## Anatomía
 
-### Botón grande
+![completar](/componentes/botón/anatomia-1.svg)
 
-<Row><Col items={2}>
+1.El área de texto indica la acción que puede realizar el usuario activando el botón.
 
-#### Padding derecho e izquierdo
+## Opciones de botón
 
-Se utiliza un padding automático variable de 24 px / 1.5 rem según el tamaño de texo.
 
-</Col><Col items={2}>
+### Botón primario
 
-![completar](/componentes/botón/anatomía-1.svg)
-
-</Col></Row>
-
-<Row><Col items={2}>
-
-#### Padding superior e inferior
-
-Padding superior e inferior
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/anatomía-2.svg)
-
-</Col></Row>
-
-<Row><Col items={2}>
-
-#### Radio de vértice
-
-Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/anatomía-3.svg)
-
-</Col></Row>
-
-### Botón pequeño
-
-<Row><Col items={2}>
-
-#### Padding derecho e izquierdo
-
-Se utiliza un padding automático variable de 16 px / 1 rem según el tamaño de texo.
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/anatomía-4.svg)
-
-</Col></Row>
-
-<Row><Col items={2}>
-
-#### Padding superior e inferior
-
-Se utiliza un padding fijo de 6 px / 0,375 rem.
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/anatomía-5.svg)
-
-</Col></Row>
-
-<Row><Col items={2}>
-
-#### Radio de vértice
-
-Se utiliza un radio de 4 px / 0,25 rem para sus cuatro vértices.
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/anatomía-6.svg)
-
-</Col></Row>
-
----
-
-## Botón primario
-
-### Estados del botón
+Los botones primarios se usan generalmente para acciones principales. Normalmente los usamos para acciones denotadas como “positivas”.
 
 <ButtonStates variant="primary" />
 
-### ¿Para qué sirven?
 
-Los botones primarios se usan generalmente para **acciones principales**, también llamados _“**Call to action**”_. Por ejemplo, enviar un formulario.
+### Botón secundario
 
-Normalmente, los usamos para **acciones** denotadas como “**positivas**”.
-
-El texto de los botones debe indicar claramente la acción. Usá verbos activos, como Enviar o Guardar. Si necesitás incluir más palabras para describir mejor dicha acción te recomendamos que no superes las tres palabras. Por ejemplo, “Enviar formulario” o “Guardar cambios”.
-
-Más ejemplos de verbos para indicar una acción principal:
-
-Aplicar, Actualizar, Adjuntar, Agregar, Aprender, Buscar, Cerrar, Copiar, Crear, Comenzar, Compartir, Continuar, Confirmar, Descargar, Editar, Enviar, Exportar, Filtrar, Finalizar, Guardar, Importar, Iniciar, Insertar, Imprimir, Mostrar, Mover, Ordenar, Registrar, Replicar, Restaurar, Seleccionar, Ver, etc.
-
-### ¿Cómo se usan?
-
-En lo posible, tratamos de usar un único botón primario por página. Si usamos varios tenemos que tener en cuenta que más de un llamado a la acción principal reduce su impacto y dificulta que los usuarios entiendan qué hacer luego.
-
-En un mismo grupo de botones debe haber un único botón primario. El resto de los llamados a acción debe representarse como botones secundarios.
-
-No usamos botones como elementos de navegación. Cuando la acción deseada es llevar al usuario a una nueva página usamos enlaces.
-
-Para conjuntos de botones usamos textos específicos. Por ejemplo, en el caso de un formulario: “Siguiente” sería el texto primario y “Volver” el secundario.
-
-### ¿Orden y alineación?
-
-Respetar este punto es muy importante a la hora de pensar en la consistencia de nuestros productos digitales. Si mantenemos bien el orden y la alineación de los botones el usuario lo va a saber apreciar.
-
-### En formularios y modales
-
-**Orden**: Los botones primarios siempre aparecen a la derecha. Si hay botones secundarios aparecen a la izquierda del botón primario.
-
-**Alineación**: Cuando la acción principal implica un paso de navegación hacia adelante, cómo en un formulario justifique los botones a la derecha, ya sea individuales o grupos de botones (secundarios / primarios). Esta posición transmite la intención del “siguiente paso”.
-
-<Row><Col items={2}>
-
-![completar](/componentes/botón/alineación-1.svg)
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/alineación-2.svg)
-
-</Col></Row>
-<Row><Col items={2}>
-
-![completar](/componentes/botón/alineación-3.svg)
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/alineación-4.svg)
-
-</Col></Row>
-
-### En bloque de texto
-
-**Orden**: Los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario.
-
-**Alineación**: Cuando la acción principal está dentro de un bloque de texto se deben justificar los botones a la izquierda respetando el orden de lectura.
-
-<Row><Col items={2}>
-
-![completar](/componentes/botón/alineación-5.svg)
-
-</Col><Col items={2}>
-
-![completar](/componentes/botón/alineación-6.svg)
-
-</Col></Row>
-
----
-
-## Botón Secundario
-
-### Estados del botón
+Los botones secundarios se usan para llamadas a la acción secundarias en una página. Se pueden usar, también, en combinación con botones primarios.
 
 <ButtonStates variant="secondary" />
 
-### ¿Cómo se usan?
 
-Los botones secundarios se usan para llamadas a la **acción secundarias** en una página.
+### Botón de éxito
 
-Las páginas con demasiadas llamadas a la acción dificultan que los usuarios deduzcan qué tienen que hacer después. Antes de agregar varios botones secundarios, intentá simplificar la página o dividir el contenido en varias páginas.
-
-Si hay más de 4 botones se debe considerar utilizar una lista con enlaces.
-
-Se pueden usar, también, en combinación con botones predeterminados.
-
----
-
-## Botón de éxito
-
-### Estados del botón
+Los botones de éxito son utilizados para avisarle al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación. 
 
 <ButtonStates variant="success" />
 
-### ¿Cómo se usan?
 
-·Los botones de éxito tienen un estilo visual distintivo para avisarle al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
+### Botón de peligro
 
-### ¿Dónde los uso?
-
-Último paso de un formulario o en la finalización de un registro.
-
----
-
-## Botón de peligro
-
-### Estados del botón
+Están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son utilizados en acciones permanentes e irreversibles que no pueden deshacerse.
 
 <ButtonStates variant="danger" />
 
-### ¿Cómo se usan?
 
-Los botones de peligro tienen un estilo visual distintivo ya que están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son acciones permanentes e irreversibles que no pueden deshacerse.
+### Botón pequeño
 
-Al permitir que los usuarios realicen acciones como estas, se debe incluir un paso adicional que les pida confirmación. Por ejemplo, se puede crear un botón de “Eliminar cuenta” y cuando el usuario haga clic allí se abrirá un modal de confirmación en el que aparecerá nuevamente el botón de peligro para confirmar la operación.
-
-### ¿Dónde los uso?
-
-Paso previo a una acción irreversible o en Modales de confirmación
-
----
-
-## Tipos de botones
+Su única diferencia es el lugar de implementación. Se utilizan principalmente dentro de otros componentes, actualmente el principal uso de estos botones es dentro de los modales.
 
 <div className="buttons-showcase">
   <Button type="primary" size="small">
@@ -233,43 +65,46 @@ Paso previo a una acción irreversible o en Modales de confirmación
   </Button>
 </div>
 
-### ¿Cómo se usan?
 
-Los botones pequeños respetan los mismos estados que los botones grandes, su única diferencia aparte de su tamaño es el lugar de implementación.
+## Diseño y estructura
 
-<Row><Col items={2}>
 
-### ¿Dónde los uso?
+### Orden y alineación
 
-Se utiliza en modales alineando los botones a la derecha de la caja de texto. En los casos de necesitar un botón secundario este acompaña a la izquierda.
+En los modales los botones primarios siempre aparecen a la derecha. Si hay botones secundarios aparecen a la izquierda del botón primario. Cuando la acción principal implica un paso de navegación hacia adelante, cómo en un formulario justifique los botones a la derecha. Esta posición transmite la intención del “siguiente paso”.
 
-</Col><Col items={2}>
+![completar](/componentes/botón/alineacion-1.svg)
 
-![completar](/componentes/botón/pequeño.svg)
+![completar](/componentes/botón/alineacion-2.svg)
 
-</Col></Row>
 
----
+En los bloques de texto los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario. Las acciones principales de los botones se deben justificar en un texto los botones a la izquierda respetando el orden de lectura.
 
-## Consideraciones de accesibilidad
+![completar](/componentes/botón/alineacion-3.svg)
 
-Las interacciones de los botones en el sistema de diseño de Obelisco se implementan utilizando la etiqueta de `<button>` como elemento sobre el HTML5.
+### Composición
 
-Los elementos interactivos como se incluyen en el orden de tabulación. Cuando un botón tiene el foco, tanto la **Barra Espaciadora** y el **Enter** activarán el botón (a menos que esté deshabilitado).
+![completar](/componentes/botón/composicion-1.svg)
 
-La etiqueta de un botón puede estar escrita como ¿buttons o proporcionada por los atributos `aria-label`, o `aria-labelledby`. El atributo `aria-describedby` puede proporcionar información adicional sobre el botón. Usar la propiedad `aria-disabled` para marcar como desabilitado el estado del botón. Esto previene que sea interactivo y transmite su estado inactivo a tecnologías de asistencia.
+## Usabilidad
 
-El contraste de color en los botones está diseñado para que siempre sea mayor a `4.5.1` cumpliendo con los requerimientos para entes gubernamentales.
+**Usar botones primarios para acciones que van al siguiente paso.**
 
----
+**Asegurarse de la función de clic en los botones.** Usar las variaciones de color hace distinguir los estados estático, flotante y activo.
+
+**No usar demasiados botones en una página.**
+
+**Mantener el texto del botón corto.** El texto del botón debe ser lo más corto posible con palabras de acción que expliquen claramente lo que sucederá cuando se seleccione el botón (por ejemplo Descargar, Ver, o Ingresar).
+
+**Empezar con un verbo.** Utilizar la primera palabra del texto del botón como un verbo.
+
 
 ## Tipografía
 
-| Tamaño  | Tipografía | Tamaño          | Variable       | Color   |
-| ------- | ---------- | --------------- | -------------- | ------- |
-| Grande  | Open sans  | 18px / 1.125rem | Semibold / 600 | #38485C |
-| Pequeño | Open sans  | 16px / 1rem     | Semibold / 600 | #38485C |
+| Tamaño  | Tipografía | Tamaño                      | Variable       | Color   |
+| ------- | ---------- | --------------------------- | -------------- | ------- |
+| Grande  | Open sans  | 18px / 1.125rem Por defecto | Semibold / 600 | #38485C |
+| Pequeño | Open sans  | 16px / 1rem  Pequeño        | Semibold / 600 | #38485C |
 
-Usar **mayúsculas** para **dar estilo** a las oraciones. Estas se usan en la primera palabra de una frase; en nombres propios; en términos como “Ciudad”, “Gobierno” o “Comuna”; en nombre de programas y/o para escribir siglas.
 
-Es importante nunca escribir TODO EN MAYÚSCULAS ya que **dificulta la lectura** y por convención web equivaldría a gritar o levantar la voz.
+
