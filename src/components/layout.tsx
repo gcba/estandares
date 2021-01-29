@@ -13,7 +13,6 @@ import { Img, Table, Lead } from "./markdown"
 import { Row, Col, Example } from "./docs/Layout"
 import { Color } from "./docs/Color"
 import { Card } from "./docs/Card"
-import { Grid } from "./docs/Grid"
 import { getNavigation, getPrevAndNext } from "../utils/navigation"
 
 const Layout = (props: any) => {
@@ -73,8 +72,7 @@ const MdxContent = (props: any) => {
         Col,
         Color,
         Example,
-        Card,
-        Grid
+        Card
       }}
     >
       {props.children}
