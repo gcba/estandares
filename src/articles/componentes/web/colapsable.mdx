@@ -20,12 +20,94 @@ position: 8
 Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
 
 <!-- codigo -->
+<div id="accordion">
+  <div className="accordion-wrapper">
+    <div className="accordion" id="accordionExample">
+      <div className="card">
+        <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+          Colapsable
+        </button>
+        <div id="collapseOne" className="collapse" data-parent="#accordion">
+          <div className="card-body">
+            Este es el área descriptiva de un colapsable de selección única. 
+            Una vez que se accione sobre el área de títulos, 
+            se abrirá el componente mostrando el área descriptiva.
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
+          Colapsable
+        </button>
+        <div id="collapseTwo" className="collapse" data-parent="#accordion">
+          <div className="card-body">
+            Este es el área descriptiva de un colapsable de selección única. 
+            Una vez que se accione sobre el área de títulos, 
+            se abrirá el componente mostrando el área descriptiva.
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
+          Colapsable
+        </button>
+        <div id="collapseThree" className="collapse" data-parent="#accordion">
+          <div className="card-body">
+            Este es el área descriptiva de un colapsable de selección única. 
+            Una vez que se accione sobre el área de títulos, 
+            se abrirá el componente mostrando el área descriptiva.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Selección múltiple
 
 Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo.
 
 <!-- codigo -->
+<div className="accordion-wrapper">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFour">
+        Colapsable
+      </button>
+      <div id="collapseFour" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Este es el área descriptiva de un colapsable de selección única. 
+          Una vez que se accione sobre el área de títulos, 
+          se abrirá el componente mostrando el área descriptiva.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFive">
+        Colapsable
+      </button>
+      <div id="collapseFive" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Este es el área descriptiva de un colapsable de selección única. 
+          Una vez que se accione sobre el área de títulos, 
+          se abrirá el componente mostrando el área descriptiva.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSix">
+        Colapsable
+      </button>
+      <div id="collapseSix" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Este es el área descriptiva de un colapsable de selección única. 
+          Una vez que se accione sobre el área de títulos, 
+          se abrirá el componente mostrando el área descriptiva.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Tarjetas sin contenedor
 
