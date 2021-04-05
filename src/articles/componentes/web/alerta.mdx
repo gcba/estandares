@@ -9,111 +9,124 @@ position: 2
 
 ![completar](/componentes/alerta/anatomía-1.svg)
 
-![completar](/componentes/alerta/anatomía-2.svg)
+1. El ícono junto con el color van a representar el tipo de alerta.
+2. El área de título funciona como primer introducción y llamado de atención a lo que se quiere comunicar.
+3. El cierre es se utiliza para cerrar la alerta. El único caso donde el cierre no existe es en las alertas tipo advertencia.
+4. El área descriptiva tiene información más detallada para el usuario. 5. El área accionable es un enlace que lo dirige a un sitio relacionado con el tipo de alerta.
 
-## Tipo de alerta
+
+## Opciones de alertas
 
 ### Alerta de error
 
-<div className="alert alert-danger" role="alert">
-  <p>Esta es la descripción de una alerta de peligro.</p>
-</div>
-
-Se usa para comunicar problemas que deben resolverse de inmediato. Por ejemplo: para que los usuarios completen una tarea.
-
-Validación de acciones. Como mensaje de validación que alerta a alguien de que acaba de hacer algo que debe corregirse.
-
-Los usuarios leerán un mensaje que les ayudará a resolver un error, incluso si generalmente no leen la documentación.
-
-### Alerta de éxito
-
-<div className="alert alert-success" role="alert">
-  <p>Esta es la descripción de una alerta de éxito.</p>
-</div>
-
-Validación de mensajes. Como confirmación de que una tarea se completó con éxito.
-
-### Alerta de información
-
-<div className="alert alert-info" role="alert">
-  <p>Esta es la descripción de una alerta de información.</p>
-</div>
-
-Se usa para actualizar a los usuario sobre un cambio, para darles consejos o para brindar información especifica sobre la sección en la que se encuentran.
-
-### Alerta de alarma
-
-<div className="alert alert-primary" role="alert">
-  <p>Esta es la descripción de una alerta de advertencia.</p>
-</div>
-
-Se usa para mostrar información que necesita atención y que los usuarios deben tomar medidas sobre eso.
-
-Ver muchas alertas puede ser estresante para los usuarios, abrumarán o molestarán al usuario y es probable que se ignoren.
-
-### Alerta con acción
-
-<div className="alert alert-info" role="alert">
-  <p>
-    Esta es la descripción de una alerta de información.&nbsp;
-    <a href="#">Enlace</a>
-  </p>
-</div>
-
-Los enlaces dentro de las alertas pueden ayudar al usuario a concretar alguna acción sobre la información que se muestra ó también pueden encontrar más información sobre el contenido desarrollado.
-
-### Alerta con cierre
-
-<div className="alert alert-info" role="alert">
-  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <p>Esta es la descripción de una alerta de información.</p>
-</div>
-
-<div className="alert alert-primary" role="alert">
-  <p>Esta es la descripción de una alerta de información.</p>
-</div>
-
-Las alertas son descartables, a menos que tengan información crítica o una acción importante que los usuarios deben tomar.
-
-Las alertas de alarma no tienen la opción de cerrarse ya que son advertencias que tienen que ser atendidas por los usuarios
-
-### Alerta con titulo y texto
+Las alertas de error se usan para comunicar problemas que deben resolverse, validación de acciones o errores del sistema. Los usuarios leerán un mensaje que les ayudará a resolver y a continuar con su navegación.
 
 <div className="alert alert-danger" role="alert">
   <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-  <h4>Lorem ipsum dolor sit amet, adipiscing elit.</h4>
-  <p> Lorem ipsum dolor sit amet, adipiscing elit.</p>
+  <p>Esta es la descripción de una alerta de error. <a href="#">Enlace opcional</a></p>
 </div>
-
-Se usan títulos cuando quiero que la alerta tenga mas jerarquía y a través del mismo poder introducir al usuario con lo que se le quiere comunicar.
-
-### Alerta de error en formularios
 
 <div className="alert alert-danger" role="alert">
   <button type="button" className="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-  <h4>Lorem ipsum dolor sit amet, adipiscing elit.</h4>
+  <h4>Este es el título de una alerta de error.</h4>
+  <p>Esta es la descripción de una alerta de error. <a href="#">Enlace opcional</a></p>
+</div>
+
+<div className="alert alert-danger" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4>Este es un mensaje de error dentro de un formulario.</h4>
   <ol>
     <li>
-      <a href="#">Link al error 1</a>
+      <a href="#">Enlace al primer error</a>
     </li>
     <li>
-      <a href="#">Link al error 2</a>
+      <a href="#">Enlace al segundo error</a>
     </li>
     <li>
-      <a href="#">Link al error 3</a>
+      <a href="#">Enlace al tercer  error</a>
     </li>
   </ol>
 </div>
 
-Estas alertas se usan solamente en formularios. Su objetivo es ayudar al usuario a que complete todos los campos faltantes para poder continuar su navegación.
 
-Se le describe mediante los enlaces su error y se lo lleva con un scroll al campo correspondiente.
+### Alerta de éxito
+
+Las alertas de éxito funcionan para validación de acciones del usuario. Por ejemplo como confirmación de una tarea se completó correctamente.
+
+<div className="alert alert-success" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <p>Esta es la descripción de una alerta de éxito. <a href="#">Enlace opcional</a></p>
+</div>
+
+<div className="alert alert-success" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4>Este es el título de una alerta de éxito.</h4>
+  <p>Esta es la descripción de una alerta de éxito. <a href="#">Enlace opcional</a></p>
+</div>
+
+
+### Alerta de información
+
+Las alertas de información se usan para notificar a los usuario sobre un cambio, para darles consejos o brindar información especifica sobre la sección en la que se encuentran.
+
+<div className="alert alert-info" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <p>Esta es la descripción de una alerta de información. <a href="#">Enlace opcional</a></p>
+</div>
+
+<div className="alert alert-info" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4>Este es el título de una alerta de información.</h4>
+  <p>Esta es la descripción de una alerta de información. <a href="#">Enlace opcional</a></p>
+</div>
+
+
+### Alerta de advertencia
+
+Las alertas de advertencia se usan para mostrar información que necesita la atención de los usuarios. Este tipo de alertas influyen en la navegación del usuario, por lo que no tienen cierre y es muy importante que las tengan en cuenta.
+
+<div className="alert alert-primary" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <p>Esta es la descripción de una alerta de advertencia. <a href="#">Enlace opcional</a></p>
+</div>
+
+<div className="alert alert-primary" role="alert">
+  <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h4>Este es el título de una alerta de advertencia.</h4>
+  <p>Esta es la descripción de una alerta de advertencia. <a href="#">Enlace opcional</a></p>
+</div>
+
+
+## Diseño y estructura
+### Composición
+
+![completar](/componentes/alerta/composición-1.svg)
+
+
+## Usabilidad
+**Comprender el contexto del usuario**. No incluir notificaciones que no estén relacionadas con el objetivo actual del usuario.
+
+**Que el usuario descarte una alerta cuando sea apropiado**.
+
+**Las alertas son una oportunidad**. Los usuarios leerán un mensaje que les ayudará a resolver un error incluso si por lo general no leen la documentación; incluya contenido que ayude al usuario a resolver.
 
 ## Consideraciones de accesibilidad
 
@@ -123,17 +136,10 @@ No se debe ocultar los mensajes de alerta y hacerlos visibles cuando sea necesar
 
 Utilizar fondos claro con el color de los textos principales nos permite generar el contraste necesario.
 
-## Tipografiía
+## Tipografía
 
 | Tipografía | Tamaño           | Variable       | Color   |
 | ---------- | ---------------- | -------------- | ------- |
-| Open sans  | 16px / 1rem      | Regular / 500  | #38485C |
 | Nunito     | 21px / 1.3125rem | Semibold / 600 | #38485C |
-
-Usar mayúsculas para dar estilo a las oraciones. Estas se usan en la primera palabra de una frase; en nombres propios; en términos como “Ciudad”, “Gobierno” o “Comuna”; en nombre de programas y/o para escribir siglas.
-
-Es importante nunca escribir TODO EN MAYÚSCULAS ya que dificulta la lectura y por convención web equivaldría a gritar o levantar la voz.
-
-## Alertas en mobile
-
-Las alertas en mobile tienen un contenedor más pequeño que en desktop por lo que se busca optimizar todo el espacio posible para que no desborde la información. Por eso, se eliminó el ícono de acompañamiento permaneciendo el color que indica el tipo de alerta.
+| Open Sans  | 16px / 1rem      | Regular / 500  | #38485C |
+| Open Sans  | 16px / 1rem      | Regular / 500  | #007BC7 |

@@ -1,0 +1,90 @@
+---
+menu: Barra de progreso
+title: Barra de progreso
+description: Las barras de progreso muestran la progresión del sistema sobre el estado de una operación.
+position: 4
+---
+
+
+## Anatomía
+
+![completar](/componentes/barradeprogreso/anatomía-1.svg)
+
+1. El área de título es una introducción al progreso
+2. El área de detalle puede indicar una breve descripción del área de título y de ser necesario una fecha y hora.
+3. El área de interacción, conformado por un enlace, permite mostrar u ocultar el área de detalle correspondiente a cada título. Cuando el usuario acciona este enlace cambia el texto para ver más o menos detalles.
+
+## Opciones de barras de progreso
+
+### Detalles ocultos/visibles
+
+Las barras de progreso ofrecen una visualización del estado en que se encuentra determinada operación dentro del sistema. El estado actual siempre se mostrará destacado del resto de los estados y con su respectiva descripción.
+
+Los estados que todavía están incompletos o ya fueron realizados tienen un nivel de color inferior y no se visualizan su área de detalle. En caso de querer visualizar, se puede accionar el botón de **Más detalles** que desplegará esta información.
+
+<Row>
+<Col items={3}></Col>
+<Col items={3}>
+<div className="progression-container">
+<ul className="progression">
+<li className="progression-item completed" aria-expanded="false">
+<p className="progression-title">Estado anterior</p>
+<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
+</li>
+
+<li className="progression-item active" aria-expanded="true">
+<p className="progression-title">Estado actual</p>
+<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
+</li>
+
+<li className="progression-item" aria-expanded="false">
+<p className="progression-title">Próximo estado</p>
+<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
+</li>
+
+<li className="progression-item" aria-expanded="false">
+<p className="progression-title">Próximo estado</p>
+<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
+</li>
+
+<li className="progression-item" aria-expanded="false">
+<p className="progression-title">Estado final</p>
+<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
+</li>
+</ul>
+
+<button className="progression-link">Menos detalles</button>
+</div>
+
+</Col>
+<Col items={3}></Col>
+</Row>
+
+## Diseño y estructura
+
+### Composición
+
+![completar](/componentes/barradeprogreso/composición-1.svg)
+
+## Usabilidad
+
+**Uso adecuado**. Las barras de progreso son utilizadas para indicar el estado de una operación dentro del sistema.
+
+**Destacar el estado actual**. El texto que se destaca únicamente es el del estado en el que se encuentra la operación. Los demás estados aparecerán en un nivel cromático inferior.
+
+**Textos cortos**. El área de detalle es opcional, sin embargo al utilizarla se recomienda utilizar una descripción corta que permita entender o dar más información del propio estado.
+
+**Barra de progreso**. La barra lateral permite acompañar el progreso de la operación marcando los círculos de los estados que fueron completos y agrandando el círculo del estado actual.
+
+## Consideraciones
+
+**Tener en cuenta el área de detalle desplegada**. Es necesario tener en cuenta el espacio que disponemos en la pantalla ya que hay detalles ocultos que pueden desplegarse y harán que este componente se más grande en un sentido vertical.
+
+**Claridad**. Las barras de progreso tienen que ser claras en cuanto al mensaje que comunican. A partir de los estados le tienen que indicar al usuario en que etapa se encuentran y cuanto falta para que finalice.
+
+## Tipografía
+
+| Tipografía | Tamaño           | Variable       | Color          |
+| ---------- | ---------------- | -------------- | -------------- |
+| Open sans  | 18px / 1,125rem  | Semibold / 600 | #38485C #9EAAB8|
+| Open sans  | 13px / 0.8125rem | Regular / 500  | #38485C #9EAAB8|

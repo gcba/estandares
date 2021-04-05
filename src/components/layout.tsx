@@ -12,8 +12,10 @@ import Seo from "./seo"
 import { Img, Table, Lead } from "./markdown"
 import { Row, Col, Example } from "./docs/Layout"
 import { Color } from "./docs/Color"
-import { Card } from "./docs/Card"
+import { Card, SimpleCard } from "./docs/Card"
 import { getNavigation, getPrevAndNext } from "../utils/navigation"
+import { withPrefix } from "gatsby"
+
 
 const Layout = (props: any) => {
   const { pageContext, children } = props
@@ -39,6 +41,7 @@ const Layout = (props: any) => {
           <div className="col-md-8 offset-md-1">
             <main id="content">
               <header>
+                {isIndex && <img src={withPrefix("/estandares.svg")} alt="Ilustración que muestra un flujo de cómo construir una idea" className="img-fluid mb-5" />}
                 <h1>{page.title}</h1>
                 <Lead>{page.description}</Lead>
               </header>
@@ -72,7 +75,8 @@ const MdxContent = (props: any) => {
         Col,
         Color,
         Example,
-        Card
+        Card,
+        SimpleCard
       }}
     >
       {props.children}
