@@ -11,14 +11,16 @@ import "./modals.scss"
 
 ![completar](/componentes/modals/anatomia-1.svg)
 
-1. El Área de título se componte de un contenido titular que engloba el contenido.
+1. El Área de título se compone de un contenido titular que engloba el contenido.
 2. El área descriptiva muestra el contenido en relación al título que lo abarca, puede ser una pregunta que se relacione con el Área accionable.
 3. El Área accionable se compone de dos (2) botones, con una acción positivia-activa y otra negativa o de cancelación.
 
 
 ## Opciones de modal
 
-Los modales con formulario permiten ingresar información o datos, para completar un requerimiento del sistema
+### Diálogos de confirmación
+
+Son para cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc. Este diálogo tiene un botón rojo (negativo) para resaltar la acción destructiva.
 
 <Example>
 
@@ -69,11 +71,26 @@ Acción 1
 
 ## Diseño y estructura
 
+### Composición
+
+![completar](/componentes/modals/composicion-1.svg)
 
 ## Usabilidad
 
-**Requerir una respuesta inmediata del usuario**. Utilice un modal para solicitar información que impida que el sistema continúe con un proceso iniciado por el usuario.
+**Los diálogos modales son invasivos y deben usarse con moderación.** La capacidad del usuario para acceder y ver su propio contenido es fundamental para una buena experiencia.
 
-**Notificar al usuario de información urgente**. Utilice un modal para notificar al usuario de información urgente sobre su trabajo actual. Los modales se utilizan comúnmente para confirmar acciones o transmitir una consecuencia de la acción de un usuario.
+**Intente limitar el número de contenido** en un diálogo modal. Debe contener solo información valiosa y relevante que sea útil y concisa.
 
-**Confirmar la decisión de un usuario**. Utilice un modal para confirmar las decisiones del usuario. Describa claramente la acción que se está confirmando y explique las posibles consecuencias que pueda causar. Tanto el título como el botón deben reflejar la acción que ocurrirá, si la acción es destructiva o irreversible.
+**Evite varios pasos que requieran navegación** dentro del diálogo modal.
+
+**Evite la toma de decisiones complejas**  que requieran fuentes adicionales de información no disponibles en el modal.
+
+**La acción principal (botón principal) debe reflejar el título del modal.** Por ejemplo, un modal con el título "Pago de boleta" tiene un botón con la palabra "Pagar".
+
+
+## Tipografía
+
+| Tipografía | Tamaño           | Variable       | Color   |
+| ---------- | ---------------- | -------------- | ------- |
+| Nunito     | 21px / 1.3125rem | Semibold / 600 | #38485C |
+| Open Sans  | 16px / 1rem      | Regular / 500  | #38485C |
