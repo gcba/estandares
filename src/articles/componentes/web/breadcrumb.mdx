@@ -19,17 +19,11 @@ Las rutas de navegación muestran dónde se encuentra la página actual en la je
 
 <div>
 <nav aria-label="breadcrumb">
-<ol className="breadcrumb">
-<li className="breadcrumb-item">
-<a href="#">Inicio</a>
-</li>
-<li className="breadcrumb-item">
-<a href="#">Buenos Aires</a>
-</li>
-<li className="breadcrumb-item">
-<a href="#">Pagina anterior</a>
-</li>
-</ol>
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+    <li className="breadcrumb-item"><a href="#">Página intermedia</a></li>
+    <li className="breadcrumb-item"><a href="#">Pagina anterior</a></li>
+  </ol>
 </nav>
 </div>
 
@@ -37,11 +31,41 @@ Las rutas de navegación muestran dónde se encuentra la página actual en la je
 
 ### Niveles
 
-Las páginas actuales siempre aparecen en forma de título luego de las migas de pan. En este caso podemos observar tres niveles de navegación anteriores a la página actual.
+Las páginas actuales siempre aparecen en forma de título luego de las migas de pan. En este caso podemos observar tres niveles de navegación anteriores a la página actual. Los niveles que posean más de 30 caracteres (aproximadamente) se les agregarán tres puntos (…) al final para visualizar que hay mas texto en dicho nivel.
 
-![completar](/componentes/breadcrumb/niveles-1.svg)
+<Example>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+  </ol>
+</nav>
+<div class="h2 text-muted">Primer página</div>
+</Example>
 
-![completar](/componentes/breadcrumb/niveles-2.svg)
+<br />
+
+<Example>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+    <li className="breadcrumb-item"><a href="#">Primera página</a></li>
+  </ol>
+</nav>
+<div class="h2 text-muted">Segunda página con mucho mucho texto</div>
+</Example>
+
+<br />
+
+<Example>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+    <li className="breadcrumb-item"><a href="#">Primera página</a></li>
+    <li className="breadcrumb-item"><a href="#">Segunda página con mucho mucho texto</a></li>
+  </ol>
+</nav>
+<div class="h2 text-muted">Tercer página</div>
+</Example>
 
 
 ## Composición
