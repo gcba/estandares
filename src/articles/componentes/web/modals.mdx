@@ -1,7 +1,7 @@
 ---
 menu: Modals
 title: Modals
-description: Los modales muestran información importante que los usuarios deben reconocer. Pueden ser perjudiciales porque requieren que los usuarios tomen una acción antes de que puedan continuar interactuando con el resto. Debe usarse con cuidado y con moderación.
+description: Muestran contenido importante que requiere la interacción del usuario, en una capa sobre la página y bloquea otras interacciones.
 position: 7
 ---
 
@@ -24,42 +24,31 @@ Son para cuando un usuario necesita confirmar una acción que afectará sus dato
 
 <Example>
 
-<div
-className="modal"
-id="thirdexampleModal"
-tabIndex={-1}
-role="dialog"
-aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div className="modal-dialog" role="document">
-<div className="modal-content">
-<div className="modal-header">
-<h4 className="modal-title">Modal</h4>
-<button type="button" className="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
+<div class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Cancelación de pago</h4>
+<button
+type="button"
+class="close"
+data-dismiss="modal"
+aria-label="Close"
+>
+<span aria-hidden="true">×</span>
 </button>
 </div>
-<div className="modal-body">
-<form className="form-group">
-<label htmlFor="name-input">Campo simple</label>
-<input type="text" className="form-control" id="name-input" name="name" placeholder="Ejemplo: Camila" />
-
-<label htmlFor="text-area">Bloque de texto</label>
-<textarea
-className="form-control"
-id="text-area"
-placeholder="Texto"
-maxLength={100}
-rows={3}></textarea>
-</form>
+<div class="modal-body">
+<p>¿Estás seguro de querer cancelar el pago de boletas?</p>
 </div>
-<div className="modal-footer">
-<button type="button" className="btn btn-secondary btn-sm" data-dismiss="modal">
-Acción 2
-</button>
-<button type="button" className="btn btn-primary btn-sm">
-Acción 1
-</button>
+<div class="modal-footer">
+<button
+type="button"
+class="btn btn-link btn-sm"
+data-dismiss="modal"
+>
+No estoy seguro</button
+><button type="button" class="btn btn-danger btn-sm">Sí, cancelar</button>
 </div>
 </div>
 </div>
