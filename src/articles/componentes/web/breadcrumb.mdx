@@ -1,0 +1,87 @@
+---
+menu: Miga de pan
+title: Miga de pan
+description: Proporciona una navegación secundaria para ayudar a los usuarios a comprender dónde se encuentran.
+position: 5
+---
+
+## Anatomía
+
+![completar](/componentes/breadcrumb/anatomía-1.svg)
+
+1. El enlace describe la relación jerárquica entre la página actual y la estructura general del sitio. Ayuda a posicionar al usuario y permite interactuar para la navegación del sitio.
+2. El ícono se utiliza para indicar el recorrido del sitio para llegar la página actual.
+
+
+## Opciones de miga de pan
+
+Las rutas de navegación muestran dónde se encuentra la página actual en la jerarquía del sitio web. Utilizar migas de pan refuerza la estructura del sitio.
+
+<div>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+    <li className="breadcrumb-item"><a href="#">Página intermedia</a></li>
+    <li className="breadcrumb-item"><a href="#">Pagina anterior</a></li>
+  </ol>
+</nav>
+</div>
+
+## Diseño y estructura
+
+### Niveles
+
+Las páginas actuales siempre aparecen en forma de título luego de las migas de pan. En este caso podemos observar tres niveles de navegación anteriores a la página actual. Los niveles que posean más de 30 caracteres (aproximadamente) se les agregarán tres puntos (…) al final para visualizar que hay mas texto en dicho nivel.
+
+<Example>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+  </ol>
+</nav>
+<div class="h2 text-muted">Primer página</div>
+</Example>
+
+<br />
+
+<Example>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+    <li className="breadcrumb-item"><a href="#">Primera página</a></li>
+  </ol>
+</nav>
+<div class="h2 text-muted">Segunda página con mucho mucho texto</div>
+</Example>
+
+<br />
+
+<Example>
+<nav aria-label="breadcrumb">
+  <ol className="breadcrumb">
+    <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+    <li className="breadcrumb-item"><a href="#">Primera página</a></li>
+    <li className="breadcrumb-item"><a href="#">Segunda página con mucho mucho texto</a></li>
+  </ol>
+</nav>
+<div class="h2 text-muted">Tercer página</div>
+</Example>
+
+
+## Composición
+
+![completar](/componentes/breadcrumb/composición-1.svg)
+
+
+## Usabilidad
+
+**Empiece con la palabra "Inicio" como primer enlace de las rutas de navegación**.
+
+**Considerar el tamaño de los botones**. Aunque las rutas de navegación se muestran con frecuencia con texto más pequeño, asegúrese de que el texto sea el tamaño dispuesto.
+
+
+## Tipografiía
+
+| Tipografía | Tamaño           | Variable       | Color   |
+| ---------- | ---------------- | -------------- | ------- |
+| Open sans  | 16px / 1rem      | Regular / 500  | #007BC7 |

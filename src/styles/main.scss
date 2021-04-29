@@ -93,6 +93,13 @@ main {
     }
   }
 
+  .img-fluid {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   article {
     margin-bottom: $section-space-bottom;
     
@@ -105,13 +112,6 @@ main {
 
     h1, h2 {
       word-break: break-word;
-    }
-
-    .img-fluid {
-      display: block;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .row [class^=col] {

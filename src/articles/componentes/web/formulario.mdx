@@ -1,0 +1,215 @@
+---
+menu: Control de formularios
+title: Formulario
+description: Permiten a los usuarios ingresar formatos de texto, incluidos números. Se pueden mostrar varias opciones con el campo para comunicar los requisitos de entrada o necesidades especificas.
+position: 9
+---
+
+## Anatomía
+
+ ![completar](/componentes/formulario/anatomia.svg) 
+
+1. El label es una introducción al campo que hay que completar. 
+2. El campo es el lugar donde el usuario tiene que ingresar los datos correspondiente que se piden en cada control. 
+3. El ícono indica y acompaña la acción que se puede hacer en el tipo de campo. 
+4. El área de ayuda es opcional. En caso de ser necesario se puede incluir un mensaje que ayude al usuario para completar el campo. En caso de ser un campo obligatorio y no estar completo, ese espacio se utiliza para un mensaje de error indicando que falta completar el campo. Funciona igual para todos los tipos de campo.
+
+## Opciones de controles de formulario
+
+### Campo de texto simple
+
+Los campos de texto simples pueden llevar un placeholder para mostrar un ejemplo de los datos que se están solicitando. El área de ayuda proporciona información extra de asistencia.
+
+<Row>
+<Col items={2}>
+<div className="form-wrapper">
+  <div className="form-group">
+    <label htmlFor="name-input">D.N.I.</label>
+    <input type="text" className="form-control" id="name-input" name="name" placeholder="Ejemplo: 35487884" />
+    <small className="form-text text-muted">
+      Completar sin puntos ni guiones.
+    </small>
+  </div>
+</div>
+</Col>
+</Row>
+
+
+### Selector
+
+Los selectores se utilizan cuando el sistema ya posee los datos que se precisan y el usuario solo debe seleccionar uno de ellos. Debe haber al menos cinco opciones de selección.
+
+<Row>
+<Col items={2}>
+<div className="form-group">
+  <label htmlFor="lista-de-seleccion">País</label>
+  <select className="custom-select" id="lista-de-seleccion">
+    <option>Argentina</option>
+    <option>Brasil</option>
+    <option>Colombia</option>
+    <option>Ecuador</option>
+    <option>Peru</option>
+  </select>
+</div>
+</Col>
+</Row>
+
+### Campo de búsqueda
+
+Los campos de búsqueda llevan siempre un placeholder que anticipe y ayude al usuario a saber que información podrá encontrar en el buscador.
+
+<Row>
+<Col items={2}>
+<div className="form-wrapper">
+  <div className="form-group">
+    <input type="search" className="form-control" id="search-input" name="name" placeholder="Buscar trámites" />
+  </div>
+</div>
+</Col>
+</Row>
+
+### Campo de fecha
+
+Los campos de fecha siempre llevan un placeholder que indiquen al usuario como debe completar el campo. Cuando se acciona el campo, la fecha se completa mediante el teclado.
+
+<Row>
+<Col items={2}>
+<div className="form-wrapper">
+  <div className="form-group">
+    <label htmlFor="date-input">Fecha de nacimiento</label>
+    <input type="date" className="form-control" id="date-input" name="date" aria-describedby="date-help" />
+  </div>
+</div>
+</Col>
+</Row>
+
+### Área de texto
+
+El área de texto puede tener o no una limitación de caracteres. Cuando hay una limitación se visualiza con la cantidad de caracteres que hay actualmente y la cantidad máxima permitida.
+
+<Row>
+<Col items={2}>
+<div className="form-wrapper">
+  <div className="form-group">
+    <label htmlFor="text-area">Comentarios 0/100</label>
+    <textarea className="form-control" id="text-area" rows={3}></textarea>
+  </div>
+</div>
+</Col>
+</Row>
+
+### Campo numérico
+
+Los campos numéricos pueden cargarse tanto por teclado como por las flechas indicadoras. Este tipo de campos se utilizan cuando necesitamos un valor de cantidad.
+
+<Row>
+<Col items={2}>
+<div className="form-wrapper">
+  <div className="form-group">
+    <label htmlFor="number-input">Insertar número</label>
+    <input type="number" className="form-control" id="number-input" name="number" value="0" />
+  </div>
+</div>
+</Col>
+</Row>
+
+### Radio button
+
+Permite seleccionar una sola opción de una lista de opciones. Lo recomendable es que el usuario pueda ver todas las opciones al mismo tiempo y compararlas.
+
+<div className="custom-control custom-radio">
+  <input className="custom-control-input" type="radio" name="option" id="option-one" value="one" checked  />
+  <label className="custom-control-label" htmlFor="option-one">
+    Opción 1
+  </label>
+</div>
+<div className="custom-control custom-radio">
+  <input className="custom-control-input" type="radio" name="option" id="option-two" value="two" />
+  <label className="custom-control-label" htmlFor="option-two">
+    Opción 2
+  </label>
+</div>
+<div className="custom-control custom-radio">
+  <input className="custom-control-input" type="radio" name="option" id="option-three" value="three" />
+  <label className="custom-control-label" htmlFor="option-three">
+    Opción 3
+  </label>
+</div>
+<div className="custom-control custom-radio">
+  <input className="custom-control-input" type="radio" name="option" id="option-four" value="four" />
+  <label className="custom-control-label" htmlFor="option-four">
+    Opción 4
+  </label>
+</div>
+<div className="custom-control custom-radio">
+  <input className="custom-control-input" type="radio" name="option" id="option-five" value="five" />
+  <label className="custom-control-label" htmlFor="option-five">
+    Opción 5
+  </label>
+</div>
+
+### Checkbox
+
+Permite seleccionar varios elementos de una lista de elementos individuales o marcar un elemento individual como seleccionado.
+
+<div className="custom-control custom-checkbox">
+  <input className="custom-control-input" type="checkbox" id="skills-one-input" name="skills" value="one" />
+  <label className="custom-control-label" htmlFor="skills-one-input">
+    Opción 1
+  </label>
+</div>
+<div className="custom-control custom-checkbox">
+  <input className="custom-control-input" type="checkbox" id="skills-two-input" name="skills" value="two" />
+  <label className="custom-control-label" htmlFor="skills-two-input">
+    Opción 2
+  </label>
+</div>
+<div className="custom-control custom-checkbox">
+  <input className="custom-control-input" type="checkbox" id="skills-three-input" name="skills" value="three" />
+  <label className="custom-control-label" htmlFor="skills-three-input">
+    Opción 3
+  </label>
+</div>
+<div className="custom-control custom-checkbox">
+  <input className="custom-control-input" type="checkbox" id="skills-four-input" name="skills" value="four" />
+  <label className="custom-control-label" htmlFor="skills-four-input">
+    Opción 4
+  </label>
+</div>
+<div className="custom-control custom-checkbox">
+  <input className="custom-control-input" type="checkbox" id="skills-five-input" name="skills" value="five" />
+  <label className="custom-control-label" htmlFor="skills-five-input">
+    Opción 5
+  </label>
+</div>
+
+## Diseño y estructura
+
+### Composición
+
+![completar](/componentes/formulario/composicion.svg) 
+
+
+## Usabilidad
+
+**Campos adecuados a la longitud del texto requerido**. La longitud del campo de texto proporciona a los usuarios una pista sobre la cantidad de texto que deben escribir. 
+
+**Usar un área de texto para que los usuarios escriban párrafos de textos extensos**. 
+
+**Esperar para validar un campo**. Mostrar mensajes de validación de errores o estilos después de que un usuario haya interactuado con un campo en particular. 
+
+**Evitar los menús desplegables en el campo de fecha**. Puede ser tentador cambiar todos o algunos de estos campos de texto a menús desplegables, pero estos tienden a ser más difíciles de usar que los cuadros de texto. 
+
+**En el campo de fecha describir el formato**. Esto proporciona una ayuda a los usuarios al ingresar el formato de fecha adecuado. Ejemplo: dd/mm/aaaa 
+
+**En los checkbox y radio buttons las etiqueta deben ser seleccionables**. Los usuarios deben poder tocar o hacer clic en la etiqueta de texto o en el ícono para realizar una selección. 
+
+**Las opciones de los checkbox y radio buttons deben estar posicionadas verticalmente**. Los listados horizontales pueden dificultar saber qué etiqueta corresponde a cada opción.
+
+## Tipografiía
+
+| Tipografía | Tamaño                         | Variable       | Color           |
+| ---------- | ------------------------------ | -------------- | --------------- |
+| Open sans  | 13px / 0.8125rem  Label        | Regular / 500  | #38485C         |
+| Open sans  | 16px / 1rem Campo              | Regular / 500  | #38485C #8A98A8 |
+| Open sans  | 13px / 0.8125rem Area de ayuda | Regular / 500  | #38485C #C93B3B |
