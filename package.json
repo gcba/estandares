@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "GCBA",
   "dependencies": {
-    "@gcba/obelisco": "^1.12.0",
+    "@gcba/obelisco": "^1.12.2",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@popperjs/core": "^2.5.4",
@@ -32,10 +32,9 @@
     "react-helmet": "^6.0.0",
     "remark-emoji": "^2.1.0",
     "remark-slug": "^6.0.0",
-    "sistebase": "^1.1.0"
+    "boxicons": "^2.0.5"
   },
   "devDependencies": {
-    "boxicons": "^2.0.5",
     "eslint-config-react-app": "^5.2.1",
     "gatsby-remark-custom-blocks": "^2.3.13",
     "gatsby-transformer-remark": "^2.8.42",
