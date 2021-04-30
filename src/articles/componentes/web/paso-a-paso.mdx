@@ -1,0 +1,67 @@
+---
+menu: Paso a paso
+title: Paso a paso
+description: Son representaciones visuales de una cantidad o un logro. Su progreso está determinado por las acciones del usuario, más que por las acciones del sistema.
+position: 12
+---
+
+## Anatomía
+
+![completar](/componentes/paso-a-paso/anatomía.svg) 
+
+1. El área de título es la presentación del estado actual.
+2. El área descriptiva siguiente, indica el título del paso siguiente. 
+3. El área representativa conformada por circulos, según la cantidad de pasos, permite mostrar de forma gráfica en que paso se encuentra y cuantos faltan.
+4. Los pasos faltantes, es la manera textual de mostrar la cantidad de pasos faltantes y en el que se encuentra.
+
+## Opciones de paso a paso
+
+### determinados
+
+Los paso a paso son indicadores determinados que muestran cuántos pasos llevará un proceso. Deben utilizarse cuando se pueda detectar la tasa de finalización del proceso.
+
+<!-- codigo -->
+<Example>
+<div className="mx-4">
+  <div className="stepper">
+    <p className="step-title">Paso número 3</p>
+    <p className="step-next">Paso siguiente: Paso número 4</p>
+    <div className="steps">
+      <div className="step active"></div>
+      <div className="step active"></div>
+      <div className="step active"></div>
+      <div className="step"></div>
+      <div className="step"></div>
+      <div className="step"></div>
+    </div>
+    <span className="step-text">Paso 3 de 6</span>
+  </div>
+</div>
+</Example>
+
+### Diseño y estructura
+
+#### Composición
+
+![completar](/componentes/paso-a-paso/diseño.svg) 
+
+#### Con bloque de formulario
+
+![completar](/componentes/paso-a-paso/formulario.svg)
+
+
+## Usabilidad
+
+**Progreso**: El paso a paso avanza automáticamente a medida que el sistema se carga de forma determinada por el usuario. Las acciones de un usuario afectan el paso a paso, indica cuántos pasos debe progresar para que finalice el proceso.
+
+**Integración con acciones**: El indicador de paso se integra al accionable de progreso, componente botón, para expresar una conexión entre una interacción y un proceso determinado. Por lo general, se usan para expresar una interacción de avance, como el hacer clic en el botón "Siguiente".
+
+
+## Tipografía
+
+| Tipografía | Tamaño                           | Variable        | Color   |
+|------------|----------------------------------|-----------------|---------|
+| Nunito     | 28px / 1.75 rem Título           | Semibold / 600  | #38485C |
+| Open Sans  | 16px / 1 rem Descripción         | Regular / 500   | #38485C |
+| Open Sans  | 13px / 0.8125 rem Número de paso | Regular / 500   | #38485C |
+
