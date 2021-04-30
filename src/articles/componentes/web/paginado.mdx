@@ -1,0 +1,120 @@
+---
+menu: Paginado
+title: Paginado
+description: Se utiliza cuando hay demasiados resultados para mostrar en una página, de modo que el usuario no se sienta abrumado por demasiada información.
+position: 11
+---
+
+## Anatomía
+
+![completar](/componentes/paginado/anatomía.svg) 
+
+1. Anterior y siguiente: Navega hacia atrás y hacia adelante desde la página seleccionada actualmente.
+2. Navegación de página: Navegue a una página específica seleccionando el número de página.
+3. Truncamiento: Cuando se alcanza un umbral de páginas, la lista se trunca con puntos suspensivos. Este aparece en el ante último lugar, para mostrar únicamente que existen mas en el medio.
+4. Posición actual: Indica la página o vista actual que se este mostrando.
+
+## Opciones de paginado
+
+### Tarjetas verticales u horizontales
+
+Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
+
+<!-- codigo -->
+<Example align="center">
+<div className="my-3">
+<nav aria-label="Ejemplo de paginación">
+  <ul className="pagination">
+    <li className="page-item">
+      <a className="page-link" href="#">
+        <span className="page-previous-icon" aria-hidden="true" /> Anterior
+      </a>
+    </li>
+    <li className="page-item active">
+      <a className="page-link" href="#">
+        1
+      </a>
+    </li>
+    <li className="page-item">
+      <a className="page-link" href="#">
+        2
+      </a>
+    </li>
+    <li className="page-item">
+      <a className="page-link" href="#">
+        3
+      </a>
+    </li>
+    <li className="page-item">
+      <a className="page-link" href="#">
+        Siguiente <span className="page-next-icon" aria-hidden="true" />
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div className="mb-5" />
+
+<nav aria-label="Ejemplo de paginación">
+  <ul className="pagination">
+    <li className="page-item">
+      <a className="page-link" href="#">
+        <span className="page-previous-icon" aria-hidden="true" /> Anterior
+      </a>
+    </li>
+    <li className="page-item active">
+      <a className="page-link" href="#">
+        1
+      </a>
+    </li>
+    {[2, 3, 4, 5, 6, 7].map(i => (
+      <li className="page-item" key={i}>
+        <a className="page-link" href="#">
+          {i}
+        </a>
+      </li>
+    ))}
+    <li className="page-item disabled">
+      <span className="page-link">...</span>
+    </li>
+    <li className="page-item">
+      <a className="page-link" href="#">
+        60
+      </a>
+    </li>
+    <li className="page-item">
+      <a className="page-link" href="#">
+        Siguiente <span className="page-next-icon" aria-hidden="true" />
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</Example>
+
+### Diseño y estructura
+
+#### Composición
+
+![completar](/componentes/paginado/diseño.svg) 
+
+
+## Usabilidad
+
+**Uso principal**: la paginación se usa comúnmente para resultados de búsqueda.
+
+**Posicionamiento**: se encuentra en la parte inferior de la página y permite al usuario moverse fácilmente entre cada página.
+
+**Vision general**: generalmente, se usa si hay más de 25 elementos mostrados en una vista.
+
+**Truncamiento**: cuando el número de páginas supera el límite máximo de visualización, se utiliza una elipsis, puntos suspensivos (…), para truncar las páginas restantes.
+
+**Botón**: cada página del control de paginación es un enlace de botón que les permite navegar rápidamente por los resultados.
+
+
+## Tipografía
+
+| Tipografía | Tamaño                           | Variable       | Color   |
+|------------|----------------------------------|----------------|---------|
+| Open Sans  | 16px / 1 rem Área Descriptiva    | Regular / 500  | #007BC7 |
+
