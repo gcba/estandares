@@ -10,9 +10,6 @@ $container-space-x: 0;
 
 $section-space-bottom: spaceUnits(12);
 
-$sidebar-offset-left: spaceUnits(32);
-$sidebar-offset-right: spaceUnits(16);
-
 $separation-border: 1px solid $border-color;
 
 aside {
@@ -23,14 +20,12 @@ aside {
   &::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: $grisulado-10;
     z-index: -1;
-    padding-right: $sidebar-offset-left - 1rem;
-    padding-left: $sidebar-offset-right;
     box-sizing: content-box;
-    left: $sidebar-offset-left * -1;
+    right: -3rem;
 
     @include media-breakpoint-down(sm) {
       padding: 0;
@@ -125,35 +120,7 @@ main {
     .card {
       margin-bottom: $section-space-bottom / 2;
     }
-
-    .card-row {
-      margin: $section-space-bottom 0;
-
-      .docs-card {
-        margin-bottom: $section-space-bottom;
-
-        > i {
-          font-size: 3rem;
-        }
-        h3 {
-          margin-top: spaceUnits(2);
-        }
-
-        a i {
-          font-size: 1.6rem;
-          vertical-align: middle;
-        }
-
-      }
-
-      > .col-6:last-of-type .docs-card {
-        margin-bottom: 0;
-      }
-      > .col-6:nth-last-child(2) .docs-card {
-        margin-bottom: 0;
-      }
-    }
-
+    
     hr {
       margin-top: $section-space-bottom;
       margin-bottom: $section-space-bottom;
@@ -209,21 +176,6 @@ main {
     } 
   }
 
-  .navigator {
-    padding-top: spaceUnits(6);
-    padding-bottom: spaceUnits(4);
-    border-bottom: $separation-border;
-
-    a {
-      font-size: .825rem;
-
-      i {
-        font-size: 1.2rem;
-        vertical-align: text-bottom;
-      }
-    }    
-  }
-
   footer {
     .footer-container {
       padding: spaceUnits(6) 0 spaceUnits(4);
@@ -259,7 +211,7 @@ main {
 }
 
 
-/* === Color component === */
+/* === Example component === */
 
 .docs-example {
   background: $grisulado-10;
@@ -305,6 +257,11 @@ main {
     padding-top: spaceUnits(2);
     border-top: 1px solid $grisulado-50;
     line-height: 100%;
+
+    &.no-description {
+      padding-top: 0;
+      border-top: none;
+    }
 
     dt, dd {
       display: inline-block;

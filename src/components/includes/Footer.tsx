@@ -4,25 +4,27 @@ import { withPrefix } from "gatsby"
 export const Footer = () => {
   return (
     <footer>
-      <div className="row footer-container">
-        <div className="col-md-6 h4">Formá parte de la comunidad</div>
-        <div className="col-md-2">
-          <a href="mailto:experienciadigital@buenosaires.gob.ar">
-            <i className="bx bx-mail-send"></i>
-            Correo
-          </a>
-        </div>
-        <div className="col-md-2">
-          <a href="//github.com/gcba/estandares">
-            <i className="bx bxl-github"></i>
-            Github
-          </a>
-        </div>
-        <div className="col-md-2">
-          <a href="//dribbble.com/ExperieniciadigitalBA">
-            <i className="bx bxl-dribbble"></i>
-            Dribbble
-          </a>
+      <div className="footer-container">
+        <div className="row">
+          <div className="col-md-6 h4">Formá parte de la comunidad</div>
+          <div className="col-md-2">
+            <a href="mailto:experienciadigital@buenosaires.gob.ar">
+              <i className="bx bx-mail-send"></i>
+              Correo
+            </a>
+          </div>
+          <div className="col-md-2">
+            <a href="//github.com/gcba/estandares">
+              <i className="bx bxl-github"></i>
+              Github
+            </a>
+          </div>
+          <div className="col-md-2">
+            <a href="//dribbble.com/ExperieniciadigitalBA">
+              <i className="bx bxl-dribbble"></i>
+              Dribbble
+            </a>
+          </div>
         </div>
       </div>
       <div className="row">

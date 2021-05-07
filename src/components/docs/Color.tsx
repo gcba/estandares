@@ -12,6 +12,8 @@ export const Color = (props: React.PropsWithChildren<ColorProps>) => {
   const current = color(hex)
   const textColor = current.luminosity() > 0.5 ? "dark" : "light"
 
+  const hasDescription = name !== undefined && description !== undefined;
+
   return (
     <div className={`docs-color docs-color-${textColor}`}>
       <div className="docs-color-bg" style={{ backgroundColor: current.hex() }} />
@@ -19,7 +21,7 @@ export const Color = (props: React.PropsWithChildren<ColorProps>) => {
       <div className="docs-color-name">{name}</div>
       {description && <div className="docs-color-description">{description}</div>}
 
-      <dl className="docs-color-specs">
+      <dl className={`docs-color-specs ${!hasDescription ? "no-description": ""}`}>
         <dt>Hex</dt>
         <dd>{current.hex()}</dd>
         <dt>RGB</dt>

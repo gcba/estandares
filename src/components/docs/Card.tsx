@@ -34,9 +34,10 @@ export const SimpleCard = (props: React.PropsWithChildren<SimpleCardProps>) => (
   <div className="card card-simple">
     <div className="card-body">
       {props.icon && <i className={`card-icon bx ${props.icon.name} `} style={{ color: props.icon.color }}></i>}
-      <h4 className="card-title">{props.title}</h4>
+      <h4 className="card-title">
+        <a href={props.linkUrl.includes("//") ? props.linkUrl : withPrefix(props.linkUrl)}>{props.title}</a>
+      </h4>
       <p className="card-text">{props.description}</p>
-      <a href={props.linkUrl.includes("//") ? props.linkUrl : withPrefix(props.linkUrl)} className="link-arrow">{props.linkText}</a>
     </div>
   </div>
 )

@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "GCBA",
   "dependencies": {
-    "@gcba/obelisco": "^1.12.3",
+    "@gcba/obelisco": "^1.12.5",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@popperjs/core": "^2.5.4",
