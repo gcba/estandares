@@ -1,0 +1,85 @@
+---
+menu: Modals
+title: Modals
+description: Muestran contenido importante que requiere la interacción del usuario, en una capa sobre la página y bloquea otras interacciones.
+position: 7
+---
+
+import "./modals.scss"
+
+## Anatomía
+
+![completar](/componentes/modals/anatomia-1.svg)
+
+1. El Área de título se compone de un contenido titular que engloba el contenido.
+2. El área descriptiva muestra el contenido en relación al título que lo abarca, puede ser una pregunta que se relacione con el Área accionable.
+3. El Área accionable se compone de dos (2) botones, con una acción positivia-activa y otra negativa o de cancelación.
+
+
+## Opciones de modal
+
+### Diálogos de confirmación
+
+Son para cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc. Este diálogo tiene un botón rojo (negativo) para resaltar la acción destructiva.
+
+<Example>
+
+<div class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Cancelación de pago</h4>
+<button
+type="button"
+class="close"
+data-dismiss="modal"
+aria-label="Close"
+>
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<p>¿Estás seguro de querer cancelar el pago de boletas?</p>
+</div>
+<div class="modal-footer">
+<button
+type="button"
+class="btn btn-link btn-sm"
+data-dismiss="modal"
+>
+No estoy seguro</button
+><button type="button" class="btn btn-danger btn-sm">Sí, cancelar</button>
+</div>
+</div>
+</div>
+</div>
+
+
+</Example>
+
+
+## Diseño y estructura
+
+### Composición
+
+![completar](/componentes/modals/composicion-1.svg)
+
+## Usabilidad
+
+**Los diálogos modales son invasivos y deben usarse con moderación.** La capacidad del usuario para acceder y ver su propio contenido es fundamental para una buena experiencia.
+
+**Intente limitar el número de contenido** en un diálogo modal. Debe contener solo información valiosa y relevante que sea útil y concisa.
+
+**Evite varios pasos que requieran navegación** dentro del diálogo modal.
+
+**Evite la toma de decisiones complejas**  que requieran fuentes adicionales de información no disponibles en el modal.
+
+**La acción principal (botón principal) debe reflejar el título del modal.** Por ejemplo, un modal con el título "Pago de boleta" tiene un botón con la palabra "Pagar".
+
+
+## Tipografía
+
+| Tipografía | Tamaño           | Variable       | Color   |
+| ---------- | ---------------- | -------------- | ------- |
+| Nunito     | 21px / 1.3125rem | Semibold / 600 | #38485C |
+| Open Sans  | 16px / 1rem      | Regular / 500  | #38485C |
