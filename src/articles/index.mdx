@@ -7,44 +7,42 @@ draft: false
 img: 
 ---
 
-<a href={"/acerca_de_obelisco"} className="link-arrow">Acerca de Obelisco</a>
+import { withPrefix } from "gatsby"
+<><a href={withPrefix("/acerca_de_obelisco")} className="link-arrow">Acerca de Obelisco</a></>
+
 <hr class="my-3" />
 
 <div className="row">
   <div className="col-6">
     <SimpleCard
-      icon={{ name: "bx-atom", color: "#7A58B1" }}
+      picture={{ icon: "bx-atom", color: "#7A58B1" }}
       title="Creamos experiencias"
       description="Te contamos el proceso de trabajo que llevamos adelante en Experiencia Digital con el objetivo de construir mejores experiencias para los vecinos."
-      linkText="Ver fundamentos"
-      linkUrl="/creamos_experiencias/como_trabajamos"
+      href="/creamos_experiencias/como_trabajamos"
     />
   </div>
   <div className="col-6">
     <SimpleCard
-      icon={{ name: "bxs-component", color: "#F3C237" }}
+      picture={{ icon: "bxs-component", color: "#F3C237" }}
       title="Componentes"
       description="El sistema de diseño proporciona componentes accesibles para la ideacióon y desarrollo de productos digitales."
-      linkText="Ver componentes"
-      linkUrl="/componentes/web"
+      href="/componentes/web"
     />
   </div>
   <div className="col-6">
     <SimpleCard
-      icon={{ name: "bx-palette", color: "#00BDA7" }}
+      picture={{ icon: "bx-palette", color: "#00BDA7" }}
       title="Guía de estilos"
       description="Los estilos reflejan quienes somos y lo que queremos que los ciudadanos sientan cuando usen cualquiera de nuestros productos."
-      linkText="Ver guía de estilos"
-      linkUrl="/guías_de_estilos/detalles_formales"
+      href="/guías_de_estilos/detalles_formales"
     />
   </div>
   <div className="col-6">
     <SimpleCard
-      icon={{ name: "bx-book-open", color: "#FF6940" }}
+      picture={{ icon: "bx-book-open", color: "#FF6940" }}
       title="Contenidos"
       description="Son los lineamientos a tener en cuenta para escribir contenidos en los productos digitales del Gobierno de la Ciudad."
-      linkText="Ver contenidos"
-      linkUrl="/contenido/comunicar-con-claridad"
+      href="/contenido/comunicar-con-claridad"
     />
   </div>
 </div>
@@ -56,20 +54,18 @@ Brindamos un conjunto de herramientas y guías para ayudar y simplificar la crea
 <div className="row">
   <div className="col-6">
     <Card
-      icon={{ name: "bx-vector", color: "#7A58B1" }}
+      picture={{ icon: "bx-vector", color: "#7A58B1" }}
       title="UI kit"
       description="Diseña con nuestra librería de componentes en Adobe XD."
-      linkText="Ver UI kit"
-      linkUrl="/herramientas_y_recursos/ui_kit/"
+      href="/herramientas_y_recursos/ui_kit/"
     />
   </div>
   <div className="col-6">
     <Card
-      icon={{ name: "bx-code-alt", color: "#7A58B1" }}
+      picture={{ icon: "bx-code-alt", color: "#7A58B1" }}
       title="Implementación y desarrollo"
       description="Utilizá nuestras implementaciones de código abierto."
-      linkText="Ver implementación"
-      linkUrl="/herramientas_y_recursos/implementacion/"
+      href="/herramientas_y_recursos/implementacion/"
     />
   </div>
 </div>

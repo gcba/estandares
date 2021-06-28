@@ -5,6 +5,7 @@ description: Las barras de progreso muestran la progresión del sistema sobre el
 position: 2
 ---
 
+import { ProgessionExample } from "../../../components/docs/Progression"
 
 ## Anatomía
 
@@ -25,37 +26,7 @@ Los estados que todavía están incompletos o ya fueron realizados tienen un niv
 <Row>
 <Col items={3}></Col>
 <Col items={3}>
-<div className="progression-container">
-<ul className="progression">
-<li className="progression-item completed" aria-expanded="false">
-<p className="progression-title">Estado anterior</p>
-<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
-</li>
-
-<li className="progression-item active" aria-expanded="true">
-<p className="progression-title">Estado actual</p>
-<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
-</li>
-
-<li className="progression-item" aria-expanded="false">
-<p className="progression-title">Próximo estado</p>
-<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
-</li>
-
-<li className="progression-item" aria-expanded="false">
-<p className="progression-title">Próximo estado</p>
-<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
-</li>
-
-<li className="progression-item" aria-expanded="false">
-<p className="progression-title">Estado final</p>
-<p className="progression-subtitle">Descripción del estado dd/mm/aa - 00:00hs</p>
-</li>
-</ul>
-
-<button className="progression-link">Menos detalles</button>
-</div>
-
+<ProgessionExample />
 </Col>
 <Col items={3}></Col>
 </Row>

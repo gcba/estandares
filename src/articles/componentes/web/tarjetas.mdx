@@ -20,19 +20,14 @@ position: 12
 
 Las tarjetas con imágenes se pueden colocar verticalmente u horizontalmente. En caso de no tener “área preliminar” el ancho máximo de las tarjetas son 6 columnas.
 
-<Example align="center">
+<Example>
   
   <div className="row">
     <div className="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-      <button className="card">
-        <img src="/componentes/card/paseobajo.png" className="card-img-top" />
-        <div className="card-body">
-          <h4 className="card-title">Título Tarjeta</h4>
-          <p className="card-text">
-            Recomendamos en este espacio no utilizar más de 3 líneas, para generar una lectura óptima.
-          </p>
-        </div>
-      </button>
+      <Card
+        title="Título Tarjeta"
+        description= "Recomendamos en este espacio no utilizar más de 3 líneas, para generar una lectura óptima."
+        picture={{ src: "/componentes/card/paseobajo.png" }} />
     </div>
     <div className="col-xs-12 col-lg-10 offset-lg-1">
       <button className="card card-horizontal">
