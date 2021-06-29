@@ -34,4 +34,5 @@ export const ProgessionExample = () => {
     <button className="progression-link" onClick={() => setOpen(!isOpen)}>
       {isOpen ? "Menos" : "Más"} detalles
     </button>
-  </div>}
+  </div>;
+}

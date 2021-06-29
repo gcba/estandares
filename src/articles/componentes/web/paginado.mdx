@@ -5,6 +5,8 @@ description: Se utiliza cuando hay demasiados resultados para mostrar en una pá
 position: 9
 ---
 
+import { PaginationExample } from "../../../components/docs/pagination"
+
 ## Anatomía
 
 ![completar](/componentes/paginado/anatomía.svg) 
@@ -22,73 +24,11 @@ Los paginados siempre van centrados con respecto a la página. La cantidad máxi
 
 <!-- codigo -->
 <Example align="center">
-<div className="my-3">
-<nav aria-label="Ejemplo de paginación">
-  <ul className="pagination">
-    <li className="page-item">
-      <a className="page-link" href="#">
-        <span className="page-previous-icon" aria-hidden="true" /> Anterior
-      </a>
-    </li>
-    <li className="page-item active">
-      <a className="page-link" href="#">
-        1
-      </a>
-    </li>
-    <li className="page-item">
-      <a className="page-link" href="#">
-        2
-      </a>
-    </li>
-    <li className="page-item">
-      <a className="page-link" href="#">
-        3
-      </a>
-    </li>
-    <li className="page-item">
-      <a className="page-link" href="#">
-        Siguiente <span className="page-next-icon" aria-hidden="true" />
-      </a>
-    </li>
-  </ul>
-</nav>
-
-<div className="mb-5" />
-
-<nav aria-label="Ejemplo de paginación">
-  <ul className="pagination">
-    <li className="page-item">
-      <a className="page-link" href="#">
-        <span className="page-previous-icon" aria-hidden="true" /> Anterior
-      </a>
-    </li>
-    <li className="page-item active">
-      <a className="page-link" href="#">
-        1
-      </a>
-    </li>
-    {[2, 3, 4, 5, 6, 7].map(i => (
-      <li className="page-item" key={i}>
-        <a className="page-link" href="#">
-          {i}
-        </a>
-      </li>
-    ))}
-    <li className="page-item disabled">
-      <span className="page-link">...</span>
-    </li>
-    <li className="page-item">
-      <a className="page-link" href="#">
-        60
-      </a>
-    </li>
-    <li className="page-item">
-      <a className="page-link" href="#">
-        Siguiente <span className="page-next-icon" aria-hidden="true" />
-      </a>
-    </li>
-  </ul>
-</nav>
+<div className="mt-3 mb-4">
+<PaginationExample pages={3} />
+</div>
+<div className="mb-4">
+<PaginationExample pages={13} />
 </div>
 </Example>
 
