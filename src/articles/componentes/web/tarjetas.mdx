@@ -9,9 +9,9 @@ position: 12
 
 ![completar](/componentes/card/anatomía.svg)
 
-1. El área preliminar puede estar conformada por imágenes o iconos. 
-2. El área de títulos esta conformado por títulos y subtítulos. 
-3. El área descriptiva es una bajada que introduce contenido que se encontrará luego. 
+1. El área preliminar puede estar conformada por imágenes o iconos.
+2. El área de títulos esta conformado por títulos y subtítulos.
+3. El área descriptiva es una bajada que introduce contenido que se encontrará luego.
 4. El área de cierre es una información extra que puede ser de interés.
 
 ## Opciones de tarjetas
@@ -51,45 +51,49 @@ El diseño de una tarjeta dependerá de la información que se deba mostrar. Cad
 <Row>
 <Col items={2}>
 
-  <a className="card" href="#">
-    <div className="card-body">
-      <i className="bx bx-news card-icon text-info"></i>
-      <h4 className="card-title">Noticias</h4>
-      <p className="card-subtitle"> Más noticias de la Ciudad </p>
-    </div>
-  </a>
+{" "}
 
-  <button className="card">
-    <img src="/componentes/card/paseobajo.png" className="card-img-top" />
-    <div className="card-body">
-      <h4 className="card-title">Consejos para cuidarnos</h4>
-      <p className="card-text">
-        Recomendaciones y cuidados para prevenir el contagio del Covid-19.
-      </p>
-    </div>
-  </button>
+<a className="card" href="#">
+  <div className="card-body">
+    <i className="bx bx-news card-icon text-info"></i>
+    <h4 className="card-title">Noticias</h4>
+    <p className="card-subtitle"> Más noticias de la Ciudad </p>
+  </div>
+</a>
+
+{" "}
+
+<button className="card">
+  <img src="/componentes/card/paseobajo.png" className="card-img-top" />
+  <div className="card-body">
+    <h4 className="card-title">Consejos para cuidarnos</h4>
+    <p className="card-text">Recomendaciones y cuidados para prevenir el contagio del Covid-19.</p>
+  </div>
+</button>
 
 </Col>
 <Col items={2}>
 
-  <a className="card" href="#">
-    <img src="/componentes/card/paseobajo.png" className="card-img-top" />
-    <div className="card-body">
-      <h4 className="card-title">Caminá Buenos Aires</h4>
-      <p className="card-text">
-        15 recorridos gratuitos con mapas y audioguías de la Ciudad Autónoma de Buenos Aires.
-      </p>
-    </div>
-    <div className="card-footer text-right">
-      <small>Este evento está disponible todo el año</small>
-    </div>
-  </a>
+{" "}
 
-  <a className="card" href="#">
-    <div className="card-body">
-      <h4 className="card-title">Permisos para ubicar mesas y sillas en espacios públicos</h4>
-    </div>
-  </a>
+<a className="card" href="#">
+  <img src="/componentes/card/paseobajo.png" className="card-img-top" />
+  <div className="card-body">
+    <h4 className="card-title">Caminá Buenos Aires</h4>
+    <p className="card-text">15 recorridos gratuitos con mapas y audioguías de la Ciudad Autónoma de Buenos Aires.</p>
+  </div>
+  <div className="card-footer text-right">
+    <small>Este evento está disponible todo el año</small>
+  </div>
+</a>
+
+{" "}
+
+<a className="card" href="#">
+  <div className="card-body">
+    <h4 className="card-title">Permisos para ubicar mesas y sillas en espacios públicos</h4>
+  </div>
+</a>
 
 </Col>
 </Row>
@@ -104,10 +108,10 @@ Las tarjetas sin contenedor se diferencian del resto por tener más espacio para
 <div className="card card-simple">
   <div className="card-body">
     <i className="bx bx-message-square-edit card-icon text-danger"></i>
-    <h4 className="card-title"><a href="tel:123456789">Comunidad Educativa Conectada</a></h4>
-    <p className="card-text">
-      Recibí ayuda personalizada llamando al 0800-333-3382 de lunes a viernes de 8 a 20 h
-    </p>
+    <h4 className="card-title">
+      <a href="tel:123456789">Comunidad Educativa Conectada</a>
+    </h4>
+    <p className="card-text">Recibí ayuda personalizada llamando al 0800-333-3382 de lunes a viernes de 8 a 20 h</p>
   </div>
 </div>
 
@@ -117,10 +121,10 @@ Las tarjetas sin contenedor se diferencian del resto por tener más espacio para
 <div className="card card-simple">
   <div className="card-body">
     <i className="bx bx-bot card-icon text-success"></i>
-    <h4 className="card-title"><a href="#">BOTI</a></h4>
-    <p className="card-text">
-      Resolvé todas tus dudas sobre el proceso de inscripción escolar.
-    </p>
+    <h4 className="card-title">
+      <a href="#">BOTI</a>
+    </h4>
+    <p className="card-text">Resolvé todas tus dudas sobre el proceso de inscripción escolar.</p>
   </div>
 </div>
 
@@ -158,13 +162,13 @@ Para tarjetas con un “Área descriptiva” van a ser tres la cantidad máxima 
 ## Tipografía
 
 | Tipografía | Tamaño                       | Variable       | Color   |
-|------------|------------------------------|----------------|---------|
+| ---------- | ---------------------------- | -------------- | ------- |
 | Nunito     | 21px / 1,3125 rem Títulos    | Semibold / 600 | #38485C |
 | Open Sans  | 19px / 1,1875 rem Subtítulos | Regular / 500  | #38485C |
 | Open Sans  | 16px / 1 rem Descripciones   | Regular / 500  | #38485C |
 | Open Sans  | 11,7px / 0,73125 rem Caption | Regular / 500  | #38485C |
 
-<!-- 
+<!--
 Usar **mayúsculas para dar estilo** a las oraciones. Estas se usan en la primera palabra de una frase; en nombres propios; en términos como “Ciudad”, “Gobierno” o “Comuna”; en nombre de programas y/o para escribir siglas.
 
 Es importante nunca escribir TODO EN MAYÚSCULAS ya que **dificulta la lectura** y por convención web equivaldría a gritar o levantar la voz.

@@ -7,10 +7,10 @@ position: 4
 
 ## Anatomía
 
-![completar](/componentes/colapsable/anatomia.svg) 
+![completar](/componentes/colapsable/anatomia.svg)
 
-1. El área de título se utiliza para introducir la información que se encuentra al accionar el colapsable. 
-2. El ícono cambia según si el colapsable esta abierto o cerrado. 
+1. El área de título se utiliza para introducir la información que se encuentra al accionar el colapsable.
+2. El ícono cambia según si el colapsable esta abierto o cerrado.
 3. El área descriptiva es el contenido que se encuentra oculto dentro del colapsable. Una vez que el usuario acciona sobre el área de título, se abrirá el componente mostrando el área descriptiva.
 
 ## Opciones de colapsables
@@ -20,6 +20,7 @@ position: 4
 Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
 
 <!-- codigo -->
+
 <div id="accordion">
   <div className="accordion-wrapper">
     <div className="accordion" id="accordionExample">
@@ -29,9 +30,8 @@ Los grupos de colapsables de selección única permiten un solo colapsable abier
         </button>
         <div id="collapseOne" className="collapse" data-parent="#accordion">
           <div className="card-body">
-            Este es el área descriptiva de un colapsable de selección única. 
-            Una vez que se accione sobre el área de títulos, 
-            se abrirá el componente mostrando el área descriptiva.
+            Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
+            títulos, se abrirá el componente mostrando el área descriptiva.
           </div>
         </div>
       </div>
@@ -41,9 +41,8 @@ Los grupos de colapsables de selección única permiten un solo colapsable abier
         </button>
         <div id="collapseTwo" className="collapse" data-parent="#accordion">
           <div className="card-body">
-            Este es el área descriptiva de un colapsable de selección única. 
-            Una vez que se accione sobre el área de títulos, 
-            se abrirá el componente mostrando el área descriptiva.
+            Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
+            títulos, se abrirá el componente mostrando el área descriptiva.
           </div>
         </div>
       </div>
@@ -53,9 +52,8 @@ Los grupos de colapsables de selección única permiten un solo colapsable abier
         </button>
         <div id="collapseThree" className="collapse" data-parent="#accordion">
           <div className="card-body">
-            Este es el área descriptiva de un colapsable de selección única. 
-            Una vez que se accione sobre el área de títulos, 
-            se abrirá el componente mostrando el área descriptiva.
+            Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
+            títulos, se abrirá el componente mostrando el área descriptiva.
           </div>
         </div>
       </div>
@@ -68,6 +66,7 @@ Los grupos de colapsables de selección única permiten un solo colapsable abier
 Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo.
 
 <!-- codigo -->
+
 <div className="accordion-wrapper">
   <div className="accordion" id="accordionExample">
     <div className="card">
@@ -76,9 +75,8 @@ Los grupos de colapsables de selección múltiple permiten que varios colapsable
       </button>
       <div id="collapseFour" className="collapse" data-parent="#accordion">
         <div className="card-body">
-          Este es el área descriptiva de un colapsable de selección única. 
-          Una vez que se accione sobre el área de títulos, 
-          se abrirá el componente mostrando el área descriptiva.
+          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
+          títulos, se abrirá el componente mostrando el área descriptiva.
         </div>
       </div>
     </div>
@@ -88,9 +86,8 @@ Los grupos de colapsables de selección múltiple permiten que varios colapsable
       </button>
       <div id="collapseFive" className="collapse" data-parent="#accordion">
         <div className="card-body">
-          Este es el área descriptiva de un colapsable de selección única. 
-          Una vez que se accione sobre el área de títulos, 
-          se abrirá el componente mostrando el área descriptiva.
+          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
+          títulos, se abrirá el componente mostrando el área descriptiva.
         </div>
       </div>
     </div>
@@ -100,9 +97,8 @@ Los grupos de colapsables de selección múltiple permiten que varios colapsable
       </button>
       <div id="collapseSix" className="collapse" data-parent="#accordion">
         <div className="card-body">
-          Este es el área descriptiva de un colapsable de selección única. 
-          Una vez que se accione sobre el área de títulos, 
-          se abrirá el componente mostrando el área descriptiva.
+          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
+          títulos, se abrirá el componente mostrando el área descriptiva.
         </div>
       </div>
     </div>
@@ -113,26 +109,21 @@ Los grupos de colapsables de selección múltiple permiten que varios colapsable
 
 Las tarjetas sin contenedor se diferencian del resto por tener más espacio para su “area de títulos” y “área descriptiva”. Además esta tarjeta no es accionable, sino que al final tendrá un enlace que marcará la acción que se realizará.
 
-
 ## Diseño y estructura
 
 ### Composición
 
-
-![completar](/componentes/colapsable/composicion.svg) 
-
+![completar](/componentes/colapsable/composicion.svg)
 
 ## Usabilidad
 
-**Todo el área de títulos debe ser seleccionable**. Los usuarios podrán hacer clic en cualquier parte del área para expandir o contraer el contenido. 
+**Todo el área de títulos debe ser seleccionable**. Los usuarios podrán hacer clic en cualquier parte del área para expandir o contraer el contenido.
 
 **Los colapsables deben respetar la guía de espaciados**. Hay que asegurarse que cada colapsable este suficientemente lejos del siguiente para que los usuarios no se activen accidentalmente. La distancia exacta va a depender del dispositivo.
 
-
 ## Tipografía
 
-| Tipografía | Tamaño                           | Variable       | Color   |
-|------------|----------------------------------|----------------|---------|
-| Open Sans  | 18px / 1,125 rem Área de títulos | Regular / 500  | #38485C |
-| Open Sans  | 16px / 1 rem Área Descriptiva    | Regular / 500  | #38485C |
-
+| Tipografía | Tamaño                           | Variable      | Color   |
+| ---------- | -------------------------------- | ------------- | ------- |
+| Open Sans  | 18px / 1,125 rem Área de títulos | Regular / 500 | #38485C |
+| Open Sans  | 16px / 1 rem Área Descriptiva    | Regular / 500 | #38485C |

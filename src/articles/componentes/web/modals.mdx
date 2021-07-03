@@ -15,7 +15,6 @@ import "./modals.scss"
 2. El área descriptiva muestra el contenido en relación al título que lo abarca, puede ser una pregunta que se relacione con el Área accionable.
 3. El Área accionable se compone de dos (2) botones, con una acción positivia-activa y otra negativa o de cancelación.
 
-
 ## Opciones de modal
 
 ### Diálogos de confirmación
@@ -25,30 +24,27 @@ Son para cuando un usuario necesita confirmar una acción que afectará sus dato
 <Example>
 
 <div class="modal modal-sm mx-auto" tabindex="-1" role="dialog">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h4 class="modal-title">Cancelación de pago</h4>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Cancelación de pago</h4>
+      </div>
+      <div class="modal-body">
+        <p>¿Estás seguro de querer cancelar el pago de boletas?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link btn-sm" data-dismiss="modal">
+          No estoy seguro
+        </button>
+        <button type="button" class="btn btn-danger btn-sm">
+          Sí, cancelar
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="modal-body">
-<p>¿Estás seguro de querer cancelar el pago de boletas?</p>
-</div>
-<div class="modal-footer">
-<button
-type="button"
-class="btn btn-link btn-sm"
-data-dismiss="modal"
->
-No estoy seguro</button
-><button type="button" class="btn btn-danger btn-sm">Sí, cancelar</button>
-</div>
-</div>
-</div>
-</div>
-
 
 </Example>
-
 
 ## Diseño y estructura
 
@@ -64,10 +60,9 @@ No estoy seguro</button
 
 **Evite varios pasos que requieran navegación** dentro del diálogo modal.
 
-**Evite la toma de decisiones complejas**  que requieran fuentes adicionales de información no disponibles en el modal.
+**Evite la toma de decisiones complejas** que requieran fuentes adicionales de información no disponibles en el modal.
 
 **La acción principal (botón principal) debe reflejar el título del modal.** Por ejemplo, un modal con el título "Pago de boleta" tiene un botón con la palabra "Pagar".
-
 
 ## Tipografía
 

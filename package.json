@@ -3,8 +3,18 @@
   "description": "Estándares y lineamientos para productos digitales del GCBA",
   "version": "0.1.0",
   "author": "GCBA",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "dev": "gatsby develop",
+    "dev:with-paths": "gatsby develop --prefix-paths",
+    "lint": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
+    "start": "npm run dev",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
-    "@gcba/obelisco": "^1.12.11",
+    "@gcba/obelisco": "^1.12.12",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@popperjs/core": "^2.5.4",
@@ -38,22 +48,16 @@
     "eslint-config-react-app": "^5.2.1",
     "gatsby-remark-custom-blocks": "^2.3.13",
     "gatsby-transformer-remark": "^2.8.42",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0"
   },
   "keywords": [
     "gcba"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build --prefix-paths",
-    "dev": "gatsby develop",
-    "dev:with-paths": "gatsby develop --prefix-paths",
-    "lint": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
-    "start": "npm run dev",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gcba/estandares"

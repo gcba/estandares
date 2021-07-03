@@ -16,7 +16,6 @@ import { Card, SimpleCard } from "./docs/Card"
 import { getNavigation, getPrevAndNext } from "../utils/navigation"
 import { withPrefix } from "gatsby"
 
-
 const Layout = (props: any) => {
   const { pageContext, children } = props
   const page = pageContext.frontmatter || pageContext
@@ -41,7 +40,13 @@ const Layout = (props: any) => {
           <div className="col-md-8 offset-md-1">
             <main id="content">
               <header>
-                {isIndex && <img src={withPrefix("/estandares.svg")} alt="Ilustración que muestra un flujo de cómo construir una idea" className="img-fluid mb-5" />}
+                {isIndex && (
+                  <img
+                    src={withPrefix("/estandares.svg")}
+                    alt="Ilustración que muestra un flujo de cómo construir una idea"
+                    className="img-fluid mb-5"
+                  />
+                )}
                 <h1>{page.title}</h1>
                 <Lead>{page.description}</Lead>
               </header>
@@ -76,7 +81,7 @@ const MdxContent = (props: any) => {
         Color,
         Example,
         Card,
-        SimpleCard
+        SimpleCard,
       }}
     >
       {props.children}
