@@ -3,18 +3,32 @@ import { withPrefix } from "gatsby"
 import { Card as BaseCard, SimpleCard as BaseSimpleCard, CardProps, SimpleCardProps } from "@gcba/obelisco"
 
 export const Card = (props: React.PropsWithChildren<CardProps>) => {
-  addPrefix(props.href);
-  addPrefix(props.picture?.src);
+  props = addCardPrefix(props);
   return <BaseCard {...props} />
 }
 
 export const SimpleCard = (props: React.PropsWithChildren<SimpleCardProps>) => {
-  addPrefix(props.href);
+  props = addSimpleCardPrefix(props);
   return <BaseSimpleCard {...props} />
 }
 
-const addPrefix = (url?: string) => {
-  if(url && !url.includes("//")) {
-    url = withPrefix(url);
+const addSimpleCardPrefix = (props: SimpleCardProps): SimpleCardProps => {
+  return { ...props, href: addPrefixToLocalUrl(props.href) };
+}
+
+const addCardPrefix = (props: CardProps) => {
+  const picture = props.picture?.src ? {
+    ...props.picture,
+    src: addPrefixToLocalUrl(props.picture.src)
+  } : props.picture;
+
+  return {
+    ...props,
+    picture,
+    href: addPrefixToLocalUrl(props.href)
   }
+}
+
+const addPrefixToLocalUrl = (url?: string) => {
+  return url && !url.includes("//") && withPrefix(url) || url;
 }

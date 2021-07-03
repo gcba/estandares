@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "GCBA",
   "dependencies": {
-    "@gcba/obelisco": "^1.12.8",
+    "@gcba/obelisco": "^1.12.11",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@popperjs/core": "^2.5.4",
@@ -46,9 +46,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
+    "dev:with-paths": "gatsby develop --prefix-paths",
     "lint": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

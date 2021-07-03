@@ -5,7 +5,7 @@ description: Se utiliza cuando hay demasiados resultados para mostrar en una pá
 position: 9
 ---
 
-import { PaginationExample } from "../../../components/docs/Pagination"
+import { Pagination } from "@gcba/obelisco"
 
 ## Anatomía
 
@@ -25,10 +25,10 @@ Los paginados siempre van centrados con respecto a la página. La cantidad máxi
 <!-- codigo -->
 <Example align="center">
 <div className="mt-3 mb-4">
-<PaginationExample pages={3} />
+<Pagination pages={3} ariaLabel="Ejemplo de paginación simple" />
 </div>
 <div className="mb-4">
-<PaginationExample pages={13} />
+<Pagination pages={13} default={6} ariaLabel="Ejemplo de paginación compleja" />
 </div>
 </Example>
 
