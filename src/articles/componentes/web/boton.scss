@@ -1,5 +1,9 @@
 .buttons-showcase {
-  .btn:not(:last-child) {
-    margin-right: 16px;
+  .btn{
+    margin-bottom: 16px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
   }
 }

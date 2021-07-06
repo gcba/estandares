@@ -23,13 +23,13 @@ Las tarjetas con imágenes se pueden colocar verticalmente u horizontalmente. En
 <Example>
   
   <div className="row">
-    <div className="col-xs-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+    <div className="col-xs-12 col-md-8 col-lg-6">
       <Card
         title="Título Tarjeta"
         description= "Recomendamos en este espacio no utilizar más de 3 líneas, para generar una lectura óptima."
         picture={{ src: "/componentes/card/paseobajo.png" }} />
     </div>
-    <div className="col-xs-12 col-lg-10 offset-lg-1">
+    <div className="col-xs-12 col-lg-10">
       <button className="card card-horizontal">
         <img src="/componentes/card/paseobajo-wide.png" className="card-img-left" width={168} />
         <div className="card-body">
@@ -51,8 +51,6 @@ El diseño de una tarjeta dependerá de la información que se deba mostrar. Cad
 <Row>
 <Col items={2}>
 
-{" "}
-
 <a className="card" href="#">
   <div className="card-body">
     <i className="bx bx-news card-icon text-info"></i>
@@ -60,8 +58,6 @@ El diseño de una tarjeta dependerá de la información que se deba mostrar. Cad
     <p className="card-subtitle"> Más noticias de la Ciudad </p>
   </div>
 </a>
-
-{" "}
 
 <button className="card">
   <img src="/componentes/card/paseobajo.png" className="card-img-top" />
@@ -74,8 +70,6 @@ El diseño de una tarjeta dependerá de la información que se deba mostrar. Cad
 </Col>
 <Col items={2}>
 
-{" "}
-
 <a className="card" href="#">
   <img src="/componentes/card/paseobajo.png" className="card-img-top" />
   <div className="card-body">
@@ -86,8 +80,6 @@ El diseño de una tarjeta dependerá de la información que se deba mostrar. Cad
     <small>Este evento está disponible todo el año</small>
   </div>
 </a>
-
-{" "}
 
 <a className="card" href="#">
   <div className="card-body">

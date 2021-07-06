@@ -5,7 +5,7 @@ description: Las barras de progreso muestran la progresión del sistema sobre el
 position: 2
 ---
 
-import { ProgessionExample } from "../../../components/docs/Progression"
+import { ProgessionExample } from "../../../components/docs/ProgressionExample"
 
 ## Anatomía
 
@@ -23,13 +23,14 @@ Las barras de progreso ofrecen una visualización del estado en que se encuentra
 
 Los estados que todavía están incompletos o ya fueron realizados tienen un nivel de color inferior y no se visualizan su área de detalle. En caso de querer visualizar, se puede accionar el botón de **Más detalles** que desplegará esta información.
 
-<Row>
-  <Col items={3}></Col>
-  <Col items={3}>
-    <ProgessionExample />
-  </Col>
-  <Col items={3}></Col>
-</Row>
+
+<Example transparent={true}>
+  <Row>
+    <Col items={1}>
+      <ProgessionExample />
+    </Col>
+  </Row>
+</Example>
 
 ## Diseño y estructura
 

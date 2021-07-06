@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Button, ButtonType } from "@gcba/obelisco"
 
-export const ButtonStates = (props: { variant: ButtonType; showDisabled: boolean }) => (
+export const ButtonExample = (props: { variant: ButtonType; showDisabled: boolean }) => (
   <div className="buttons-showcase">
     <Button type={props.variant}>Default</Button>
     <Button type={props.variant} className="active">

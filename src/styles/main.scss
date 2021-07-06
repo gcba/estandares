@@ -209,15 +209,22 @@ main {
 /* === Example component === */
 
 .docs-example {
-  background: $grisulado-10;
+  background-color: $grisulado-10;
   border-radius: $border-radius-container;
   padding: spaceUnits(6) spaceUnits(8);
+
+  &.transparent {
+    background-color: transparent;
+  }
 
   > * {
     margin: spaceUnits(2) 0;
   }
-  .row [class^=col] {
-    margin-top: 0;
+  .row {
+    justify-content: center;
+    [class^=col] {
+      margin-top: 0;
+    }
   }
 }
 
