@@ -9,9 +9,8 @@
     "dev:with-paths": "gatsby develop --prefix-paths",
     "lint": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,mdx}\"",
     "start": "npm run dev",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "serve": "gatsby serve  --prefix-paths",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@gcba/obelisco": "^1.12.16",

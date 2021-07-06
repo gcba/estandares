@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 interface NavigatorProps {
   prev: {
@@ -19,16 +18,16 @@ export const Navigator = (props: NavigatorProps) => {
       <div className="row">
         <div className="col-6">
           {prev && (
-            <Link to={prev.url} className="page-navigation-prev">
+            <a href={prev.url} className="page-navigation-prev">
               <i className="bx bxs-chevron-left"></i> {prev.title}
-            </Link>
+            </a>
           )}
         </div>
         <div className="col-6 text-right">
           {next && (
-            <Link to={next.url} className="page-navigation-next">
+            <a href={next.url} className="page-navigation-next">
               {next.title} <i className="bx bxs-chevron-right"></i>
-            </Link>
+            </a>
           )}
         </div>
       </div>

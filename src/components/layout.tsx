@@ -20,7 +20,7 @@ const Layout = (props: any) => {
   const { pageContext, children } = props
   const page = pageContext.frontmatter || pageContext
   const pageContent = pageContext.tableOfContents?.items
-  const path = decodeURI(props.path)
+  const path = decodeURI(props.location.pathname)
   const isIndex = page.url === "/"
   const navigation = getNavigation()
 

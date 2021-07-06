@@ -70,7 +70,7 @@ export const getNavigation = (): NavItem[] => {
   const navigationToNavItemsArray = (nav): NavItem[] => {
     return _.sortBy<Node>(Object.values(nav), "position").map((node: Node) => ({
       name: node.menu,
-      id: node.url,
+      id: withPrefix(node.url),
       href: withPrefix(node.fakeNode ? Object.values(node.children)[0].url : node.url),
       children: node.children ? navigationToNavItemsArray(node.children) : [],
     }))
@@ -92,7 +92,7 @@ export const getPrevAndNext = (navigation: NavItem[], current: string) => {
     return { title: name, url: href }
   }
 
-  const nodes = _.flatMap(_.cloneDeep(navigation), flattenChildren).filter(node => !!node.name)
+  const nodes = _.flatMap(_.cloneDeep(navigation), flattenChildren).filter(node => node.id === node.href)
   const currentIndex = _.findIndex(nodes, node => node.href === current)
 
   const prevIndex = currentIndex - 1
