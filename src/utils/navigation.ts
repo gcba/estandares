@@ -1,33 +1,30 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import * as _ from "lodash"
-
-export interface Data {
-  allMdx: {
-    nodes: Array<{
-      frontmatter: {
-        menu: string
-        title: string
-        description: string
-        position: number
-        draft?: boolean
-      }
-      fields: {
-        url: string
-      }
-    }>
-  }
-}
+import { NavItem } from "@gcba/obelisco"
 
 export interface Node {
   menu: string
   title: string
   description: string
-  url: string
   position: number
+  draft?: boolean
+  url: string
+  fakeNode?: boolean
   children?: Node[]
 }
 
-export const getNavigation = () => {
+interface RawNode {
+  frontmatter: Pick<Node, "menu" | "title" | "description" | "position" | "draft">
+  fields: Pick<Node, "url" | "fakeNode">
+}
+
+export interface Data {
+  allMdx: {
+    nodes: RawNode[]
+  }
+}
+
+export const getNavigation = (): NavItem[] => {
   const data: Data = useStaticQuery(graphql`
     query {
       allMdx(sort: { fields: frontmatter___position, order: ASC }, filter: { fields: { url: { ne: "/404/" } } }) {
@@ -50,8 +47,8 @@ export const getNavigation = () => {
   const nodes = _.cloneDeep(data.allMdx.nodes)
   const navAsObject = {}
 
-  const fakeNode = (position: number, menu: string, url: string) => {
-    return { frontmatter: { menu, position, title: "", description: "" }, fields: { url } }
+  const fakeNode = (position: number, menu: string, url: string): RawNode => {
+    return { frontmatter: { menu, position, title: "", description: "" }, fields: { url, fakeNode: true } }
   }
 
   nodes.push(
@@ -70,31 +67,33 @@ export const getNavigation = () => {
       _.set(navAsObject, path, { ...node.frontmatter, ...node.fields, children })
     })
 
-  const navigationToArrays = nav => {
-    return _.sortBy(Object.values(nav), "position").map((node: Node) => ({
-      ...node,
-      children: node.children ? navigationToArrays(node.children) : [],
+  const navigationToNavItemsArray = (nav): NavItem[] => {
+    return _.sortBy<Node>(Object.values(nav), "position").map((node: Node) => ({
+      name: node.menu,
+      id: node.url,
+      href: withPrefix(node.fakeNode ? Object.values(node.children)[0].url : node.url),
+      children: node.children ? navigationToNavItemsArray(node.children) : [],
     }))
   }
 
-  return navigationToArrays(navAsObject)
+  return navigationToNavItemsArray(navAsObject)
 }
 
-export const getPrevAndNext = (navigation: Node[], current: string) => {
-  const flattenChildren = (node: Node): Node[] => {
+export const getPrevAndNext = (navigation: NavItem[], current: string) => {
+  const flattenChildren = (node: NavItem): NavItem[] => {
     const children = _.flatMap(node.children, flattenChildren)
     delete node.children
 
     return [node, ...children]
   }
 
-  const getTitleAndUrl = (node: Node) => {
-    const { menu, url } = node
-    return { title: menu, url }
+  const getTitleAndUrl = (node: NavItem) => {
+    const { name, href } = node
+    return { title: name, url: href }
   }
 
-  const nodes = _.flatMap(_.cloneDeep(navigation), flattenChildren).filter(node => !!node.title)
-  const currentIndex = _.findIndex(nodes, node => node.url === current)
+  const nodes = _.flatMap(_.cloneDeep(navigation), flattenChildren).filter(node => !!node.name)
+  const currentIndex = _.findIndex(nodes, node => node.href === current)
 
   const prevIndex = currentIndex - 1
   const nextIndex = currentIndex + 1

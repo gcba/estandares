@@ -32,9 +32,12 @@ const Layout = (props: any) => {
       <a href="#content" className="sr-only sr-only-focusable">
         Pasar al contenido principal
       </a>
+      <div className="d-block d-md-none">
+        <Sidebar current={path} navigation={navigation} />
+      </div>
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 d-none d-md-block">
             <Sidebar current={path} navigation={navigation} />
           </div>
           <div className="col-md-8 offset-md-1">

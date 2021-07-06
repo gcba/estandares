@@ -19,62 +19,14 @@ position: 6
 
 Los componentes de listas están diseñados para agregar niveles según sea necesario. Las listas como maximo se componen de hasta 3 niveles. Si se tienen menos páginas se recomienda reorganizar la información buscando otras alternativas.
 
+import { NavExample } from "../../../components/docs/Nav"
+
 <Example>
-<Row>
-<Col items={2}>
-
-<nav className="nav-container">
-<ul className="nav flex-column">
-<li className="nav-item">
-<a className="nav-link nav-link-header" href="#">
-  Nivel 1
-</a>
-<ul className="nav flex-column">
-<li className="nav-item">
-  <a className="nav-link" href="#">
-    Anidado Nivel 2
-  </a>
-</li>
-<li className="nav-item">
-  <a className="nav-link active" href="#">
-    Anidado Nivel 2.1
-  </a>
-  <ul className="nav nav-pills flex-column">
-    <li className="nav-item">
-      <a className="nav-link" href="#">
-        Anidado Nivel 3
-      </a>
-    </li>
-    <li className="nav-item">
-      <a className="nav-link active" href="#">
-        Anidado Nivel 3.1
-      </a>
-    </li>
-  </ul>
-</li>
-<li className="nav-item">
-  <a className="nav-link" href="#">
-    Anidado Nivel 2.2
-  </a>
-</li>
-<li className="nav-item">
-  <a className="nav-link" href="#">
-    Anidado Nivel 2.3
-  </a>
-</li>
-</ul>
-</li>
-
-<li className="nav-item">
-<a className="nav-link nav-link-header" href="#">
-  Nivel 2
-</a>
-</li>
-</ul>
-</nav>
-
-</Col>
-</Row>
+  <Row>
+    <Col items={2}>
+      <NavExample />
+    </Col>
+  </Row>
 </Example>
 
 ## Diseño y estructura

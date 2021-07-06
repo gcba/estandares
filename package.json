@@ -14,7 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@gcba/obelisco": "^1.12.12",
+    "@gcba/obelisco": "^1.12.16",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@popperjs/core": "^2.5.4",
