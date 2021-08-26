@@ -1,11 +1,6 @@
 import * as React from "react"
 import * as color from "color"
-
-interface ColorProps {
-  name: string
-  hex: string
-  description?: string
-}
+import { ColorProps } from "../../types/components/docs/"
 
 export const Color = (props: React.PropsWithChildren<ColorProps>) => {
   const { name, description, hex } = props

@@ -1,15 +1,5 @@
 import * as React from "react"
-
-interface RadioOption {
-  label: string
-  value: string
-}
-
-interface RadioProps {
-  name: string
-  options: RadioOption[]
-  defaultValue?: string
-}
+import { RadioProps, RadioOptionProps } from '../../../types/components/docs/index'
 
 export const RadioInput = (props: React.PropsWithChildren<RadioProps>) => {
   const { name, options, defaultValue } = props
@@ -28,12 +18,6 @@ export const RadioInput = (props: React.PropsWithChildren<RadioProps>) => {
       ))}
     </>
   )
-}
-
-interface RadioOptionProps extends RadioOption {
-  name: string
-  selected: boolean
-  onClick: () => void
 }
 
 const RadioOption: React.FC<RadioOptionProps> = (props: RadioOptionProps) => {

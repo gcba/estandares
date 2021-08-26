@@ -1,28 +1,7 @@
 import { useStaticQuery, graphql, withPrefix } from "gatsby"
 import * as _ from "lodash"
 import { NavItem } from "@gcba/obelisco"
-
-export interface Node {
-  menu: string
-  title: string
-  description: string
-  position: number
-  draft?: boolean
-  url: string
-  fakeNode?: boolean
-  children?: Node[]
-}
-
-interface RawNode {
-  frontmatter: Pick<Node, "menu" | "title" | "description" | "position" | "draft">
-  fields: Pick<Node, "url" | "fakeNode">
-}
-
-export interface Data {
-  allMdx: {
-    nodes: RawNode[]
-  }
-}
+import { Data, RawNode, Node } from '../types/utils/navigation';
 
 export const getNavigation = (): NavItem[] => {
   const data: Data = useStaticQuery(graphql`

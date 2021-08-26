@@ -1,11 +1,5 @@
 import React from "react"
-
-interface TableOfContentsProps {
-  items: {
-    title: string
-    url: string
-  }[]
-}
+import { TableOfContentsProps } from '../../types/components/includes/index'
 
 export const TableOfContents = (props: TableOfContentsProps) => {
   return (

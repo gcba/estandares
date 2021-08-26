@@ -1,10 +1,9 @@
 import React from "react"
 import { withPrefix } from "gatsby"
-import { Nav, NavItem } from "@gcba/obelisco"
-import { SidebarProps } from '../../types/components/includes/Sidebar'
+import { Nav } from "@gcba/obelisco"
+import { SidebarProps } from "../../types/components/includes/"
 
 export const Sidebar = ({ navigation, current }: SidebarProps) => {
-
   return (
     <aside>
       <div>

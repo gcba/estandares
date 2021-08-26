@@ -1,15 +1,5 @@
 import React from "react"
-
-interface NavigatorProps {
-  prev: {
-    title: string
-    url: string
-  }
-  next: {
-    title: string
-    url: string
-  }
-}
+import { NavigatorProps } from "../../types/components/includes/"
 
 export const Navigator = (props: NavigatorProps) => {
   const { prev, next } = props
