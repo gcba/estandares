@@ -43,5 +43,5 @@ export const NavExample: React.FC = () => {
     },
   ]
 
-  return <Nav items={items} selected={selected} onClick={id => setSelected(id)} />;
+  return <Nav items={items} selected={selected} onClick={id => setSelected(id)} />
 }

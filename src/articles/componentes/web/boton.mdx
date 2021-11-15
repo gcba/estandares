@@ -6,7 +6,7 @@ position: 3
 ---
 
 import { Button } from "@gcba/obelisco"
-import { ButtonExample } from "../../../components/docs/ButtonExample"
+import { ButtonExample, ButtonSizeExample } from "../../../components/docs/ButtonExample"
 import "./boton.scss"
 
 ## Anatomía
@@ -33,7 +33,7 @@ Los botones secundarios se usan para llamadas a la acción secundarias en una p�
 
 Los botones de éxito son utilizados para avisarle al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
 
-<ButtonExample variant="success" />
+<ButtonExample variant="success" showDisabled={true} />
 
 ### Botón de peligro
 
@@ -47,25 +47,33 @@ Están diseñados para utilizar en acciones secundarias o acciones que no tengan
 
 <ButtonExample variant="link" />
 
+## Tamaños de botón
+
+Los botones tienen diferentes tamaños de implementación de acuerdo al orden de importancia de las acciones dentro de una página. Las acciones principales se visualizarán en un orden de jerarquía de mayor a menor tamaño con respecto a su grado de importancia. Sugerimos que haya la menor cantidad de acciones en una pantalla para que los usuarios puedan percibir las acciones mas importantes.
+
+### Botón grande
+
+<ButtonSizeExample size="large" />
+
+### Botón mediano
+
+<ButtonSizeExample size="default" />
+
 ### Botón pequeño
 
-Su única diferencia es el lugar de implementación. Se utilizan principalmente dentro de otros componentes, actualmente el principal uso de estos botones es dentro de los modales.
+<ButtonSizeExample size="small" />
 
-<div className="buttons-showcase">
-  <Button type="primary" size="small">
-    Primario
+### Botón ancho
+
+<div className="btn-block-container">
+  <Button type="primary" size="large" className="btn-block">
+    Botón primario
   </Button>
-  <Button type="secondary" size="small">
-    Secundario
+  <Button type="secondary" size="large" className="btn-block">
+    Botón secundario
   </Button>
-  <Button type="success" size="small">
-    Éxito
-  </Button>
-  <Button type="danger" size="small">
-    Peligro
-  </Button>
-  <Button type="link" size="small">
-    Fantasma
+  <Button type="link" size="large" className="btn-block">
+    Botón fantasma
   </Button>
 </div>
 
@@ -101,7 +109,8 @@ En los **bloques de texto** los botones primarios siempre aparecen a la izquierd
 
 ## Tipografía
 
-| Tamaño  | Tipografía | Tamaño                      | Variable       | Color   |
-| ------- | ---------- | --------------------------- | -------------- | ------- |
-| Grande  | Open sans  | 18px / 1.125rem Por defecto | Semibold / 600 | #38485C |
-| Pequeño | Open sans  | 16px / 1rem Pequeño         | Semibold / 600 | #38485C |
+| Tamaño         | Tipografía | Tamaño           | Variable       | Color   |
+| -------------- | ---------- | ---------------- | -------------- | ------- |
+| Grande         | Open sans  | 18px / 1.125rem  | Semibold / 600 | #38485C |
+| Predeterminado | Open sans  | 16px / 1rem      | Semibold / 600 | #38485C |
+| Pequeño        | Open sans  | 13px / 0.8125rem | Semibold / 600 | #38485C |
