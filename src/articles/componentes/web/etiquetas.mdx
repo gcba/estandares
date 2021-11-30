@@ -1,0 +1,48 @@
+---
+menu: Etiquetas
+title: Etiquetas
+description: Las etiquetas ayudan a navegar en la información para que las personas encuentren contenido relevante sobre lo que necesitan saber.
+position: 7
+---
+
+import { Badge } from "@gcba/obelisco"
+
+## Opciones de etiquetas
+
+Las etiquetas interactivas se muestran de manera distinta según su estado en relación al mouse, ya que son interactivas teniendo enlazados una página con contenidos.
+
+<Badge text="Etiqueta 1" href="#" />
+<Badge text="Etiqueta 2" href="#" className="active" />
+<Badge text="Etiqueta 3" href="#" className="focus active" />
+<Badge text="Etiqueta 4" href="#" className="focus" />
+
+## Diseño y estructura
+
+### Orden y alineación
+
+Con el objetivo de que se mantenga un orden de lectura natural, las etiquetas **siempre deben estar alineadas a la izquierda**, para que no se rompa ese patrón de lectura haciendo que la persona leyendo no vea la etiqueta.
+
+![completar](/componentes/etiqueta/alineacion.svg)
+
+Las etiquetas solo pueden aparecer **al principio de un artículo** (usando una sola, la principal) **o al final de una** (como parte de una sección de “Etiquetas relacionadas”, justo antes del término del texto de la noticia y antes de “Últimas noticias”).
+
+![completar](/componentes/etiqueta/orden.svg)
+
+
+## Usabilidad
+
+**Las etiquetas ayudan a categorizar la información**. Funcionan como filtros (aunque no en buscadores) para, por ejemplo, leer más información que trata una noticia, accediendo a más noticias sobre el tema.
+
+**Las personas pueden llegar a confundir etiquetas con botones**. Para asegurarnos que esto no es un problema, siempre conviene llevar a cabo pruebas de usabilidad para entender si la ubicación del componente, por ejemplo, puede llegar a generar esa confusión.
+
+**En caso de que la etiqueta sea estática, que no varíen sus estados**. Si la etiqueta no es interactiva, es decir, que no tenga enlazado algo y solo sea a modo de información en la pantalla, es necesario deshabilitar el hover, on-click y focus.
+
+**No combinar etiquetas estáticas con interactivas**. Evitar que una etiqueta que al hacer clic lleve a algún lugar, se ubique al lado de una que no tenga ese atributo: optar por una de las dos, según sea más pertinente.
+
+**Usar las etiquetas con moderación**. Al combinar las etiquetas con otros elementos visuales, pueden hacer que haya mucho ruido visual en la pantalla, por lo que es preferible solo usarlas si es que realmente le es útil a la persona ciudadana.
+
+## Tipografía
+
+| Tipografía | Tamaño           | Variable       | Color   |
+| ---------- | ---------------- | -------------- | ------- |
+| Open sans  | 16px / 1rem      | Semibold / 600 | #007bc7 |
