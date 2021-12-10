@@ -1,0 +1,141 @@
+---
+menu: Acceso
+title: Acceso
+description: Permite agrupar acciones principales con el objetivo de unificar la navegación.
+position: 1
+---
+
+## Anatomía
+
+![completar](/componentes/acceso/anatomía.svg)
+
+1. El título indica la sección a la que se va a dirigir en caso de hacer clic.
+2. El ícono indica y acompaña la acción que se puede hacer en el tipo de campo.
+
+## Opciones de accesos
+
+### Acceso grande
+
+Se utilizan para acceder a secciones de un sitio de mayor relevancia. Su uso principalmente es dentro de los accesos en bloque, en donde se le da más contexto al lugar donde se accede.
+
+<Row>
+  <Col items={2}>
+    <a href="#" className="list-group-item">
+      Default
+    </a>
+  </Col>
+  <Col items={2}>
+    <a href="#" className="list-group-item hover">
+      Hover
+    </a>
+  </Col>
+</Row>
+<Row>
+  <Col items={2}>
+    <a href="#" className="list-group-item hover focus">
+      On click
+    </a>
+  </Col>
+  <Col items={2}>
+    <a href="#" className="list-group-item focus">
+      Focus
+    </a>
+  </Col>
+</Row>
+
+### Acceso pequeño
+
+Los accesos de menor tamaño se usan para dos instancias principalmente: para su variante de cerrar sesión y para el patrón de selección de accesos.
+
+<Row>
+  <Col items={2}>
+    <div className="list-group list-group-sm">
+      <a href="#" className="list-group-item">
+        Datos de mi cuenta
+      </a>
+    </div>
+  </Col>
+  <Col items={2}>
+    <div className="list-group list-group-sm">
+      <a href="#" className="list-group-item hover">
+        Datos de mi cuenta
+      </a>
+    </div>
+  </Col>
+</Row>
+
+### Patrón de selección de accesos
+
+En caso de que exista una serie de accesos pequeños que deberían estar agrupadas que no van a depender de otro componente (como sucede en el desplegable), se usa este patrón.
+
+<Example>
+  <Row>
+  <div className="col-12 col-sm-10 col-lg-8 col-xl-7">
+  <div className="list-group list-group-sm bg-white p-3">
+  <h4 className="list-group-title">Seleccioná un trámite</h4>
+  <p className="list-group-category">Categoría 1</p>
+  <a href="#" className="list-group-item">
+    Opción 1
+  </a>
+  <a href="#" className="list-group-item">
+    Opción 2
+  </a>
+  <a href="#" className="list-group-item">
+    Opción 3
+  </a>
+
+  <p className="list-group-category">Categoría 2</p>
+  <a href="#" className="list-group-item">
+    Opción 1
+  </a>
+  <a href="#" className="list-group-item">
+    Opción 2
+  </a>
+  <a href="#" className="list-group-item">
+    Opción 3
+  </a>
+  </div>
+  </div>
+  </Row>
+</Example>
+
+### Variante de cerrar sesión
+
+Solo usar esta variante en espacios donde se dé a lugar la opción de cerrar sesión.
+
+<Row>
+  <Col items={2}>
+    <div className="list-group list-group-sm">
+      <a href="#" className="list-group-item list-group-item-logout">
+        Cerrar sesión
+      </a>
+    </div>
+  </Col>
+  <Col items={2}>
+    <div className="list-group list-group-sm">
+      <a href="#" className="list-group-item list-group-item-logout hover">
+        Cerrar sesión
+      </a>
+    </div>
+  </Col>
+</Row>
+
+## Diseño y estructura
+
+### Composición
+
+![completar](/componentes/acceso/composición.svg)
+
+## Usabilidad
+
+**Incluir pocos elementos en el patrón de selección de accesos**. Con el objetivo de que sea más fácil de escanear con la vista, intentar limitarse a 7 opciones como máximo.
+
+**No incluir dentro de un mismo patrón de selección de accesos a información y funcionalidades**. Si bien los accesos pueden ser usados para entrar a un lugar con información (como ver los requisitos de un trámite), como también para realizar una acción (como cerrar sesión), estos dos tipos de accesos no se deben agrupar en un solo patrón (en todo caso, generar otro).
+
+**Limitarse a una línea de texto**. Tanto para el título del desplegable como el de los elementos dentro, que el texto no exceda un renglón, ni tampoco usar puntos suspensivos para truncarlo.
+
+## Tipografía
+
+| Tipografía | Tamaño           | Variable       | Color   |
+| ---------- | ---------------- | -------------- | ------- |
+| Open Sans  | 16px / 1rem      | Regular / 500  | #007BC7 |
