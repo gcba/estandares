@@ -5,6 +5,8 @@ description: Los enlaces facilitan la navegación entre páginas de una web, com
 position: 6
 ---
 
+import { Link } from "@gcba/obelisco"
+
 ## Opciones de enlaces
 
 Los enlaces se muestran de manera distinta según su estado en relación al mouse (hover, on click y focus) y a interacciones previas (visitado), como también según las características de lo vinculado (externo: si queda por fuera de la web de Buenos Aires).
@@ -14,42 +16,35 @@ Los enlaces se muestran de manera distinta según su estado en relación al mous
   <a href="#" className="external">
     Externo
   </a>
+ <a className="active"> On click y focus</a>
 </p>
 
 ### Enlaces en párrafos
 
 Pueden variar según el hipervínculo del enlace al que vaya.
 
-<Example>
-  <h4>Título de párrafo con enlace</h4>
-  <p>
-    Se aportó este año más de 21 millones de pesos para poder seguir acompañando al sector del tango en su reactivación
-    y reapertura. A la fecha ya se encuentran habilitados los <a href="#">protocolos de prácticas</a>, clases y milongas
-    al aire libre.
-  </p>
-</Example>
 
-<br />
+Título de párrafo con enlace - H4
 
-<Example>
-  <h4>Título de párrafo con enlace a web externa</h4>
-  <p>
-    En 2021, la Ciudad destina más de $190 millones de pesos para seguir acompañando la reactivación de la cultura
-    independiente entre sus seis programas de financiamiento de la plataforma de Impulso Cultural. Lo que significa un
-    aumento respecto de 2020 de un 40%.
-  </p>
-  <p>
-    <a href="#" className="external">
-      Impulso digital
-    </a>
-  </p>
-</Example>
+Se aportó este año más de 21 millones de pesos para poder seguir acompañando al sector del tango en su reactivación
+y reapertura. A la fecha ya se encuentran habilitados los <a href="#">protocolos</a> de prácticas, clases y milongas
+al aire libre.
 
-## Anclas
+Título de párrafo con enlace a web externa - H4
+
+En 2021, la Ciudad destina más de $190 millones de pesos para seguir acompañando la reactivación de la cultura
+independiente entre sus seis programas de financiamiento de la plataforma de Impulso Cultural. Lo que significa un
+aumento respecto de 2020 de un 40%.
+
+<a href="#" className="external">
+  Impulso digital
+</a>
+
+
+### Anclas
 
 Se usan para elementos anclados en una parte de la página que funcionan a modo de índice.
 
-<Example>
   <h4>Contenido en esta página</h4>
   <ul class="list-unstyled">
     <li>
@@ -65,7 +60,6 @@ Se usan para elementos anclados en una parte de la página que funcionan a modo 
       <a href="#ancla-4">4º ancla-enlace</a>
     </li>
   </ul>
-</Example>
 
 ## Usabilidad
 

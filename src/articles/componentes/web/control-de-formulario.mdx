@@ -24,7 +24,7 @@ Los campos de texto simples pueden llevar un placeholder para mostrar un ejemplo
   <Col items={2}>
     <div className="form-wrapper">
       <div className="form-group">
-        <label htmlFor="name-input">D.N.I.</label>
+        <label htmlFor="name-input">DNI *</label>
         <input type="text" className="form-control" id="name-input" name="name" placeholder="Ejemplo: 35487884" />
         <small className="form-text text-muted">Completar sin puntos ni guiones.</small>
       </div>
@@ -168,6 +168,22 @@ Permite seleccionar varios elementos de una lista de elementos individuales o ma
     Opción 5
   </label>
 </div>
+
+### Subida de archivo
+
+Permite subir archivos como imágenes o documentos en caso de ser requerido en un formulario, como variante de uso específico al botón predeterminado.
+
+<Row>
+  <Col items={2}>
+    <div class="form-wrapper">
+      <div class="form-group">
+        <label for="file-input">Adjuntar un archivo de ejemplo</label>
+        <input type="file" class="form-control-file" id="file-input" />
+      </div>
+    </div>
+  </Col>
+</Row>
+
 
 ## Diseño y estructura
 
