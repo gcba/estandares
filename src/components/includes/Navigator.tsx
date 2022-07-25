@@ -14,20 +14,22 @@ interface NavigatorProps {
 export const Navigator = (props: NavigatorProps) => {
   const { prev, next } = props
   return (
-    <div className="page-navigation">
-      <div className="row">
-        <div className="col-6">
+    <div className="pagination">
+      <div className="page-navigation">
+        <div className="page-item">
           {prev && (
-            <a href={prev.url} className="page-navigation-prev">
-              <i className="bx bxs-chevron-left"></i> {prev.title}
-            </a>
+          <a href={prev.url} className="btn page-link">
+            <span className="page-previous-icon" aria-hidden="true"></span>
+            <span className="page-next-text">{prev.title}</span>
+          </a>
           )}
         </div>
-        <div className="col-6 text-right">
+        <div className="page-item">
           {next && (
-            <a href={next.url} className="page-navigation-next">
-              {next.title} <i className="bx bxs-chevron-right"></i>
-            </a>
+          <a className="btn page-link" href={next.url}>
+            <span className="page-next-text">{next.title}</span>
+            <span className="page-next-icon" aria-hidden="true"></span>
+          </a>
           )}
         </div>
       </div>
