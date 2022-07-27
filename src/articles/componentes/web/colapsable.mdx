@@ -1,129 +1,124 @@
 ---
 menu: Colapsable
 title: Colapsable
-description: Permiten a los usuarios mostrar y ocultar secciones de contenido relacionado en una página.
+description: Los colapsables permiten a los usuarios mostrar y ocultar secciones de contenido relacionado en una página.
 position: 4
 ---
 
-## Anatomía
+## Tipos de colapsables
 
-![completar](/componentes/colapsable/anatomia.svg)
+### Colapsable simple
 
-1. El área de título se utiliza para introducir la información que se encuentra al accionar el colapsable.
-2. El ícono cambia según si el colapsable esta abierto o cerrado.
-3. El área descriptiva es el contenido que se encuentra oculto dentro del colapsable. Una vez que el usuario acciona sobre el área de título, se abrirá el componente mostrando el área descriptiva.
+Se utilizan para brindarle a los usuarios información sobre un tema en particular. Generalmente los podemos encontrar en la sección de preguntas frecuentes de una página.
 
-## Opciones de colapsables
-
-### Selección única
-
-Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
-
-<!-- codigo -->
-
-<div id="accordion">
-  <div className="accordion-wrapper">
-    <div className="accordion" id="accordionExample">
-      <div className="card">
-        <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
-          Colapsable
-        </button>
-        <div id="collapseOne" className="collapse" data-parent="#accordion">
-          <div className="card-body">
-            Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-            títulos, se abrirá el componente mostrando el área descriptiva.
-          </div>
-        </div>
-      </div>
-      <div className="card">
-        <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
-          Colapsable
-        </button>
-        <div id="collapseTwo" className="collapse" data-parent="#accordion">
-          <div className="card-body">
-            Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-            títulos, se abrirá el componente mostrando el área descriptiva.
-          </div>
-        </div>
-      </div>
-      <div className="card">
-        <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
-          Colapsable
-        </button>
-        <div id="collapseThree" className="collapse" data-parent="#accordion">
-          <div className="card-body">
-            Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-            títulos, se abrirá el componente mostrando el área descriptiva.
-          </div>
+<div class="content-2">
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <button
+        class="card-header collapsed card-link accordion-card-icon"
+        data-toggle="collapse"
+        data-target="#collapseEight"
+      >
+        Colapsable
+      </button>
+      <div id="collapseEight" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Este es el área descriptiva de un colapsable de selección única. Una
+          vez que se accione sobre el área de títulos, se abrirá el componente
+          mostrando el área descriptiva.
         </div>
       </div>
     </div>
   </div>
 </div>
 
-### Selección múltiple
+### Colapsable - Tarjetas
 
-Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo.
+Se usa exclusivamente para transacciones. Dentro del área de contenido el usuario podrá encontrar diferentes opciones para elegir una de ellas y realizar determinada acción.
 
-<!-- codigo -->
+### Colapsable - Totalizador
 
-<div className="accordion-wrapper">
-  <div className="accordion" id="accordionExample">
-    <div className="card">
-      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFour">
-        Colapsable
+Se usa exclusivamente para transacciones. Sirve para poder dar el detalle especificando cada parte del pago que realiza la persona ciudadana, dando transparencia y claridad.
+
+<div class="content-2">
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <button
+        class="card-header collapsed card-link card-info"
+        data-toggle="collapse"
+        data-target="#collapseFive"
+      >
+        <span class="collpase-title">Total:</span>
+        <br />
+        <span class="collpase-subtitle">$ 900</span>
       </button>
-      <div id="collapseFour" className="collapse" data-parent="#accordion">
-        <div className="card-body">
-          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-          títulos, se abrirá el componente mostrando el área descriptiva.
-        </div>
-      </div>
-    </div>
-    <div className="card">
-      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFive">
-        Colapsable
-      </button>
-      <div id="collapseFive" className="collapse" data-parent="#accordion">
-        <div className="card-body">
-          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-          títulos, se abrirá el componente mostrando el área descriptiva.
-        </div>
-      </div>
-    </div>
-    <div className="card">
-      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSix">
-        Colapsable
-      </button>
-      <div id="collapseSix" className="collapse" data-parent="#accordion">
-        <div className="card-body">
-          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-          títulos, se abrirá el componente mostrando el área descriptiva.
+      <div id="collapseFive" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <small>BOLETA N° 2564-59879543</small>
+          <h4 class="mb-0">Solicitud de informes varios</h4>
+          <small>$ 900</small>
+          <hr />
+          <small>BOLETA N° 2564-59879543</small>
+          <h4 class="mb-0">Solicitud de informes varios</h4>
+          <small>$ 900</small>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-### Tarjetas sin contenedor
+## Diseño y estructura (contexto de uso)
 
-Las tarjetas sin contenedor se diferencian del resto por tener más espacio para su “area de títulos” y “área descriptiva”. Además esta tarjeta no es accionable, sino que al final tendrá un enlace que marcará la acción que se realizará.
+### Colapsable - Simple
 
-## Diseño y estructura
+Colapsable de selección única. Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
 
-### Composición
+![completar](/componentes/colapsable/collapse_simple.png)
 
-![completar](/componentes/colapsable/composicion.svg)
+### Colapsable - Multiple
+
+Colapsable de selección múltiple. Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo sin límites de apertura.
+
+![completar](/componentes/colapsable/collapse_multiple.png)
+
+### Colapsable - Tarjetas
+
+Colapsable de selección única. Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
+
+![completar](/componentes/colapsable/collapse_card.png)
+
+### Colapsable - Totalizador
+
+Solamente se pueden visualizar este tipo de colapsables de a uno por vez o por pantalla, no se pueden agrupar varios de estos tipos. Se ubican a un costado de la pantalla.
+
+![completar](/componentes/colapsable/collapse_totalizador.png)
 
 ## Usabilidad
 
-**Todo el área de títulos debe ser seleccionable**. Los usuarios podrán hacer clic en cualquier parte del área para expandir o contraer el contenido.
+### Buenas prácticas
 
-**Los colapsables deben respetar la guía de espaciados**. Hay que asegurarse que cada colapsable este suficientemente lejos del siguiente para que los usuarios no se activen accidentalmente. La distancia exacta va a depender del dispositivo.
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p class="pl-2">
+    <strong>Utiliza otros recursos o componentes antes de usar los colapsables, </strong> 
+    te sugerimos simplificar y reducir la cantidad de contenido o dividir el contenido en varias páginas o mantener el contenido en una sola página separado por encabezados.
+  </p>
+</div>
 
-## Tipografía
+### Malas prácticas
 
-| Tipografía | Tamaño                           | Variable      | Color   |
-| ---------- | -------------------------------- | ------------- | ------- |
-| Open Sans  | 18px / 1,125 rem Área de títulos | Regular / 500 | #38485C |
-| Open Sans  | 16px / 1 rem Área Descriptiva    | Regular / 500 | #38485C |
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
+  <p class="pl-2">
+    <strong>No utilice un acordeón para el contenido </strong> 
+    que todos los usuarios necesitan ver, no lo oculte dentro de un colapsable.
+  </p>
+</div>
+
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
+  <p class="pl-2">
+    <strong>Cuando el contenido es poco o insuficiente </strong> 
+    utilice otra herramienta o componente para mostrar esa información, como un encabezado y texto simple. Los colapsables aumentan la carga cognitiva de los usuarios a la hora de decidir.
+  </p>
+</div>

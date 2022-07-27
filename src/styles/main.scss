@@ -88,6 +88,7 @@ main {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.313rem;
   }
 
   article {
@@ -288,3 +289,14 @@ main {
   }
 }
 
+.content-1 {
+  width: 526px;
+  margin: 8rem auto;
+  pointer-events: none;
+}
+
+.content-2 {
+  width: 340px;
+  margin: 8rem auto;
+  pointer-events: none;
+}

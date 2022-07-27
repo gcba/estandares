@@ -1,7 +1,7 @@
 ---
 menu: Botón
 title: Botón
-description: Los botones se usan para establecer una interacción con el usuario. El texto que incluyamos en ellos es fundamental para indicarle la acción específica que queremos que realice en nuestro sitio o aplicación.
+description: Los botones permiten a los usuarios realizar acciones o navegar a otra página, son el medio a través del cual interactúan.
 position: 3
 ---
 
@@ -9,108 +9,164 @@ import { Button } from "@gcba/obelisco"
 import { ButtonExample, ButtonSizeExample } from "../../../components/docs/ButtonExample"
 import "./boton.scss"
 
-## Anatomía
-
-![completar](/componentes/botón/anatomia-1.svg)
-
-1.El área de texto indica la acción que puede realizar el usuario activando el botón.
-
-## Opciones de botón
+## Tipos de botones
 
 ### Botón primario
 
-Los botones primarios se usan generalmente para acciones principales. Normalmente los usamos para acciones denotadas como “positivas”.
+Los botones primarios se usan generalmente para acciones principales y las denotadas como “positivas”.
 
-<ButtonExample variant="primary" showDisabled={true} />
+<div className="btn-flex-container">
+  <Button type="primary" size="large">
+    Botón
+  </Button>
+  <Button type="primary" size="medium">
+    Botón
+  </Button>
+  <Button type="primary" size="small">
+    Botón
+  </Button>
+</div>
 
-### Botón secundario
+### Botón primario
 
 Los botones secundarios se usan para llamadas a la acción secundarias en una página. Se pueden usar, también, en combinación con botones primarios.
 
-<ButtonExample variant="secondary" showDisabled={true} />
+<div className="btn-flex-container">
+  <Button type="secondary" size="large">
+    Botón
+  </Button>
+  <Button type="secondary" size="medium">
+    Botón
+  </Button>
+  <Button type="secondary" size="small">
+    Botón
+  </Button>
+</div>
 
 ### Botón de éxito
 
-Los botones de éxito son utilizados para avisarle al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
+Los botones de éxito son utilizados para avisar al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
 
-<ButtonExample variant="success" showDisabled={true} />
+<div className="btn-flex-container">
+  <Button type="success" size="large">
+    Botón
+  </Button>
+  <Button type="success" size="medium">
+    Botón
+  </Button>
+  <Button type="success" size="small">
+    Botón
+  </Button>
+</div>
 
 ### Botón de peligro
 
 Están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son utilizados en acciones permanentes e irreversibles que no pueden deshacerse.
 
-<ButtonExample variant="danger" />
+<div className="btn-flex-container">
+  <Button type="danger" size="large">
+    Botón
+  </Button>
+  <Button type="danger" size="medium">
+    Botón
+  </Button>
+  <Button type="danger" size="small">
+    Botón
+  </Button>
+</div>
 
 ### Botón fantasma
 
 Están diseñados para utilizar en acciones secundarias o acciones que no tengan tanta relevancia, pero aún son necesarias, dentro de la interfaz. Su principal diferencial del botón secundario es el poco peso visual que tienen.
 
-<ButtonExample variant="link" />
-
-## Tamaños de botón
-
-Los botones tienen diferentes tamaños de implementación de acuerdo al orden de importancia de las acciones dentro de una página. Las acciones principales se visualizarán en un orden de jerarquía de mayor a menor tamaño con respecto a su grado de importancia. Sugerimos que haya la menor cantidad de acciones en una pantalla para que los usuarios puedan percibir las acciones mas importantes.
-
-### Botón grande
-
-<ButtonSizeExample size="large" />
-
-### Botón mediano
-
-<ButtonSizeExample size="default" />
-
-### Botón pequeño
-
-<ButtonSizeExample size="small" />
-
-### Botón ancho
-
-<div className="btn-block-container">
-  <Button type="primary" size="large" className="btn-block">
-    Botón primario
+<div className="btn-flex-container">
+  <Button type="link" size="large">
+    Botón
   </Button>
-  <Button type="secondary" size="large" className="btn-block">
-    Botón secundario
+  <Button type="link" size="medium">
+    Botón
   </Button>
-  <Button type="link" size="large" className="btn-block">
-    Botón fantasma
+  <Button type="link" size="small">
+    Botón
   </Button>
 </div>
 
-## Diseño y estructura
+## Botones en caja
+
+Están diseñados para ser utilizados dentro de alguna caja, contenedor, o espacio para iniciar alguna acción, como en inicio de un trámite
+
+<div className="btn-block-container border-box p-3">
+  <Button type="primary" size="large" className="btn-block">
+    Botón
+  </Button>
+</div>
+
+## Botones a 4 columnas
+
+Estan diseñados para ser usados a un tamaño de 4 columnas fijo. Para mobile su uso es frecuente.
+
+<div className="btn-block-container">
+  <Button type="primary" size="large" className="btn-block">
+    Botón
+  </Button>
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+Los botones tienen diferentes tamaños de implementación de acuerdo al orden de importancia de las acciones dentro de una página. Las principales, se visualizarán en un orden de jerarquía de mayor que al resto.
 
 ### Orden y alineación
 
 En los **modales** los botones primarios siempre aparecen a la derecha. Si hay botones secundarios aparecen a la izquierda del botón primario. Cuando la acción principal implica un paso de navegación hacia adelante, cómo en un **formulario** justifique los botones a la derecha. Esta posición transmite la intención del “siguiente paso”.
 
-![completar](/componentes/botón/alineacion-1.svg)
+![completar](/componentes/botón/composición-1.svg)
 
-![completar](/componentes/botón/alineacion-2.svg)
+![completar](/componentes/botón/composición-2.svg)
 
 En los **bloques de texto** los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario. Las acciones principales de los botones se deben justificar en un texto los botones a la izquierda respetando el orden de lectura.
 
-![completar](/componentes/botón/alineacion-3.svg)
-
-### Composición
-
-![completar](/componentes/botón/composicion-1.svg)
+![completar](/componentes/botón/composición-3.svg)
 
 ## Usabilidad
 
-**Usar botones primarios para acciones que van al siguiente paso.**
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p class="pl-2">
+    <strong>Utilice jerarquías. </strong> 
+    Debe quedar claro cuál es el botón de mayor importancia. Este puede ir acompañado de botones de énfasis medio y bajo que realizan acciones menos importantes.
+  </p>
+</div>
 
-**Asegurarse de la función de clic en los botones.** Usar las variaciones de color hace distinguir los estados estático, flotante y activo.
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p class="pl-2">
+    <strong>Enuncie acciones claras. </strong> 
+    Use verbos o frases de acción para indicarle al usuario lo que sucederá cuando se seleccione el botón. El texto debe ser corto y explicativo.
+  </p>
+</div>
 
-**No usar demasiados botones en una página.**
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p class="pl-2">
+    <strong>Utilice la menor cantidad de acciones en una pantalla </strong> 
+    para poder enmarcar las acciones de los usuarios.
+  </p>
+</div>
 
-**Mantener el texto del botón corto.** El texto del botón debe ser lo más corto posible con palabras de acción que expliquen claramente lo que sucederá cuando se seleccione el botón (por ejemplo Descargar, Ver, o Ingresar).
+## Malas prácticas
 
-**Empezar con un verbo.** Utilizar la primera palabra del texto del botón como un verbo.
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
+  <p class="pl-2">
+    <strong>Usar demasiados botones en una página. </strong> 
+    Evite el uso excesivo porque puede confundir al usuario.
+  </p>
+</div>
 
-## Tipografía
-
-| Tamaño         | Tipografía | Tamaño           | Variable       | Color   |
-| -------------- | ---------- | ---------------- | -------------- | ------- |
-| Grande         | Open sans  | 18px / 1.125rem  | Semibold / 600 | #38485C |
-| Predeterminado | Open sans  | 16px / 1rem      | Semibold / 600 | #38485C |
-| Pequeño        | Open sans  | 13px / 0.8125rem | Semibold / 600 | #38485C |
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
+  <p class="pl-2">
+    <strong>Utilizar un botón para navegar a otro lugar. </strong> 
+    Use un enlace en su lugar.
+  </p>
+</div>
