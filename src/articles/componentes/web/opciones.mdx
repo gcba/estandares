@@ -1,0 +1,131 @@
+---
+menu: Opciones
+title: Opciones
+description: Las opciones aparecen al interactuar con un elemento como un botón o un icono o un selector de formulario. Es una forma simple y compacta de mostrar múltiples opciones.
+position: 15
+---
+
+import "./opciones.scss"
+
+## Tipos de opciones
+
+Cuando el sistema ya posee los datos que se precisan seleccionar y la persona solo debe optar por uno o varios de ellos. Se muestran al accionar un Desplegable.
+
+<div className="opciones-box">
+<form className="d-flex flex-row justify-content-center options-container mt-5">
+  <fieldset className="dropdown show">
+    <button
+      type="button"
+      className="btn btn-dropdown btn-dropdown-lg dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="true"
+    >
+      Desplegable
+    </button>
+    <div className="dropdown-menu show">
+      <input type="radio" id="options-example1" name="example1" className="sr-only" />
+      <label for="options-example1" className="dropdown-item">
+        Opción 1
+      </label>
+      <input type="radio" id="options-example2" name="example1" className="sr-only" />
+      <label for="options-example2" className="dropdown-item">
+        Opción 2
+      </label>
+      <input type="radio" id="options-example3" name="example1" className="sr-only" />
+      <label for="options-example3" className="dropdown-item">
+        Opción 3
+      </label>
+      <input type="radio" id="options-example3" name="example1" className="sr-only" />
+      <label for="options-example3" className="dropdown-item">
+        Opción 4
+      </label>
+    </div>
+  </fieldset>
+</form>
+</div>
+
+
+## Diseño y estructura (Contexto de uso)
+
+Opciones alineadas a la izquierda, se muestran al accionar un Desplegable.
+
+![completar](/componentes/opciones/izquierda.png)
+
+<br></br>
+
+Opciones alineadas al centro, se muestran al accionar un Desplegable.
+
+![completar](/componentes/opciones/centro.png)
+
+<br></br>
+
+Opciones alineadas al centro, se muestran al accionar un Desplegable.
+
+![completar](/componentes/opciones/derecha.png)
+
+<br></br>
+
+## Usabilidad
+
+### Buenas prácticas
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p className="pl-2">
+    <strong>Limita a una cantidad de entre 5 y 15 opciones</strong> para elegir dentro de un menú.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p className="pl-2">
+    <strong> En formularios al utilizar menos de 5 opciones,</strong> use el componente de radio button y no un menú
+    desplegable con opciones, específicamente en los formularios.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p className="pl-2">
+    <strong>Al utilizar más de 5 opciones,</strong> los menús se pueden desplazar. En este estado, muestra una barra de
+    desplazamiento en su lado derecho para realizar el scroll correspondiente.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p className="pl-2">
+    <strong>Botones de radio y casillas de verificación</strong> pueden incluirse dentro de las opciones.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p className="pl-2">
+    <strong>Prioriza las opciones en un orden lógico</strong> coloca la opción más seleccionada en primer lugar.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
+  <p className="pl-2"><strong>Mantene las opciones del menú breves y concisas.</strong> Se desaconsejan las opciones de menú largas que hacen que el texto se ajuste a varias líneas.</p>
+</div>
+
+### Malas prácticas
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
+  <p className="pl-2">
+    <strong>No usar textos largos</strong> en donde el usuario se canse o confunda.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
+  <p className="pl-2">
+    <strong>No usar más de 20 opciones dentro de un menú,</strong> revisa la información, prioriza o dividi el menú en
+    otro con una nueva categoría.
+  </p>
+</div>
+
