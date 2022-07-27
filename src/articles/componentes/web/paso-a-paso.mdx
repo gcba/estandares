@@ -1,65 +1,99 @@
 ---
 menu: Paso a paso
 title: Paso a paso
-description: Son representaciones visuales de una cantidad o un logro. Su progreso está determinado por las acciones del usuario, más que por las acciones del sistema.
+description: Es un indicador de progreso que muestra visualmente los pasos y el progreso de las acciones del usuario. Los ayuda a comprender la progresión de los formularios largos y reduce la incertidumbre a medida que completan cada pantalla.
 position: 12
 ---
 
-## Anatomía
+## Tipos de pasos de un formulario
 
-![completar](/componentes/paso-a-paso/anatomía.svg)
+### Pasos de un formulario
 
-1. El área de título es la presentación del estado actual.
-2. El área descriptiva siguiente, indica el título del paso siguiente.
-3. El área representativa conformada por circulos, según la cantidad de pasos, permite mostrar de forma gráfica en que paso se encuentra y cuantos faltan.
-4. Los pasos faltantes, es la manera textual de mostrar la cantidad de pasos faltantes y en el que se encuentra.
+Los pasos de un formulario son guías visuales que muestran cuántos pasos llevará un proceso y cuánto falta para completar una tarea.
 
-## Opciones de paso a paso
-
-### determinados
-
-Los paso a paso son indicadores determinados que muestran cuántos pasos llevará un proceso. Deben utilizarse cuando se pueda detectar la tasa de finalización del proceso.
-
-<!-- codigo -->
-
-<Example>
-  <div className="mx-4">
-    <div className="stepper">
-      <p className="step-title">Paso número 3</p>
-      <p className="step-next">Paso siguiente: Paso número 4</p>
-      <div className="steps">
-        <div className="step active"></div>
-        <div className="step active"></div>
-        <div className="step active"></div>
-        <div className="step"></div>
-        <div className="step"></div>
-        <div className="step"></div>
+<div className="mt-5 pt-3 pb-3">
+  <Example>
+    <div className="mx-4">
+      <div className="stepper">
+        <p className="step-title">Paso actual</p>
+        <p className="step-next">Paso siguiente: Nombre del paso siguiente</p>
+        <div className="steps">
+          <div className="step active"></div>
+          <div className="step"></div>
+          <div className="step"></div>
+        </div>
+        <span className="step-text">Paso 1 de 3</span>
       </div>
-      <span className="step-text">Paso 3 de 6</span>
     </div>
-  </div>
-</Example>
+  </Example>
+</div>
 
-### Diseño y estructura
+## Diseño y estructura (contexto de uso)
 
-#### Composición
-
-![completar](/componentes/paso-a-paso/diseño.svg)
-
-#### Con bloque de formulario
+Este componente se ubica en la parte superior de la página, a continuación del header.
 
 ![completar](/componentes/paso-a-paso/formulario.svg)
 
+<br></br>
+
 ## Usabilidad
 
-**Progreso**: El paso a paso avanza automáticamente a medida que el sistema se carga de forma determinada por el usuario. Las acciones de un usuario afectan el paso a paso, indica cuántos pasos debe progresar para que finalice el proceso.
+### Buenas prácticas
 
-**Integración con acciones**: El indicador de paso se integra al accionable de progreso, componente botón, para expresar una conexión entre una interacción y un proceso determinado. Por lo general, se usan para expresar una interacción de avance, como el hacer clic en el botón "Siguiente".
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-check-circle" style="color:#26874a"></i>
+  <p className="pl-2">
+    <strong>Progresión lineal.</strong> El indicador de paso está diseñado para complementar la navegación estándar
+    atrás/siguiente en una secuencia lineal, debe utilizarse cuando se pueda detectar la tasa de finalización del
+    proceso.
+  </p>
+</div>
 
-## Tipografía
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-check-circle" style="color:#26874a"></i>
+  <p className="pl-2">
+    <strong>Proporcione la navegación por separado.</strong> Utilice botones para avanzar y retroceder en un formulario.
+  </p>
+</div>
 
-| Tipografía | Tamaño                           | Variable       | Color   |
-| ---------- | -------------------------------- | -------------- | ------- |
-| Nunito     | 28px / 1.75 rem Título           | Semibold / 600 | #38485C |
-| Open Sans  | 16px / 1 rem Descripción         | Regular / 500  | #38485C |
-| Open Sans  | 13px / 0.8125 rem Número de paso | Regular / 500  | #38485C |
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-check-circle" style="color:#26874a"></i>
+  <p className="pl-2">
+    <strong>Use etiquetas cortas o de una sola palabra.</strong> Utilice palabras muy cortas (1-2 palabras) y
+    descriptivas.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-check-circle" style="color:#26874a"></i>
+  <p className="pl-2">
+    <strong>A partir de 3 y hasta 5 pasos permite el uso de este componente,</strong> si necesita más pasos piense en
+    redefinir los formularios en menos pasos.
+  </p>
+</div>
+
+### Malas prácticas
+
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p className="pl-2">
+    <strong>Utilizarlo en procesos de más de seis pasos.</strong> Considere simplificar el proceso o dividirlo en varias
+    tareas.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p className="pl-2">
+    <strong>Cantidad de pasos variables.</strong> Considere otro enfoque si la cantidad de pasos puede cambiar debido a
+    la entrada del usuario.
+  </p>
+</div>
+
+<div className="d-flex flex-row justify-content-start">
+  <i className="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p className="pl-2">
+    <strong>Utilizar un indicador de paso para formularios muy breves,</strong> sin capítulos o secciones. Debe tener al
+    menos tres secciones.
+  </p>
+</div>
