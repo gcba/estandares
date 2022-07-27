@@ -1,72 +1,92 @@
 ---
-menu: Modals
-title: Modals
-description: Muestran contenido importante que requiere la interacción del usuario, en una capa sobre la página y bloquea otras interacciones.
-position: 10
+menu: Modal
+title: Modal
+description: Enfocan contenido importante en una sola tarea o mensaje, sobre la página y bloquea otras interacciones.
+position: 11
 ---
 
 import "./modals.scss"
 
-## Anatomía
 
-![completar](/componentes/modals/anatomia-1.svg)
+## Tipos de modal
 
-1. El Área de título se compone de un contenido titular que engloba el contenido.
-2. El área descriptiva muestra el contenido en relación al título que lo abarca, puede ser una pregunta que se relacione con el Área accionable.
-3. El Área accionable se compone de dos (2) botones, con una acción positivia-activa y otra negativa o de cancelación.
+### Modal de confirmación
 
-## Opciones de modal
-
-### Diálogos de confirmación
-
-Son para cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc. Este diálogo tiene un botón rojo (negativo) para resaltar la acción destructiva.
+Cuando un usuario necesita información adicional o contexto para tomar una de las decisiones que ofrecen las acciones.
 
 <Example>
 
-<div class="modal modal-sm mx-auto" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+<div class="modal d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Cancelación de pago</h4>
-      </div>
-      <div class="modal-body">
-        <p>¿Estás seguro de querer cancelar el pago de boletas?</p>
-      </div>
+      <div class="modal-header"><h4 class="modal-title">Modal</h4></div>
+      <div class="modal-body"><p>Esta es la descripción del modal.</p></div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-link btn-sm" data-dismiss="modal">
-          No estoy seguro
+        <button type="button" class="btn btn-link" data-dismiss="modal">
+          Botón
         </button>
-        <button type="button" class="btn btn-danger btn-sm">
-          Sí, cancelar
-        </button>
+        <button type="button" class="btn btn-primary">Botón</button>
       </div>
     </div>
   </div>
 </div>
+<div class=" show"></div>
 
 </Example>
 
-## Diseño y estructura
+### Modal de confirmación
 
-### Composición
+Cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc.
 
-![completar](/componentes/modals/composicion-1.svg)
+<Example>
+
+<div class="modal d-block" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header"><h4 class="modal-title">Modal</h4></div>
+      <div class="modal-body"><p>Esta es la descripción del modal.</p></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Botón
+        </button>
+        <button type="button" class="btn btn-danger">Botón</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" show"></div>
+
+</Example>
+
+## Diseño y estructura (Contexto de uso)
+
+Un modal deshabilita el contenido de la página y enfoca la atención del usuario en una sola tarea o mensaje.
+
+![completar](/componentes/modals/modal.svg)
 
 ## Usabilidad
 
-**Los diálogos modales son invasivos y deben usarse con moderación.** La capacidad del usuario para acceder y ver su propio contenido es fundamental para una buena experiencia.
+### Buenas prácticas
 
-**Intente limitar el número de contenido** en un diálogo modal. Debe contener solo información valiosa y relevante que sea útil y concisa.
+![completar](/bxs-check-circle.svg) **Se utilizan para confirmar acciones o completar tareas** que requieran toda la atención. 
 
-**Evite varios pasos que requieran navegación** dentro del diálogo modal.
+![completar](/bxs-check-circle.svg) **Los diálogos interrumpen la acción del usuario**, por lo que deben usarse con moderación. 
 
-**Evite la toma de decisiones complejas** que requieran fuentes adicionales de información no disponibles en el modal.
+![completar](/bxs-check-circle.svg) **Deben aparecer como resultado de una acción realizada por el usuario** o (menos comúnmente) por inactividad. 
 
-**La acción principal (botón principal) debe reflejar el título del modal.** Por ejemplo, un modal con el título "Pago de boleta" tiene un botón con la palabra "Pagar".
+![completar](/bxs-check-circle.svg) **Los títulos son simples y comunican lo principal que una persona está a punto de hacer**. 
+Lo ideal es que los títulos usen la misma frase o una similar a la llamada a la acción que llevó a alguien al cuadro de diálogo de alerta en primer lugar. 
 
-## Tipografía
+![completar](/bxs-check-circle.svg) **En los títulos evita hacer preguntas**, como "¿Estás seguro de que deseas salir?" o "¿Queres cancelar?" son redundantes en la decisión que ya tomaron al realizar una acción previa. 
+Esta frase también establece un conjunto de acciones de sí/no, lo que puede volverse confuso. 
+En su lugar, reformula el mensaje para centrarse en el resultado o efecto. 
 
-| Tipografía | Tamaño                   | Variable       | Color   |
-| ---------- | ------------------------ | -------------- | ------- |
-| Nunito     | 21px / 1.3125rem Títulos | Semibold / 600 | #38485C |
-| Open Sans  | 16px / 1rem Descripción  | Regular / 500  | #38485C |
+![completar](/bxs-check-circle.svg) **Evitá el contenido largo que requiere desplazamiento**. El contenido extenso puede ser problemático porque empuja los botones fuera de la vista inicial del usuario, lo que puede causar confusión. 
+
+![completar](/bxs-check-circle.svg) **Las opciones para los próximos pasos deben estar en equilibrio con el título**. Por ejemplo, si el título de un cuadro de diálogo es "Eliminar conversación", la etiqueta del botón de acción principal sería "Eliminar". 
+
+![completar](/bxs-check-circle.svg) **Los grupos de botones se apilan verticalmente** cuando el espacio horizontal es limitado. Deben aparecer en orden ascendente según la importancia, con la acción más crítica en la parte inferior.
+
+### Malas prácticas
+
+![completar](/bxs-x-circle.svg) **No debería sorprender al usuario**, no lo muestres automáticamente si el usuario no realizó una acción previa.

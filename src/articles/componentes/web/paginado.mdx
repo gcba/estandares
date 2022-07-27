@@ -1,58 +1,61 @@
 ---
 menu: Paginado
 title: Paginado
-description: Se utiliza cuando hay demasiados resultados para mostrar en una página, de modo que el usuario no se sienta abrumado por demasiada información.
-position: 11
+description: El paginado se usa en la parte inferior de la página cuando hay demasiados resultados de búsqueda para evitar que el usuario se sienta abrumado por la cantidad de información.
+position: 14
 ---
 
 import { Pagination } from "@gcba/obelisco"
 
-## Anatomía
 
-![completar](/componentes/paginado/anatomía.svg)
+## Tipos de paginado
 
-1. Anterior y siguiente: Navega hacia atrás y hacia adelante desde la página seleccionada actualmente.
-2. Navegación de página: Navegue a una página específica seleccionando el número de página.
-3. Truncamiento: Cuando se alcanza un umbral de páginas, la lista se trunca con puntos suspensivos. Este aparece en el ante último lugar, para mostrar únicamente que existen mas en el medio.
-4. Posición actual: Indica la página o vista actual que se este mostrando.
+### Paginado
 
-## Opciones de paginado
+Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 5 (incluidos los puntos suspensivos). 
 
-### Tarjetas verticales u horizontales
+Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en la última página del conjunto. 
 
-Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
+**Truncamiento**: cuando el número de páginas supera el límite máximo de visualización, se utiliza una elipsis, puntos suspensivos (…), para truncar las páginas restantes.
 
 <!-- codigo -->
 
-<Example align="center">
+<div class="d-grid justify-content-center my-5">
   <div className="mt-3 mb-4">
     <Pagination pages={3} ariaLabel="Ejemplo de paginación simple" />
   </div>
   <div className="mb-4">
     <Pagination pages={13} default={6} ariaLabel="Ejemplo de paginación compleja" />
   </div>
-</Example>
+</div>
 
-### Diseño y estructura
 
-#### Composición
+## Diseño y estructura (contexto de uso)
 
-![completar](/componentes/paginado/diseño.svg)
+### Paginado
+
+Oculte el ANTERIOR en la primera página del conjunto y oculte el PRÓXIMO en la última página del conjunto.
+
+![completar](/componentes/paginado/paginado-1.svg)
+
+### Paginado en documentación
+
+Para documentación como la pagina actual puede utilizar solo los botones de Anterior y Siguiente.
+
+![completar](/componentes/paginado/paginado-2.svg)
 
 ## Usabilidad
 
-**Uso principal**: la paginación se usa comúnmente para resultados de búsqueda.
+### Buenas prácticas
 
-**Posicionamiento**: se encuentra en la parte inferior de la página y permite al usuario moverse fácilmente entre cada página.
+![completar](/bxs-check-circle.svg) **Visión general**: generalmente, se usa si hay más de 25 elementos mostrados en una vista, comúnmente en listados de tablas, resultados de búsqueda y directorios. 
 
-**Vision general**: generalmente, se usa si hay más de 25 elementos mostrados en una vista.
+![completar](/bxs-check-circle.svg) **Destaque la página actual** para mostrar en dónde se encuentra el usuario en relación con toda la colección de páginas. 
 
-**Truncamiento**: cuando el número de páginas supera el límite máximo de visualización, se utiliza una elipsis, puntos suspensivos (…), para truncar las páginas restantes.
+![completar](/bxs-check-circle.svg) **Incluya siempre la primera página**, la anterior y la siguiente. Los usuarios siempre deben poder navegar a cada una de estas páginas desde cualquier página del conjunto. 
 
-**Botón**: cada página del control de paginación es un enlace de botón que les permite navegar rápidamente por los resultados.
+![completar](/bxs-check-circle.svg) **Cada página del control de paginación es un enlace** de botón que les permite navegar rápidamente por los resultados.
 
-## Tipografía
+### Malas prácticas
 
-| Tipografía | Tamaño                        | Variable      | Color   |
-| ---------- | ----------------------------- | ------------- | ------- |
-| Open Sans  | 16px / 1 rem Área Descriptiva | Regular / 500 | #007BC7 |
+![completar](/bxs-x-circle.svg) **No divida los elementos en varias líneas**, muestre los elementos de navegación en una sola línea para que sea más fácil de comprender y seleccionar.

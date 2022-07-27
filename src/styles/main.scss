@@ -84,10 +84,15 @@ main {
   }
 
   .img-fluid {
-    display: block;
+    // display: block;
+    display: inline-block;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .d-grid {
+    display: grid;
   }
 
   article {
