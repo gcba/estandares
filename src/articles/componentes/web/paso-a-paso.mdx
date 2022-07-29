@@ -5,15 +5,16 @@ description: Es un indicador de progreso que muestra visualmente los pasos y el 
 position: 12
 ---
 
+import "./paso-a-paso.scss"
+
 ## Tipos de pasos de un formulario
 
 ### Pasos de un formulario
 
 Los pasos de un formulario son guías visuales que muestran cuántos pasos llevará un proceso y cuánto falta para completar una tarea.
-
-<div className="my-5">
+<div className='paso-a-paso-box '>
   <Example>
-    <div className="mx-4">
+    <div class="stepper-wrapper">
       <div className="stepper">
         <p className="step-title">Paso actual</p>
         <p className="step-next">Paso siguiente: Nombre del paso siguiente</p>
@@ -26,7 +27,7 @@ Los pasos de un formulario son guías visuales que muestran cuántos pasos lleva
       </div>
     </div>
   </Example>
-</div>
+      </div>
 
 ## Diseño y estructura (contexto de uso)
 
