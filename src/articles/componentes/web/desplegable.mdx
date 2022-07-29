@@ -9,11 +9,9 @@ position: 7
 
 ### Con bordes
 
-
 Disponibles en tres tamaños.
 
-
-<div class="dropdown-container d-flex justify-content-between my-5">
+<div class="content-2 text-center">
   <div class="dropdown mb-3">
     <button
       type="button"
@@ -25,9 +23,15 @@ Disponibles en tres tamaños.
       Filtro (1)
     </button>
     <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">Opción 1</button>
-      <button class="dropdown-item" type="button">Opción 2</button>
-      <button class="dropdown-item" type="button">Opción 3</button>
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
     </div>
   </div>
   <div class="dropdown mb-3">
@@ -41,9 +45,15 @@ Disponibles en tres tamaños.
       Filtro (1)
     </button>
     <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">Opción 1</button>
-      <button class="dropdown-item" type="button">Opción 2</button>
-      <button class="dropdown-item" type="button">Opción 3</button>
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
     </div>
   </div>
   <div class="dropdown mb-3">
@@ -57,21 +67,24 @@ Disponibles en tres tamaños.
       Filtro (1)
     </button>
     <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">Opción 1</button>
-      <button class="dropdown-item" type="button">Opción 2</button>
-      <button class="dropdown-item" type="button">Opción 3</button>
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
     </div>
   </div>
 </div>
 
-
 ### Sin bordes
-
 
 Disponibles en tres tamaños.
 
-
-<div class="dropdown-container d-flex justify-content-between my-5">
+<div class="content-2 text-center">
   <div class="dropdown mb-3">
     <button
       type="button"
@@ -83,9 +96,15 @@ Disponibles en tres tamaños.
       Filtro (1)
     </button>
     <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">Opción 1</button>
-      <button class="dropdown-item" type="button">Opción 2</button>
-      <button class="dropdown-item" type="button">Opción 3</button>
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
     </div>
   </div>
   <div class="dropdown mb-3">
@@ -99,9 +118,15 @@ Disponibles en tres tamaños.
       Filtro (1)
     </button>
     <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">Opción 1</button>
-      <button class="dropdown-item" type="button">Opción 2</button>
-      <button class="dropdown-item" type="button">Opción 3</button>
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
     </div>
   </div>
   <div class="dropdown mb-3">
@@ -115,15 +140,18 @@ Disponibles en tres tamaños.
       Filtro (1)
     </button>
     <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">Opción 1</button>
-      <button class="dropdown-item" type="button">Opción 2</button>
-      <button class="dropdown-item" type="button">Opción 3</button>
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
     </div>
   </div>
 </div>
-
-
-
 
 ## Diseño y estructura (Contexto de uso)
 
@@ -133,31 +161,83 @@ Se agrupan de forma horizontal.
 
 Combinables con Botón y con Navegación horizontal.
 
-
 ![completar](/componentes/desplegable/diseño-estructura-2.svg)
-
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-![completar](/bxs-check-circle.svg) **Limita a una cantidad de entre 5 y 15 opciones** para elegir dentro de un menú. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Limita a una cantidad de entre 5 y 15 opciones </strong> 
+    para elegir dentro de un menú.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Al utilizar más de 5 opciones**, los menús se pueden desplazar. En este estado, muestra una barra de desplazamiento en su lado derecho para realizar el scroll correspondiente. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Al utilizar más de 5 opciones </strong> 
+    , los menús se pueden desplazar. En este estado, muestra una barra de desplazamiento en su lado 
+    derecho para realizar el scroll correspondiente.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Se utilizan para navegación o filtros**, en donde se inicia una acción basada en la selección. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Se utilizan para navegación o filtros </strong> 
+    , en donde se inicia una acción basada en la selección.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Prioriza las opciones en un orden lógico** colocando la opción más seleccionada en la parte superior. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Prioriza las opciones en un orden lógico </strong> 
+    colocando la opción más seleccionada en la parte superior.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Mantiene las opciones del menú breves y concisas**. Se desaconsejan las opciones de menú largas que hacen que el texto se ajuste a varias líneas.
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Mantiene las opciones del menú breves y concisas. </strong> 
+    Se desaconsejan las opciones de menú largas que hacen que el texto se ajuste a varias líneas.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Pueden usarse en conjunto** con [Botón](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) y [Navegacion horizontal](https://gcba.github.io/Obelisco/?path=/story/componentes-navegaci%C3%B3n-horizontal--simple).
-
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Pueden usarse en conjunto </strong> 
+    con <a class="" href="https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores" target="_blank" rel="noreferrer"> Botón </a> y <a class="" href="https://gcba.github.io/Obelisco/?path=/story/componentes-navegaci%C3%B3n-horizontal--simple" target="_blank" rel="noreferrer"> Navegacion horizontal </a>.
+  </p>
+</div>
 
 ### Malas prácticas
 
-![completar](/bxs-x-circle.svg) **No deben quedar desplegados dos menú** al mismo tiempo. 
+<div class="d-flex flex-row justify-content-start">
+  <i class="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p class="pl-2">
+    <strong>No deben quedar desplegados dos menú </strong>
+    al mismo tiempo.
+  </p>
+</div>
 
-![completar](/bxs-x-circle.svg) **Alinea el menú desplegable con prioridad a su izquierda**. En caso de no tener espacio suficiente para alinear desde la izquierda, alinear a su derecha. 
+<div class="d-flex flex-row justify-content-start">
+  <i class="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p class="pl-2">
+    <strong>Alinea el menú desplegable con prioridad a su izquierda. </strong>
+    En caso de no tener espacio suficiente para alinear desde la izquierda, alinear a su derecha.
+  </p>
+</div>
 
-![completar](/bxs-x-circle.svg) **Alinea el menú desplegable al centro** cuando los espacios en la pantalla sean reducidos.
+<div class="d-flex flex-row justify-content-start">
+  <i class="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p class="pl-2">
+    <strong>Alinea el menú desplegable al centro </strong>
+    cuando los espacios en la pantalla sean reducidos.
+  </p>
+</div>

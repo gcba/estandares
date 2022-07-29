@@ -11,45 +11,46 @@ position: 10
 
 Los campos de texto simples pueden llevar un placeholder para mostrar un ejemplo de los datos que se están solicitando. El área de ayuda proporciona información extra de asistencia.
 
-
-<div class="form-wrapper d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="name-input">Nombre *</label>
-    <input type="text" class="form-control" id="name-input" name="name" placeholder="Ejemplo: Camila" />
+<div class="content-2">
+  <div class="form-wrapper">
+    <div class="form-group">
+      <label for="name-input">Nombre *</label>
+      <input type="text" class="form-control" id="name-input" name="name" placeholder="Ejemplo: Camila" />
+    </div>
+  </div>
+  <div class="form-wrapper bg-light p-4">
+    <div class="form-group">
+      <label for="name-input">Nombre</label>
+      <input type="text" class="form-control" id="name-input" name="name" placeholder="Ejemplo: Camila" />
+    </div>
   </div>
 </div>
-<div class="form-wrapper bg-light p-4 d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="name-input">Nombre</label>
-    <input type="text" class="form-control" id="name-input" name="name" placeholder="Ejemplo: Camila" />
-  </div>
-</div>
-
-
 
 ### Selector
 
 Los selectores se utilizan cuando el sistema ya posee los datos que se precisan y el usuario solo debe seleccionar uno de ellos. Debe haber al menos cinco opciones de selección.
 
-<div class="form-wrapper d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="lista-de-seleccion">Nombre del selector *</label>
-    <select class="custom-select" id="lista-de-seleccion">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+<div class="content-2">
+  <div class="form-wrapper">
+    <div class="form-group">
+      <label for="lista-de-seleccion">Nombre del selector *</label>
+      <select class="custom-select" id="lista-de-seleccion">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
   </div>
-</div>
-<div class="form-wrapper bg-light p-4 d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="lista-de-seleccion">Nombre del selector</label>
-    <select class="custom-select" id="lista-de-seleccion">
-      <option>1</option>
-      <option>2</option>
-    </select>
+  <div class="form-wrapper bg-light p-4">
+    <div class="form-group">
+      <label for="lista-de-seleccion">Nombre del selector</label>
+      <select class="custom-select" id="lista-de-seleccion">
+        <option>1</option>
+        <option>2</option>
+      </select>
+    </div>
   </div>
 </div>
 
@@ -58,21 +59,23 @@ Los selectores se utilizan cuando el sistema ya posee los datos que se precisan 
 Los campos de búsqueda llevan siempre un placeholder que anticipe y ayude al usuario a saber que información podrá encontrar en el buscador.
 
 
-<div class="form-wrapper d-flex justify-content-center my-5">
-  <form class="form-search col-md-6 col-12">
-    <div class="form-group">
-      <input type="search" class="form-control input-search" id="name-input" name="name" placeholder="Buscar..." />
-      <button class="reset" type="reset"></button>
-    </div>
-  </form>
-</div>
-<div class="form-wrapper bg-light p-4 d-flex justify-content-center my-5">
-  <form class="form-search col-md-6 col-12">
-    <div class="form-group">
-      <input type="search" class="form-control input-search" id="name-input" name="name" placeholder="Buscar..." />
-      <button class="reset" type="reset"></button>
-    </div>
-  </form>
+<div class="content-2">
+  <div class="form-wrapper mb-3">
+    <form class="form-search">
+      <div class="form-group">
+        <input type="search" class="form-control input-search" id="name-input" name="name" placeholder="Buscar..." />
+        <button class="reset" type="reset"></button>
+      </div>
+    </form>
+  </div>
+  <div class="form-wrapper bg-light p-4">
+    <form class="form-search">
+      <div class="form-group">
+        <input type="search" class="form-control input-search" id="name-input" name="name" placeholder="Buscar..." />
+        <button class="reset" type="reset"></button>
+      </div>
+    </form>
+  </div>
 </div>
 
 
@@ -81,22 +84,24 @@ Los campos de búsqueda llevan siempre un placeholder que anticipe y ayude al us
 Los campos de fecha siempre llevan un placeholder que indiquen al usuario como debe completar el campo. Cuando se acciona el campo, la fecha se completa mediante el teclado.
 
 
-<div class="form-wrapper d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="date-input">Fecha</label>
-    <span id="date-help" class="form-text">
-      Nombre del campo *
-    </span>
-    <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+<div class="content-2">
+  <div class="form-wrapper">
+    <div class="form-group">
+      <label for="date-input">Fecha</label>
+      <span id="date-help" class="form-text">
+        Nombre del campo *
+      </span>
+      <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+    </div>
   </div>
-</div>
-<div class="form-wrapper bg-light p-4 d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="date-input">Fecha</label>
-    <span id="date-help" class="form-text">
-      Nombre del campo *
-    </span>
-    <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+  <div class="form-wrapper bg-light p-4">
+    <div class="form-group">
+      <label for="date-input">Fecha</label>
+      <span id="date-help" class="form-text">
+        Nombre del campo *
+      </span>
+      <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+    </div>
   </div>
 </div>
 
@@ -106,16 +111,18 @@ Los campos de fecha siempre llevan un placeholder que indiquen al usuario como d
 El área de texto puede tener o no una limitación de caracteres. Cuando hay una limitación se visualiza con la cantidad de caracteres que hay actualmente y la cantidad máxima permitida.
 
 
-<div class="form-wrapper d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="text-area">Bloque de texto</label>
-    <textarea class="form-control" id="text-area" rows="3"></textarea>
+<div class="content-2">
+  <div class="form-wrapper">
+    <div class="form-group">
+      <label for="text-area">Bloque de texto</label>
+      <textarea class="form-control" id="text-area" rows="3"></textarea>
+    </div>
   </div>
-</div>
-<div class="form-wrapper bg-light p-4 d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="text-area">Bloque de texto</label>
-    <textarea class="form-control" id="text-area" rows="3"></textarea>
+  <div class="form-wrapper bg-light p-4">
+    <div class="form-group">
+      <label for="text-area">Bloque de texto</label>
+      <textarea class="form-control" id="text-area" rows="3"></textarea>
+    </div>
   </div>
 </div>
 
@@ -123,16 +130,19 @@ El área de texto puede tener o no una limitación de caracteres. Cuando hay una
 
 Los campos numéricos pueden cargarse tanto por teclado como por las flechas indicadoras. Este tipo de campos se utilizan cuando necesitamos un valor de cantidad.
 
-<div class="form-wrapper d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="number-input">Campo numérico *</label>
-    <input type="number" class="form-control" id="number-input" name="number" value="30" />
+
+<div class="content-2">
+  <div class="form-wrapper">
+    <div class="form-group">
+      <label for="number-input">Campo numérico *</label>
+      <input type="number" class="form-control" id="number-input" name="number" value="30" />
+    </div>
   </div>
-</div>
-<div class="form-wrapper bg-light p-4 d-flex justify-content-center my-5">
-  <div class="form-group col-md-6 col-12">
-    <label for="number-input">Campo numérico *</label>
-    <input type="number" class="form-control" id="number-input" name="number" value="30" />
+  <div class="form-wrapper bg-light p-4">
+    <div class="form-group">
+      <label for="number-input">Campo numérico *</label>
+      <input type="number" class="form-control" id="number-input" name="number" value="30" />
+    </div>
   </div>
 </div>
 
@@ -143,39 +153,43 @@ Permite seleccionar una sola opción de una lista de opciones. Lo recomendable e
 
 import { RadioInput } from "../../../components/docs/forms/RadioInput"
 
-<div class="form-wrapper d-grid justify-content-center my-5">
-  <RadioInput
-    name="skills"
-    options={[
-      { value: "uno", label: "Opción 1" },
-      { value: "dos", label: "Opción 2" },
-      { value: "tres", label: "Opción 3" },
-    ]}
-  />
+<div class="content-2">
+  <div class="form-wrapper d-grid text-center">
+    <RadioInput
+      name="skills"
+      options={[
+        { value: "uno", label: "Opción 1" },
+        { value: "dos", label: "Opción 2" },
+        { value: "tres", label: "Opción 3" },
+      ]}
+    />
+  </div>
 </div>
 
 ### Checkbox
 
 Permite seleccionar varios elementos de una lista de elementos individuales o marcar un elemento individual como seleccionado.
 
-<div class="form-wrapper d-grid justify-content-center my-5">
-  <div className="custom-control custom-checkbox">
-    <input className="custom-control-input" type="checkbox" id="skills-one-input" name="skills" value="one" />
-    <label className="custom-control-label" htmlFor="skills-one-input">
-      Opción 1
-    </label>
-  </div>
-  <div className="custom-control custom-checkbox">
-    <input className="custom-control-input" type="checkbox" id="skills-two-input" name="skills" value="two" />
-    <label className="custom-control-label" htmlFor="skills-two-input">
-      Opción 2
-    </label>
-  </div>
-  <div className="custom-control custom-checkbox">
-    <input className="custom-control-input" type="checkbox" id="skills-three-input" name="skills" value="three" />
-    <label className="custom-control-label" htmlFor="skills-three-input">
-      Opción 3
-    </label>
+<div class="content-2">
+  <div class="form-wrapper d-grid text-center">
+    <div className="custom-control custom-checkbox">
+      <input className="custom-control-input" type="checkbox" id="skills-one-input" name="skills" value="one" />
+      <label className="custom-control-label" htmlFor="skills-one-input">
+        Opción 1
+      </label>
+    </div>
+    <div className="custom-control custom-checkbox">
+      <input className="custom-control-input" type="checkbox" id="skills-two-input" name="skills" value="two" />
+      <label className="custom-control-label" htmlFor="skills-two-input">
+        Opción 2
+      </label>
+    </div>
+    <div className="custom-control custom-checkbox">
+      <input className="custom-control-input" type="checkbox" id="skills-three-input" name="skills" value="three" />
+      <label className="custom-control-label" htmlFor="skills-three-input">
+        Opción 3
+      </label>
+    </div>
   </div>
 </div>
 
@@ -183,15 +197,16 @@ Permite seleccionar varios elementos de una lista de elementos individuales o ma
 
 Permite subir archivos como imágenes o documentos en caso de ser requerido en un formulario, como variante de uso específico al botón predeterminado.
 
-<div class="form-wrapper d-grid justify-content-center my-5">
-  <div class="form-group">
-    <label for="file-input">Adjuntar un archivo de ejemplo</label>
-    <input type="file" class="form-control-file" id="file-input" />
+<div class="content-2">
+  <div class="form-wrapper d-grid">
+    <div class="form-group">
+      <label for="file-input">Adjuntar un archivo de ejemplo</label>
+      <input type="file" class="form-control-file" id="file-input" />
+    </div>
   </div>
 </div>
 
-
-## Diseño y estructura
+## Diseño y estructura (Contexto de uso)
 
 Un formulario permite a los usuarios ingresar información en una página. Los botones deben estar ordenados por importancia de derecha a izquierda, con el botón más importante (principal) a la derecha. Agrupe las secciones relacionadas en conjuntos lógicos con un encabezado o divídalo en otra página, para que los usuarios puedan comprender la información que necesitan ingresar.
 
@@ -201,17 +216,53 @@ Un formulario permite a los usuarios ingresar información en una página. Los b
 
 ### Buenas prácticas
 
-![completar](/bxs-check-circle.svg) **Reduzca la cantidad de campos en su formulario** para evitar una gran carga cognitiva en los usuarios (o para ayudar a los usuarios a enviar el formulario más rápido). 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Reduzca la cantidad de campos en su formulario </strong> 
+    para evitar una gran carga cognitiva en los usuarios (o para ayudar a los usuarios a enviar el formulario más rápido).
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Evite los campos opcionales** solicitando a los usuarios solo información relevante. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Evite los campos opcionales </strong> 
+    solicitando a los usuarios solo información relevante.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Cada campo de texto debe tener una etiqueta**. Un campo sin etiqueta es ambiguo y no accesible. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Cada campo de texto debe tener una etiqueta. </strong> 
+    Un campo sin etiqueta es ambiguo y no accesible.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Campos adecuados a la longitud del texto requerido**. La longitud del campo de texto proporciona a los usuarios una pista sobre la cantidad de texto que deben escribir. Las etiquetas en los checkbox y radio buttons deben ser seleccionables. Los usuarios deben poder tocar o hacer clic en la etiqueta de texto o en el ícono para realizar una selección.
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Campos adecuados a la longitud del texto requerido. </strong> 
+    La longitud del campo de texto proporciona a los usuarios una pista sobre la cantidad de texto que deben escribir. Las etiquetas en los checkbox y radio buttons deben ser seleccionables. Los usuarios deben poder tocar o hacer clic en la etiqueta de texto o en el ícono para realizar una selección.
+  </p>
+</div>
+
 
 ### Malas prácticas
 
-![completar](/bxs-x-circle.svg) **Deshabilitar el botón de envío** no es recomendable, incluso si no se completaron todos los campos obligatorios. En su lugar, describa lo que debe hacerse usando mensajes de error y validación. 
+<div class="d-flex flex-row justify-content-start">
+  <i class="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p class="pl-2">
+    <strong>Deshabilitar el botón de envío </strong>
+    no es recomendable, incluso si no se completaron todos los campos obligatorios. En su lugar, describa lo que debe hacerse usando mensajes de error y validación.
+  </p>
+</div>
 
-![completar](/bxs-x-circle.svg) **Posicionar los checkbox y radio buttons horizontalmente no es recomendable**. Los listados con esa direccionalidad pueden dificultar saber qué etiqueta corresponde a cada opción.
-
+<div class="d-flex flex-row justify-content-start">
+  <i class="bx bx-sm bxs-x-circle" style="color:#d02323"></i>
+  <p class="pl-2">
+    <strong>Posicionar los checkbox y radio buttons horizontalmente no es recomendableo. </strong>
+    Los listados con esa direccionalidad pueden dificultar saber qué etiqueta corresponde a cada opción.
+  </p>
+</div>

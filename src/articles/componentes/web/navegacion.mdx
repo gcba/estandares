@@ -14,7 +14,7 @@ import "./modals.scss"
 
 Disponibles en dos tamaños.
 
-<div class="d-flex justify-content-center my-5">
+<div class="d-flex justify-content-center content-2">
   <nav>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
@@ -33,7 +33,7 @@ Disponibles en dos tamaños.
 
 Disponibles en dos tamaños.
 
-<div class="d-flex justify-content-center my-5">
+<div class="d-flex justify-content-center content-2">
   <nav>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
@@ -50,32 +50,30 @@ Disponibles en dos tamaños.
 
 Disponibles en tres niveles
 
-<div class="nav-container d-flex justify-content-center my-5">
-  <div class="col-md-6 col-12">
-    <nav>
-      <ul class="nav flex-column nav-pills nav-lg">
-        <li class="nav-item">
-          <a class="nav-link active-child" href="#">
-            <span>Anidado Nivel 1</span>
-          </a>
-          <ul class="nav flex-column nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active-child" href="#">
-                <span>Anidado Nivel 2</span>
-              </a>
-              <ul class="nav flex-column nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span>Anidado Nivel 3</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<div class="nav-container content-2 text-center">
+  <nav>
+    <ul class="nav flex-column nav-pills nav-lg">
+      <li class="nav-item">
+        <a class="nav-link active-child" href="#">
+          <span>Anidado Nivel 1</span>
+        </a>
+        <ul class="nav flex-column nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active-child" href="#">
+              <span>Anidado Nivel 2</span>
+            </a>
+            <ul class="nav flex-column nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span>Anidado Nivel 3</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 
@@ -83,22 +81,20 @@ Disponibles en tres niveles
 
 Disponibles en tres niveles.
 
-<div class="nav-container d-flex justify-content-center my-5">
-  <div class="col-md-6 col-12">
-    <nav>
-      <ul class="nav flex-column nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><span>Active</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><span>Active</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><span>Active</span></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+<div class="nav-container content-2">
+  <nav>
+    <ul class="nav flex-column nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><span>Active</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><span>Active</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><span>Active</span></a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 
@@ -122,20 +118,67 @@ Solo la navegación vertical tiene hasta 3 niveles de navegación.
 
 ### Buenas prácticas
 
-![completar](/bxs-check-circle.svg) **Los enlaces de navegación deben ser cortos**. Pueden ser derivados más cortos de los propios títulos de página. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Los enlaces de navegación deben ser cortos. </strong> 
+    Pueden ser derivados más cortos de los propios títulos de página.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **Reducir a una o dos palabras** para que nunca sean tan largas que requieran truncamiento. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>Reducir a una o dos palabras </strong> 
+    para que nunca sean tan largas que requieran truncamiento. 
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **En la navegación vertical solo los elementos del primer nivel pueden tener iconos**. 
-Cualquier elemento de subnivel siempre debe ser solo de texto para garantizar una jerarquía clara. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>En la navegación vertical solo los elementos del primer nivel pueden tener iconos. </strong> 
+    Cualquier elemento de subnivel siempre debe ser solo de texto para garantizar una jerarquía clara.  
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **En la navegación vertical si los elementos de navegación de nivel superior tienen una ubicación asociada**, envíe al usuario a esa ubicación y abra los elementos de navegación de subnivel. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>En la navegación vertical si los elementos de navegación de nivel superior tienen una ubicación asociada, </strong> 
+    envíe al usuario a esa ubicación y abra los elementos de navegación de subnivel.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **En la navegación vertical si los elementos de navegación de nivel superior no tienen una ubicación asociada**, solo abra los elementos de navegación de nivel inferior. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>En la navegación vertical si los elementos de navegación de nivel superior no tienen una ubicación asociada, </strong> 
+    solo abra los elementos de navegación de nivel inferior.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **La navegación vertical puede usar cualquiera de estos comportamientos, pero nunca debe mezclar comportamientos** en la misma experiencia. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>La navegación vertical puede usar cualquiera de estos comportamientos, pero nunca debe mezclar comportamientos </strong> 
+    en la misma experiencia.
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) **En la navegación horizontal si hay demasiados componentes** puede permitir el desplazamiento horizontal en responsive. 
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    <strong>En la navegación horizontal si hay demasiados componentes </strong> 
+    puede permitir el desplazamiento horizontal en responsive. 
+  </p>
+</div>
 
-![completar](/bxs-check-circle.svg) La navegación horizontal pueden usarse en conjunto con [Botón](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) 
-y [Desplegables](https://gcba.github.io/Obelisco/?path=/story/componentes-desplegables--desplegable-con-icono).
+<div class="d-flex flex-row justify-content-start">
+  <i class='bx bx-sm bxs-check-circle' style='color:#26874A'></i>
+  <p class="pl-2">
+    La navegación horizontal pueden usarse en conjunto con
+    <a class="" href="https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores" target="_blank" rel="noreferrer"> Botón </a> 
+    y <a class="" href="https://gcba.github.io/Obelisco/?path=/story/componentes-desplegables--desplegable-con-icono" target="_blank" rel="noreferrer"> Desplegables </a>
+  </p>
+</div>
