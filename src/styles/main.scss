@@ -296,13 +296,20 @@ main {
 
 .content-1 {
   width: 526px;
-  margin: 8rem auto;
+  margin: 5rem auto;
   pointer-events: none;
-  background-color: aqua;
 }
 
 .content-2 {
   width: 340px;
-  margin: 8rem auto;
+  margin: 5rem auto;
+  pointer-events: none;
+}
+
+.content-3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem auto;
   pointer-events: none;
 }

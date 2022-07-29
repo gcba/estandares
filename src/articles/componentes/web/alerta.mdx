@@ -5,6 +5,8 @@ description: Las alertas mantienen a los usuarios informados sobre el estado del
 position: 1
 ---
 
+import "./alert.scss";
+
 ## Tipos de alertas
 
 Las opciones de alerta muestran su color semántico e ícono correspondiente para ayudar a las personas con deficiencia de visión del color a discernir el tono del mensaje.
@@ -20,9 +22,7 @@ Se usan para mostrar un error de validación, falla del sistema, o para transmit
       Esta es la descripción de una alerta de error que continua el texto destacado y es obligatoria.
     </p>
   </div>
-</div>
 
-<div className="alert-wrapper">
   <div className="alert alert-danger alert-dismissible fade show" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de error. </strong>
@@ -45,11 +45,13 @@ Se usan para mostrar un error de validación, falla del sistema, o para transmit
 
 Se usan para informar al usuario sobre una tarea que se realizó con éxito.
 
-<div className="alert alert-success" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de éxito. </strong>
-    Esta es la descripción de una alerta de éxito y es obligatoria.
-  </p>
+<div className="alert-wrapper">
+  <div className="alert alert-success" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de éxito. </strong>
+      Esta es la descripción de una alerta de éxito y es obligatoria.
+    </p>
+  </div>
 </div>
 
 ### Alertas de información
@@ -69,11 +71,13 @@ Notifican al usuario sobre un cambio, para darles consejos o brindar informació
 
 Esta variante se utiliza para informar sobre una situación que debe abordarse pronto.
 
-<div className="alert alert-primary" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de advertencia. </strong>
-    Esta es la descripción de una alerta de advertencia y es obligatoria.
-  </p>
+<div className="alert-wrapper">
+  <div className="alert alert-primary" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de advertencia. </strong>
+      Esta es la descripción de una alerta de advertencia y es obligatoria.
+    </p>
+  </div>
 </div>
 
 ## Diseño y estructura (Contexto de uso)

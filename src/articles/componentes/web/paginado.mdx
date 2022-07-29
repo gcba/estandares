@@ -2,10 +2,11 @@
 menu: Paginado
 title: Paginado
 description: El paginado se usa en la parte inferior de la página cuando hay demasiados resultados de búsqueda para evitar que el usuario se sienta abrumado por la cantidad de información.
-position: 14
+position: 13
 ---
 
-import { Pagination } from "@gcba/obelisco"
+import { Pagination } from "@gcba/obelisco";
+import "./paginacion.scss";
 
 
 ## Tipos de paginado
@@ -20,13 +21,16 @@ Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en l
 
 <!-- codigo -->
 
-<div class="d-grid content-2">
-  <div className="mt-3 mb-4">
+<div class="pagination-container">
+  {/* <div className="mt-3 mb-4"> */}
     <Pagination pages={3} ariaLabel="Ejemplo de paginación simple" />
-  </div>
-  <div className="mb-4">
+  {/* </div> */}
+  {/* <div className="mt-3 mb-4"> */}
+    <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginación simple" />
+  {/* </div> */}
+  {/* <div className="mb-4"> */}
     <Pagination pages={13} default={6} ariaLabel="Ejemplo de paginación compleja" />
-  </div>
+  {/* </div> */}
 </div>
 
 

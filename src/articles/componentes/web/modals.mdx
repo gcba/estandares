@@ -2,7 +2,7 @@
 menu: Modal
 title: Modal
 description: Enfocan contenido importante en una sola tarea o mensaje, sobre la página y bloquea otras interacciones.
-position: 11
+position: 10
 ---
 
 import "./modals.scss"
@@ -15,47 +15,43 @@ import "./modals.scss"
 Cuando un usuario necesita información adicional o contexto para tomar una de las decisiones que ofrecen las acciones.
 
 <Example>
-
-<div class="modal d-block" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header"><h4 class="modal-title">Modal</h4></div>
-      <div class="modal-body"><p>Esta es la descripción del modal.</p></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-link" data-dismiss="modal">
-          Botón
-        </button>
-        <button type="button" class="btn btn-primary">Botón</button>
+  <div class="modal d-block" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header"><h4 class="modal-title">Modal</h4></div>
+        <div class="modal-body"><p>Esta es la descripción del modal.</p></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-link" data-dismiss="modal">
+            Botón
+          </button>
+          <button type="button" class="btn btn-primary">Botón</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class=" show"></div>
-
+  <div class=" show"></div>
 </Example>
 
 ### Modal de confirmación
 
 Cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc.
 
-<Example>
-
-<div class="modal d-block" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header"><h4 class="modal-title">Modal</h4></div>
-      <div class="modal-body"><p>Esta es la descripción del modal.</p></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Botón
-        </button>
-        <button type="button" class="btn btn-danger">Botón</button>
+<Example class="content-3">
+  <div class="modal d-block" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header"><h4 class="modal-title">Modal</h4></div>
+        <div class="modal-body"><p>Esta es la descripción del modal.</p></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Botón
+          </button>
+          <button type="button" class="btn btn-danger">Botón</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class=" show"></div>
-
+  <div class=" show"></div>
 </Example>
 
 ## Diseño y estructura (Contexto de uso)

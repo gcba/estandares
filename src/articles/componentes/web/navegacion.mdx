@@ -2,7 +2,7 @@
 menu: Navegación
 title: Navegación
 description: Permiten jerarquizar elementos al margen izquierdo de una página, o mostrar la sub navegación dentro de una sección de un sitio web de forma horizontal.
-position: 12
+position: 11
 ---
 
 import "./modals.scss"
@@ -14,88 +14,80 @@ import "./modals.scss"
 
 Disponibles en dos tamaños.
 
-<div class="d-flex justify-content-center content-2">
-  <nav>
-    <ul class="nav flex-row nav-pills">
-      <li class="nav-item">
-        <a class="nav-link border-link" href="#"><span>Link</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-link-sm border-link" href="#">
-          <span>Link</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<nav>
+  <ul class="nav content-3 nav-pills">
+    <li class="nav-item">
+      <a class="nav-link border-link" href="#"><span>Link</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-link-sm border-link" href="#">
+        <span>Link</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 ### Horizontal sin bordes
 
 Disponibles en dos tamaños.
 
-<div class="d-flex justify-content-center content-2">
-  <nav>
-    <ul class="nav flex-row nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="#"><span>Link</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><span>Link</span></a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<nav>
+  <ul class="nav content-3 nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span>Link</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span>Link</span></a>
+    </li>
+  </ul>
+</nav>
 
 ### Vertical no seleccionados
 
 Disponibles en tres niveles
 
-<div class="nav-container content-2 text-center">
-  <nav>
-    <ul class="nav flex-column nav-pills nav-lg">
-      <li class="nav-item">
-        <a class="nav-link active-child" href="#">
-          <span>Anidado Nivel 1</span>
-        </a>
-        <ul class="nav flex-column nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active-child" href="#">
-              <span>Anidado Nivel 2</span>
-            </a>
-            <ul class="nav flex-column nav-pills">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span>Anidado Nivel 3</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</div>
+<nav class="content-2 text">
+  <ul class="nav flex-column nav-pills nav-lg">
+    <li class="nav-item">
+      <a class="nav-link active-child" href="#">
+        <span>Anidado Nivel 1</span>
+      </a>
+      <ul class="nav flex-column nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active-child" href="#">
+            <span>Anidado Nivel 2</span>
+          </a>
+          <ul class="nav flex-column nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>Anidado Nivel 3</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 ### Vertical seleccionados
 
 Disponibles en tres niveles.
 
-<div class="nav-container content-2">
-  <nav>
-    <ul class="nav flex-column nav-pills">
-      <li class="nav-item">
-        <a class="nav-link active" href="#"><span>Active</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#"><span>Active</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#"><span>Active</span></a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<nav class="content-2 text">
+  <ul class="nav flex-column nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"><span>Active</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#"><span>Active</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#"><span>Active</span></a>
+    </li>
+  </ul>
+</nav>
 
 
 ## Diseño y estructura (Contexto de uso)

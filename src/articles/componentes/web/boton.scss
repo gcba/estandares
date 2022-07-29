@@ -8,18 +8,10 @@
   }
 }
 
-.btn-flex-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 8rem auto;
-  pointer-events: none;
-}
-
 .btn-block-container {
   width: 340px;
   max-width: 100%;
-  margin: 8rem auto;
+  margin: 5rem auto;
   pointer-events: none;
 
   &.border-box {
