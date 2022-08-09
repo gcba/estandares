@@ -38,38 +38,16 @@ Los accesos de menor tamaño se usan principalmente para dos instancias: para el
 
 Esta variante se usa en el caso de que necesitemos agrupar una serie de accesos pequeños que no van a depender de otro componente.
 
-
 ![completar](/componentes/acceso/design_structure.png)
 
 ## Usabilidad
 
 ### Buenas prácticas
 
+[[si | **Tratá de incluir pocos elementos en el patrón de selección de accesos.** Esto es para que sea más fácil de escanear con la vista, intentá limitarte a 7 opciones como máximo.]]
 
-
-<div class="d-flex flex-row justify-content-start">
-  <i class='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
-  <p class="pl-2">
-    <strong>Tratá de incluir pocos elementos en el patrón de selección de accesos. </strong> 
-    Esto es para que sea más fácil de escanear con la vista, intentá limitarte a 7 opciones como máximo.
-  </p>
-</div>
-
-<div class="d-flex flex-row justify-content-start">
-  <i class='bx bx-sm bxs-check-circle' style='color:#26874a'></i>
-  <p class="pl-2">
-    <strong>Limitarse a una línea de texto. </strong> 
-    Tanto para el título del desplegable como para el título individual de cada acceso el texto no debe superar los xx caracteres. Tampoco se deben usar puntos suspensivos para truncarlo.
-  </p>
-</div>
+[[si | **Limitarse a una línea de texto.** Tanto para el título del desplegable como para el título individual de cada acceso el texto no debe superar los xx caracteres. Tampoco se deben usar puntos suspensivos para truncarlo.]]
 
 ### Malas prácticas
 
-
-<div class="d-flex flex-row justify-content-start">
-  <i class='bx bx-sm bxs-x-circle' style='color:#d02323'></i>
-  <p class="pl-2">
-    <strong>Dentro de un mismo patrón de selección de accesos </strong> 
-    no agrupar información con funcionalidades. Si bien los accesos pueden ser usados para ingresar a un sitio con información (como ver los requisitos de un trámite), como también para realizar una acción (como cerrar sesión), estos dos tipos de accesos no se deben agrupar en un solo patrón. En todo caso, generar otro.
-  </p>
-</div>
+[[no | **Dentro de un mismo patrón de selección de accesos** no agrupar información con funcionalidades. Si bien los accesos pueden ser usados para ingresar a un sitio con información (como ver los requisitos de un trámite), como también para realizar una acción (como cerrar sesión), estos dos tipos de accesos no se deben agrupar en un solo patrón. En todo caso, generar otro.]]
