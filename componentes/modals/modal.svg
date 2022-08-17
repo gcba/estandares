@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="387" viewBox="0 0 712 387">
+  <g id="Grupo_32436" data-name="Grupo 32436" transform="translate(-513 -1759)">
+    <rect id="Rectángulo_26403" data-name="Rectángulo 26403" width="712" height="387" rx="8" transform="translate(513 1759)" fill="gray"/>
+    <g id="Modal_-_Confirmación" data-name="Modal - Confirmación" transform="translate(699 1831)">
+      <g id="Rectángulo_23922" data-name="Rectángulo 23922" fill="#fff" stroke="#e6ebf0" stroke-width="2">
+        <rect width="340" height="243" rx="8" stroke="none"/>
+        <rect x="-1" y="-1" width="342" height="245" rx="9" fill="none"/>
+      </g>
+      <g id="Grupo_26909" data-name="Grupo 26909" transform="translate(-141 -729)">
+        <g id="Grupo_32179" data-name="Grupo 32179" transform="translate(4007 12077)">
+          <g id="Botón_Primario_-_Mediano_-_Default" data-name="Botón Primario - Mediano - Default" transform="translate(-3632 -11169)">
+            <rect id="Rectángulo_3061" data-name="Rectángulo 3061" width="82" height="40" rx="8" fill="#ffdb2e"/>
+            <text id="Botón" transform="translate(16 26)" fill="#38485c" font-size="18" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">Botón</tspan></text>
+          </g>
+          <g id="Botón_Fantasma_-_Mediano_-_Default" data-name="Botón Fantasma - Mediano - Default" transform="translate(-3722 -11169)">
+            <rect id="Rectángulo_3061-2" data-name="Rectángulo 3061" width="82" height="40" rx="8" fill="#f5f9fc"/>
+            <text id="Botón-2" data-name="Botón" transform="translate(16 26)" fill="#007bc7" font-size="18" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">Botón</tspan></text>
+          </g>
+        </g>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(165 822)" fill="#38485c" font-size="16" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="17">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="41">consetetur sadipscing elitr, sed diam </tspan><tspan x="0" y="65">nonumy eirmod tempor invidunt ut</tspan></text>
+        <g id="Rectángulo_26331" data-name="Rectángulo 26331" transform="translate(165 813)" fill="#e6ebf0" stroke="#e6ebf0" stroke-width="1">
+          <rect width="292" height="1" stroke="none"/>
+          <rect x="0.5" y="0.5" width="291" fill="none"/>
+        </g>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_2" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(165 753)" fill="#38485c" font-size="19" font-family="Nunito-Bold, Nunito" font-weight="700" letter-spacing="-0.001em"><tspan x="0" y="19">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="45">consetetur sadipscing elitr, sed</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
