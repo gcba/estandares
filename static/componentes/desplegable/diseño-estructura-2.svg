@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="192" viewBox="0 0 712 192">
+  <g id="Grupo_32425" data-name="Grupo 32425" transform="translate(-513 -1615)">
+    <g id="Rectángulo_26394" data-name="Rectángulo 26394" transform="translate(513 1615)" fill="#fff" stroke="#38485c" stroke-width="2">
+      <rect width="712" height="192" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="710" height="190" rx="7" fill="none"/>
+    </g>
+    <g id="Grupo_32279" data-name="Grupo 32279" transform="translate(25 236)">
+      <g id="Botón_Fantasma_-_Grande" data-name="Botón Fantasma - Grande" transform="translate(1006 1451)">
+        <rect id="Rectángulo_3061" data-name="Rectángulo 3061" width="90" height="48" rx="8" fill="#f5f9fc"/>
+        <text id="Botón" transform="translate(20 30)" fill="#007bc7" font-size="18" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">Botón</tspan></text>
+      </g>
+      <g id="Navegación_-_Horizontal_-_L" data-name="Navegación - Horizontal - L" transform="translate(879 1451)">
+        <rect id="Rectángulo_26341" data-name="Rectángulo 26341" width="119" height="48" rx="8" fill="#fff"/>
+        <text id="Navegación" transform="translate(12 30)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="0">Navegación</tspan></text>
+      </g>
+      <g id="Navegación_-_Horizontal_-_L-2" data-name="Navegación - Horizontal - L" transform="translate(752 1451)">
+        <rect id="Rectángulo_26341-2" data-name="Rectángulo 26341" width="119" height="48" rx="8" fill="#fff"/>
+        <text id="Navegación-2" data-name="Navegación" transform="translate(12 30)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="0">Navegación</tspan></text>
+      </g>
+      <g id="Desplegable_-_L" data-name="Desplegable - L" transform="translate(592 1451)">
+        <rect id="Rectángulo_26341-3" data-name="Rectángulo 26341" width="152" height="48" rx="8" fill="#fff"/>
+        <g id="Grupo_32051" data-name="Grupo 32051" transform="translate(-513 -310)">
+          <g id="chevron_right" transform="translate(653 322) rotate(90)">
+            <rect id="Rectángulo_32" data-name="Rectángulo 32" width="24" height="24" fill="none"/>
+            <path id="Trazado_13167" data-name="Trazado 13167" d="M9,102.711a1,1,0,0,0,0,1.41L12.88,108,9,111.881a1,1,0,0,0,1.41,1.41L15,108.7a1,1,0,0,0,0-1.41l-4.59-4.59A1,1,0,0,0,9,102.711Z" transform="translate(0 -96)" fill="#38485c"/>
+          </g>
+          <text id="Desplegable" transform="translate(525 340)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="0">Desplegable</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

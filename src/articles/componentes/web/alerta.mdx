@@ -1,34 +1,28 @@
 ---
 menu: Alerta
 title: Alerta
-description: Las alertas mantienen a los usuarios informados sobre cambios importantes, a veces urgentes, y condiciones persistentes.
+description: Las alertas mantienen a los usuarios informados sobre el estado del sistema y puede requerir o no que realicen una acción.
 position: 1
 ---
 
-## Anatomía
+import "./alert.scss";
 
-![completar](/componentes/alerta/anatomía-1.svg)
+## Tipos de alertas
 
-1. El ícono junto con el color van a representar el tipo de alerta.
-2. El área destacable funciona como primer introducción y llamado de atención a lo que se quiere comunicar.
-3. El área descriptiva tiene información más detallada para el usuario.
-
-## Opciones de alertas
+Las opciones de alerta muestran su color semántico e ícono correspondiente para ayudar a las personas con deficiencia de visión del color a discernir el tono del mensaje.
 
 ### Alertas de error
 
-Las alertas de error se usan para comunicar problemas que deben resolverse, validación de acciones o errores del sistema. Los usuarios leerán un mensaje que les ayudará a resolver y a continuar con su navegación.
+Se usan para mostrar un error de validación, falla del sistema, o para transmitir algo que debe reconocerse o abordarse de inmediato para continuar con su navegación.
 
 <div className="alert-wrapper">
   <div className="alert alert-danger" role="alert">
     <p>
-      <strong>Este es un destacado de una alerta de error (opcional). </strong>
+      <strong>Este es un destacado de una alerta de error. </strong>
       Esta es la descripción de una alerta de error que continua el texto destacado y es obligatoria.
     </p>
   </div>
-</div>
 
-<div className="alert-wrapper">
   <div className="alert alert-danger alert-dismissible fade show" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de error. </strong>
@@ -49,23 +43,25 @@ Las alertas de error se usan para comunicar problemas que deben resolverse, vali
 
 ### Alertas de éxito
 
-Las alertas de éxito funcionan para validación de acciones del usuario. Por ejemplo como confirmación de una tarea se completó correctamente.
+Se usan para informar al usuario sobre una tarea que se realizó con éxito.
 
-<div className="alert alert-success" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de éxito (opcional). </strong>
-    Esta es la descripción de una alerta de éxito y es obligatoria.
-  </p>
+<div className="alert-wrapper">
+  <div className="alert alert-success" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de éxito. </strong>
+      Esta es la descripción de una alerta de éxito y es obligatoria.
+    </p>
+  </div>
 </div>
 
 ### Alertas de información
 
-Las alertas de información se usan para notificar a los usuario sobre un cambio, para darles consejos o brindar información especifica sobre la sección en la que se encuentran. Son las únicas alertas que la persona tiene habilitada la acción de cerrarlas en caso de que considere que es contenido molesto o innecesario.
+Notifican al usuario sobre un cambio, para darles consejos o brindar información específica sobre la sección en la que se encuentran.
 
 <div className="alert-wrapper">
   <div className="alert alert-info alert-dismissible fade show" role="alert">
     <p>
-      <strong>Este es un destacado de una alerta de información (opcional). </strong>
+      <strong>Este es un destacado de una alerta de información. </strong>
       Esta es la descripción de una alerta de información y es obligatoria.
     </p>
   </div>
@@ -73,33 +69,36 @@ Las alertas de información se usan para notificar a los usuario sobre un cambio
 
 ### Alertas de advertencia
 
-Las alertas de advertencia se usan para mostrar información que necesita la atención de los usuarios. Este tipo de alertas influyen en la navegación del usuario, por lo que no tienen cierre y es muy importante que las tengan en cuenta.
+Esta variante se utiliza para informar sobre una situación que debe abordarse pronto.
 
-<div className="alert alert-primary" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de advertencia (opcional). </strong>
-    Esta es la descripción de una alerta de advertencia y es obligatoria.
-  </p>
+<div className="alert-wrapper">
+  <div className="alert alert-primary" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de advertencia. </strong>
+      Esta es la descripción de una alerta de advertencia y es obligatoria.
+    </p>
+  </div>
 </div>
 
-## Diseño y estructura
+## Diseño y estructura (Contexto de uso)
 
-### Composición
+### En cuerpo de página
 
-![completar](/componentes/alerta/composición-1.svg)
+Los carteles de alerta están destinados a llamar la atención y pedir a los usuarios que tomen medidas necesarias en el contexto de una página. Se colocan al principio de aquello que se quiera advertir, alineados al margen izquierdo.
+
+![completar](/componentes/alerta/diseño_estructura.svg)
 
 ## Usabilidad
 
-**Comprender el contexto del usuario**. No incluir notificaciones que no estén relacionadas con el objetivo actual del usuario.
+### Buenas prácticas
 
-**Que el usuario descarte una alerta cuando sea apropiado**.
+[[si | **Se amable,** hacele saber de forma clara y con lenguaje conciso lo que debe hacer para que la tarea sea lo más fácil posible.]]
 
-**Las alertas son una oportunidad**. Los usuarios leerán un mensaje que les ayudará a resolver un error incluso si por lo general no leen la documentación; incluya contenido que ayude al usuario a resolver.
+[[si | **Comprender el contexto del usuario.** No incluir notificaciones que no estén relacionadas con el objetivo actual del usuario.]]
 
-## Tipografía
+[[si | **Las alertas son una oportunidad.** Los usuarios leerán un mensaje que les ayudará a resolver un error incluso si por lo general no leen la documentación; incluya contenido que ayude al usuario a resolver inconvenientes.]]
 
-| Tipografía | Tamaño           | Variable       | Color   |
-| ---------- | ---------------- | -------------- | ------- |
-| Nunito     | 21px / 1.3125rem | Semibold / 600 | #38485C |
-| Open Sans  | 16px / 1rem      | Regular / 500  | #38485C |
-| Open Sans  | 16px / 1rem      | Regular / 500  | #007BC7 |
+
+### Malas prácticas
+
+[[no | **Excederse en la cantidad de alertas.** Este tipo de alertas influyen en la navegación del usuario, demasiadas notificaciones lo podrían abrumar o molestar.]]

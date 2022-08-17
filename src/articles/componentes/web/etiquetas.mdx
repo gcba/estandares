@@ -1,47 +1,78 @@
 ---
-menu: Etiquetas
-title: Etiquetas
-description: Las etiquetas ayudan a navegar en la información para que las personas encuentren contenido relevante sobre lo que necesitan saber.
-position: 7
+menu: Etiqueta
+title: Etiqueta
+description: Las etiquetas identifican y categorizan la información diferenciando el contenido para que los usuarios encuentren aquello que necesitan.
+position: 8
 ---
 
-import { Badge } from "@gcba/obelisco"
+## Tipos de navegación
 
-## Opciones de etiquetas
+### Default
 
-Las etiquetas interactivas se muestran de manera distinta según su estado en relación al mouse, ya que son interactivas teniendo enlazados una página con contenidos.
+Cuando las etiquetas las utilizamos en un mismo componente no las diferenciamos por color, sino por texto. En estos casos usamos etiquetas default.
 
-<Badge text="Etiqueta 1" href="#" />
-<Badge text="Etiqueta 2" href="#" className="active" />
-<Badge text="Etiqueta 3" href="#" className="focus active" />
-<Badge text="Etiqueta 4" href="#" className="focus" />
+<div className='d-flex flex-row justify-content-center content-1'>
+  <span className="badge badge-secondary">Etiqueta</span>
+</div>
 
-## Diseño y estructura
+### Éxito
 
-### Orden y alineación
+De éxito para casos aprobados, completos, exitosos, finalizados.
 
-Con el objetivo de que se mantenga un orden de lectura natural, las etiquetas **siempre deben estar alineadas a la izquierda**, para que no se rompa ese patrón de lectura haciendo que la persona leyendo no vea la etiqueta.
+<div className='d-flex flex-row justify-content-center content-1'>
+  <span className="badge badge-success">Etiqueta</span>
+</div>
 
-![completar](/componentes/etiqueta/alineacion.svg)
+### Información
 
-Las etiquetas solo pueden aparecer **al principio de un artículo** (usando una sola, la principal) **o al final de una** (como parte de una sección de “Etiquetas relacionadas”, justo antes del término del texto de la noticia y antes de “Últimas noticias”).
+De información para casos en uso, en vivo, publicados, nuevos.
 
-![completar](/componentes/etiqueta/orden.svg)
+<div className='d-flex flex-row justify-content-center content-1'>
+  <span className="badge badge-info">Etiqueta</span>
+</div>
+
+### Advertencia
+
+De advertencia para casos de alerta, en pausa, rechazado.
+
+<div className='d-flex flex-row justify-content-center content-1'>
+  <span className="badge badge-primary">Etiqueta</span>
+</div>
+
+### Peligro
+
+De peligro para casos de error, fallidos, no completados, eliminados.
+
+<div className='d-flex flex-row justify-content-center content-1'>
+  <span className="badge badge-danger">Etiqueta</span>
+</div>
+
+## Diseño y estructura (Contexto de uso)
+
+### En tarjetas
+
+Dentro de las tarjetas se pueden usar un máximo de tres etiquetas.
+
+![completar](/componentes/etiqueta/en_tarjetas.png)
+
+### En texto
+
+**Siempre deben estar alineadas a la izquierda,** con el objetivo de que se mantenga un orden de lectura natural.
+
+![completar](/componentes/etiqueta/en_texto.svg)
+
+**Aparecen al principio de un artículo, usando una sola etiqueta principal y/o al final,** como parte de una sección con encabezado “Etiquetas relacionadas”, luego del final del texto.
+
+![completar](/componentes/etiqueta/en_texto2.svg)
 
 ## Usabilidad
 
-**Las etiquetas ayudan a categorizar la información**. Funcionan como filtros (aunque no en buscadores) para, por ejemplo, leer más información que trata una noticia, accediendo a más noticias sobre el tema.
+### Buenas prácticas
 
-**Las personas pueden llegar a confundir etiquetas con botones**. Para asegurarnos que esto no es un problema, siempre conviene llevar a cabo pruebas de usabilidad para entender si la ubicación del componente, por ejemplo, puede llegar a generar esa confusión.
+[[si | **Las etiquetas aumentan la cantidad de ruido visual** así que utilícelas con moderación.]]
 
-**En caso de que la etiqueta sea estática, que no varíen sus estados**. Si la etiqueta no es interactiva, es decir, que no tenga enlazado algo y solo sea a modo de información en la pantalla, es necesario deshabilitar el hover, on-click y focus.
+[[si | **Si requiere varias etiquetas, considere reservar una sola** para mostrar el estado, la categoría o el significado más importante.]]
 
-**No combinar etiquetas estáticas con interactivas**. Evitar que una etiqueta que al hacer clic lleve a algún lugar, se ubique al lado de una que no tenga ese atributo: optar por una de las dos, según sea más pertinente.
+[[si | **Los usuarios suelen confundir etiquetas con botones.** Evite las etiquetas si aparecen en la misma área de la página que los botones.]]
 
-**Usar las etiquetas con moderación**. Al combinar las etiquetas con otros elementos visuales, pueden hacer que haya mucho ruido visual en la pantalla, por lo que es preferible solo usarlas si es que realmente le es útil a la persona ciudadana.
-
-## Tipografía
-
-| Tipografía | Tamaño      | Variable       | Color   |
-| ---------- | ----------- | -------------- | ------- |
-| Open sans  | 16px / 1rem | Semibold / 600 | #007bc7 |
+[[si | **Reducir a una o dos palabras** para que nunca sean tan largas que requieran truncamiento.]]

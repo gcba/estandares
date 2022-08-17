@@ -5,42 +5,46 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
-        <div className="row">
-          <div className="col-md-6 h4">Formá parte de la comunidad</div>
-          <div className="col-md-2">
-            <a href="mailto:experienciadigital@buenosaires.gob.ar">
-              <i className="bx bx-mail-send"></i>
-              Correo
-            </a>
-          </div>
-          <div className="col-md-2">
-            <a href="//github.com/gcba/estandares">
-              <i className="bx bxl-github"></i>
-              Github
-            </a>
-          </div>
-          <div className="col-md-2">
-            <a href="//dribbble.com/ExperieniciadigitalBA">
-              <i className="bx bxl-dribbble"></i>
-              Dribbble
-            </a>
-          </div>
-        </div>
+        <section className="d-flex justify-content-between">
+          <h4>Formá parte de la comunidad</h4>
+          <ul className="list-inline">
+            <li className="list-inline-item redes-items">
+              <a href="mailto:experienciadigital@buenosaires.gob.ar">
+                <i className="bx bx-mail-send"></i>
+                Correo
+              </a>
+            </li>
+            <li className="list-inline-item redes-items">
+              <a href="//github.com/gcba/estandares">
+                <i className="bx bxl-github"></i>
+                Github
+              </a>
+            </li>
+            <li className="list-inline-item redes-items">
+              <a href="//dribbble.com/ExperieniciadigitalBA">
+                <i className="bx bxl-dribbble"></i>
+                Dribbble
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
-      <div className="row">
-        <div className="col-md-6">
-          <img
-            src={withPrefix("/logo-gcba.svg")}
-            alt="Logo del sistema de diseño Obelisco"
-            className="img-fluid"
-            width="230"
-          />
-        </div>
-        <div className="col-md-6">
-          <small className="text-secondary">
-            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina
-            License.
-          </small>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <img
+              src={withPrefix("/logo-gcba.svg")}
+              alt="Logo del sistema de diseño Obelisco"
+              className="img-fluid"
+              width="230"
+            />
+          </div>
+          <div className="col-md-6">
+            <small className="text-secondary">
+              Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina
+              License.
+            </small>
+          </div>
         </div>
       </div>
     </footer>

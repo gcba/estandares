@@ -1,22 +1,17 @@
 ---
 menu: Miga de pan
 title: Miga de pan
-description: Proporciona una navegación secundaria para ayudar a los usuarios a comprender dónde se encuentran.
+description: Las migas de pan brindan un sistema de navegación secundaria y muestran el contexto para ayudar a los usuarios a comprender dónde se encuentran.
 position: 9
 ---
 
-## Anatomía
+## Tipos de migas de pan
 
-![completar](/componentes/breadcrumb/anatomía-1.svg)
+### Desktop
 
-1. El enlace describe la relación jerárquica entre la página actual y la estructura general del sitio. Ayuda a posicionar al usuario y permite interactuar para la navegación del sitio.
-2. El ícono se utiliza para indicar el recorrido del sitio para llegar la página actual.
+Las rutas de navegación muestran dónde se encuentra la página actual en la jerarquía del sitio web. Utilizar migas de pan refuerza la estructura del sitio. En desktop, se ve completo.
 
-## Opciones de miga de pan
-
-Las rutas de navegación muestran dónde se encuentra la página actual en la jerarquía del sitio web. Utilizar migas de pan refuerza la estructura del sitio.
-
-<div>
+<div className='d-flex flex-row justify-content-center content-1'>
   <nav aria-label="breadcrumb">
     <ol className="breadcrumb">
       <li className="breadcrumb-item">
@@ -32,70 +27,37 @@ Las rutas de navegación muestran dónde se encuentra la página actual en la je
   </nav>
 </div>
 
-## Diseño y estructura
+### Mobile
 
-### Niveles
+Mientras que en dispositivos móviles, se ve de manera reducida, solo para permitir un regreso.
 
-Las páginas actuales siempre aparecen en forma de título luego de las migas de pan. En este caso podemos observar tres niveles de navegación anteriores a la página actual. Los niveles que posean más de 30 caracteres (aproximadamente) se les agregarán tres puntos (…) al final para visualizar que hay mas texto en dicho nivel.
-
-<Example>
+<div className='d-flex flex-row justify-content-center content-1'>
   <nav aria-label="breadcrumb">
     <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="#">Inicio</a>
-      </li>
+      <li className="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+      <li className="breadcrumb-item"><a href="#">Página anterior</a></li>
     </ol>
   </nav>
-  <div class="h2 text-muted">Primer página</div>
-</Example>
+</div>
 
-<br />
+## Diseño y estructura (contexto de uso)
 
-<Example>
-  <nav aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="#">Inicio</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="#">Primera página</a>
-      </li>
-    </ol>
-  </nav>
-  <div class="h2 text-muted">Segunda página con mucho mucho texto</div>
-</Example>
+### Desktop
 
-<br />
+Se ubican sobre el título de la página y muestran el progreso jerárquico desde el nivel de elemento más alto hasta el más bajo. 
 
-<Example>
-  <nav aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="#">Inicio</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="#">Primera página</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="#">Segunda página con mucho mucho texto</a>
-      </li>
-    </ol>
-  </nav>
-  <div class="h2 text-muted">Tercer página</div>
-</Example>
+Los niveles que posean más de 30 caracteres se truncarán y agregarán tres puntos (…) al final para visualizar que hay más texto en dicho nivel.
 
-### Composición
+<br></br>
 
-![completar](/componentes/breadcrumb/composición-1.svg)
+![completar](/componentes/breadcrumb/breadcrumb.png)
 
 ## Usabilidad
 
-**Empiece con la palabra "Inicio" como primer enlace de las rutas de navegación**.
+### Buenas prácticas
 
-**Considerar el tamaño de los botones**. Aunque las rutas de navegación se muestran con frecuencia con texto más pequeño, asegúrese de que el texto sea el tamaño dispuesto.
+[[si | **Use migas de pan para la navegación anidada.** Cada elemento debe actuar como un enlace, excepto el último que se visualiza y refuerza con el nombre de la página.]]
 
-## Tipografía
+[[si | **Evalúe si sus usuarios necesitan las migas de pan** si está utilizando otros elementos de navegación en la página, como una barra lateral.]]
 
-| Tipografía | Tamaño      | Variable      | Color   |
-| ---------- | ----------- | ------------- | ------- |
-| Open sans  | 16px / 1rem | Regular / 500 | #007BC7 |
+[[si | **Empiece con la palabra "Inicio"** como primer enlace de las rutas de navegación.]]

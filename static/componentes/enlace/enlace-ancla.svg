@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="378" viewBox="0 0 712 378">
+  <g id="Grupo_32428" data-name="Grupo 32428" transform="translate(-513 -2799)">
+    <g id="Rectángulo_26467" data-name="Rectángulo 26467" transform="translate(513 2799)" fill="#fff" stroke="#38485c" stroke-width="2">
+      <rect width="712" height="378" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="710" height="376" rx="7" fill="none"/>
+    </g>
+    <g id="Grupo_32391" data-name="Grupo 32391" transform="translate(0 51)">
+      <g id="V2-Enlace" transform="translate(606.5 3056.037)">
+        <rect id="Rectángulo_17710" data-name="Rectángulo 17710" width="114" height="22" rx="1" fill="none"/>
+        <text id="_4_ancla-enlace" data-name="4º ancla-enlace" transform="translate(1 17)" fill="#007bc7" font-size="16" font-family="OpenSans-Regular, Open Sans" text-decoration="underline"><tspan x="0" y="0">4º ancla-enlace</tspan></text>
+      </g>
+      <g id="V2-Enlace-2" data-name="V2-Enlace" transform="translate(606.5 3022.037)">
+        <rect id="Rectángulo_17710-2" data-name="Rectángulo 17710" width="114" height="22" rx="1" fill="none"/>
+        <text id="_3_ancla-enlace" data-name="3º ancla-enlace" transform="translate(1 17)" fill="#007bc7" font-size="16" font-family="OpenSans-Regular, Open Sans" text-decoration="underline"><tspan x="0" y="0">3º ancla-enlace</tspan></text>
+      </g>
+      <g id="V2-Enlace-3" data-name="V2-Enlace" transform="translate(606.5 2988.037)">
+        <rect id="Rectángulo_17710-3" data-name="Rectángulo 17710" width="114" height="22" rx="1" fill="none"/>
+        <text id="_2_ancla-enlace" data-name="2º ancla-enlace" transform="translate(1 17)" fill="#007bc7" font-size="16" font-family="OpenSans-Regular, Open Sans" text-decoration="underline"><tspan x="0" y="0">2º ancla-enlace</tspan></text>
+      </g>
+      <g id="V2-Enlace-4" data-name="V2-Enlace" transform="translate(606.5 2954.037)">
+        <rect id="Rectángulo_17710-4" data-name="Rectángulo 17710" width="114" height="22" rx="1" fill="none"/>
+        <text id="_1_ancla-enlace" data-name="1º ancla-enlace" transform="translate(1 17)" fill="#007bc7" font-size="16" font-family="OpenSans-Regular, Open Sans" text-decoration="underline"><tspan x="0" y="0">1º ancla-enlace</tspan></text>
+      </g>
+      <line id="Línea_591" data-name="Línea 591" x2="525.5" transform="translate(606.5 2942.037)" fill="none" stroke="#dfe7f0" stroke-width="1"/>
+      <text id="Contenido_en_esta_página" data-name="Contenido en esta página" transform="translate(606 2927.037)" fill="#38485c" font-size="19" font-family="Nunito-SemiBold, Nunito" font-weight="600" letter-spacing="-0.001em"><tspan x="0" y="0">Contenido en esta página</tspan></text>
+      <text id="Se_usan_para_elementos_anclados_en_una_parte_de_la_página_que_funcionan_a_modo_de_índice." data-name="Se usan para elementos anclados en una parte de la página que funcionan a modo de índice." transform="translate(606 2838)" fill="#38485c" font-size="16" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="17">Se usan para elementos anclados en una parte de la página que </tspan><tspan x="0" y="41">funcionan a modo de índice.</tspan></text>
+      <text id="Anclas" transform="translate(606 2796)" fill="#38485c" font-size="19" font-family="Nunito-Bold, Nunito" font-weight="700" letter-spacing="-0.001em"><tspan x="0" y="19">Anclas</tspan></text>
+    </g>
+  </g>
+</svg>

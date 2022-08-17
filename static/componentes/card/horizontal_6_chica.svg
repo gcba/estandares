@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="189" viewBox="0 0 712 189">
+  <g id="Grupo_32450" data-name="Grupo 32450" transform="translate(-513 -7143)">
+    <g id="Rectángulo_26414" data-name="Rectángulo 26414" transform="translate(513 7143)" fill="#fff" stroke="#38485c" stroke-width="2">
+      <rect width="712" height="189" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="710" height="187" rx="7" fill="none"/>
+    </g>
+    <g id="Grupo_32342" data-name="Grupo 32342" transform="translate(545 7190.577)">
+      <g id="Rectángulo_26427" data-name="Rectángulo 26427" transform="translate(0.001 0.423)" fill="#fff" stroke="#d1d8df" stroke-width="1">
+        <rect width="318" height="93" rx="4" stroke="none"/>
+        <rect x="0.5" y="0.5" width="317" height="92" rx="3.5" fill="none"/>
+      </g>
+      <g id="Grupo_32341" data-name="Grupo 32341" transform="translate(12.001 12)">
+        <g id="Grupo_32339" data-name="Grupo 32339" transform="translate(0 0)">
+          <rect id="Rectángulo_18485" data-name="Rectángulo 18485" width="196" height="22" transform="translate(81 9.423)" fill="#d1d8df"/>
+          <rect id="Rectángulo_18486" data-name="Rectángulo 18486" width="204" height="9" transform="translate(81 53.423)" fill="#e6ebf0"/>
+          <rect id="Rectángulo_18487" data-name="Rectángulo 18487" width="213" height="9" transform="translate(81 39.423)" fill="#e6ebf0"/>
+          <g id="Grupo_32316" data-name="Grupo 32316" transform="translate(0 0)">
+            <rect id="Rectángulo_4828" data-name="Rectángulo 4828" width="72" height="69" transform="translate(0 0.423)" fill="#e6ebf0"/>
+            <path id="bxs-image-alt" d="M8.139,49.254H44.114a5.141,5.141,0,0,0,5.139-5.139V8.139A5.141,5.141,0,0,0,44.114,3H8.139A5.141,5.141,0,0,0,3,8.139V44.114A5.141,5.141,0,0,0,8.139,49.254Zm7.709-17.988,6.072,6.072,9.346-13.781L44.114,41.545H8.139Z" transform="translate(9.539 8.817)" fill="#9eaab8" opacity="0.51"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Grupo_32343" data-name="Grupo 32343" transform="translate(874.963 7190.577)">
+      <g id="Rectángulo_26427-2" data-name="Rectángulo 26427" transform="translate(0.036 0.423)" fill="#fff" stroke="#d1d8df" stroke-width="1">
+        <rect width="318" height="93" rx="4" stroke="none"/>
+        <rect x="0.5" y="0.5" width="317" height="92" rx="3.5" fill="none"/>
+      </g>
+      <g id="Grupo_32341-2" data-name="Grupo 32341" transform="translate(12.001 12)">
+        <g id="Grupo_32339-2" data-name="Grupo 32339" transform="translate(0 0)">
+          <rect id="Rectángulo_18485-2" data-name="Rectángulo 18485" width="195" height="22" transform="translate(81.035 9.423)" fill="#d1d8df"/>
+          <rect id="Rectángulo_18486-2" data-name="Rectángulo 18486" width="204" height="9" transform="translate(81.035 53.423)" fill="#e6ebf0"/>
+          <rect id="Rectángulo_18487-2" data-name="Rectángulo 18487" width="213" height="9" transform="translate(81.035 39.423)" fill="#e6ebf0"/>
+          <g id="Grupo_32316-2" data-name="Grupo 32316" transform="translate(0 0)">
+            <rect id="Rectángulo_4828-2" data-name="Rectángulo 4828" width="70" height="69" transform="translate(0.035 0.423)" fill="#e6ebf0"/>
+            <path id="bxs-image-alt-2" data-name="bxs-image-alt" d="M8.139,49.254H44.114a5.141,5.141,0,0,0,5.139-5.139V8.139A5.141,5.141,0,0,0,44.114,3H8.139A5.141,5.141,0,0,0,3,8.139V44.114A5.141,5.141,0,0,0,8.139,49.254Zm7.709-17.988,6.072,6.072,9.346-13.781L44.114,41.545H8.139Z" transform="translate(9.287 8.817)" fill="#9eaab8" opacity="0.51"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+---
+menu: Opciones
+title: Opciones
+description: Las opciones aparecen al interactuar con un elemento como un botón o un icono o un selector de formulario. Es una forma simple y compacta de mostrar múltiples opciones.
+position: 12
+---
+
+import "./opciones.scss"
+
+## Tipos de opciones
+
+Cuando el sistema ya posee los datos que se precisan seleccionar y la persona solo debe optar por uno o varios de ellos. Se muestran al accionar un Desplegable.
+
+<div className="opciones-box my-5">
+<form className="d-flex flex-row justify-content-center options-container">
+  <fieldset className="dropdown show">
+    <button
+      type="button"
+      className="btn btn-dropdown btn-dropdown-lg dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="true"
+    >
+      Desplegable
+    </button>
+    <div className="dropdown-menu show">
+      <input type="radio" id="options-example1" name="example1" className="sr-only" />
+      <label for="options-example1" className="dropdown-item">
+        Opción 1
+      </label>
+      <input type="radio" id="options-example2" name="example1" className="sr-only" />
+      <label for="options-example2" className="dropdown-item">
+        Opción 2
+      </label>
+      <input type="radio" id="options-example3" name="example1" className="sr-only" />
+      <label for="options-example3" className="dropdown-item">
+        Opción 3
+      </label>
+      <input type="radio" id="options-example3" name="example1" className="sr-only" />
+      <label for="options-example3" className="dropdown-item">
+        Opción 4
+      </label>
+    </div>
+  </fieldset>
+</form>
+</div>
+
+
+## Diseño y estructura (Contexto de uso)
+
+Opciones alineadas a la izquierda, se muestran al accionar un Desplegable.
+
+![completar](/componentes/opciones/izquierda.png)
+
+Opciones alineadas al centro, se muestran al accionar un Desplegable.
+
+![completar](/componentes/opciones/centro.png)
+
+Opciones alineadas al centro, se muestran al accionar un Desplegable.
+
+![completar](/componentes/opciones/derecha.png)
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | **Limita a una cantidad de entre 5 y 15 opciones** para elegir dentro de un menú.]]
+
+[[si | **En formularios al utilizar menos de 5 opciones,** use el componente de radio button y no un menú desplegable con opciones, específicamente en los formularios.]]
+
+[[si | **Al utilizar más de 5 opciones,** los menús se pueden desplazar. En este estado, muestra una barra de desplazamiento en su lado derecho para realizar el scroll correspondiente.]]
+
+[[si | **Botones de radio y casillas de verificación** pueden incluirse dentro de las opciones.]]
+
+[[si | **Prioriza las opciones en un orden lógico** coloca la opción más seleccionada en primer lugar.]]
+
+[[si | **Mantene las opciones del menú breves y concisas.** Se desaconsejan las opciones de menú largas que hacen que el texto se ajuste a varias líneas.]]
+
+### Malas prácticas
+
+[[no | **No usar textos largos** en donde el usuario se canse o confunda.]]
+
+[[no | **No usar más de 20 opciones dentro de un menú,** revisa la información, prioriza o dividi el menú en otro con una nueva categoría.]]

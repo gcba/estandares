@@ -19,7 +19,7 @@ export const Sidebar = (props: SidebarProps) => {
             Acerca de Obelisco
           </a>
           <div className="nav-responsive collapse" id="sidebar-nav">
-            <ul className="nav nav-lg flex-column">
+            <ul className="nav flex-column nav-pills nav-lg">
               <Nav items={navigation} navSize="large" selected={current} />
             </ul>
           </div>
