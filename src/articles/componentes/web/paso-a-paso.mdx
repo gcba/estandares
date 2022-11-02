@@ -1,7 +1,7 @@
 ---
-menu: Paso a paso
-title: Paso a paso
-description: Es un indicador de progreso que muestra visualmente los pasos y el progreso de las acciones del usuario. Los ayuda a comprender la progresión de los formularios largos y reduce la incertidumbre a medida que completan cada pantalla.
+menu: Pasos de un formulario
+title: Pasos de un formulario
+description: Es un indicador de progreso que muestra visualmente los pasos de las acciones del usuario en un formulario. Los ayuda a comprender la progresión de los formularios largos y reduce la incertidumbre a medida que completan cada pantalla.
 position: 14
 ---
 
@@ -11,7 +11,7 @@ import "./paso-a-paso.scss"
 
 ### Pasos de un formulario
 
-Los pasos de un formulario son guías visuales que muestran cuántos pasos llevará un proceso y cuánto falta para completar una tarea.
+Los pasos de un formulario son guías visuales que muestran cuántos pasos llevará un proceso, en qué lugar se encuentra la persona en este proceso y cuánto falta para completar una tarea.
 <div className='paso-a-paso-box '>
   <Example>
     <div class="stepper-wrapper">
@@ -31,7 +31,7 @@ Los pasos de un formulario son guías visuales que muestran cuántos pasos lleva
 
 ## Diseño y estructura (contexto de uso)
 
-Este componente se ubica en la parte superior de la página, a continuación del header.
+Este componente se ubica siempre al principio del formulario, en la parte superior de la página. 
 
 ![completar](/componentes/paso-a-paso/formulario.svg)
 
@@ -39,18 +39,18 @@ Este componente se ubica en la parte superior de la página, a continuación del
 
 ### Buenas prácticas
 
-[[si | **Progresión lineal.** El indicador de paso está diseñado para complementar la navegación estándar atrás/siguiente en una secuencia lineal, debe utilizarse cuando se pueda detectar la tasa de finalización del proceso.]]
+[[si | **Respetar la progresión lineal.** El indicador de paso está diseñado para complementar la navegación estándar Atrás/Siguiente en una secuencia lineal. Debe utilizarse cuando se pueda detectar la tasa de finalización del proceso.]]
 
-[[si | **Proporcione la navegación por separado.** Utilice botones para avanzar y retroceder en un formulario.]]
+[[si | **Proporcionar la navegación por separado.** En un formulario utilizar botones para avanzar y retroceder.]]
 
-[[si | **Use etiquetas cortas o de una sola palabra.** Utilice palabras muy cortas (1-2 palabras) y descriptivas.]]
+[[si | **Usar etiquetas cortas o de una sola palabra.** Utilice palabras/frases cortas y descriptivas.]]
 
-[[si | **A partir de 3 y hasta 5 pasos permite el uso de este componente,** si necesita más pasos piense en redefinir los formularios en menos pasos.]]
+[[si | **Utilizar este componente a partir de 3 y hasta 5 pasos.** De necesitar más pasos pensar en redefinir los formularios en menos pasos.]]
+
+[[si | **Utilizar un indicador de pasos para formularios muy breves,** sin capítulos o secciones. Debe tener al menos tres secciones.]]
 
 ### Malas prácticas
 
-[[no | **Utilizarlo en procesos de más de seis pasos.** Considere simplificar el proceso o dividirlo en varias tareas.]]
+[[no | **No utilizar el paso a paso en procesos de más de 6 pasos.** Considerar simplificar el proceso o dividirlo en varias tareas.]]
 
-[[no | **Cantidad de pasos variables.** Considere otro enfoque si la cantidad de pasos puede cambiar debido a la entrada del usuario.]]
-
-[[no | **Utilizar un indicador de paso para formularios muy breves,** sin capítulos o secciones. Debe tener al menos tres secciones.]]
+[[no | **Evitar la cantidad de pasos variables.** Considerar otro enfoque si la cantidad de pasos puede cambiar debido a la entrada del usuario.]]

@@ -1,19 +1,21 @@
 ---
-menu: Etiqueta
-title: Etiqueta
-description: Las etiquetas identifican y categorizan la información diferenciando el contenido para que los usuarios encuentren aquello que necesitan.
-position: 8
+menu: Etiquetas
+title: Etiquetas
+description: Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan.
+position: 7
 ---
 
-## Tipos de navegación
+## Tipos de etiquetas
 
 ### Default
 
-Cuando las etiquetas las utilizamos en un mismo componente no las diferenciamos por color, sino por texto. En estos casos usamos etiquetas default.
+Cuando utilizamos las etiquetas en un mismo componente no las diferenciamos por color, sino por texto. En estos casos usamos etiquetas default.
 
 <div className='d-flex flex-row justify-content-center content-1'>
   <span className="badge badge-secondary">Etiqueta</span>
 </div>
+
+Cuando las etiquetas tienen un significado semántico se diferencian por colores. Utilizar estas variantes para los siguientes estados:
 
 ### Éxito
 
@@ -23,7 +25,7 @@ De éxito para casos aprobados, completos, exitosos, finalizados.
   <span className="badge badge-success">Etiqueta</span>
 </div>
 
-### Información
+### Información 
 
 De información para casos en uso, en vivo, publicados, nuevos.
 
@@ -33,7 +35,7 @@ De información para casos en uso, en vivo, publicados, nuevos.
 
 ### Advertencia
 
-De advertencia para casos de alerta, en pausa, rechazado.
+De advertencia para casos de alerta, fallidos, en pausa, rechazado
 
 <div className='d-flex flex-row justify-content-center content-1'>
   <span className="badge badge-primary">Etiqueta</span>
@@ -41,15 +43,13 @@ De advertencia para casos de alerta, en pausa, rechazado.
 
 ### Peligro
 
-De peligro para casos de error, fallidos, no completados, eliminados.
+De peligro para casos de error, no completados, eliminados.
 
 <div className='d-flex flex-row justify-content-center content-1'>
   <span className="badge badge-danger">Etiqueta</span>
 </div>
 
-## Diseño y estructura (Contexto de uso)
-
-### En tarjetas
+## Diseño y estructura (contexto de uso)
 
 Dentro de las tarjetas se pueden usar un máximo de tres etiquetas.
 
@@ -61,7 +61,7 @@ Dentro de las tarjetas se pueden usar un máximo de tres etiquetas.
 
 ![completar](/componentes/etiqueta/en_texto.svg)
 
-**Aparecen al principio de un artículo, usando una sola etiqueta principal y/o al final,** como parte de una sección con encabezado “Etiquetas relacionadas”, luego del final del texto.
+**Aparecen al principio de un artículo con una sola etiqueta principal y/o al final del texto** como parte de una sección de “Etiquetas relacionadas”.
 
 ![completar](/componentes/etiqueta/en_texto2.svg)
 
@@ -69,10 +69,10 @@ Dentro de las tarjetas se pueden usar un máximo de tres etiquetas.
 
 ### Buenas prácticas
 
-[[si | **Las etiquetas aumentan la cantidad de ruido visual** así que utilícelas con moderación.]]
+[[si | **Deshabilitar los diferentes estados cuando la etiqueta es estática.** Si la etiqueta es meramente informativa y no se encuentra asociada a un enlace de destino es necesario deshabilitar el hover, on-click y focus.]]
 
-[[si | **Si requiere varias etiquetas, considere reservar una sola** para mostrar el estado, la categoría o el significado más importante.]]
+[[si | **Usar las etiquetas con moderación.** Al combinar las etiquetas con otros elementos visuales se puede generar mucho ruido visual en la pantalla, por lo que es preferible usarlas únicamente si le es útil a la persona ciudadana.]]
 
-[[si | **Los usuarios suelen confundir etiquetas con botones.** Evite las etiquetas si aparecen en la misma área de la página que los botones.]]
+### Malas prácticas
 
-[[si | **Reducir a una o dos palabras** para que nunca sean tan largas que requieran truncamiento.]]
+[[no | **No combinar etiquetas estáticas con interactivas.** Evitar que una etiqueta con enlace se ubique al lado de otra que no tenga ese atributo. Optar por una de las dos, según sea más pertinente.]]

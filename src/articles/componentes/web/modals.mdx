@@ -1,18 +1,18 @@
 ---
-menu: Modal
-title: Modal
-description: Enfocan contenido importante en una sola tarea o mensaje, sobre la página y bloquea otras interacciones.
+menu: Modales
+title: Modales
+description: Los modales son utilizados como ventanas emergentes para resaltar contenido importante en una página haciendo foco en una sola tarea o mensaje. También bloquean otras interacciones para los usuarios.
 position: 10
 ---
 
 import "./modals.scss"
 
 
-## Tipos de modal
+## Tipos de modales
 
 ### Modal de confirmación
 
-Cuando un usuario necesita información adicional o contexto para tomar una de las decisiones que ofrecen las acciones.
+Cuando un usuario necesita información adicional o contexto para tomar la decisión de qué acción realizar.
 
 <Example>
   <div class="modal d-block" tabindex="-1" role="dialog">
@@ -32,7 +32,7 @@ Cuando un usuario necesita información adicional o contexto para tomar una de l
   <div class=" show"></div>
 </Example>
 
-### Modal de confirmación
+### Modal de peligro
 
 Cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc.
 
@@ -54,7 +54,7 @@ Cuando un usuario necesita confirmar una acción que afectará sus datos o exper
   <div class=" show"></div>
 </Example>
 
-## Diseño y estructura (Contexto de uso)
+## Diseño y estructura (contexto de uso)
 
 Un modal deshabilita el contenido de la página y enfoca la atención del usuario en una sola tarea o mensaje.
 
@@ -64,22 +64,22 @@ Un modal deshabilita el contenido de la página y enfoca la atención del usuari
 
 ### Buenas prácticas
 
-[[si | **Se utilizan para confirmar acciones o completar tareas** que requieran toda la atención.]]
+[[si | **Utilizar los modales para confirmar acciones o completar tareas** que requieran toda la atención.]]
 
-[[si | **Los diálogos interrumpen la acción del usuario** , por lo que deben usarse con moderación.]]
+[[si | **Usarlos con moderación** ya que los diálogos interrumpen la acción del usuario.]]
 
-[[si | **Deben aparecer como resultado de una acción realizada por el usuario** o (menos comúnmente) por inactividad.]]
+[[si | **Mostrar los modales como resultado de una acción realizada por el usuario** o (menos comúnmente) por inactividad.]]
 
-[[si | **Los títulos son simples y comunican lo principal que una persona está a punto de hacer.** Lo ideal es que los títulos usen la misma frase o una similar a la llamada a la acción que llevó a alguien al cuadro de diálogo de alerta en primer lugar.]]
+[[si | **Usar títulos simples y comunicar lo principal** que la persona usuaria está a punto de hacer. Lo ideal es que los títulos usen la misma frase o una similar a la llamada a la acción que llevó a alguien al cuadro de diálogo de alerta en primer lugar.]]
 
-[[si | **En los títulos evita hacer preguntas** como "¿Estás seguro de que deseas salir?" o "¿Queres cancelar?" son redundantes en la decisión que ya tomaron al realizar una acción previa. Esta frase también establece un conjunto de acciones de sí/no, lo que puede volverse confuso. En su lugar, reformula el mensaje para centrarse en el resultado o efecto.]]
+[[si | **Mantener una coherencia textual entre el título del modal y las opciones para los próximos pasos.** Por ejemplo, si el título de un cuadro de diálogo es "Eliminar conversación", la etiqueta del botón de acción principal sería "Eliminar".]]
 
-[[si | **Evitá el contenido largo que requiere desplazamiento.** El contenido extenso puede ser problemático porque empuja los botones fuera de la vista inicial del usuario, lo que puede causar confusión.]]
-
-[[si | **Las opciones para los próximos pasos deben estar en equilibrio con el título.** Por ejemplo, si el título de un cuadro de diálogo es "Eliminar conversación", la etiqueta del botón de acción principal sería "Eliminar".]]
-
-[[si | **Los grupos de botones se apilan verticalmente** cuando el espacio horizontal es limitado. Deben aparecer en orden ascendente según la importancia, con la acción más crítica en la parte inferior.]]
+[[si | **Apilar verticalmente los grupos de botones** cuando el espacio horizontal es limitado. Deben aparecer en orden ascendente según la importancia, con la acción más crítica en la parte inferior.]]
 
 ### Malas prácticas
 
-[[no | **No debería sorprender al usuario,** no lo muestres automáticamente si el usuario no realizó una acción previa.]]
+[[no | **No sorprender al usuario,** no le muestres un modal automáticamente si no realizó ninguna acción previa.]]
+
+[[no | **Evitar hacer preguntas como** "¿Estás seguro de que deseas salir?" o "¿Querés cancelar?" son redundantes en la decisión que ya tomaron al realizar una acción previa. Esta frase también establece un conjunto de acciones de sí/no, lo que puede volverse confuso. En su lugar, reformulá el mensaje para centrarlo en el resultado o efecto.]]
+
+[[no | **Evitar el contenido largo que requiere desplazamiento.** El contenido extenso puede ser problemático porque empuja los botones fuera de la vista inicial del usuario, lo que puede causar confusión.]]

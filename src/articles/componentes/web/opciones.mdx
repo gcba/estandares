@@ -1,7 +1,7 @@
 ---
 menu: Opciones
 title: Opciones
-description: Las opciones aparecen al interactuar con un elemento como un botón o un icono o un selector de formulario. Es una forma simple y compacta de mostrar múltiples opciones.
+description: Las opciones aparecen al interactuar con elementos como desplegables, botones o un ícono o selector de formulario. Es una forma simple y compacta de mostrar múltiples opciones.
 position: 12
 ---
 
@@ -9,7 +9,7 @@ import "./opciones.scss"
 
 ## Tipos de opciones
 
-Cuando el sistema ya posee los datos que se precisan seleccionar y la persona solo debe optar por uno o varios de ellos. Se muestran al accionar un Desplegable.
+Cuando el sistema ya posee los datos que se precisan seleccionar y la persona solo debe optar por uno o varios de ellos.
 
 <div className="opciones-box my-5">
 <form className="d-flex flex-row justify-content-center options-container">
@@ -46,9 +46,9 @@ Cuando el sistema ya posee los datos que se precisan seleccionar y la persona so
 </div>
 
 
-## Diseño y estructura (Contexto de uso)
+## Diseño y estructura (contexto de uso)
 
-Opciones alineadas a la izquierda, se muestran al accionar un Desplegable.
+Se muestran al accionar un [Desplegable](https://gcba.github.io/Obelisco/?path=/story/componentes-opciones--opciones-grande).
 
 ![completar](/componentes/opciones/izquierda.png)
 
@@ -56,7 +56,7 @@ Opciones alineadas al centro, se muestran al accionar un Desplegable.
 
 ![completar](/componentes/opciones/centro.png)
 
-Opciones alineadas al centro, se muestran al accionar un Desplegable.
+Opciones alineadas a la derecha, se muestran al accionar un Desplegable.
 
 ![completar](/componentes/opciones/derecha.png)
 
@@ -64,20 +64,18 @@ Opciones alineadas al centro, se muestran al accionar un Desplegable.
 
 ### Buenas prácticas
 
-[[si | **Limita a una cantidad de entre 5 y 15 opciones** para elegir dentro de un menú.]]
+[[si | **Usar el componente de radio button** y no un menú desplegable con opciones en formularios con menos de 5 opciones.]]
 
-[[si | **En formularios al utilizar menos de 5 opciones,** use el componente de radio button y no un menú desplegable con opciones, específicamente en los formularios.]]
+[[si | **Desplazar los menús con más de 5 opciones.** En este estado mostrar una barra de desplazamiento en el lado derecho para realizar el scroll correspondiente.]]
 
-[[si | **Al utilizar más de 5 opciones,** los menús se pueden desplazar. En este estado, muestra una barra de desplazamiento en su lado derecho para realizar el scroll correspondiente.]]
+[[si | **Pueden incluirse botones de radio y casillas de verificación** dentro de las opciones.]]
 
-[[si | **Botones de radio y casillas de verificación** pueden incluirse dentro de las opciones.]]
+[[si | **Priorizar las opciones en un orden lógico** colocando la opción más seleccionada en primer lugar.]]
 
-[[si | **Prioriza las opciones en un orden lógico** coloca la opción más seleccionada en primer lugar.]]
-
-[[si | **Mantene las opciones del menú breves y concisas.** Se desaconsejan las opciones de menú largas que hacen que el texto se ajuste a varias líneas.]]
+[[si | **Mantener los textos de las opciones del menú breves y concisas.** Se desaconsejan las opciones de menú que se extiendan en varias líneas. ]]
 
 ### Malas prácticas
 
-[[no | **No usar textos largos** en donde el usuario se canse o confunda.]]
+[[no | **No usar textos largos en las opciones,** pueden confundir al usuario.]]
 
-[[no | **No usar más de 20 opciones dentro de un menú,** revisa la información, prioriza o dividi el menú en otro con una nueva categoría.]]
+[[no | **No usar más de 15 opciones dentro de un menú.** Revisar la información, priorizar o dividir el menú en otro con una nueva categoría.]]
