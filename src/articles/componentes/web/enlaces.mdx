@@ -1,7 +1,7 @@
 ---
-menu: Enlace
-title: Enlace
-description: Los enlaces conectan a los usuarios a una página diferente, les permiten navegar entre páginas de una web o acceder a más información.
+menu: Enlaces
+title: Enlaces
+description: Los enlaces son hipervínculos que facilitan la navegación dentro de una misma página web como también para acceder a páginas externas o a más información.
 position: 6
 ---
 
@@ -9,46 +9,40 @@ position: 6
 
 ### Default
 
-Es su estado principal y lo utilizamos para conectar o enlazar un contenido que no se encuentra en la página actual.
+Es el enlace en su estado principal y lo utilizamos para enlazar un contenido que no se encuentra en la página actual pero sí dentro del mismo sitio.
 
-<p class="content-2 text-center">
-  <a href="#" target="_blank" rel="noreferrer">
-    Enlace
-  </a>
-</p>
+![completar](/componentes/enlace/enlace.svg)
 
-### Ancla
+### Anclas
 
-Se usan para elementos anclados en una parte de la página que funcionan a modo de índice.
+Se usan en grupo y funcionan a modo de índice relacionándose con contenido en otra parte de la página.
 
-<p class="content-2 text-center d-grid">
-  <a href="#">1º ancla-enlace</a>
-  <a href="#">2º ancla-enlace</a>
-  <a href="#">3º ancla-enlace</a>
-  <a href="#">4º ancla-enlace</a>
-</p>
+
+
+![completar](/componentes/enlace/anclas.svg)
+
+### Accesos
+
+Los utilizamos para ver más información dentro del mismo sitio. Por ejemplo, "Ver más noticias".
+
+![completar](/componentes/enlace/accesos.svg)
+
 
 ### Externo
 
-Identificamos al enlace con un icono para referirnos que el sitio siguiente es un sitio externo al sitio actual.
+Identificamos al enlace con un **ícono** para indicar que el vínculo se trata de un sitio externo.  
 
-<p class="content-2 text-center">
-  <a href="#" className="external">
-    Enlace
-  </a>
-</p>
+![completar](/componentes/enlace/externo.svg)
 
 ### Descarga
 
-Identificamos al enlace con un icono de descarga para referirnos que al accionar sobre el podremos descargar un archivo.
+Identificamos al enlace con un **ícono** de descarga para indicar que al accionar sobre **él podremos** descargar un archivo.
 
-<p class="content-2 text-center">
-  <a href="#" className="download">
-    Enlace
-  </a>
-</p>
+![completar](/componentes/enlace/descarga.svg)
 
-## Diseño y estructura (Contexto de uso)
+## Diseño y estructura (contexto de uso)
+
+Los enlaces se muestran de distintas formas según su estado en relación al mouse (hover, on click y focus);  a interacciones previas (visitado, no visitado); como también según las características de lo vinculado (externo: si queda por fuera de la web de Buenos Aires).
 
 ### Enlace default en párrafos
 
@@ -78,12 +72,15 @@ Se suelen utilizar al finalizar una pantalla para poder descargar esos archivos 
 
 ### Buenas prácticas
 
-[[si | **Proporcione información clara.** Identifique los enlaces externos o el tipo de archivo en el caso de no ser un enlace a un HTML para que la persona pueda anticipar lo que va a abrir.]]
+[[si | **Proporcionar información clara.** Identificar los enlaces externos o el tipo de archivo en el caso de no ser un enlace a un HTML para que la persona pueda anticipar lo que va a abrir.]]
 
-[[si | **Use textos cortos y auto explicativos.** El texto de un enlace tiene que ser explicativo y representar su propósito]]
+[[si | **Usar textos cortos y auto explicativos.**  El texto de un enlace tiene que ser explicativo y representar claramente su propósito de modo que se entienda el destino del vínculo.]]
 
-[[si | **Considerar incluir los enlaces al comienzo o final** de las oraciones para una mejor lectura de los mismos]]
+[[si | **Considerar incluir los enlaces al comienzo o final de las oraciones** para facilitar su lectura.]]
 
 ### Malas prácticas
 
-[[no | **Excederse en cantidad de enlaces.** Los enlaces tienen una carga cognitiva y afectan a la lectura. Se sugiere limitarse a un enlace por oración para simplificar el mensaje.]]
+[[no | **Excederse en la cantidad de enlaces.** Los enlaces tienen una carga cognitiva y afectan a la lectura. Se sugiere limitarse a un enlace por oración para simplificar el mensaje.]]
+
+[[no | **No utilizar los enlaces como botones.** Diferenciar su funcionalidad, ya que los botones son llamados a una acción y los enlaces, hipervínculos.]]
+

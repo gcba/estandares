@@ -1,7 +1,7 @@
 ---
 menu: Paginado
 title: Paginado
-description: El paginado se usa en la parte inferior de la página cuando hay demasiados resultados de búsqueda para evitar que el usuario se sienta abrumado por la cantidad de información.
+description: Este componente se usa en la parte inferior de la página cuando hay demasiados resultados de búsqueda para evitar que el usuario se sienta abrumado por la cantidad de información.
 position: 13
 ---
 
@@ -9,15 +9,15 @@ import { Pagination } from "@gcba/obelisco";
 import "./paginacion.scss";
 
 
-## Tipos de paginado
+## Paginado
 
 ### Paginado
 
-Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 5 (incluidos los puntos suspensivos). 
+Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
 
 Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en la última página del conjunto. 
 
-**Truncamiento**: cuando el número de páginas supera el límite máximo de visualización, se utiliza una elipsis, puntos suspensivos (…), para truncar las páginas restantes.
+**Truncamiento**: cuando el número de páginas supera el límite máximo de visualización se utiliza una elipsis en forma de puntos suspensivos (…) para truncar las páginas restantes.
 
 <!-- codigo -->
 
@@ -52,14 +52,14 @@ Para documentación como la pagina actual puede utilizar solo los botones de Ant
 
 ### Buenas prácticas
 
-[[si | **Visión general:** generalmente, se usa si hay más de 25 elementos mostrados en una vista, comúnmente en listados de tablas, resultados de búsqueda y directorios. ]]
+[[si | **Usarlos si hay más de 25 elementos mostrados en una vista.** Como por ejemplo en listados de tablas, resultados de búsqueda y directorios. ]]
 
-[[si | **Destaque la página actual** para mostrar en dónde se encuentra el usuario en relación con toda la colección de páginas.]]
+[[si | **Destacar la página actual** para mostrar en dónde se encuentra el usuario en relación con toda la colección de páginas.]]
 
-[[si | **Incluya siempre la primera página,** la anterior y la siguiente. Los usuarios siempre deben poder navegar a cada una de estas páginas desde cualquier página del conjunto. ]]
+[[si | **Incluir siempre la primera página, la anterior y la siguiente.** Los usuarios deben poder navegar a cada una de estas páginas desde cualquier página del conjunto. ]]
 
-[[si | **Cada página del control de paginación es un enlace** de botón que les permite navegar rápidamente por los resultados.]]
+[[si | **Colocar un enlace en cada página del control de paginación.** Esto permite a los usuarios navegar rápidamente por los resultados.]]
 
 ### Malas prácticas
 
-[[no |**No divida los elementos en varias líneas,** muestre los elementos de navegación en una sola línea para que sea más fácil de comprender y seleccionar.]]
+[[no |**No dividir los elementos en varias líneas.** Mostrar los elementos de navegación en una sola línea para que sea más fácil de comprender y seleccionar.]]

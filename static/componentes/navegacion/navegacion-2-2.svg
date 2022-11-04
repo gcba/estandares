@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="480" viewBox="0 0 712 480">
+  <g id="Grupo_32438" data-name="Grupo 32438" transform="translate(-513 -2611)">
+    <g id="Rectángulo_26397" data-name="Rectángulo 26397" transform="translate(513 2611)" fill="#fff" stroke="#38485c" stroke-width="2">
+      <rect width="712" height="480" rx="8" stroke="none"/>
+      <rect x="1" y="1" width="710" height="478" rx="7" fill="none"/>
+    </g>
+    <g id="Grupo_32029" data-name="Grupo 32029" transform="translate(-186 2236)">
+      <g id="Navegación_-_Vertical_-_A1" data-name="Navegación - Vertical - A1" transform="translate(885 735)">
+        <rect id="Rectángulo_24357" data-name="Rectángulo 24357" width="340" height="48" rx="8" fill="#fff" opacity="0"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(16 12)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 1</tspan></text>
+      </g>
+      <g id="Navegación_-_Vertical_-_A3_-_Seleccionado" data-name="Navegación - Vertical - A3 - Seleccionado" transform="translate(885 687)">
+        <rect id="Rectángulo_24365" data-name="Rectángulo 24365" width="340" height="48" rx="8" fill="#007bc7"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_2" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(48 12)" fill="#fff" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 3</tspan></text>
+      </g>
+      <g id="Navegación_-_Vertical_-_A3" data-name="Navegación - Vertical - A3" transform="translate(885 639)">
+        <rect id="Rectángulo_24366" data-name="Rectángulo 24366" width="340" height="48" rx="8" fill="#fff" opacity="0"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_3" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(48 12)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 3</tspan></text>
+      </g>
+      <g id="Navegación_-_Vertical_-_A2" data-name="Navegación - Vertical - A2" transform="translate(885 591)">
+        <rect id="Rectángulo_24359" data-name="Rectángulo 24359" width="340" height="48" rx="8" fill="#fff" opacity="0"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_4" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(32 12)" fill="#007bc7" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 2</tspan></text>
+      </g>
+      <g id="Navegación_-_Vertical_-_A2-2" data-name="Navegación - Vertical - A2" transform="translate(885 543)">
+        <rect id="Rectángulo_24359-2" data-name="Rectángulo 24359" width="340" height="48" rx="8" fill="#fff" opacity="0"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_5" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(32 12)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 2</tspan></text>
+      </g>
+      <g id="Navegación_-_Vertical_-_A1-2" data-name="Navegación - Vertical - A1" transform="translate(885 495)">
+        <rect id="Rectángulo_24357-2" data-name="Rectángulo 24357" width="340" height="48" rx="8" fill="#fff" opacity="0"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_6" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(16 12)" fill="#007bc7" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 1</tspan></text>
+      </g>
+      <g id="Navegación_-_Vertical_-_A1-3" data-name="Navegación - Vertical - A1" transform="translate(885 447)">
+        <rect id="Rectángulo_24357-3" data-name="Rectángulo 24357" width="340" height="48" rx="8" fill="#fff" opacity="0"/>
+        <text id="_Text_Body_1_Selected_On_Surface_Medium_Emphasis_Left_7" data-name="✱ / Text / Body 1 / Selected / On Surface / Medium Emphasis / Left " transform="translate(16 12)" fill="#38485c" font-size="18" font-family="Nunito-Regular, Nunito"><tspan x="0" y="18">Anidado Nivel 1</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

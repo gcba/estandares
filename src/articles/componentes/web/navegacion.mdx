@@ -1,7 +1,7 @@
 ---
 menu: Navegación
 title: Navegación
-description: Permiten jerarquizar elementos al margen izquierdo de una página, o mostrar la sub navegación dentro de una sección de un sitio web de forma horizontal.
+description: La navegación permite jerarquizar elementos al margen izquierdo de una página en forma vertical, o mostrar la sub navegación dentro de una sección de un sitio web de forma horizontal.
 position: 11
 ---
 
@@ -9,38 +9,6 @@ import "./modals.scss"
 
 
 ## Tipos de navegación
-
-### Horizontal con bordes
-
-Disponibles en dos tamaños.
-
-<nav>
-  <ul class="nav content-3 nav-pills">
-    <li class="nav-item">
-      <a class="nav-link border-link" href="#"><span>Link</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link nav-link-sm border-link" href="#">
-        <span>Link</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-### Horizontal sin bordes
-
-Disponibles en dos tamaños.
-
-<nav>
-  <ul class="nav content-3 nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#"><span>Link</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><span>Link</span></a>
-    </li>
-  </ul>
-</nav>
 
 ### Vertical no seleccionados
 
@@ -89,15 +57,41 @@ Disponibles en tres niveles.
   </ul>
 </nav>
 
+### Horizontal con bordes
 
-## Diseño y estructura (Contexto de uso)
+Disponibles en dos tamaños.
 
-### Navegación horizontal
+<nav>
+  <ul class="nav content-3 nav-pills">
+    <li class="nav-item">
+      <a class="nav-link border-link" href="#"><span>Link</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-link-sm border-link" href="#">
+        <span>Link</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-Solo la navegación horizontal puede combinarse con [Botón](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) 
-y con [Desplegables](https://gcba.github.io/Obelisco/?path=/story/componentes-desplegables--desplegable-con-icono).
+### Horizontal sin bordes
 
-![completar](/componentes/navegacion/navegacion-1.svg)
+Disponibles en dos tamaños.
+
+<nav>
+  <ul class="nav content-3 nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span>Link</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span>Link</span></a>
+    </li>
+  </ul>
+</nav>
+
+
+
+## Diseño y estructura (contexto de uso)
 
 ### Navegación vertical
 
@@ -105,23 +99,30 @@ Solo la navegación vertical tiene hasta 3 niveles de navegación.
 
 ![completar](/componentes/navegacion/navegacion-2.svg)
 
+### Navegación horizontal
+
+Solo la navegación horizontal puede combinarse con [Botones](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) 
+y con [Desplegables](https://gcba.github.io/Obelisco/?path=/story/componentes-desplegables--desplegable-con-icono).
+
+![completar](/componentes/navegacion/navegacion-1.svg)
+
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Los enlaces de navegación deben ser cortos.** Pueden ser derivados más cortos de los propios títulos de página.]]
+[[si | **Usar textos cortos en los enlaces de navegación.** Pueden ser textos derivados de los propios títulos de la página. Usar como máximo 2 palabras por enlace de navegación para que no requieran truncamiento.]]
 
-[[si | **Reducir a una o dos palabras** para que nunca sean tan largas que requieran truncamiento.]]
+[[si | **Utilizar íconos únicamente en los elementos del primer nivel en la navegación vertical.** Cualquier elemento de subnivel siempre debe ser solo de texto para garantizar una jerarquía visual clara.]]
 
-[[si | **En la navegación vertical solo los elementos del primer nivel pueden tener iconos.** Cualquier elemento de subnivel siempre debe ser solo de texto para garantizar una jerarquía clara.]]
+[[si | **Enviar al usuario a la ubicación asociada en los elementos de navegación vertical de nivel superior** y abrir los elementos de navegación de subnivel.]]
 
-[[si | **En la navegación vertical si los elementos de navegación de nivel superior tienen una ubicación asociada,** envíe al usuario a esa ubicación y abra los elementos de navegación de subnivel.]]
+[[si | **Abrir únicamente los elementos de navegación de nivel inferior** si los elementos de navegación de nivel superior no tienen una ubicación asociada en la navegación vertical.]]
 
-[[si | **En la navegación vertical si los elementos de navegación de nivel superior no tienen una ubicación asociada,** solo abra los elementos de navegación de nivel inferior.]]
+[[si | **Habilitar el desplazamiento horizontal en responsive** si hay demasiados componentes en la navegación horizontal.]]
 
-[[si | **La navegación vertical puede usar cualquiera de estos comportamientos, pero nunca debe mezclar comportamientos** en la misma experiencia.]]
+[[si | **La navegación horizontal puede combinarse** con [Botones](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) y [Desplegables](https://gcba.github.io/Obelisco/?path=/story/componentes-desplegables--desplegable-con-icono).]]
 
-[[si | **En la navegación horizontal si hay demasiados componentes** puede permitir el desplazamiento horizontal en responsive.]]
+### Malas prácticas
 
-[[si | La navegación horizontal pueden usarse en conjunto con [Botón](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) y [Desplegables](https://gcba.github.io/Obelisco/?path=/story/componentes-desplegables--desplegable-con-icono)]]
+[[no | **No mezclar comportamientos en la misma experiencia** de navegación vertical.]]
