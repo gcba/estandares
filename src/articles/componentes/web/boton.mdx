@@ -1,7 +1,7 @@
 ---
-menu: Botón
-title: Botón
-description: Los botones permiten a los usuarios realizar acciones o navegar a otra página, son el medio a través del cual interactúan.
+menu: Botones
+title: Botones
+description: Los botones permiten a los usuarios realizar acciones o navegar a otra página, son el medio a través del cual interactúan. Éstos suelen usarse como parte de componentes o patrones más grandes, como formularios o cuadros de diálogo.
 position: 3
 ---
 
@@ -11,7 +11,7 @@ import "./boton.scss"
 
 ## Tipos de botones
 
-### Botón primario
+### Botones primarios
 
 Los botones primarios se usan generalmente para acciones principales y las denotadas como “positivas”.
 
@@ -27,7 +27,7 @@ Los botones primarios se usan generalmente para acciones principales y las denot
   </Button>
 </div>
 
-### Botón primario
+### Botones secundarios
 
 Los botones secundarios se usan para llamadas a la acción secundarias en una página. Se pueden usar, también, en combinación con botones primarios.
 
@@ -43,7 +43,7 @@ Los botones secundarios se usan para llamadas a la acción secundarias en una p�
   </Button>
 </div>
 
-### Botón de éxito
+### Botones de éxito
 
 Los botones de éxito son utilizados para avisar al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
 
@@ -59,7 +59,7 @@ Los botones de éxito son utilizados para avisar al usuario que se encuentra en 
   </Button>
 </div>
 
-### Botón de peligro
+### Botones de peligro
 
 Están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son utilizados en acciones permanentes e irreversibles que no pueden deshacerse.
 
@@ -75,9 +75,9 @@ Están diseñados para que los usuarios piensen detenidamente antes de usarlos. 
   </Button>
 </div>
 
-### Botón fantasma
+### Botones fantasma
 
-Están diseñados para utilizar en acciones secundarias o acciones que no tengan tanta relevancia, pero aún son necesarias, dentro de la interfaz. Su principal diferencial del botón secundario es el poco peso visual que tienen.
+Están diseñados para utilizar en acciones secundarias o de poca relevancia dentro de la interfaz. Se diferencian de los botones secundarios por su poco peso visual.
 
 <div className="content-3">
   <Button type="link" size="large">
@@ -93,7 +93,7 @@ Están diseñados para utilizar en acciones secundarias o acciones que no tengan
 
 ### Botones en caja
 
-Están diseñados para ser utilizados dentro de alguna caja, contenedor, o espacio para iniciar alguna acción, como en inicio de un trámite
+Están diseñados para ser utilizados dentro de cajas, contenedores, o espacios para iniciar alguna acción, como el inicio de un trámite.
 
 <div className="btn-block-container border-box p-3">
   <Button type="primary" size="large" className="btn-block">
@@ -103,7 +103,7 @@ Están diseñados para ser utilizados dentro de alguna caja, contenedor, o espac
 
 ### Botones a 4 columnas
 
-Estan diseñados para ser usados a un tamaño de 4 columnas fijo. Para mobile su uso es frecuente.
+Están diseñados para ser usados en un tamaño fijo de 4 columnas. Su uso es frecuente en mobile.
 
 <div className="btn-block-container">
   <Button type="primary" size="large" className="btn-block">
@@ -113,17 +113,17 @@ Estan diseñados para ser usados a un tamaño de 4 columnas fijo. Para mobile su
 
 ## Diseño y estructura (contexto de uso)
 
-Los botones tienen diferentes tamaños de implementación de acuerdo al orden de importancia de las acciones dentro de una página. Las principales, se visualizarán en un orden de jerarquía de mayor que al resto.
+Los botones tienen diferentes tamaños de implementación de acuerdo al orden de importancia de las acciones que aparecen dentro de una página. Las acciones principales se visualizarán en un orden de jerarquía mayor que el resto.
 
 ### Orden y alineación
 
-En los **modales** los botones primarios siempre aparecen a la derecha. Si hay botones secundarios aparecen a la izquierda del botón primario. Cuando la acción principal implica un paso de navegación hacia adelante, cómo en un **formulario** justifique los botones a la derecha. Esta posición transmite la intención del “siguiente paso”.
+En los modales los botones primarios siempre aparecen a la derecha. Si hay botones secundarios se muestran a la izquierda del botón primario. Cuando la acción principal implica un paso de navegación hacia adelante, como en un formulario, los botones se justifican a la derecha. Esta posición transmite la intención del “siguiente paso”.
 
 ![completar](/componentes/botón/composición-1.svg)
 
 ![completar](/componentes/botón/composición-2.svg)
 
-En los **bloques de texto** los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario. Las acciones principales de los botones se deben justificar en un texto los botones a la izquierda respetando el orden de lectura.
+En los bloques de texto los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario. En acciones principales los botones se deben justificar a la izquierda respetando el orden de lectura.
 
 ![completar](/componentes/botón/composición-3.svg)
 
@@ -131,14 +131,16 @@ En los **bloques de texto** los botones primarios siempre aparecen a la izquierd
 
 ### Buenas prácticas
 
-[[si | **Utilice jerarquías.** Debe quedar claro cuál es el botón de mayor importancia. Este puede ir acompañado de botones de énfasis medio y bajo que realizan acciones menos importantes.]]
+[[si | **Utilizar jerarquías visuales.** Debe quedar claro cuál es el botón de mayor importancia. Este puede ir acompañado de botones de énfasis medio y bajo que realizan acciones menos importantes.]]
 
-[[si | **Enuncie acciones claras.** Use verbos o frases de acción para indicarle al usuario lo que sucederá cuando se seleccione el botón. El texto debe ser corto y explicativo.]]
+[[si | **Enunciar acciones claras.** Usar verbos o frases de acción para indicarle al usuario lo que sucederá cuando se seleccione el botón. El texto debe ser corto y explicativo.]]
 
-[[si | **Utilice la menor cantidad de acciones en una pantalla** para poder enmarcar las acciones de los usuarios.]]
+[[si | **Utilizar la menor cantidad de acciones en una pantalla** para poder enmarcar las acciones de los usuarios.]]
 
 ### Malas prácticas
 
-[[no | **Usar demasiados botones en una página.** Evite el uso excesivo porque puede confundir al usuario.]]
+[[no | **Evitar el uso de demasiados botones en una página.**]]
 
-[[no | **Utilizar un botón para navegar a otro lugar.** Use un enlace en su lugar.]]
+[[no | **No combinar botones primarios entre sí.** Usar botones primarios con secundarios o de otro nivel jerárquico.]]
+
+[[no | **No utilizar un botón para navegar a otro lugar.** Usar un enlace en su lugar.]]

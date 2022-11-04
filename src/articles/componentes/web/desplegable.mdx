@@ -1,88 +1,84 @@
 ---
-menu: Desplegable
+menu: Desplegables
 title: Desplegables
-description: Un desplegable comparte apariencia con un botón pero al interactuar con él permite seleccionar una sola opción dentro de un menú.
-position: 6
+description: Los desplegables tienen la apariencia de un botón pero al interactuar con ellos permiten seleccionar una opción dentro de un menú.
+position: 5
 ---
 
 ## Tipos de desplegables
 
-### Con bordes
-
-Disponibles en tres tamaños.
+### Disponibles en tres tamaños. Con bordes.
 
 <div class="content-3">
   <div class="dropdown mb-3">
-  <button
-    type="button"
-    class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
-    data-toggle="dropdown"
-    aria-haspopup="true"
-    aria-expanded="false"
-  >
-    Grande
-  </button>
-  <div class="dropdown-menu">
-    <button class="dropdown-item" type="button">
-      Opción 1
+    <button
+      type="button"
+      class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Grande
     </button>
-    <button class="dropdown-item" type="button">
-      Opción 2
-    </button>
-    <button class="dropdown-item" type="button">
-      Opción 3
-    </button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
+    </div>
   </div>
-</div>
-<div class="dropdown mb-3">
-  <button
-    type="button"
-    class="btn btn-dropdown btn-dropdown-border dropdown-toggle"
-    data-toggle="dropdown"
-    aria-haspopup="true"
-    aria-expanded="false"
-  >
-    Mediano
-  </button>
-  <div class="dropdown-menu">
-    <button class="dropdown-item" type="button">
-      Opción 1
+  <div class="dropdown mb-3">
+    <button
+      type="button"
+      class="btn btn-dropdown btn-dropdown-border dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Mediano
     </button>
-    <button class="dropdown-item" type="button">
-      Opción 2
-    </button>
-    <button class="dropdown-item" type="button">
-      Opción 3
-    </button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
+    </div>
   </div>
-</div>
-<div class="dropdown mb-3">
-  <button
-    type="button"
-    class="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
-    data-toggle="dropdown"
-    aria-haspopup="true"
-    aria-expanded="false"
-  >
-    Chico
-  </button>
-  <div class="dropdown-menu">
-    <button class="dropdown-item" type="button">
-      Opción 1
+  <div class="dropdown mb-3">
+    <button
+      type="button"
+      class="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Chico
     </button>
-    <button class="dropdown-item" type="button">
-      Opción 2
-    </button>
-    <button class="dropdown-item" type="button">
-      Opción 3
-    </button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button class="dropdown-item" type="button">
+        Opción 3
+      </button>
+    </div>
   </div>
-</div>
 </div>
 
-### Sin bordes
-
-Disponibles en tres tamaños.
+### Disponibles en tres tamaños. Sin bordes.
 
 <div class="content-3">
   <div class="dropdown mb-3">
@@ -153,13 +149,13 @@ Disponibles en tres tamaños.
   </div>
 </div>
 
-## Diseño y estructura (Contexto de uso)
+## Diseño y estructura (contexto de uso)
 
 Se agrupan de forma horizontal.
 
 ![completar](/componentes/desplegable/diseño-estructura-1.svg)
 
-Combinables con Botón y con Navegación horizontal.
+Combinables con [Botones](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) y con [Navegación horizontal](https://gcba.github.io/Obelisco/?path=/story/componentes-navegaci%C3%B3n-horizontal--simple).
 
 ![completar](/componentes/desplegable/diseño-estructura-2.svg)
 
@@ -167,22 +163,22 @@ Combinables con Botón y con Navegación horizontal.
 
 ### Buenas prácticas
 
-[[si | **Limita a una cantidad de entre 5 y 15 opciones** para elegir dentro de un menú.]]
+[[si | **Limitar a 15 la cantidad de opciones** para elegir dentro de un menú.]]
 
-[[si | **Al utilizar más de 5 opciones** , los menús se pueden desplazar. En este estado, muestra una barra de desplazamiento en su lado derecho para realizar el scroll correspondiente.]]
+[[si | **Desplazar los menús con más de 5 opciones.** En este estado, muestra una barra de desplazamiento en su lado derecho para realizar el scroll correspondiente.]]
 
-[[si | **Se utilizan para navegación o filtros** , en donde se inicia una acción basada en la selección.]]
+[[si | **Utilizar los desplegables para navegación o filtros,** en donde se inicia una acción basada en la selección.]]
 
-[[si | **Prioriza las opciones en un orden lógico** colocando la opción más seleccionada en la parte superior.]]
+[[si | **Priorizar las opciones en un orden lógico** colocando la opción más seleccionada en la parte superior.]]
 
-[[si | **Mantiene las opciones del menú breves y concisas.** Se desaconsejan las opciones de menú largas que hacen que el texto se ajuste a varias líneas.]]
+[[si | **Mantener los textos de las opciones del menú breves y concisas.** Se desaconsejan las opciones de menú que se extiendan en varias líneas.]]
 
-[[si | **Pueden usarse en conjunto** con [Botón](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) y [Navegacion horizontal](https://gcba.github.io/Obelisco/?path=/story/componentes-navegaci%C3%B3n-horizontal--simple).]]
+[[si | **Se pueden combinar ** con los [Botones](https://gcba.github.io/Obelisco/?path=/story/componentes-bot%C3%B3n--colores) y la [Navegación horizontal](https://gcba.github.io/Obelisco/?path=/story/componentes-navegaci%C3%B3n-horizontal--simple).]]
+
+[[si | **Alinear el menú desplegable con prioridad a la izquierda.** En caso de no tener espacio suficiente para alinear desde la izquierda, alinear a la derecha.]]
+
+[[si | **Alinear el menú desplegable al centro cuando los espacios en la pantalla sean reducidos.** ]]
 
 ### Malas prácticas
 
-[[no | **No deben quedar desplegados dos menú** al mismo tiempo.]]
-
-[[no | **Alinea el menú desplegable con prioridad a su izquierda.** En caso de no tener espacio suficiente para alinear desde la izquierda, alinear a su derecha.]]
-
-[[no | **Alinea el menú desplegable al centro** cuando los espacios en la pantalla sean reducidos.]]
+[[no | No habilitar la opción de desplegar 2 o más menús al mismo tiempo.]]

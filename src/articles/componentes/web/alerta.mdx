@@ -1,19 +1,58 @@
 ---
-menu: Alerta
-title: Alerta
-description: Las alertas mantienen a los usuarios informados sobre el estado del sistema y puede requerir o no que realicen una acción.
+menu: Alertas
+title: Alertas
+description: Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción.
 position: 1
 ---
 
-import "./alert.scss";
+import "./alert.scss"
 
 ## Tipos de alertas
 
-Las opciones de alerta muestran su color semántico e ícono correspondiente para ayudar a las personas con deficiencia de visión del color a discernir el tono del mensaje.
+Las opciones de alertas muestran su color semántico e ícono correspondiente para ayudar a las personas con deficiencia de visión a discernir el tono del mensaje.
+
+### Alertas de información
+
+Notifican al usuario sobre un cambio, para darles consejos o brindar información específica sobre la sección en la que se encuentran.
+
+<div className="alert-wrapper">
+  <div className="alert alert-info alert-dismissible fade show" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información. </strong>
+      Esta es la descripción de una alerta de información y es obligatoria.
+    </p>
+  </div>
+</div>
+
+### Alertas de éxito
+
+Se usan para informar al usuario sobre una tarea que se realizó con éxito.
+
+<div className="alert-wrapper">
+  <div className="alert alert-success" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de éxito. </strong>
+      Esta es la descripción de una alerta de éxito y es obligatoria.
+    </p>
+  </div>
+</div>
+
+### Alertas de advertencia
+
+Esta variante se utiliza para informar sobre una situación que debe abordarse pronto.
+
+<div className="alert-wrapper">
+  <div className="alert alert-primary" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de advertencia. </strong>
+      Esta es la descripción de una alerta de advertencia y es obligatoria.
+    </p>
+  </div>
+</div>
 
 ### Alertas de error
 
-Se usan para mostrar un error de validación, falla del sistema, o para transmitir algo que debe reconocerse o abordarse de inmediato para continuar con su navegación.
+Se usan para mostrar un error de validación, falla del sistema, o para transmitir algo que debe reconocerse o abordarse de inmediato para continuar con la navegación.
 
 <div className="alert-wrapper">
   <div className="alert alert-danger" role="alert">
@@ -41,46 +80,7 @@ Se usan para mostrar un error de validación, falla del sistema, o para transmit
   </div>
 </div>
 
-### Alertas de éxito
-
-Se usan para informar al usuario sobre una tarea que se realizó con éxito.
-
-<div className="alert-wrapper">
-  <div className="alert alert-success" role="alert">
-    <p>
-      <strong>Este es un destacado de una alerta de éxito. </strong>
-      Esta es la descripción de una alerta de éxito y es obligatoria.
-    </p>
-  </div>
-</div>
-
-### Alertas de información
-
-Notifican al usuario sobre un cambio, para darles consejos o brindar información específica sobre la sección en la que se encuentran.
-
-<div className="alert-wrapper">
-  <div className="alert alert-info alert-dismissible fade show" role="alert">
-    <p>
-      <strong>Este es un destacado de una alerta de información. </strong>
-      Esta es la descripción de una alerta de información y es obligatoria.
-    </p>
-  </div>
-</div>
-
-### Alertas de advertencia
-
-Esta variante se utiliza para informar sobre una situación que debe abordarse pronto.
-
-<div className="alert-wrapper">
-  <div className="alert alert-primary" role="alert">
-    <p>
-      <strong>Este es un destacado de una alerta de advertencia. </strong>
-      Esta es la descripción de una alerta de advertencia y es obligatoria.
-    </p>
-  </div>
-</div>
-
-## Diseño y estructura (Contexto de uso)
+## Diseño y estructura (contexto de uso)
 
 ### En cuerpo de página
 
@@ -92,13 +92,12 @@ Los carteles de alerta están destinados a llamar la atención y pedir a los usu
 
 ### Buenas prácticas
 
-[[si | **Se amable,** hacele saber de forma clara y con lenguaje conciso lo que debe hacer para que la tarea sea lo más fácil posible.]]
+[[si | **Ser amable con la persona usuaria.** Hacerle saber de forma clara y con lenguaje conciso lo que debe hacer para que la tarea sea lo más fácil posible.]]
 
 [[si | **Comprender el contexto del usuario.** No incluir notificaciones que no estén relacionadas con el objetivo actual del usuario.]]
 
-[[si | **Las alertas son una oportunidad.** Los usuarios leerán un mensaje que les ayudará a resolver un error incluso si por lo general no leen la documentación; incluya contenido que ayude al usuario a resolver inconvenientes.]]
-
+[[si | **Considerar las alertas como una oportunidad para resolver.** Los usuarios leerán un mensaje que les ayudará a resolver un error incluso si por lo general no leen la documentación. Incluir contenido que ayude al usuario a resolver inconvenientes.]]
 
 ### Malas prácticas
 
-[[no | **Excederse en la cantidad de alertas.** Este tipo de alertas influyen en la navegación del usuario, demasiadas notificaciones lo podrían abrumar o molestar.]]
+[[no | **No excederse en la cantidad de alertas.** Este tipo de alertas influyen en la navegación del usuario, demasiadas notificaciones lo podrían abrumar o molestar.]]
