@@ -1,15 +1,15 @@
 ---
-menu: Controles de formularios
-title: Controles de formularios
-description: Los campos de formularios permiten a los usuarios ingresar entradas de texto. Se pueden mostrar varias opciones de campo para comunicar los requisitos de entrada o necesidades específicas. Estos comúnmente son campos de texto, selectores, botones de radio, casillas de verificación y selectores de fecha.
+menu: Formularios
+title: Formularios
+description: Los formularios permiten una comunicación directa con las personas usuarias y nos ayudan a gestionar procesos o trámites que los hacen partícipes. Los tipos de campos que usamos en ellos para comunicar los requisitos de entrada o necesidades específicas son variados. Podemos usar, por ejemplo, campos de texto, selectores, botones de radio, casillas de verificación y selectores de fecha.
 position: 8
 ---
 
-## Tipos de controles de formularios
+## Tipos de campos de un formulario
 
 ### Campo de texto simple
 
-Los campos de texto simples pueden llevar un placeholder para mostrar un ejemplo de los datos que se están solicitando. El área de ayuda proporciona información extra de asistencia.
+Los campos de texto simples pueden llevar un placeholder para mostrar un ejemplo de los datos que se están solicitando. El área de ayuda proporciona información de asistencia extra.
 
 <div class="content-2">
   <div class="form-wrapper">
@@ -26,7 +26,7 @@ Los campos de texto simples pueden llevar un placeholder para mostrar un ejemplo
   </div>
 </div>
 
-### Selector
+### Selectores
 
 Los selectores se utilizan cuando el sistema ya posee los datos que se precisan y el usuario solo debe seleccionar uno de ellos. Debe haber al menos cinco opciones de selección.
 
@@ -56,8 +56,7 @@ Los selectores se utilizan cuando el sistema ya posee los datos que se precisan 
 
 ### Campo de búsqueda
 
-Los campos de búsqueda llevan siempre un placeholder que anticipe y ayude al usuario a saber que información podrá encontrar en el buscador.
-
+Los campos de búsqueda llevan siempre un placeholder que anticipe y ayude al usuario a saber qué información podrá encontrar en el buscador.
 
 <div class="content-2">
   <div class="form-wrapper mb-3">
@@ -78,11 +77,9 @@ Los campos de búsqueda llevan siempre un placeholder que anticipe y ayude al us
   </div>
 </div>
 
-
 ### Campo de fecha
 
-Los campos de fecha siempre llevan un placeholder que indiquen al usuario como debe completar el campo. Cuando se acciona el campo, la fecha se completa mediante el teclado.
-
+Los campos de fecha siempre llevan un placeholder que indique al usuario cómo debe completar el campo, ejemplo: dd/mm/aaaa. Cuando se acciona el campo la fecha se completa mediante el teclado.
 
 <div class="content-2">
   <div class="form-wrapper">
@@ -104,13 +101,11 @@ Los campos de fecha siempre llevan un placeholder que indiquen al usuario como d
     </div>
   </div>
 </div>
-
 
 ### Área de texto
 
 El área de texto puede tener o no una limitación de caracteres. Cuando hay una limitación se visualiza con la cantidad de caracteres que hay actualmente y la cantidad máxima permitida.
 
-
 <div class="content-2">
   <div class="form-wrapper">
     <div class="form-group">
@@ -126,10 +121,9 @@ El área de texto puede tener o no una limitación de caracteres. Cuando hay una
   </div>
 </div>
 
-### Campo numérico
+### Campos numéricos
 
 Los campos numéricos pueden cargarse tanto por teclado como por las flechas indicadoras. Este tipo de campos se utilizan cuando necesitamos un valor de cantidad.
-
 
 <div class="content-2">
   <div class="form-wrapper">
@@ -150,7 +144,6 @@ Los campos numéricos pueden cargarse tanto por teclado como por las flechas ind
 
 Permite seleccionar una sola opción de una lista de opciones. Lo recomendable es que el usuario pueda ver todas las opciones al mismo tiempo y compararlas.
 
-
 import { RadioInput } from "../../../components/docs/forms/RadioInput"
 
 <div class="content-2">
@@ -168,7 +161,7 @@ import { RadioInput } from "../../../components/docs/forms/RadioInput"
 
 ### Checkbox
 
-Permite seleccionar varios elementos de una lista de elementos individuales o marcar un elemento individual como seleccionado.
+Permite seleccionar uno o varios elementos de una lista de opciones individuales.
 
 <div class="content-2">
   <div class="form-wrapper d-grid text-center">
@@ -193,9 +186,30 @@ Permite seleccionar varios elementos de una lista de elementos individuales o ma
   </div>
 </div>
 
-### Subida de archivo
+### Button checkbox
 
-Permite subir archivos como imágenes o documentos en caso de ser requerido en un formulario, como variante de uso específico al botón predeterminado.
+Este componente tiene apariencia de botón y permite seleccionar uno o varios elementos de una lista de opciones individuales.
+
+<div class="content-3">
+  <div class="btn-wrapper">
+    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
+    <label class="btn btn-chip btn-sm mx-2 active" for="btn-check">
+      Checkbox button
+    </label>
+    <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off" />
+    <label class="btn btn-chip btn-sm mx-2" for="btn-check2">
+      Checkbox button
+    </label>
+    <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off" disabled="" />
+    <label class="btn btn-chip btn-sm mx-2 disabled" for="btn-check3">
+      Checkbox button
+    </label>
+  </div>
+</div>
+
+### Subida de archivos
+
+Permite subir archivos como imágenes o documentos en caso de ser requeridos en un formulario, como variante de uso específico al botón predeterminado.
 
 <div class="content-2">
   <div class="form-wrapper d-grid">
@@ -206,9 +220,13 @@ Permite subir archivos como imágenes o documentos en caso de ser requerido en u
   </div>
 </div>
 
-## Diseño y estructura (Contexto de uso)
+## Diseño y estructura (contexto de uso)
 
-Un formulario permite a los usuarios ingresar información en una página. Los botones deben estar ordenados por importancia de derecha a izquierda, con el botón más importante (principal) a la derecha. Agrupe las secciones relacionadas en conjuntos lógicos con un encabezado o divídalo en otra página, para que los usuarios puedan comprender la información que necesitan ingresar.
+Un formulario permite a los usuarios ingresar información en una página.
+
+Los botones deben estar ordenados por importancia de derecha a izquierda, con el botón más importante (principal) a la derecha.
+
+Agrupar las secciones relacionadas en conjuntos lógicos para que los usuarios puedan comprender la información que necesitan ingresar.
 
 ![completar](/componentes/formulario/formulario.svg)
 
@@ -216,17 +234,18 @@ Un formulario permite a los usuarios ingresar información en una página. Los b
 
 ### Buenas prácticas
 
-[[si | **Reduzca la cantidad de campos en su formulario** para evitar una gran carga cognitiva en los usuarios (o para ayudar a los usuarios a enviar el formulario más rápido).]]
+[[si | **Reducir la cantidad de campos del formulario** para evitar una mayor carga cognitiva en los usuarios.]]
 
-[[si | **Evite los campos opcionales** solicitando a los usuarios solo información relevante.]]
+[[si | **Evitar los campos opcionales** solicitando a los usuarios solo información relevante.]]
 
-[[si | **Cada campo de texto debe tener una etiqueta.** Un campo sin etiqueta es ambiguo y no accesible.]]
+[[si | **Colocar etiquetas en los campos de texto.** Un campo sin etiqueta es ambiguo y poco accesible.]]
 
-[[si | **Campos adecuados a la longitud del texto requerido.** La longitud del campo de texto proporciona a los usuarios una pista sobre la cantidad de texto que deben escribir. Las etiquetas en los checkbox y radio buttons deben ser seleccionables. Los usuarios deben poder tocar o hacer clic en la etiqueta de texto o en el ícono para realizar una selección.]]
+[[si | **Utilizar campos adecuados a la longitud del texto requerido.** La longitud del campo de texto proporciona a los usuarios una pista sobre la cantidad de texto que deben escribir.]]
 
+[[si | **Colocar etiquetas seleccionables en los checkbox y radio buttons.** Los usuarios deben poder tocar o hacer clic en la etiqueta de texto o en el ícono para realizar una selección.]]
 
 ### Malas prácticas
 
-[[no | **Deshabilitar el botón de envío** no es recomendable, incluso si no se completaron todos los campos obligatorios. En su lugar, describa lo que debe hacerse usando mensajes de error y validación.]]
+[[no | **Evitar deshabilitar el botón de envío,** incluso si no se completaron todos los campos obligatorios. En su lugar, describir lo que debe hacerse usando mensajes de error y validación.]]
 
-[[no | **Posicionar los checkbox y radio buttons horizontalmente no es recomendableo.** Los listados con esa direccionalidad pueden dificultar saber qué etiqueta corresponde a cada opción.]]
+[[no | **Evitar posicionar los checkbox y radio buttons de forma horizontal.** Los listados con esa direccionalidad pueden dificultar saber qué etiqueta corresponde a cada opción.]]
