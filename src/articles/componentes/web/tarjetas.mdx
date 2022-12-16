@@ -12,16 +12,17 @@ position: 15
 Su único uso es en la Home de Buenos Aires, y nos direccionan a las temáticas principales.
 
 <div className="content-1">
-  <SimpleCard
-    title="Ambiente, espacio público y edilicio"
-    description="Habilitaciones para el uso de la vía pública, espacios urbanos y servicios para el desarrollo sostenible."
-    picture={{
-      src: "/estandares/componentes/card/ciudad.jpg",
-      alt: "descripción alternativa",
-    }}
-    className="card-lg"
-    href="#"
-  />
+  <div class="card card-simple card-horizontal card-lg">
+    <img src="/componentes/card/ciudad.jpg" class="card-img-left" alt="descripción alternativa" />
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#">Ambiente, espacio público y edilicio</a>
+      </h4>
+      <p class="card-text">
+        Habilitaciones para el uso de la vía pública, espacios urbanos y servicios para el desarrollo sostenible.
+      </p>
+    </div>
+  </div>
 </div>
 
 ### Con contenedor
