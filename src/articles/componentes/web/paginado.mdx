@@ -2,12 +2,11 @@
 menu: Paginado
 title: Paginado
 description: Este componente se usa en la parte inferior de la página cuando hay demasiados resultados de búsqueda para evitar que el usuario se sienta abrumado por la cantidad de información.
-position: 13
+position: 16
 ---
 
-import { Pagination } from "@gcba/obelisco";
-import "./paginacion.scss";
-
+import { Pagination } from "@gcba/obelisco"
+import "./paginacion.scss"
 
 ## Paginado
 
@@ -15,7 +14,7 @@ import "./paginacion.scss";
 
 Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
 
-Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en la última página del conjunto. 
+Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en la última página del conjunto.
 
 **Truncamiento**: cuando el número de páginas supera el límite máximo de visualización se utiliza una elipsis en forma de puntos suspensivos (…) para truncar las páginas restantes.
 
@@ -23,16 +22,15 @@ Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en l
 
 <div class="pagination-container">
   {/* <div className="mt-3 mb-4"> */}
-    <Pagination pages={3} ariaLabel="Ejemplo de paginación simple" />
+  <Pagination pages={3} ariaLabel="Ejemplo de paginación simple" />
   {/* </div> */}
   {/* <div className="mt-3 mb-4"> */}
-    <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginación simple" />
+  <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginación simple" />
   {/* </div> */}
   {/* <div className="mb-4"> */}
-    <Pagination pages={13} default={6} ariaLabel="Ejemplo de paginación compleja" />
+  <Pagination pages={13} default={6} ariaLabel="Ejemplo de paginación compleja" />
   {/* </div> */}
 </div>
-
 
 ## Diseño y estructura (contexto de uso)
 
