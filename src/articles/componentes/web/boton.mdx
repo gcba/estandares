@@ -19,7 +19,7 @@ Los botones primarios se usan generalmente para acciones principales y las denot
   <Button type="primary" size="large">
     Botón
   </Button>
-  <Button type="primary" size="medium">
+  <Button type="primary" size="default">
     Botón
   </Button>
   <Button type="primary" size="small">
@@ -35,7 +35,7 @@ Los botones secundarios se usan para llamadas a la acción secundarias en una p�
   <Button type="secondary" size="large">
     Botón
   </Button>
-  <Button type="secondary" size="medium">
+  <Button type="secondary" size="default">
     Botón
   </Button>
   <Button type="secondary" size="small">
@@ -51,7 +51,7 @@ Los botones de éxito son utilizados para avisar al usuario que se encuentra en 
   <Button type="success" size="large">
     Botón
   </Button>
-  <Button type="success" size="medium">
+  <Button type="success" size="default">
     Botón
   </Button>
   <Button type="success" size="small">
@@ -67,7 +67,7 @@ Están diseñados para que los usuarios piensen detenidamente antes de usarlos. 
   <Button type="danger" size="large">
     Botón
   </Button>
-  <Button type="danger" size="medium">
+  <Button type="danger" size="default">
     Botón
   </Button>
   <Button type="danger" size="small">
@@ -83,20 +83,10 @@ Están diseñados para utilizar en acciones secundarias o de poca relevancia den
   <Button type="link" size="large">
     Botón
   </Button>
-  <Button type="link" size="medium">
+  <Button type="link" size="default">
     Botón
   </Button>
   <Button type="link" size="small">
-    Botón
-  </Button>
-</div>
-
-### Botones en caja
-
-Están diseñados para ser utilizados dentro de cajas, contenedores, o espacios para iniciar alguna acción, como el inicio de un trámite.
-
-<div className="btn-block-container border-box p-3">
-  <Button type="primary" size="large" className="btn-block">
     Botón
   </Button>
 </div>
@@ -107,6 +97,55 @@ Están diseñados para ser usados en un tamaño fijo de 4 columnas. Su uso es fr
 
 <div className="btn-block-container">
   <Button type="primary" size="large" className="btn-block">
+    Botón
+  </Button>
+</div>
+
+### Botones en caja
+
+Están diseñados para ser utilizados dentro de cajas, contenedores, o espacios para iniciar alguna acción, como el inicio de un trámite.
+
+<div className="content-2">
+  <div className="card">
+    <div className="card-body">
+      <Button type="primary" size="large" className="btn-block">
+        Botón
+      </Button>
+    </div>
+  </div>
+</div>
+
+### Botones con ícono
+
+En este tipo de botón el texto va acompañado de un ícono a la izquierda. Está permitido un ícono por botón y debe respetar tamaño y estilos
+
+<div className="content-3">
+  <Button type="primary" size="large" className="btn-icon">
+    <i className="bx bxs-car"></i>
+    Botón
+  </Button>
+  <Button type="primary" size="default" className="btn-icon">
+    <i className="bx bxs-car"></i>
+    Botón
+  </Button>
+  <Button type="primary" size="small" className="btn-icon">
+    <i className="bx bxs-car"></i>
+    Botón
+  </Button>
+</div>
+
+### Botones con borde
+
+A diferencia del resto de los botones, éstos están delineados, lo cual les otorga menos jerarquía visual que los botones sólidos. Son utilizados para denotar menos énfasis y pueden combinarse con otros.
+
+<div className="content-3">
+  <Button type="outline-primary" size="large">
+    Botón
+  </Button>
+  <Button type="outline-primary" size="default">
+    Botón
+  </Button>
+  <Button type="outline-primary" size="small">
     Botón
   </Button>
 </div>

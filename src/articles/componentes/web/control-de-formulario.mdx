@@ -140,7 +140,7 @@ Los campos numéricos pueden cargarse tanto por teclado como por las flechas ind
   </div>
 </div>
 
-### Radio button
+### Casilla de selección única
 
 Permite seleccionar una sola opción de una lista de opciones. Lo recomendable es que el usuario pueda ver todas las opciones al mismo tiempo y compararlas.
 
@@ -159,7 +159,7 @@ import { RadioInput } from "../../../components/docs/forms/RadioInput"
   </div>
 </div>
 
-### Checkbox
+### Casilla de selección múltiple
 
 Permite seleccionar uno o varios elementos de una lista de opciones individuales.
 
@@ -186,7 +186,28 @@ Permite seleccionar uno o varios elementos de una lista de opciones individuales
   </div>
 </div>
 
-### Button checkbox
+### Botón de selección única
+
+Este componente tiene apariencia de botón y permite seleccionar un elemento de una lista de opciones individuales.
+
+<div class="content-3">
+  <div class="btn-wrapper" data-toggle="buttons">
+    <label class="btn btn-chip btn-sm mx-2">
+      <input type="radio" name="options1" id="option1" class="btn-check" />
+      Botón
+    </label>
+    <label class="btn btn-chip btn-sm mx-2 active">
+      <input type="radio" name="options2" id="option2" class="btn-check" checked="" />
+      Botón
+    </label>
+    <label class="btn btn-chip btn-sm mx-2 disabled">
+      <input type="radio" name="options3" id="option3" class="btn-check" />
+      Botón
+    </label>
+  </div>
+</div>
+
+### Botón de selección múltiple
 
 Este componente tiene apariencia de botón y permite seleccionar uno o varios elementos de una lista de opciones individuales.
 
@@ -194,15 +215,15 @@ Este componente tiene apariencia de botón y permite seleccionar uno o varios el
   <div class="btn-wrapper">
     <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
     <label class="btn btn-chip btn-sm mx-2 active" for="btn-check">
-      Checkbox button
+      Botón
     </label>
     <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off" />
     <label class="btn btn-chip btn-sm mx-2" for="btn-check2">
-      Checkbox button
+      Botón
     </label>
     <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off" disabled="" />
     <label class="btn btn-chip btn-sm mx-2 disabled" for="btn-check3">
-      Checkbox button
+      Botón
     </label>
   </div>
 </div>
