@@ -52,11 +52,11 @@ export const getNavigation = (): NavItem[] => {
   }
 
   nodes.push(
-    fakeNode(1, "Contenido", "/contenido"),
-    fakeNode(2, "Creamos experiencias", "/creamos_experiencias"),
-    fakeNode(3, "Guía de estilos", "/guías_de_estilos"),
+    fakeNode(1, "Creamos experiencias", "/creamos_experiencias"),
+    fakeNode(2, "Guía de estilos", "/guías_de_estilos"),
+    fakeNode(3, "Contenido", "/contenido"),
     fakeNode(4, "Herramientas y recursos", "/herramientas_y_recursos"),
-    fakeNode(5, "Obelisco", "/componentes")
+    fakeNode(5, "Obelisco", "/obelisco")
   )
 
   nodes
@@ -103,3 +103,4 @@ export const getPrevAndNext = (navigation: NavItem[], current: string) => {
     next: nextIndex < nodes.length ? getTitleAndUrl(nodes[currentIndex + 1]) : null,
   }
 }
+///////////////////////////////////////////////////////////////////////////////////////////
