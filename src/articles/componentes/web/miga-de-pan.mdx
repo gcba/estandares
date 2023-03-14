@@ -1,67 +1,88 @@
 ---
 menu: Migas de pan
 title: Migas de pan
-description: Las migas de pan brindan un sistema de navegación secundaria y muestran el contexto para ayudar a los usuarios a comprender su ubicación dentro del mapa del sitio.
+description: El componente de migas de pan ayuda a los usuarios a comprender dónde se encuentran dentro de la estructura de un sitio web y moverse entre niveles.
 position: 12
 ---
 
 ## Tipos de migas de pan
 
-Las migas de pan muestran dónde se encuentra la página actual en la jerarquía del sitio web. Utilizar migas de pan refuerza la estructura del sitio.
-
-### Desktop
+### Dispositivos de escritorio
 
 Las rutas de navegación muestran dónde se encuentra la página actual en la jerarquía del sitio web. Utilizar migas de pan refuerza la estructura del sitio. En desktop, se ve completo.
 
-<div className="d-flex flex-row justify-content-center content-1">
+<div className="d-flex flex-row justify-content-center">
   <nav aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="#">Inicio</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="#">Página intermedia</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="#">Página anterior</a>
-      </li>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="#">Página 2</a></li>
+      <li class="breadcrumb-item"><a href="#">Página 3</a></li>
+      <li class="breadcrumb-item"><a href="#">Última página visitada</a></li>
     </ol>
   </nav>
 </div>
 
-### Mobile
+### Dispositivos móviles
 
-Mientras que en dispositivos móviles, se ve de manera reducida, solo para permitir un regreso.
+Se ve de manera reducida, solo para permitir un regreso.
 
-<div className="d-flex flex-row justify-content-center content-1">
+<div className="d-flex flex-row justify-content-center">
   <nav aria-label="breadcrumb">
-    <ol className="breadcrumb">
-      <li className="breadcrumb-item">
-        <a href="#">Buenos Aires</a>
-      </li>
-      <li className="breadcrumb-item">
-        <a href="#">Página anterior</a>
-      </li>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="#">Última página visitada</a></li>
     </ol>
   </nav>
 </div>
 
 ## Diseño y estructura (contexto de uso)
 
+### Ubicación
+
 Se ubican sobre el título de la página y muestran el progreso jerárquico desde el nivel de elemento más alto hasta el más bajo.
 
-Los niveles que posean más de 30 caracteres aproximadamente se truncarán y agregarán tres puntos (…) al final para visualizar que hay más texto en dicho nivel.
+<div className="breadcrumb-bg">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="#">Página 2</a></li>
+      <li class="breadcrumb-item"><a href="#">Página 3</a></li>
+      <li class="breadcrumb-item"><a href="#">Última página visitada</a></li>
+    </ol>
+  </nav>
+  <h1>Título</h1>
+  <p className="lead">Descripción donde se visualiza la información correspondiente al título de la página que se encuentra la persona usuaria.</p>
+</div>
 
-<br></br>
+<!-- ![completar](/componentes/breadcrumb/breadcrumb-1.svg) -->
 
-![completar](/componentes/breadcrumb/breadcrumb.png)
+### Textos largos
+
+Los niveles que posean más de 36 caracteres se truncarán y agregarán tres puntos (…) al final para visualizar que hay más texto en dicho nivel.
+
+<div className="breadcrumb-bg">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="#">Texto con más de treinta y seis caracteres.</a></li>
+    </ol>
+  </nav>
+  <h1>Título</h1>
+  <p className="lead">Descripción donde se visualiza la información correspondiente al título de la página que se encuentra la persona usuaria.</p>
+</div>
+
+<!-- ![completar](/componentes/breadcrumb/breadcrumb-2.svg) -->
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Usar migas de pan para la navegación anidada.** Cada elemento debe actuar como un enlace, excepto el último que se visualiza y refuerza con el nombre de la página.]]
+[[si | **Las migas de pan son efectivas en productos y experiencias que tienen una gran cantidad de contenido organizado en una jerarquía de más de dos niveles.** Ocupan poco espacio, pero aun así brindan contexto para el lugar del usuario en la jerarquía de navegación.]]
 
-[[si | **Evaluar si es necesario utilizar las migas de pan** en el caso de estar utilizando otros elementos de navegación en la página, como una barra lateral.]]
+[[si | **Use las de migas de pan cuando necesite ayudar a los usuarios a comprender y moverse entre los múltiples niveles de un sitio web.** ]]
 
-[[si | **Empezar con la palabra "Inicio" como primer enlace de las rutas de navegación.**]]
+### Malas prácticas
+
+[[no | **No utilice el componente de migas de pan en sitios web con una estructura plana, o para mostrar el progreso a través de una transacción o viaje lineal.** ]]
+
+[[no | Si está utilizando otros elementos de navegación en la página, como una barra lateral, **considere si sus usuarios necesitan el soporte adicional de las migas de pan.** ]]
