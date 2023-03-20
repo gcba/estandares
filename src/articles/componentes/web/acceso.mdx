@@ -1,53 +1,281 @@
 ---
-menu: Accesos
-title: Accesos
-description: Los accesos funcionan como puntos de ingreso a diferentes secciones y agrupan acciones principales con el objetivo de unificar la navegación dentro de un sitio. Contienen un breve título obligatorio para acompañar la acción del usuario y pueden tener un ícono y/o una descripción opcional/es.
+menu: Acceso
+title: Acceso
+description: Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido.
 position: 0
 ---
 
-## Tipos de accesos
+import "./acceso.scss"
 
-### Acceso grande
+## Tipos de acceso
 
-Se utilizan para acceder a secciones de mayor relevancia. Principalmente se usan en bloque (en grupo) para darle al usuario el contexto necesario del/los sitio/s a los que se ingresará.
+### Acceso sin borde
+
+Se utilizan para componer organismos donde se establezcan múltiples accesos dentro de un mismo contenedor.
 
 <div className="content-2">
   <div class="list-group">
-    <a href="#" class="list-group-item mb-4">
-      <span class="access-title">Acceso grande</span>
+    <a href="#" class="list-group-item item-sm no-shadow">
+      <span class="access-title">Acceso</span>
     </a>
   </div>
 </div>
 
-### Acceso pequeño
+### Acceso con borde
 
-Los accesos de menor tamaño se usan principalmente para dos instancias: para el patrón de selección de accesos y para cerrar sesión.
+Se utilizan para acceder a secciones de mayor relevancia. Principalmente se usan en compañía de otros accesos generando agrupaciones de una misma temática.
 
 <div className="content-2">
   <div class="list-group">
-    <a href="#" class="list-group-item item-sm mb-4">
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">Acceso</span>
+    </a>
+  </div>
+</div>
+
+### Acceso con descripción
+
+La descripción es una variable del acceso para agregar información adicional que puede servirle a la persona usuaria a comprender mejor la acción a realizar.
+
+<div className="content-2">
+  <div class="list-group">
+    <a href="#" class="list-group-item item-sm">
       <div class="access-content">
-        <span class="access-title">Acceso chico</span>
+        <span class="access-title">Acceso</span>
         <p class="access-text">Descripción (Opcional)</p>
       </div>
     </a>
   </div>
 </div>
 
+### Acceso con ícono
+
+El ícono sirve como referencia visual para complementar al título del acceso y así ayudar a la persona usuaria a tomar una decisión.
+
+<div className="content-2">
+  <div class="list-group">
+    <a href="#" class="list-group-item item-sm">
+      <i class="bx bxs-info-circle"></i>
+      <div class="access-content">
+        <span class="access-title">Acceso</span>
+        <p class="access-text">Descripción (Opcional)</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+## Tamaños
+
+<div class="row-access">
+
+<div>
+
+  ### Grande
+
+  <div class="list-group">
+    <a href="#" class="list-group-item">
+      <span class="access-title">Acceso</span>
+    </a>
+  </div>
+  
+</div>
+
+<div>
+
+  ### Chico
+
+  <div class="list-group">
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">Acceso chico</span>
+    </a>
+  </div>
+
+</div>
+
+</div>
+
 ## Diseño y estructura (contexto de uso)
 
-Esta variante se usa en el caso de que necesitemos agrupar una serie de accesos pequeños que no van a depender de otro componente.
+### Acceso completo simple
 
-![completar](/componentes/acceso/design_structure.png)
+La primer sección visualiza la información relevante para el usuario y la segunda sección esta compuesta por el acceso grande.
+
+<div className="content-2">
+  <div class="list-group">
+    <div class="group-access">
+      <div class="card-access">
+        <div class="card-access-body">
+          <span class="card-access-icon descriptive">Nº</span>
+          <div>
+            <h3 class="card-access-title">Título del acceso</h3>
+            <p class="mb-0">Descripción del acceso</p>
+          </div>
+        </div>
+        <a href="#" class="list-group-item card-item">
+          <span class="access-title">
+            <i class="bx bxs-info-circle"></i>
+            Acceso grande
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Acceso completo con lista de accesos
+
+La primer sección visualiza la información donde el usuario va a hacer foco, la segunda sección esta compuesta por los accesos chicos que dirigen al usuario a otra pantalla y la tercera sección esta compuesta por el acceso grande el cual permite visualizar la información total que no se muestra en la previsualización de este organismo.
+
+<div className="content-2">
+  <div class="list-group">
+    <div class="group-access">
+      <div class="card-access">
+        <div class="card-access-body reverse">
+          <span class="card-access-icon descriptive">Nº</span>
+          <div>
+            <h3 class="card-access-title">Título del acceso</h3>
+            <p class="mb-0">Descripción del acceso</p>
+          </div>
+        </div>
+        <div class="container-access">
+          <hr class="clearfix mt-0" />
+          <div class="access-option">
+            <a href="#" class="list-group-item item-sm">
+              <i class="bx bxs-info-circle"></i>
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+                <p class="access-text">Descripción (Opcional)</p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <i class="bx bxs-info-circle"></i>
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+                <p class="access-text">Descripción (Opcional)</p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <i class="bx bxs-info-circle"></i>
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+                <p class="access-text">Descripción (Opcional)</p>
+              </div>
+            </a>
+            <hr class="clearfix my-0 mt-2" />
+          </div>
+        </div>
+        <a href="#" class="list-group-item card-item no-shadow">
+          <span class="access-title">
+            <i class="bx bxs-info-circle"></i>
+            Acceso grande
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Acceso completo con categorías
+
+Tiene el mismo comportamiento que el “Acceso completo con listas de accesos”, solo que se pueden sumar diferentes categorías a los accesos chicos.
+
+<div className="content-2">
+  <div class="list-group">
+    <div class="group-access">
+      <div class="card-access">
+        <div class="card-access-body reverse">
+          <span class="card-access-icon descriptive">Nº</span>
+          <div>
+            <h3 class="card-access-title">Título del acceso</h3>
+            <p class="mb-0">Descripción del acceso</p>
+          </div>
+        </div>
+        <div class="container-access">
+          <hr class="clearfix mt-0" />
+          <div class="access-option">
+            <h2 class="title-option font-weight-bold">Categoría 1</h2>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <hr class="clearfix clearfix-category" />
+            <h2 class="title-option font-weight-bold">Categoría 2</h2>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <hr class="clearfix my-0 mt-2" />
+          </div>
+        </div>
+        <a href="#" class="list-group-item card-item no-shadow">
+          <span class="access-title">
+            <i class="bx bxs-info-circle"></i>
+            Acceso grande
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Lista de accesos
+
+El componente de acceso puede visualizarse tanto en posición horizontal como vertical. Para lograrlo, se ha implementado una combinación de clases llamadas "list-group" y "list-group-row", las cuales permiten organizar y adaptar el componente de forma adecuada en la página o aplicación. Además, se ha asegurado que el componente respete los tamaños de ancho y espaciado correspondientes para garantizar su apariencia y usabilidad.
+
+<div className="content-2">
+  <div class="list-group">
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">
+        <i class="bx bxs-info-circle"></i>
+        Acceso
+      </span>
+    </a>
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">
+        <i class="bx bxs-info-circle"></i>
+        Acceso
+      </span>
+    </a>
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">
+        <i class="bx bxs-info-circle"></i>
+        Acceso
+      </span>
+    </a>
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">
+        <i class="bx bxs-info-circle"></i>
+        Acceso
+      </span>
+    </a>
+  </div>
+</div>
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Incluir pocos elementos en el patrón de selección de accesos.** Esto es para que sea más fácil de escanear con la vista. Limitarse a 7 opciones como máximo.]]
+[[si | Intentá incluir hasta 7 accesos en el organismo de “Acceso completo con lista de accesos” para que le sea más fácil a las personas usuarias de escanear con la vista todos los elementos.]]
 
-[[si | **Resumir todo en una línea de texto.** Tanto el título del desplegable como el título individual de cada acceso no deben superar los 25 caracteres. Tampoco se deben usar puntos suspensivos para truncarlo.]]
+[[si | Recomendamos limitarse a una línea de texto para el título y la descripción de los accesos.]]
 
 ### Malas prácticas
 
-[[no | **No agrupar información con funcionalidades dentro de un mismo patrón de selección de accesos.** Si bien los accesos pueden usarse para ingresar a un sitio con más información (por ejemplo, ver los requisitos de un trámite), como también para realizar una acción (por ejemplo, cerrar sesión), estos dos tipos de accesos no se deben agrupar en un solo patrón. En todo caso, generar otro.]]
+[[no | No utilizar puntos suspensivos para truncar el texto de los accesos]]
+[[no | No darle funcionalidad a los accesos. Únicamente sirven para redirigir al usuario a otra sección o pantalla del sistema.]]
