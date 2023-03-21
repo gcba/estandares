@@ -6,7 +6,6 @@ position: 16
 ---
 
 import { Pagination } from "@gcba/obelisco"
-import "./paginacion.scss"
 
 ## Tipos de paginado
 
@@ -16,7 +15,7 @@ Se utilizan cuando hay un gran número de páginas. Cuando el número de página
 
 <!-- codigo -->
 
-<div class="pagination-container">
+<div className="row justify-content-center">
   <Pagination pages={13} default={1} ariaLabel="Ejemplo de paginado numerado central" />
 </div>
 
@@ -26,21 +25,19 @@ Generalmente se usan para páginas que poseen documentación sobre un tema parti
 
 <!-- codigo -->
 
-<div class="mt-4 mb-5">
-  <div class="pagination">
-    <div class="page-navigation">
-      <div class="page-item">
-        <a class="btn page-link" href="#">
-          <span class="page-previous-icon" aria-hidden="true"></span>
-          <span class="page-next-text">Anterior</span>
-        </a>
-      </div>
-      <div class="page-item">
-        <a class="btn page-link" href="#">
-          <span class="page-next-text">Siguiente</span>
-          <span class="page-next-icon" aria-hidden="true"></span>
-        </a>
-      </div>
+<div className="pagination">
+  <div className="page-navigation">
+    <div className="page-item">
+      <a className="btn page-link" href="#">
+        <span className="page-previous-icon" aria-hidden="true"></span>
+        <span className="page-next-text">Anterior</span>
+      </a>
+    </div>
+    <div className="page-item">
+      <a className="btn page-link" href="#">
+        <span className="page-next-text">Siguiente</span>
+        <span className="page-next-icon" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
 </div>
@@ -55,11 +52,11 @@ Los paginados siempre van centrados con respecto a la página. La cantidad máxi
 
 ### Página inicial y final
 
-Ocultar el botón “Anterior” en la página inicial y oculte el botón “Siguiente en la última página.
+Ocultar el botón "Anterior" en la página inicial y oculte el botón "Siguiente" en la última página.
 
 <!-- codigo -->
 
-<div class="pagination-container pagination-bg">
+<div className="content-bg row justify-content-center">
   <Pagination pages={13} ariaLabel="Ejemplo de paginado numerado inicial" />
   <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginado numerado final" />
 </div>
@@ -70,19 +67,19 @@ Puede usar descripciones dentro del páginado dar más contexto a las personas u
 
 <!-- codigo -->
 
-<div class="pagination-bg">
-  <div class="pagination">
-    <div class="page-navigation">
-      <div class="page-item">
-        <a class="btn page-link" href="#">
-          <span class="page-previous-icon" aria-hidden="true"></span>
-          <span class="page-next-text">Navegación</span>
+<div className="content-bg">
+  <div className="pagination">
+    <div className="page-navigation">
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-previous-icon" aria-hidden="true"></span>
+          <span className="page-next-text">Navegación</span>
         </a>
       </div>
-      <div class="page-item">
-        <a class="btn page-link" href="#">
-          <span class="page-next-text">Pie de página</span>
-          <span class="page-next-icon" aria-hidden="true"></span>
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-next-text">Pie de página</span>
+          <span className="page-next-icon" aria-hidden="true"></span>
         </a>
       </div>
     </div>
