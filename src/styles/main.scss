@@ -313,3 +313,9 @@ main {
   margin: 5rem auto;
   pointer-events: none;
 }
+
+.content-bg {
+  @extend .docs-example;
+  border: 2px solid $grisulado-100;
+  padding: 3.75rem 5.5rem;
+}

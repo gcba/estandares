@@ -16,8 +16,8 @@ Las rutas de navegación muestran dónde se encuentra la página actual en la je
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Inicio</a></li>
       <li class="breadcrumb-item"><a href="#">Página 2</a></li>
-      <li class="breadcrumb-item"><a href="#">Página 3</a></li>
-      <li class="breadcrumb-item"><a href="#">Última página visitada</a></li>
+      <li class="breadcrumb-item"><a href="#">Texto con más de doscientos cincuenta y seis píxeles</a></li>
+      <li class="breadcrumb-item"><a href="#">Página anterior</a></li>
     </ol>
   </nav>
 </div>
@@ -26,13 +26,8 @@ Las rutas de navegación muestran dónde se encuentra la página actual en la je
 
 Se ve de manera reducida, solo para permitir un regreso.
 
-<div className="d-flex flex-row justify-content-center">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-      <li class="breadcrumb-item"><a href="#">Última página visitada</a></li>
-    </ol>
-  </nav>
+<div>
+  <img src="/componentes/breadcrumb/breadcrumb-mobile.svg" className="d-block mx-auto" alt="Migas de pan en dispositivos móviles" />
 </div>
 
 ## Diseño y estructura (contexto de uso)
@@ -41,37 +36,37 @@ Se ve de manera reducida, solo para permitir un regreso.
 
 Se ubican sobre el título de la página y muestran el progreso jerárquico desde el nivel de elemento más alto hasta el más bajo.
 
-<div className="breadcrumb-bg">
+<div className="content-bg">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Inicio</a></li>
       <li class="breadcrumb-item"><a href="#">Página 2</a></li>
       <li class="breadcrumb-item"><a href="#">Página 3</a></li>
-      <li class="breadcrumb-item"><a href="#">Última página visitada</a></li>
+      <li class="breadcrumb-item"><a href="#">Página anterior</a></li>
     </ol>
   </nav>
-  <h1>Título</h1>
-  <p className="lead">Descripción donde se visualiza la información correspondiente al título de la página que se encuentra la persona usuaria.</p>
+  <div className="mt-4 pt-1">
+    <h1 className="mb-3">Título</h1>
+    <p className="lead">Descripción donde se visualiza la información correspondiente al título de la página que se encuentra la persona usuaria.</p>
+  </div>
 </div>
-
-<!-- ![completar](/componentes/breadcrumb/breadcrumb-1.svg) -->
 
 ### Textos largos
 
-Los niveles que posean más de 36 caracteres se truncarán y agregarán tres puntos (…) al final para visualizar que hay más texto en dicho nivel.
+Los niveles que posean un ancho mayor a 256 píxeles se truncarán y agregarán tres puntos (…) al final para visualizar que hay más texto en dicho nivel.
 
-<div className="breadcrumb-bg">
+<div className="content-bg">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-      <li class="breadcrumb-item"><a href="#">Texto con más de treinta y seis caracteres.</a></li>
+      <li class="breadcrumb-item"><a href="#">Texto con más de doscientos cincuenta y seis píxeles</a></li>
     </ol>
   </nav>
-  <h1>Título</h1>
-  <p className="lead">Descripción donde se visualiza la información correspondiente al título de la página que se encuentra la persona usuaria.</p>
+  <div className="mt-4 pt-1">
+    <h1 className="mb-3">Título</h1>
+    <p className="lead">Descripción donde se visualiza la información correspondiente al título de la página que se encuentra la persona usuaria.</p>
+  </div>
 </div>
-
-<!-- ![completar](/componentes/breadcrumb/breadcrumb-2.svg) -->
 
 ## Usabilidad
 
