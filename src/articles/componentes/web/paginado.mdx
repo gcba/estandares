@@ -13,9 +13,7 @@ import { Pagination } from "@gcba/obelisco"
 
 Se utilizan cuando hay un gran número de páginas. Cuando el número de páginas supera el límite máximo de visualización se trunca uno de los botones con tres puntos suspensivos (…) para indicar que hay más páginas para navegar.
 
-<!-- codigo -->
-
-<div className="row justify-content-center">
+<div className="row justify-content-center mx-0 my-5">
   <Pagination pages={13} default={1} ariaLabel="Ejemplo de paginado numerado central" />
 </div>
 
@@ -23,21 +21,21 @@ Se utilizan cuando hay un gran número de páginas. Cuando el número de página
 
 Generalmente se usan para páginas que poseen documentación sobre un tema particular. Los botones se pueden nomenclar según el contenido que haya hacia atrás o adelante.
 
-<!-- codigo -->
-
-<div className="pagination">
-  <div className="page-navigation">
-    <div className="page-item">
-      <a className="btn page-link" href="#">
-        <span className="page-previous-icon" aria-hidden="true"></span>
-        <span className="page-next-text">Anterior</span>
-      </a>
-    </div>
-    <div className="page-item">
-      <a className="btn page-link" href="#">
-        <span className="page-next-text">Siguiente</span>
-        <span className="page-next-icon" aria-hidden="true"></span>
-      </a>
+<div className="mt-4">
+  <div className="pagination">
+    <div className="page-navigation">
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-previous-icon" aria-hidden="true"></span>
+          <span className="page-next-text">Anterior</span>
+        </a>
+      </div>
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-next-text">Siguiente</span>
+          <span className="page-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -54,9 +52,7 @@ Los paginados siempre van centrados con respecto a la página. La cantidad máxi
 
 Ocultar el botón "Anterior" en la página inicial y oculte el botón "Siguiente" en la última página.
 
-<!-- codigo -->
-
-<div className="content-bg row justify-content-center">
+<div className="content-bg row justify-content-center mx-0">
   <Pagination pages={13} ariaLabel="Ejemplo de paginado numerado inicial" />
   <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginado numerado final" />
 </div>
@@ -64,8 +60,6 @@ Ocultar el botón "Anterior" en la página inicial y oculte el botón "Siguiente
 ### Etiquetas
 
 Puede usar descripciones dentro del páginado dar más contexto a las personas usuarias.
-
-<!-- codigo -->
 
 <div className="content-bg">
   <div className="pagination">
