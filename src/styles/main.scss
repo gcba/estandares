@@ -313,3 +313,27 @@ main {
   margin: 5rem auto;
   pointer-events: none;
 }
+
+.row-custom {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.75rem;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  div {
+    width: 100%;
+    pointer-events: none;
+
+    @media screen and (max-width: 992px) {
+      width: 340px;
+    }
+
+    h3 {
+      margin: 1rem 0;
+    }
+  }
+}
