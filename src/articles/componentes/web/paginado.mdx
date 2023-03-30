@@ -18,6 +18,12 @@ Se utilizan cuando hay un gran número de páginas. Cuando el número de página
   <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
 </div>
 
+Cuando la primera y la última página están alejadas por más de cinco páginas de la página actual, se usa el truncamiento doble.
+
+<div className="content-column">
+  <Pagination pages={10} default={4} ariaLabel="Ejemplo de paginado numerado central" />
+</div>
+
 ### Descriptivo
 
 Generalmente, se usan para páginas que poseen documentación sobre un tema particular. Los botones se pueden nomenclar según el contenido que haya hacia atrás o adelante.
