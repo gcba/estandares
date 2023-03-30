@@ -11,17 +11,18 @@ import { Pagination } from "@gcba/obelisco"
 
 ### Numerado
 
-Se utilizan cuando hay un gran número de páginas. Cuando el número de páginas supera el límite máximo de visualización se trunca uno de los botones con tres puntos suspensivos (…) para indicar que hay más páginas para navegar.
+Se utilizan cuando hay un gran número de páginas. Cuando el número de páginas supera el límite máximo de visualización, se trunca uno de los botones con tres puntos suspensivos (…) para indicar que hay más páginas para navegar.
 
-<div className="row justify-content-center mx-0 my-5">
-  <Pagination pages={13} default={1} ariaLabel="Ejemplo de paginado numerado central" />
+<div className="content-column">
+  <Pagination pages={10} ariaLabel="Ejemplo de paginado numerado inicial" />
+  <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
 </div>
 
 ### Descriptivo
 
-Generalmente se usan para páginas que poseen documentación sobre un tema particular. Los botones se pueden nomenclar según el contenido que haya hacia atrás o adelante.
+Generalmente, se usan para páginas que poseen documentación sobre un tema particular. Los botones se pueden nomenclar según el contenido que haya hacia atrás o adelante.
 
-<div className="mt-4">
+<div className="mt-4 px-5">
   <div className="pagination">
     <div className="page-navigation">
       <div className="page-item">
@@ -50,16 +51,16 @@ Los paginados siempre van centrados con respecto a la página. La cantidad máxi
 
 ### Página inicial y final
 
-Ocultar el botón "Anterior" en la página inicial y oculte el botón "Siguiente" en la última página.
+Ocultar el botón "Anterior" en la página inicial y el botón "Siguiente" en la última página.
 
 <div className="content-bg row justify-content-center mx-0">
-  <Pagination pages={13} ariaLabel="Ejemplo de paginado numerado inicial" />
-  <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginado numerado final" />
+  <Pagination pages={10} ariaLabel="Ejemplo de paginado numerado inicial" />
+  <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
 </div>
 
 ### Etiquetas
 
-Puede usar descripciones dentro del páginado dar más contexto a las personas usuarias.
+Puede usar descripciones dentro del paginado para dar más contexto a las personas usuarias.
 
 <div className="content-bg">
   <div className="pagination">
@@ -88,15 +89,15 @@ Puede usar descripciones dentro del páginado dar más contexto a las personas u
 
 [[si | **Identifique claramente en qué página se encuentra el usuario mostrando el número de página actual.** Al proporcionar contexto sobre cuántas páginas hay en total puede ayudar a proporcionar claridad sobre los datos que se muestran. ]]
 
-[[si | **Incluir siempre la primera página, la anterior y la siguiente.**  Los usuarios deben poder navegar a cada una de estas páginas desde cualquier página del conjunto. ]]
+[[si | **Incluir siempre la primera página, la anterior y la siguiente.** Los usuarios deben poder navegar a cada una de estas páginas desde cualquier página del conjunto. ]]
 
 ### Malas prácticas
 
 [[no |**Mostrar todo el contenido en una sola página hace que la página tarde demasiado en cargarse.** ]]
 
-[[no |**Evite usar la técnica de “desplazamiento infinito” para cargar contenido automáticamente cuando el usuario se acerca al final de la página.** Esto causa problemas a los usuarios de teclados.]]
+[[no |**Evite usar la técnica de "desplazamiento infinito" para cargar contenido automáticamente cuando el usuario se acerca al final de la página.** Esto causa problemas a los usuarios de teclados. ]]
 
-[[no |**No utilice este componente de paginación para recorridos lineales;** por ejemplo, cuando le pide al usuario que complete un formulario. En su lugar, use el componente Botón (generalmente un botón 'Continuar') para permitir que el usuario pase a la página siguiente, y un vínculo Atrás para permitirle pasar a la página anterior. ]]
+[[no |**No utilice este componente de paginación para recorridos lineales.** Por ejemplo, cuando le pide al usuario que complete un formulario. En su lugar, use el componente Botón (generalmente un botón 'Continuar') para permitir que el usuario pase a la página siguiente, y un vínculo Atrás para permitirle pasar a la página anterior. ]]
 
 [[no |**No muestre la paginación si solo hay una página de contenido.** ]]
 
