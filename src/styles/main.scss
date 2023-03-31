@@ -323,6 +323,21 @@ main {
   pointer-events: none;
 }
 
+.content-bg {
+  @extend .docs-example;
+  border: 2px solid $grisulado-100;
+  padding: 3.75rem 5.5rem;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 1rem;
+
+}
+
 .alert-wrapper {
   width: 100%;
   margin: 5rem 0;
