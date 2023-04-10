@@ -77,7 +77,7 @@ El ícono sirve como referencia visual para complementar al título del acceso y
     <h3>Chico</h3>
     <div className="list-group">
       <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso chico</span>
+        <span className="access-title">Acceso</span>
       </a>
     </div>
   </div>
@@ -89,23 +89,46 @@ El ícono sirve como referencia visual para complementar al título del acceso y
 
 La primer sección visualiza la información relevante para el usuario y la segunda sección esta compuesta por el acceso grande.
 
-<div className="content-2">
-  <div className="list-group">
-    <div className="group-access">
-      <div className="card-access">
-        <div className="card-access-body">
-          <span className="card-access-icon descriptive">Nº</span>
-          <div>
-            <h3 className="card-access-title">Título del acceso</h3>
-            <p className="mb-0">Descripción del acceso</p>
+<div className="row-custom">
+  <div>
+    <div className="list-group">
+      <div className="group-access">
+        <div className="card-access">
+          <div className="card-access-body">
+            <span class="card-access-icon"><i class="bx bxs-info-circle"></i></span>
+            <div>
+              <h3 className="card-access-title">Título del acceso</h3>
+              <p className="mb-0">Descripción del acceso</p>
+            </div>
           </div>
+          <a href="#" className="list-group-item card-item">
+            <span className="access-title">
+              <i className="bx bxs-info-circle"></i>
+              Acceso grande
+            </span>
+          </a>
         </div>
-        <a href="#" className="list-group-item card-item">
-          <span className="access-title">
-            <i className="bx bxs-info-circle"></i>
-            Acceso grande
-          </span>
-        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div className="list-group">
+      <div className="group-access">
+        <div className="card-access">
+          <div className="card-access-body reverse">
+            <span className="card-access-icon descriptive">Nº</span>
+            <div>
+              <h3 className="card-access-title">Título del acceso</h3>
+              <p className="mb-0">Descripción del acceso</p>
+            </div>
+          </div>
+          <a href="#" className="list-group-item card-item">
+            <span className="access-title">
+              <i className="bx bxs-info-circle"></i>
+              Acceso grande
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -223,38 +246,21 @@ Tiene el mismo comportamiento que el “Acceso completo con listas de accesos”
   </div>
 </div>
 
-### Lista de accesos
+## Disposiciones
 
-El componente de acceso puede visualizarse tanto en posición horizontal como vertical. Para lograrlo, se ha implementado una combinación de clases llamadas "list-group" y "list-group-row", las cuales permiten organizar y adaptar el componente de forma adecuada en la página o aplicación. Además, se ha asegurado que el componente respete los tamaños de ancho y espaciado correspondientes para garantizar su apariencia y usabilidad.
+Es una agrupación de accesos que tienen cercanía en cuanto a la similitud de acción. Pueden utilizarse tanto vertical como horizontalmente. 
 
-<div className="content-2">
-  <div className="list-group">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">
-        <i className="bx bxs-info-circle"></i>
-        Acceso
-      </span>
-    </a>
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">
-        <i className="bx bxs-info-circle"></i>
-        Acceso
-      </span>
-    </a>
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">
-        <i className="bx bxs-info-circle"></i>
-        Acceso
-      </span>
-    </a>
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">
-        <i className="bx bxs-info-circle"></i>
-        Acceso
-      </span>
-    </a>
-  </div>
-</div>
+### Vertical
+
+Para la implementación del componente se desarrolló la clase "list-group" que permite organizarlo y adaptarlo correctamente en forma de lista.
+
+![completar](/componentes/acceso/disposicion_vertical.png)
+
+### Horizontal
+
+Para la correcta distribución y visualización del componente, se deben utilizar la combinación de las clases: "list-group" y "list-group-row".
+
+![completar](/componentes/acceso/disposicion_horizontal.png)
 
 ## Usabilidad
 
@@ -264,7 +270,10 @@ El componente de acceso puede visualizarse tanto en posición horizontal como ve
 
 [[si | Recomendamos limitarse a una línea de texto para el título y la descripción de los accesos.]]
 
+[[si | Para el uso de los accesos horizontales se recomienda utilizar un máximo de 4 accesos en un ancho de 12 columnas y 3 accesos para una grilla de 8 columnas.]]
+
 ### Malas prácticas
 
-[[no | No utilizar puntos suspensivos para truncar el texto de los accesos]]
+[[no | No utilizar puntos suspensivos para truncar el texto de los accesos.]]
 [[no | No darle funcionalidad a los accesos. Únicamente sirven para redirigir al usuario a otra sección o pantalla del sistema.]]
+[[no | No utilizar mas de un ícono en el componente, esto puede generar confusión a la persona usuaria.]]
