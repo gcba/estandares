@@ -1,55 +1,110 @@
 ---
 menu: Paginado
 title: Paginado
-description: Este componente se usa en la parte inferior de la página cuando hay demasiados resultados de búsqueda para evitar que el usuario se sienta abrumado por la cantidad de información.
+description: El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior.
 position: 16
 ---
 
 import { Pagination } from "@gcba/obelisco"
-import "./paginacion.scss"
 
-## Paginado
+## Tipos de paginado
 
-Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
+### Numerado
 
-Oculte el Anterior en la primera página del conjunto y oculte el Siguiente en la última página del conjunto.
+Se utilizan cuando hay un gran número de páginas. Cuando el número de páginas supera el límite máximo de visualización, se trunca uno de los botones con tres puntos suspensivos (…) para indicar que hay más páginas para navegar.
 
-**Truncamiento**: cuando el número de páginas supera el límite máximo de visualización se utiliza una elipsis en forma de puntos suspensivos (…) para truncar las páginas restantes.
+<div className="content-column">
+  <Pagination pages={10} ariaLabel="Ejemplo de paginado numerado inicial" />
+  <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
+</div>
 
-<!-- codigo -->
+Cuando la primera y la última página están alejadas por más de cinco páginas de la página actual, se usa el truncamiento doble.
 
-<div class="pagination-container">
-  <Pagination pages={3} ariaLabel="Ejemplo de paginación simple" />
-  <Pagination pages={13} default={12} ariaLabel="Ejemplo de paginación simple" />
-  <Pagination pages={13} default={6} ariaLabel="Ejemplo de paginación compleja" />
+<div className="content-column">
+  <Pagination pages={10} default={4} ariaLabel="Ejemplo de paginado numerado central" />
+</div>
+
+### Descriptivo
+
+Generalmente, se usan para páginas que poseen documentación sobre un tema particular. Los botones se pueden nomenclar según el contenido que haya hacia atrás o adelante.
+
+<div className="mt-4 px-5">
+  <div className="pagination">
+    <div className="page-navigation">
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-previous-icon" aria-hidden="true"></span>
+          <span className="page-next-text">Anterior</span>
+        </a>
+      </div>
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-next-text">Siguiente</span>
+          <span className="page-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 ## Diseño y estructura (contexto de uso)
 
-### Paginado
+### Ubicación
 
-Oculte el ANTERIOR en la primera página del conjunto y oculte el PRÓXIMO en la última página del conjunto.
+Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
 
 ![completar](/componentes/paginado/paginado-1.svg)
 
-### Paginado en documentación
+### Página inicial y final
 
-Para documentación como la pagina actual puede utilizar solo los botones de Anterior y Siguiente.
+Ocultar el botón "Anterior" en la página inicial y el botón "Siguiente" en la última página.
 
-![completar](/componentes/paginado/paginado-2.svg)
+<div className="content-bg row justify-content-center mx-0">
+  <Pagination pages={10} ariaLabel="Ejemplo de paginado numerado inicial" />
+  <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
+</div>
+
+### Etiquetas
+
+Puede usar descripciones dentro del paginado para dar más contexto a las personas usuarias.
+
+<div className="content-bg">
+  <div className="pagination">
+    <div className="page-navigation">
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-previous-icon" aria-hidden="true"></span>
+          <span className="page-next-text">Navegación</span>
+        </a>
+      </div>
+      <div className="page-item">
+        <a className="btn page-link" href="#">
+          <span className="page-next-text">Pie de página</span>
+          <span className="page-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Usarlos si hay más de 25 elementos mostrados en una vista.** Como por ejemplo en listados de tablas, resultados de búsqueda y directorios. ]]
+[[si | **Solo divida el contenido en páginas separadas si mejora el rendimiento o la facilidad de uso de su servicio.** ]]
 
-[[si | **Destacar la página actual** para mostrar en dónde se encuentra el usuario en relación con toda la colección de páginas.]]
+[[si | **Identifique claramente en qué página se encuentra el usuario mostrando el número de página actual.** Al proporcionar contexto sobre cuántas páginas hay en total puede ayudar a proporcionar claridad sobre los datos que se muestran. ]]
 
 [[si | **Incluir siempre la primera página, la anterior y la siguiente.** Los usuarios deben poder navegar a cada una de estas páginas desde cualquier página del conjunto. ]]
 
-[[si | **Colocar un enlace en cada página del control de paginación.** Esto permite a los usuarios navegar rápidamente por los resultados.]]
-
 ### Malas prácticas
 
-[[no |**No dividir los elementos en varias líneas.** Mostrar los elementos de navegación en una sola línea para que sea más fácil de comprender y seleccionar.]]
+[[no |**Mostrar todo el contenido en una sola página hace que la página tarde demasiado en cargarse.** ]]
+
+[[no |**Evite usar la técnica de "desplazamiento infinito" para cargar contenido automáticamente cuando el usuario se acerca al final de la página.** Esto causa problemas a los usuarios de teclados. ]]
+
+[[no |**No utilice este componente de paginación para recorridos lineales.** Por ejemplo, cuando le pide al usuario que complete un formulario. En su lugar, use el componente Botón (generalmente un botón 'Continuar') para permitir que el usuario pase a la página siguiente, y un vínculo Atrás para permitirle pasar a la página anterior. ]]
+
+[[no |**No muestre la paginación si solo hay una página de contenido.** ]]
+
+[[no |**No dividir los elementos en varias líneas.** Mostrar los elementos de navegación en una sola línea para que sea más fácil de comprender y seleccionar. ]]
