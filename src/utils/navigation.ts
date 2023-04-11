@@ -72,8 +72,7 @@ export const getNavigation = (): NavItem[] => {
         name: node.menu,
         id: withPrefix(node.url),
         href: withPrefix(
-          node.fakeNode && node.children
-            ? withPrefix(Object.values(node.children)[0].url)
+          node.fakeNode ? withPrefix(Object.values(node.children)[0].url)
             : node.url
         ),
         children: node.children ? navigationToNavItemsArray(node.children) : [],
