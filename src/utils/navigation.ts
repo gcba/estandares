@@ -54,9 +54,9 @@ export const getNavigation = (): NavItem[] => {
   nodes.push(
     fakeNode(1, "Creamos experiencias", "/creamos_experiencias"),
     fakeNode(2, "Guía de estilos", "/guías_de_estilos"),
-    fakeNode(3, "Componentes", "/componentes"),
-    fakeNode(4, "Contenido", "/contenido"),
-    fakeNode(5, "Herramientas y recursos", "/herramientas_y_recursos")
+    fakeNode(3, "Contenido", "/contenido"),
+    fakeNode(4, "Herramientas y recursos", "/herramientas_y_recursos"),
+    fakeNode(5, "Componentes", "/componentes"),
   )
 
   nodes
@@ -67,14 +67,18 @@ export const getNavigation = (): NavItem[] => {
       _.set(navAsObject, path, { ...node.frontmatter, ...node.fields, children })
     })
 
-  const navigationToNavItemsArray = (nav): NavItem[] => {
-    return _.sortBy<Node>(Object.values(nav), "position").map((node: Node) => ({
-      name: node.menu,
-      id: withPrefix(node.url),
-      href: withPrefix(node.fakeNode ? Object.values(node.children)[0].url : node.url),
-      children: node.children ? navigationToNavItemsArray(node.children) : [],
-    }))
-  }
+    const navigationToNavItemsArray = (nav: object): NavItem[] => {
+      return _.sortBy<Node>(Object.values(nav), "position").map((node: Node) => ({
+        name: node.menu,
+        id: withPrefix(node.url),
+        href: withPrefix(
+          node.fakeNode && node.children
+            ? withPrefix(Object.values(node.children)[0].url)
+            : node.url
+        ),
+        children: node.children ? navigationToNavItemsArray(node.children) : [],
+      }))
+    }    
 
   return navigationToNavItemsArray(navAsObject)
 }
