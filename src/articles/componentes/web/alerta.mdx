@@ -9,164 +9,168 @@ import "./alert.scss"
 
 ## Tipos de alertas
 
-Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción.
+Las opciones de alertas muestran su color semántico para ayudar a las personas a discernir el tono del mensaje.
 
 ### Alerta simple
 
-Están compuestas por un ícono y descprición. La descripción informa a la persona sobre un tema particular y los íconos (correspondientes al color semántico) ayudan a las personas con deficiencia de visión a discernir el tono del mensaje.
+Están compuestas por un ícono y descripción. La descripción informa a la persona sobre un tema particular y los íconos (correspondientes al color semántico) ayudan a las personas con deficiencia de visión a discernir el tono del mensaje.
 
-<div class="alert alert-primary" role="alert">
-  <p>Esta es la descripción de una alerta de advertencia.</p>
-</div>
-<div class="alert alert-danger" role="alert">
-  <p>Esta es la descripción de una alerta de advertencia.</p>
-</div>
-<div class="alert alert-info" role="alert">
-  <p>Esta es la descripción de una alerta de información.</p>
-</div>
-<div class="alert alert-success" role="alert">
-  <p>Esta es la descripción de una alerta de éxito.</p>
+<div className="mt-4 pt-2">
+  <div className="alert alert-info" role="alert">
+    <p>Esta es la descripción de una alerta de información.</p>
+  </div>
+  <div className="alert alert-primary" role="alert">
+    <p>Esta es la descripción de una alerta de advertencia.</p>
+  </div>
+  <div className="alert alert-success" role="alert">
+    <p>Esta es la descripción de una alerta de éxito.</p>
+  </div>
+  <div className="alert alert-danger" role="alert">
+    <p>Esta es la descripción de una alerta de peligro.</p>
+  </div>
 </div>
 
 ### Alerta con cierre
 
 La acción de cierre dentro de las alertas le da la posibilidad a las personas usuarias de dejar de ver el contenido que consideran innecesario.
 
-<div class="alert alert-primary alert-dismissible show fade" role="alert">
-  <p>Esta es la descripción de una alerta de advertencia.</p>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span class="material-icons-round">close</span>
-  </button>
-</div>
-<div class="alert alert-danger alert-dismissible show fade" role="alert">
-  <p>Esta es la descripción de una alerta de advertencia.</p>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span class="material-icons-round">close</span>
-  </button>
-</div>
-<div class="alert alert-info alert-dismissible show fade" role="alert">
-  <p>Esta es la descripción de una alerta de información.</p>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span class="material-icons-round">close</span>
-  </button>
-</div>
-<div class="alert alert-success alert-dismissible show fade" role="alert">
-  <p>Esta es la descripción de una alerta de éxito.</p>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span class="material-icons-round">close</span>
-  </button>
+<div className="mt-4 pt-2">
+  <div className="alert alert-info alert-dismissible show fade" role="alert">
+    <p>Esta es la descripción de una alerta de información.</p>
+    <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+      <span className="material-icons-round">close</span>
+    </button>
+  </div>
+  <div className="alert alert-primary alert-dismissible show fade" role="alert">
+    <p>Esta es la descripción de una alerta de advertencia.</p>
+    <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+      <span className="material-icons-round">close</span>
+    </button>
+  </div>
+  <div className="alert alert-success alert-dismissible show fade" role="alert">
+    <p>Esta es la descripción de una alerta de éxito.</p>
+    <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+      <span className="material-icons-round">close</span>
+    </button>
+  </div>
+  <div className="alert alert-danger alert-dismissible show fade" role="alert">
+    <p>Esta es la descripción de una alerta de peligro.</p>
+    <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+      <span className="material-icons-round">close</span>
+    </button>
+  </div>
 </div>
 
 ### Alerta con destacado
 
 Este tipo de alertas se utilizan cuando se quiere destacar una parte de la información que es o podría ser de relevancia para las personas usuarias.
 
-<div class="alert alert-primary" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de advertencia.</strong>
-    Esta es la descripción de una alerta de advertencia que continua al texto
-    destacado.
-  </p>
-</div>
-<div class="alert alert-danger" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de error.</strong>
-    Esta es la descripción de una alerta de error que continua al texto
-    destacado.
-  </p>
-</div>
-<div class="alert alert-info" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de información.</strong>
-    Esta es la descripción de una alerta de información que continua al texto
-    destacado.
-  </p>
-</div>
-<div class="alert alert-success" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de éxito.</strong>
-    Esta es la descripción de una alerta de éxito que continua al texto
-    destacado.
-  </p>
+<div className="mt-4 pt-2">
+  <div className="alert alert-info" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información. </strong>
+      Esta es la descripción de una alerta de información que continua al texto
+      destacado.
+    </p>
+  </div>
+  <div className="alert alert-primary" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de advertencia. </strong>
+      Esta es la descripción de una alerta de advertencia que continua al texto
+      destacado.
+    </p>
+  </div>
+  <div className="alert alert-success" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de éxito. </strong>
+      Esta es la descripción de una alerta de éxito que continua al texto
+      destacado.
+    </p>
+  </div>
+  <div className="alert alert-danger" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de error. </strong>
+      Esta es la descripción de una alerta de error que continua al texto
+      destacado.
+    </p>
+  </div>
 </div>
 
 ### Alerta con enlace
 
 Los enlaces dentro de una alerta se utilizan para una llamada a la acción. Todos los enlaces a la documentación o información deben abrirse en una nueva pestaña.
 
-<div class="alert alert-primary" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de advertencia.</strong>
-    Esta es la descripción de una alerta de advertencia que continua al texto
-    destacado, incluso con
-    <a href="#">enlace</a>
-    .
-  </p>
-</div>
-<div class="alert alert-danger" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de error.</strong>
-    Esta es la descripción de una alerta de error que continua al texto
-    destacado, incluso con
-    <a href="#">enlace</a>
-    .
-  </p>
-</div>
-<div class="alert alert-info" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de información.</strong>
-    Esta es la descripción de una alerta de información que continua al texto
-    destacado, incluso con
-    <a href="#">enlace</a>
-    .
-  </p>
-</div>
-<div class="alert alert-success" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de éxito.</strong>
-    Esta es la descripción de una alerta de éxito que continua al texto
-    destacado, incluso con
-    <a href="#">enlace</a>
-    .
-  </p>
+<div className="mt-4 pt-2">
+  <div className="alert alert-info" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información. </strong>
+      Esta es la descripción de una alerta de información que continua al texto
+      destacado, incluso <a href="#">con enlace</a>.
+    </p>
+  </div>
+  <div className="alert alert-primary" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de advertencia. </strong>
+      Esta es la descripción de una alerta de advertencia que continua al texto
+      destacado, incluso <a href="#">con enlace</a>.
+    </p>
+  </div>
+  <div className="alert alert-success" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de éxito. </strong>
+      Esta es la descripción de una alerta de éxito que continua al texto
+      destacado, incluso <a href="#">con enlace</a>.
+    </p>
+  </div>
+  <div className="alert alert-danger" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de error. </strong>
+      Esta es la descripción de una alerta de error que continua al texto
+      destacado, incluso <a href="#">con enlace</a>.
+    </p>
+  </div>
 </div>
 
 ### Alerta con lista de anclas
 
 Se utilizan en formularios de gran magnitud para informar al usuario un listado de errores que no lo permiten continuar o confirmar el proceso. Cada item debe estar anclado al error correspondiente dentro del formulario.
 
-<div class="alert alert-danger fade show" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de error.</strong>
-    Esta es la descripción de una alerta de error que continua al texto
-    destacado.
-  </p>
-  <ol class="list-links">
-    <li><a href="#">Ancla al error 1</a></li>
-    <li><a href="#">Ancla al error 2</a></li>
-    <li><a href="#">Ancla al error 3</a></li>
-    <li><a href="#">Ancla al error 4</a></li>
-    <li><a href="#">Ancla al error 5</a></li>
-  </ol>
+<div className="mt-4 pt-2">
+  <div className="alert alert-danger fade show" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de error. </strong>
+      Esta es la descripción de una alerta de error que continua al texto
+      destacado.
+    </p>
+    <ol className="list-links">
+      <li><a href="#">Ancla al error 1</a></li>
+      <li><a href="#">Ancla al error 2</a></li>
+      <li><a href="#">Ancla al error 3</a></li>
+      <li><a href="#">Ancla al error 4</a></li>
+      <li><a href="#">Ancla al error 5</a></li>
+    </ol>
+  </div>
 </div>
 
 ### Alerta con lista descriptiva
 
 Su función es enumerar un conjunto de contenidos que van a ser de utilidad para el usuario.
 
-<div class="alert alert-info fade show" role="alert">
-  <p>
-    <strong>Este es un destacado de una alerta de información.</strong>
-    Esta es la descripción de una alerta de información que continua al texto
-    destacado.
-  </p>
-  <ol>
-    <li><span>Texto descriptivo</span></li>
-    <li><span>Texto descriptivo</span></li>
-    <li><span>Texto descriptivo</span></li>
-    <li><span>Texto descriptivo</span></li>
-    <li><span>Texto descriptivo</span></li>
-  </ol>
+<div className="mt-4 pt-2">
+  <div className="alert alert-info fade show" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información. </strong>
+      Esta es la descripción de una alerta de información que continua al texto
+      destacado.
+    </p>
+    <ol>
+      <li><span>Texto descriptivo</span></li>
+      <li><span>Texto descriptivo</span></li>
+      <li><span>Texto descriptivo</span></li>
+      <li><span>Texto descriptivo</span></li>
+      <li><span>Texto descriptivo</span></li>
+    </ol>
+  </div>
 </div>
 
 ## Diseño y estructura (contexto de uso)
@@ -183,7 +187,7 @@ Los carteles de alerta están destinados a llamar la atención y pedir a los usu
 
 [[si | **Ser amable con la persona usuaria.** Hacerle saber de forma clara y con lenguaje conciso lo que debe hacer para que la tarea sea lo más fácil posible.]]
 
-[[si | **Ser amable con la persona usuaria.** Hacerle saber de forma clara y con lenguaje conciso lo que debe hacer para que la tarea sea lo más fácil posible.]]
+[[si | **Comprender el contexto del usuario.** No incluir notificaciones que no estén relacionadas con el objetivo actual del usuario.]]
 
 [[si | **Considerar las alertas como una oportunidad para resolver.** Los usuarios leerán un mensaje que les ayudará a resolver un error incluso si por lo general no leen la documentación. Incluir contenido que ayude al usuario a resolver inconvenientes.]]
 
