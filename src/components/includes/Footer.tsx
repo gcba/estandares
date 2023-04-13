@@ -9,21 +9,21 @@ export const Footer = () => {
           <h4>Formá parte de la comunidad</h4>
           <ul className="list-inline">
             <li className="list-inline-item redes-items">
-              <a href="mailto:experienciadigital@buenosaires.gob.ar">
+              <a href="mailto:dgexperienciadigital@gmail.com">
                 <i className="bx bx-mail-send"></i>
                 Correo
               </a>
             </li>
             <li className="list-inline-item redes-items">
-              <a href="//github.com/gcba/estandares">
+              <a href="//github.com/gcba/estandares/issues">
                 <i className="bx bxl-github"></i>
                 Github
               </a>
             </li>
             <li className="list-inline-item redes-items">
-              <a href="//dribbble.com/ExperieniciadigitalBA">
-                <i className="bx bxl-dribbble"></i>
-                Dribbble
+              <a href="//gcba.github.io/Obelisco/">
+                <i className="bx bxl-react"></i>
+                Storybook
               </a>
             </li>
           </ul>
