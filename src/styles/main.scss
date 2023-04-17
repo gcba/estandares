@@ -34,7 +34,7 @@ aside {
   > div {
     padding: $container-space-y / 2 $container-space-x 0;
   }
-  
+
   img {
     max-width: $logo-max-width;
     margin-bottom: spaceUnits(3);
@@ -44,10 +44,9 @@ aside {
   .nav-first-level > .nav-link {
     font-size: 1.125rem;
   }
-  
+
   @include media-breakpoint-up(md) {
     min-height: $sidebar-min-height;
-
 
     > div {
       padding: $container-space-y $container-space-x;
@@ -84,7 +83,6 @@ main {
   }
 
   .img-fluid {
-    // display: block;
     display: inline-block;
     max-width: 100%;
     margin-left: auto;
@@ -98,7 +96,7 @@ main {
 
   article {
     margin-bottom: $section-space-bottom;
-    
+
     @for $i from 2 to 6 {
       > h#{$i} {
         margin-top: spaceUnits(16 - $i * 2);
@@ -106,14 +104,16 @@ main {
       }
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       word-break: break-word;
     }
 
-    .row [class^=col] {
+    .row [class^="col"] {
       margin-top: 2.5rem;
-      
-      h3, h4 {
+
+      h3,
+      h4 {
         margin-top: 0;
       }
     }
@@ -121,13 +121,14 @@ main {
     .card {
       margin-bottom: $section-space-bottom / 2;
     }
-    
+
     hr {
       margin-top: $section-space-bottom;
       margin-bottom: $section-space-bottom;
     }
 
-    .content-do, .content-dont {
+    .content-do,
+    .content-dont {
       float: left;
       margin-right: spaceUnits(1);
       vertical-align: text-bottom;
@@ -135,7 +136,8 @@ main {
     }
 
     .custom-block {
-      &.do, &.dont {
+      &.do,
+      &.dont {
         margin-bottom: spaceUnits(4);
 
         &::before {
@@ -157,7 +159,7 @@ main {
           color: $danger;
         }
       }
-      
+
       &.source {
         font-size: $font-size-sm;
         color: $text-muted;
@@ -174,7 +176,7 @@ main {
         max-width: 90px;
         display: block;
       }
-    } 
+    }
   }
 
   footer {
@@ -197,20 +199,17 @@ main {
   }
 }
 
-
 %box-icon {
-  font-family: 'boxicons'!important;
+  font-family: "boxicons" !important;
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
   line-height: 1;
   display: inline-block;
   text-transform: none;
-  // speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 /* === Example component === */
 
@@ -226,11 +225,17 @@ main {
   > * {
     margin: spaceUnits(2) 0;
   }
+
   .row {
     justify-content: center;
-    [class^=col] {
+    [class^="col"] {
       margin-top: 0;
     }
+  }
+
+  .modal {
+    position: relative;
+    display: block;
   }
 }
 
@@ -253,11 +258,12 @@ main {
   .docs-color-name {
     margin: spaceUnits(2) spaceUnits(3) 0;
     font-weight: 600;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
+  
   .docs-color-description {
     margin: 0 spaceUnits(3);
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .docs-color-specs {
@@ -271,18 +277,19 @@ main {
       border-top: none;
     }
 
-    dt, dd {
+    dt,
+    dd {
       display: inline-block;
       margin: 0;
       box-sizing: border-box;
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
 
     dt {
       width: 30%;
       font-weight: 600;
     }
-    
+
     dd {
       width: 70%;
       text-align: right;
@@ -293,6 +300,8 @@ main {
     color: $white;
   }
 }
+
+/* === Component Containers === */
 
 .content-1 {
   width: 526px;
@@ -311,5 +320,64 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin: 5rem auto;
+  pointer-events: none;
+}
+
+.content-bg {
+  @extend .docs-example;
+  border: 2px solid $grisulado-100;
+  padding: 3.75rem 5.5rem;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 1rem;
+
+}
+
+.alert-wrapper {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.buttons-showcase {
+  .btn {
+    margin-bottom: 16px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.btn-block-container {
+  width: 340px;
+  max-width: 100%;
+  margin: 5rem auto;
+  pointer-events: none;
+}
+
+.opciones-box {
+  width: 100%;
+  height: 250px;
+  margin: 8rem auto;
+  pointer-events: none;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  gap: 2rem;
+}
+
+.paso-a-paso-box {
+  width: 100%;
+  margin: 8rem auto;
   pointer-events: none;
 }
