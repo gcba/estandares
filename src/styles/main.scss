@@ -1,5 +1,6 @@
 @import "~@gcba/obelisco/src/scss/obelisco.scss";
 @import "~boxicons/css/boxicons.min.css";
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"); 
 
 $sidebar-min-height: 100vh;
 $logo-max-width: spaceUnits(60);
@@ -210,6 +211,7 @@ main {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 /* === Example component === */
 
