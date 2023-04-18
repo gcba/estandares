@@ -1,19 +1,22 @@
 ---
 menu: Barras de progreso
 title: Barras de progreso
-description: Las barras de progreso muestran la progresión del sistema sobre el estado de una operación. Pueden representar un progreso determinado o indeterminado.
+description: Las barras de progreso muestran visualmente el avance de un proceso de varios pasos a partir de la interacción de la persona usuaria.
 position: 2
 ---
 
 ## Tipos de barras de progreso
 
-### Con pasos
+La barra de progreso es una representación visual que permite a las personas conocer en qué parte del proceso se encuentran.
 
-Este componente se utiliza cuando se puede determinar el porcentaje de la tarea completada.
+La sección gris de la barra muestra la duración total del proceso y la barra de color representa el avance del usuario dentro del mismo.
+
+### Simple
+
+El componente sirve para comunicar cuánto se ha avanzado en el proceso.
 
 <div class="content-2">
-  <div class="progression-container">
-    <p class="steps">1 de 4 pasos</p>
+  <div class="progression-container mb-5">
     <div class="progress">
       <div
         class="progress-bar bg-info"
@@ -25,14 +28,27 @@ Este componente se utiliza cuando se puede determinar el porcentaje de la tarea 
       ></div>
     </div>
   </div>
+  <div class="progression-container mt-2">
+    <div class="progress">
+      <div
+        class="progress-bar bg-success"
+        role="progressbar"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="80"
+        style="width: 25%;"
+      ></div>
+    </div>
+  </div>
 </div>
 
-### Sin pasos
+### Con descripción
 
-Este tipo de barra muestra visualmente el progreso de una operación del sistema. Se utiliza cuando se desconocen los pasos para completar esta operación.
+Las barras de progreso pueden tener una descripción que brinde contexto sobre el proceso que se está llevando adelante.
 
 <div class="content-2">
   <div class="progression-container">
+    <p class="steps">Descripción</p>
     <div class="progress">
       <div
         class="progress-bar bg-info"
@@ -48,7 +64,13 @@ Este tipo de barra muestra visualmente el progreso de una operación del sistema
 
 ## Diseño y estructura (contexto de uso)
 
-Una barra de progreso muestra el estado de finalización de una tarea en curso.
+### Ubicación
+
+La barra de progreso se debe ubicar alineada a la izquierda y sobre el contenido en el cual interactuará el usuario.
+
+![completar](/componentes/barradeprogreso/barra-progreso-2.svg)
+
+El color predeterminado es azul. En el caso que haga referencia directa a un proceso en curso, utilice la barra verde para connotar éxito en el avance.
 
 ![completar](/componentes/barradeprogreso/barra-progreso.svg)
 
@@ -56,5 +78,10 @@ Una barra de progreso muestra el estado de finalización de una tarea en curso.
 
 ### Buenas prácticas
 
-[[si | **Utilizar una barra de progreso determinada** cuando se pueda calcular el progreso con respecto a un objetivo específico.]]
-[[si | **Utilizar una barra de progreso indeterminada** cuando no se pueda determinar el tiempo o el esfuerzo para completarlo.]]
+[[si | **Utilice textos explícitos** que transmitan la naturaleza o el significado de la barra de progreso.]]
+[[si | **Las descripciones deben ser breves y claras.** Mantenga el texto entre 1 y 4 palabras.]]
+[[si | **Utilice una progreción lógica.** Muestre el avance del proceso de izquierda a derecha.]]
+
+### Malas prácticas
+
+[[no | **No utilizar este componente para formularios.** La persona usuaria debe conocer en qué parte del proceso se encuentra.]]
