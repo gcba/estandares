@@ -383,3 +383,26 @@ main {
   margin: 8rem auto;
   pointer-events: none;
 }
+
+.content-row {
+  @extend .content-column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.spinner-sizes-container {
+  @extend .content-row;
+  gap: 7rem;
+  justify-content: start;
+  flex-wrap: wrap;
+  @media screen and (max-width: 592px) {
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+.spinner-block-container {
+  width: 4rem;
+}
