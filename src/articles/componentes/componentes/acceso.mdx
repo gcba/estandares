@@ -13,7 +13,7 @@ Se utilizan para componer organismos donde se establezcan múltiples accesos den
 
 <div className="content-2">
   <div className="list-group">
-    <a href="#" className="list-group-item item-sm no-shadow">
+    <a href="#" className="list-group-item item-sm shadow-none">
       <span className="access-title">Acceso</span>
     </a>
   </div>
@@ -25,8 +25,8 @@ Se utilizan para acceder a secciones de mayor relevancia. Principalmente se usan
 
 <div className="content-2">
   <div className="list-group">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">Acceso</span>
+    <a href="#" class="list-group-item item-sm">
+      <span class="access-title">Acceso</span>
     </a>
   </div>
 </div>
@@ -37,10 +37,10 @@ La descripción es una variable del acceso para agregar información adicional q
 
 <div className="content-2">
   <div className="list-group">
-    <a href="#" className="list-group-item item-sm">
-      <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+    <a href="#" class="list-group-item item-sm">
+      <div class="access-content">
+        <span class="access-title">Acceso</span>
+        <p class="access-text">Descripción (Opcional)</p>
       </div>
     </a>
   </div>
@@ -52,11 +52,11 @@ El ícono sirve como referencia visual para complementar al título del acceso y
 
 <div className="content-2">
   <div className="list-group">
-    <a href="#" className="list-group-item item-sm">
-      <i className="bx bxs-info-circle"></i>
-      <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+    <a href="#" class="list-group-item item-sm">
+      <i class="bx bxs-info-circle"></i>
+      <div class="access-content">
+        <span class="access-title">Acceso</span>
+        <p class="access-text">Descripción (Opcional)</p>
       </div>
     </a>
   </div>
@@ -64,20 +64,20 @@ El ícono sirve como referencia visual para complementar al título del acceso y
 
 ## Tamaños
 
-<div className="row-custom">
+<div className="access-wrapper">
   <div>
     <h3>Grande</h3>
     <div className="list-group">
-      <a href="#" className="list-group-item">
-        <span className="access-title">Acceso</span>
+      <a href="#" class="list-group-item">
+        <span class="access-title">Acceso grande</span>
       </a>
     </div>
   </div>
   <div>
     <h3>Chico</h3>
     <div className="list-group">
-      <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso</span>
+      <a href="#" class="list-group-item item-sm">
+        <span class="access-title">Acceso chico</span>
       </a>
     </div>
   </div>
@@ -89,21 +89,21 @@ El ícono sirve como referencia visual para complementar al título del acceso y
 
 La primer sección visualiza la información relevante para el usuario y la segunda sección esta compuesta por el acceso grande.
 
-<div className="row-custom">
+<div className="access-wrapper">
   <div>
     <div className="list-group">
-      <div className="group-access">
-        <div className="card-access">
-          <div className="card-access-body">
-            <span class="card-access-icon"><i class="bx bxs-info-circle"></i></span>
+      <div class="group-access">
+        <div class="card-access">
+          <div class="card-access-body reverse">
             <div>
-              <h3 className="card-access-title">Título del acceso</h3>
-              <p className="mb-0">Descripción del acceso</p>
+              <h4 class="mb-1">Título del acceso</h4>
+              <p class="mb-0">Descripción del acceso</p>
             </div>
+            <span class="card-access-icon material-icons-round">info</span>
           </div>
-          <a href="#" className="list-group-item card-item">
-            <span className="access-title">
-              <i className="bx bxs-info-circle"></i>
+          <a href="#" class="list-group-item card-item">
+            <span class="access-title">
+              <i class="bx bxs-info-circle"></i>
               Acceso grande
             </span>
           </a>
@@ -115,12 +115,12 @@ La primer sección visualiza la información relevante para el usuario y la segu
     <div className="list-group">
       <div className="group-access">
         <div className="card-access">
-          <div className="card-access-body reverse">
-            <span className="card-access-icon descriptive">Nº</span>
+          <div className="card-access-body">
             <div>
-              <h3 className="card-access-title">Título del acceso</h3>
+              <h4 className="mb-1">Título del acceso</h4>
               <p className="mb-0">Descripción del acceso</p>
             </div>
+            <span className="card-access-icon descriptive">N°</span>
           </div>
           <a href="#" className="list-group-item card-item">
             <span className="access-title">
@@ -140,45 +140,45 @@ La primer sección visualiza la información donde el usuario va a hacer foco, l
 
 <div className="content-2">
   <div className="list-group">
-    <div className="group-access">
-      <div className="card-access">
-        <div className="card-access-body reverse">
-          <span className="card-access-icon descriptive">Nº</span>
+    <div class="group-access">
+      <div class="card-access">
+        <div class="card-access-body">
           <div>
-            <h3 className="card-access-title">Título del acceso</h3>
-            <p className="mb-0">Descripción del acceso</p>
+            <h4 class="mb-1">Título del acceso</h4>
+            <p class="mb-0">Descripción del acceso</p>
+          </div>
+          <span class="card-access-icon descriptive">N°</span>
+        </div>
+        <hr class="clearfix" />
+        <div class="container-access">
+          <div class="access-option">
+            <a href="#" class="list-group-item item-sm">
+              <i class="bx bxs-info-circle"></i>
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+                <p class="access-text">Descripción (Opcional)</p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <i class="bx bxs-info-circle"></i>
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+                <p class="access-text">Descripción (Opcional)</p>
+              </div>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <i class="bx bxs-info-circle"></i>
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+                <p class="access-text">Descripción (Opcional)</p>
+              </div>
+            </a>
           </div>
         </div>
-        <div className="container-access">
-          <hr className="clearfix mt-0" />
-          <div className="access-option">
-            <a href="#" className="list-group-item item-sm">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-            <a href="#" className="list-group-item item-sm">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-            <a href="#" className="list-group-item item-sm">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-            <hr className="clearfix my-0 mt-2" />
-          </div>
-        </div>
-        <a href="#" className="list-group-item card-item no-shadow">
-          <span className="access-title">
-            <i className="bx bxs-info-circle"></i>
+        <hr class="clearfix" />
+        <a href="#" class="list-group-item card-item">
+          <span class="access-title">
+            <i class="bx bxs-info-circle"></i>
             Acceso grande
           </span>
         </a>
@@ -193,51 +193,50 @@ Tiene el mismo comportamiento que el “Acceso completo con listas de accesos”
 
 <div className="content-2">
   <div className="list-group">
-    <div className="group-access">
-      <div className="card-access">
-        <div className="card-access-body reverse">
-          <span className="card-access-icon descriptive">Nº</span>
+    <div class="group-access">
+      <div class="card-access">
+        <div class="card-access-body">
           <div>
-            <h3 className="card-access-title">Título del acceso</h3>
-            <p className="mb-0">Descripción del acceso</p>
+            <h4 class="mb-1">Título del acceso</h4>
+            <p class="mb-0">Descripción del acceso</p>
+          </div>
+          <span class="card-access-icon descriptive">N°</span>
+        </div>
+        <hr class="clearfix" />
+        <div class="container-access">
+          <div class="access-option">
+            <h5 class="title-option">Categoría 1</h5>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <h5 class="title-option">Categoría 2</h5>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
+            <a href="#" class="list-group-item item-sm">
+              <span class="access-title">
+                <i class="bx bxs-info-circle"></i>
+                Acceso chico
+              </span>
+            </a>
           </div>
         </div>
-        <div className="container-access">
-          <hr className="clearfix mt-0" />
-          <div className="access-option">
-            <h2 className="title-option font-weight-bold">Categoría 1</h2>
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">
-                <i className="bx bxs-info-circle"></i>
-                Acceso chico
-              </span>
-            </a>
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">
-                <i className="bx bxs-info-circle"></i>
-                Acceso chico
-              </span>
-            </a>
-            <hr className="clearfix clearfix-category" />
-            <h2 className="title-option font-weight-bold">Categoría 2</h2>
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">
-                <i className="bx bxs-info-circle"></i>
-                Acceso chico
-              </span>
-            </a>
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">
-                <i className="bx bxs-info-circle"></i>
-                Acceso chico
-              </span>
-            </a>
-            <hr className="clearfix my-0 mt-2" />
-          </div>
-        </div>
-        <a href="#" className="list-group-item card-item no-shadow">
-          <span className="access-title">
-            <i className="bx bxs-info-circle"></i>
+        <hr class="clearfix" />
+        <a href="#" class="list-group-item card-item">
+          <span class="access-title">
+            <i class="bx bxs-info-circle"></i>
             Acceso grande
           </span>
         </a>
