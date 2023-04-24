@@ -1,6 +1,6 @@
 @import "~@gcba/obelisco/src/scss/obelisco.scss";
 @import "~boxicons/css/boxicons.min.css";
-@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"); 
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 
 $sidebar-min-height: 100vh;
 $logo-max-width: spaceUnits(60);
@@ -218,7 +218,6 @@ main {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* === Example component === */
 
 .docs-example {
@@ -268,7 +267,7 @@ main {
     font-weight: 600;
     font-size: 0.8rem;
   }
-  
+
   .docs-color-description {
     margin: 0 spaceUnits(3);
     font-size: 0.7rem;
@@ -343,7 +342,6 @@ main {
   align-items: center;
   margin: 3rem 0;
   gap: 1rem;
-
 }
 
 .alert-wrapper {
@@ -389,10 +387,11 @@ main {
   gap: 2rem;
   align-items: flex-start;
   flex-wrap: wrap;
-  
+
   &.btn-block-container {
     max-width: 340px;
   }
+
   &.btn-size-container {
     justify-content: space-between;
     @media screen and (max-width: 592px) {
