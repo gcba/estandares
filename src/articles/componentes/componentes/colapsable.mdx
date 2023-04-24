@@ -11,18 +11,18 @@ position: 4
 
 El título del colapsable debe ser conciso y descriptivo sin perder claridad en su significado, ya que representa el encabezado de la sección y es el control para revelar el contenido.
 
-<div class="content-2">
-  <div class="accordion" id="accordionExample">
-    <div class="card">
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
       <button
-        class="card-header collapsed card-link accordion-card-icon"
+        className="card-header collapsed card-link accordion-card-icon"
         data-toggle="collapse"
         data-target="#collapseEight"
       >
         Título
       </button>
-      <div id="collapseEight" class="collapse" data-parent="#accordion">
-        <div class="card-body">
+      <div id="collapseEight" className="collapse" data-parent="#accordion">
+        <div className="card-body">
           Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
           dentro de un colapsable.
         </div>
@@ -35,15 +35,15 @@ El título del colapsable debe ser conciso y descriptivo sin perder claridad en 
 
 El ícono debe ser utilizado como referencia visual para complementar el título del colapsable y así mejorar la comprensión del contenido.
 
-<div class="content-2">
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <button type="button" class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseEight">
-        <i class="bx bx-sm align-top mr-1 bxs-user-circle"></i>
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button type="button" className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseEight">
+        <i className="bx bx-sm align-top mr-1 bxs-user-circle"></i>
         Título
       </button>
-      <div id="collapseEight" class="collapse" data-parent="#accordion">
-        <div class="card-body">
+      <div id="collapseEight" className="collapse" data-parent="#accordion">
+        <div className="card-body">
           Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
           dentro de un colapsable.
         </div>
@@ -56,23 +56,23 @@ El ícono debe ser utilizado como referencia visual para complementar el título
 
 El uso de estas variables es opcional para los colapsables. Ambas permiten añadir más información al componente en función de su contenido.
 
-<div class="content-2">
+<div className="content-2">
   <div id="accordion">
-    <div class="accordion" id="accordionExample">
-      <div class="card">
+    <div className="accordion" id="accordionExample">
+      <div className="card">
         <button
           type="button"
-          class="card-header collapsed card-link"
+          className="card-header collapsed card-link"
           data-toggle="collapse"
           data-target="#collapseEight"
         >
-          <i class="bx bx-sm align-top mr-1 bxs-user-circle"></i>
-          <span class="collapse-label">Label</span>
-          <h1 class="collpase-title">Título</h1>
-          <span class="collpase-subtitle">Descripción</span>
+          <i className="bx bx-sm align-top mr-1 bxs-user-circle"></i>
+          <span className="collapse-label">Label</span>
+          <h1 className="collpase-title">Título</h1>
+          <span className="collpase-subtitle">Descripción</span>
         </button>
-        <div id="collapseEight" class="collapse" data-parent="#accordion">
-          <div class="card-body">
+        <div id="collapseEight" className="collapse" data-parent="#accordion">
+          <div className="card-body">
             Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
             dentro de un colapsable.
           </div>
@@ -100,21 +100,21 @@ Los grupos de colapsables de selección múltiple permiten que varios colapsable
 
 Un colapsable puede mostrar contenido detallado en forma de lista con el objetivo de explayar la información que se encuentra en el encabezado del componente.
 
-<div class="content-2">
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <button class="card-header card-link card-info" data-toggle="collapse" data-target="#collapseFive">
-        <h1 class="collpase-title">Total:</h1>
-        <span class="collpase-subtitle">$ 450,00</span>
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header card-link card-info" data-toggle="collapse" data-target="#collapseFive">
+        <h1 className="collpase-title">Total:</h1>
+        <span className="collpase-subtitle">$ 450,00</span>
       </button>
-      <div id="collapseFive" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-          <small class="text-success">$200,00</small>
-          <h4 class="mb-0">Solicitud de informes varios</h4>
+      <div id="collapseFive" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          <small className="text-success">$200,00</small>
+          <h4 className="mb-0">Solicitud de informes varios</h4>
           <small>Boleta N° 2549-48758798</small>
           <hr />
-          <small class="text-success">$250,00</small>
-          <h4 class="mb-0">Ecoparque</h4>
+          <small className="text-success">$250,00</small>
+          <h4 className="mb-0">Ecoparque</h4>
           <small>Boleta N° 2549-48758798</small>
         </div>
       </div>
@@ -124,39 +124,39 @@ Un colapsable puede mostrar contenido detallado en forma de lista con el objetiv
 
 Las personas usuarias también pueden interactuar con el contenido que despliega el colapsable para tomar una decisión.
 
-<div class="content-2">
-  <div class="accordion" id="accordionListExample">
-    <div class="card">
-      <button type="button" class="card-header card-link card-info" data-toggle="collapse" data-target="#collapseEight">
-        <h1 class="collpase-title">Tarjeta de crédito / débito</h1>
-        <span class="collpase-subtitle">VISA, MasterCard, AMEX, CABAL, Maestro</span>
+<div className="content-2">
+  <div className="accordion" id="accordionListExample">
+    <div className="card">
+      <button type="button" className="card-header card-link card-info" data-toggle="collapse" data-target="#collapseEight">
+        <h1 className="collpase-title">Tarjeta de crédito / débito</h1>
+        <span className="collpase-subtitle">VISA, MasterCard, AMEX, CABAL, Maestro</span>
       </button>
-      <div id="collapseEight" class="collapse show" data-parent="#accordion">
-        <form class="card-body">
-          <div class="card-details">
-            <i class="bx bxl-visa"></i>
-            <div class="card-details-content">
+      <div id="collapseEight" className="collapse show" data-parent="#accordion">
+        <form className="card-body">
+          <div className="card-details">
+            <i className="bx bxl-visa"></i>
+            <div className="card-details-content">
               <h4>Visa Débito ****1234</h4>
               <small>Heraldo Paez</small>
             </div>
-            <input type="radio" class="form-radio" name="credit_card" id="visa" />
+            <input type="radio" className="form-radio" name="credit_card" id="visa" />
           </div>
           <hr />
-          <div class="card-details">
-            <i class="bx bxl-mastercard"></i>
-            <div class="card-details-content">
+          <div className="card-details">
+            <i className="bx bxl-mastercard"></i>
+            <div className="card-details-content">
               <h4>MasterCard Crédito ****5678</h4>
               <small>Heraldo Paez</small>
             </div>
-            <input type="radio" class="form-radio" name="credit_card" id="master" />
+            <input type="radio" className="form-radio" name="credit_card" id="master" />
           </div>
           <hr />
-          <div class="card-details">
-            <span class="material-icons-round">info</span>
-            <div class="card-details-content">
+          <div className="card-details">
+            <span className="material-icons-round">info</span>
+            <div className="card-details-content">
               <h4>Nueva tarjeta de crédito</h4>
             </div>
-            <input type="radio" class="form-radio" name="credit_card" id="new_card" />
+            <input type="radio" className="form-radio" name="credit_card" id="new_card" />
           </div>
         </form>
       </div>
