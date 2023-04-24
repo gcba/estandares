@@ -1,6 +1,7 @@
 import * as React from "react"
 
-export const Row = (props: React.PropsWithChildren<{}>) => <div className="row">{props.children}</div>
+export const Row = (props: React.PropsWithChildren<{rowClass: string}>) => {
+return <div className={!props.rowClass ? "row" : `row ${props.rowClass}`}>{props.children}</div>}
 
 export const Col = (props: React.PropsWithChildren<{ items: number }>) => {
   const className = props.items > 1 ? `col-xs-12 col-md-${12 / props.items}` : "col-md-10 col-lg-8 col-xl-6"
