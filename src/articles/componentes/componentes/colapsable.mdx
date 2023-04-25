@@ -38,7 +38,12 @@ El ícono debe ser utilizado como referencia visual para complementar el título
 <div className="content-2">
   <div className="accordion" id="accordionExample">
     <div className="card">
-      <button type="button" className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseEight">
+      <button
+        type="button"
+        className="card-header collapsed card-link"
+        data-toggle="collapse"
+        data-target="#collapseEight"
+      >
         <i className="bx bx-sm align-top mr-1 bxs-user-circle"></i>
         Título
       </button>
@@ -88,19 +93,91 @@ El uso de estas variables es opcional para los colapsables. Ambas permiten añad
 
 Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo, éste se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
 
-![completar](/componentes/colapsable/collapse_simple.png)
+<div className="content-2" id="accordion">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+        Título
+      </button>
+      <div id="collapseOne" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header card-link" data-toggle="collapse" data-target="#collapseTwo">
+        Título
+      </button>
+      <div id="collapseTwo" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
+        Título
+      </button>
+      <div id="collapseThree" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Colapsable de selección múltiple
 
 Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo sin límites de apertura.
 
-![completar](/componentes/colapsable/collapse_multiple.png)
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header card-link" data-toggle="collapse" data-target="#collapseOne">
+        Título
+      </button>
+      <div id="collapseOne" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
+        Título
+      </button>
+      <div id="collapseTwo" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header card-link" data-toggle="collapse" data-target="#collapseThree">
+        Título
+      </button>
+      <div id="collapseThree" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Colapsable con lista
 
 Un colapsable puede mostrar contenido detallado en forma de lista con el objetivo de explayar la información que se encuentra en el encabezado del componente.
 
-<div className="content-2">
+<div className="content-4">
   <div className="accordion" id="accordionExample">
     <div className="card">
       <button className="card-header card-link card-info" data-toggle="collapse" data-target="#collapseFive">
@@ -124,10 +201,15 @@ Un colapsable puede mostrar contenido detallado en forma de lista con el objetiv
 
 Las personas usuarias también pueden interactuar con el contenido que despliega el colapsable para tomar una decisión.
 
-<div className="content-2">
+<div className="content-4">
   <div className="accordion" id="accordionListExample">
     <div className="card">
-      <button type="button" className="card-header card-link card-info" data-toggle="collapse" data-target="#collapseEight">
+      <button
+        type="button"
+        className="card-header card-link card-info"
+        data-toggle="collapse"
+        data-target="#collapseEight"
+      >
         <h1 className="collpase-title">Tarjeta de crédito / débito</h1>
         <span className="collpase-subtitle">VISA, MasterCard, AMEX, CABAL, Maestro</span>
       </button>
