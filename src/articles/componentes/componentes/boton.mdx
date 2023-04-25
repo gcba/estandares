@@ -68,6 +68,18 @@ A diferencia del resto de los botones, éstos están delineados, lo cual les oto
   <Button type="primary" size="large" outline={true}>
     Botón
   </Button>
+  <Button type="secondary" size="large" outline={true}>
+    Botón
+  </Button>
+  <Button type="success" size="large" outline={true}>
+    Botón
+  </Button>
+  <Button type="danger" size="large" outline={true}>
+    Botón
+  </Button>
+  <Button type="link" size="large" outline={true}>
+    Botón
+  </Button>
 </div>
 
 ### Botones con spinner
@@ -103,7 +115,7 @@ En caso de que se utilice un ícono, este no debe ser únicamente decorativo, si
 Deben utilizarse los íconos proporcionados por las librerías utilizadas en Obelisco y en los colores definidos.
 
 <div className="button-container">
-  <Button type="secondary" size="large" iconMaterial="info">
+  <Button type="secondary" size="large" iconBx="bx-search-alt-2">
     Botón
   </Button>
 </div>
@@ -113,7 +125,7 @@ Deben utilizarse los íconos proporcionados por las librerías utilizadas en Obe
 Si se desea crear un botón de acción de solo ícono, es posible ocultar la etiqueta y solo mostrar el ícono. Sin embargo, en este caso, es necesario que el ícono tenga una fuerte relación con la función del botón y, en caso de que el usuario requiera mayor información, deberá aparecer en un tooltip al pasar el cursor sobre el botón.
 
 <div className="button-container">
-  <Button type="secondary" size="large" iconMaterial="info"></Button>
+  <Button type="link" size="large" iconBx="bxs-plus-circle"></Button>
 </div>
 
 ## Tamaños
@@ -149,11 +161,17 @@ Es importante establecer una jerarquía visual entre los botones dentro de la in
 Estos pueden ir acompañados de otros tipos de botones con menor peso visual y cuya llamada a la acción tenga relación entre sí.
 
 <div className="button-container justify-content-center">
-  <Button type="primary">
-    Aceptar
+  <Button type="secondary" outline={true}>
+    Cerrar
   </Button>
-  <Button type="danger" outline={true} iconMaterial="info">
+  <Button type="danger">
     Eliminar
+  </Button>
+  <Button type="link">
+    Cancelar
+  </Button>
+  <Button type="primary">
+    Continuar
   </Button>
 </div>
 
