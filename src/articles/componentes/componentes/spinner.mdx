@@ -1,7 +1,7 @@
 ---
 menu: Spinner
 title: Spinner
-description: Un spinner es un indicador visual que muestra el progreso de un proceso, como la recuperación de datos, y ayuda a informar a las personas usuarias que la carga está en curso.
+description: Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso.
 position: 19
 ---
 
@@ -55,14 +55,33 @@ Este componente puede ir acompañado de un mensaje claro que ayude a las persona
   <small>Cargando...</small>
 </div>
 
+### Spinner en otros componentes
+
+El spinner puede utilizarse en diferentes situaciones siempre y cuando refleje la carga de información en relación al contexto de uso.
+
+<div className="content-row">
+  <button type="button" className="btn btn-primary btn-lg btn-icon">
+    <div className="spinner-border text-dark spinner-border-sm" role="status">
+      <span className="sr-only">Cargando...</span>
+    </div>
+    Botón
+  </button>
+  <button type="button" className="btn btn-outline-primary btn-lg btn-icon">
+    <div className="spinner-border text-dark spinner-border-sm" role="status">
+      <span className="sr-only">Cargando...</span>
+    </div>
+    Botón
+  </button>
+</div>
+
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si |Considerar el uso de un spinner si el tiempo de espera será superior a tres segundos para asegurarle a la persona usuaria que su acción se está procesando. ]]
+[[si | Considerar el uso de un spinner si el tiempo de espera será superior a tres segundos para asegurarle a la persona usuaria que su acción se está procesando. ]]
 
-[[si |Utilizar hasta cuatro palabras para el mensaje opcional que acompaña al spinner. ]]
+[[si | Utilizar hasta cuatro palabras para el mensaje opcional que acompaña al spinner. ]]
 
 ### Malas prácticas
 
-[[no |No utilizar el spinner para comunicar el avance de un proceso de varios pasos. Para eso, utilice una barra de progreso. ]]
+[[no | No utilizar el spinner para comunicar el avance de un proceso de varios pasos. Para eso, utilice una barra de progreso. ]]

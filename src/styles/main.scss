@@ -389,17 +389,21 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  @media screen and (max-width: 592px) {
+    gap: 1rem;
+  }
 }
 
 .spinner-sizes-container {
+  @extend .docs-example;
   @extend .content-row;
   gap: 7rem;
-  justify-content: start;
   flex-wrap: wrap;
+  padding: 3.125rem 0;
   @media screen and (max-width: 592px) {
-    gap: 3rem;
-    justify-content: center;
+    gap: 2rem;
   }
 }
 
