@@ -1,11 +1,11 @@
 ---
 menu: Botones
 title: Botones
-description: Los botones permiten a los usuarios realizar acciones o navegar a otra página, son el medio a través del cual interactúan. Éstos suelen usarse como parte de componentes o patrones más grandes, como formularios o cuadros de diálogo.
+description: Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él.
 position: 3
 ---
 
-import { Button } from "@gcba/obelisco"
+import { Button, Spinner } from "@gcba/obelisco"
 import { ButtonExample, ButtonSizeExample } from "../../../components/docs/ButtonExample"
 
 ## Tipos de botones
@@ -65,19 +65,19 @@ Están diseñados para utilizar en acciones secundarias o de poca relevancia den
 A diferencia del resto de los botones, éstos están delineados, lo cual les otorga menos jerarquía visual que los botones sólidos. Son utilizados para denotar menos énfasis y pueden combinarse con otros estilos de botones.
 
 <div className="button-container">
-  <Button type="primary" size="large" outline={true}>
+  <Button type="primary" size="large" isOutline>
     Botón
   </Button>
-  <Button type="secondary" size="large" outline={true}>
+  <Button type="secondary" size="large" isOutline>
     Botón
   </Button>
-  <Button type="success" size="large" outline={true}>
+  <Button type="success" size="large" isOutline>
     Botón
   </Button>
-  <Button type="danger" size="large" outline={true}>
+  <Button type="danger" size="large" isOutline>
     Botón
   </Button>
-  <Button type="link" size="large" outline={true}>
+  <Button type="link" size="large" isOutline>
     Botón
   </Button>
 </div>
@@ -87,10 +87,10 @@ A diferencia del resto de los botones, éstos están delineados, lo cual les oto
 Los botones con spinner comunican al usuario que una acción se está procesando y debe esperar.
 
 <div className="button-container justify-content-center">
-  <Button type="primary" size="large" spinner="dark">
+  <Button type="primary" size="large" isIconSpinner={<Spinner type="dark" size="small"></Spinner>}>
     Botón
   </Button>
-  <Button type="primary" size="large" spinner="dark" outline={true}>
+  <Button type="primary" size="large" isIconSpinner={<Spinner type="dark" size="small"></Spinner>} isOutline>
     Botón
   </Button>
 </div>
@@ -100,7 +100,7 @@ Los botones con spinner comunican al usuario que una acción se está procesando
 Este botón expandible está construido con la clase btn-block para que se adapte a los distintos contenedores, tomando la medida del ancho de su elemento padre.
 
 <div className="button-container btn-block-container">
-  <Button type="primary" size="large" block={true}>
+  <Button type="primary" size="large" isBlock>
     Botón
   </Button>
 </div>
@@ -112,10 +112,9 @@ Es importante que los botones cuenten con una etiqueta corta que describa su fun
 ### Botón con etiqueta e ícono
 
 En caso de que se utilice un ícono, este no debe ser únicamente decorativo, sino que debe tener una asociación clara con el texto de la etiqueta.
-Deben utilizarse los íconos proporcionados por las librerías utilizadas en Obelisco y en los colores definidos.
 
 <div className="button-container">
-  <Button type="secondary" size="large" iconBx="bx-search-alt-2">
+  <Button type="secondary" size="large" isIconSpinner={<i className="bx bx-search-alt-2"></i>}>
     Botón
   </Button>
 </div>
@@ -125,7 +124,7 @@ Deben utilizarse los íconos proporcionados por las librerías utilizadas en Obe
 Si se desea crear un botón de acción de solo ícono, es posible ocultar la etiqueta y solo mostrar el ícono. Sin embargo, en este caso, es necesario que el ícono tenga una fuerte relación con la función del botón y, en caso de que el usuario requiera mayor información, deberá aparecer en un tooltip al pasar el cursor sobre el botón.
 
 <div className="button-container">
-  <Button type="link" size="large" iconBx="bxs-plus-circle"></Button>
+  <Button type="link" size="large" isIconSpinner={<i className="bx bxs-plus-circle"></i>}></Button>
 </div>
 
 ## Tamaños
@@ -135,19 +134,19 @@ Los botones pueden ser grandes, medianos o chicos. El tamaño mediano es la opci
 <div className="button-container btn-size-container">
   <div>
     <h3 className="mb-3">Grande</h3>
-    <Button type="primary" size="large" iconMaterial="info">
+    <Button type="primary" size="large" isIconSpinner={<span className="material-icons-round">info</span>}>
       Botón
     </Button>
   </div>
   <div>
     <h3 className="mb-3">Mediano</h3>
-    <Button type="primary" size="default" iconMaterial="info">
+    <Button type="primary" size="default" isIconSpinner={<span className="material-icons-round">info</span>}>
       Botón
     </Button>
   </div>
   <div>
     <h3 className="mb-3">Chico</h3>
-    <Button type="primary" size="small" iconMaterial="info">
+    <Button type="primary" size="small" isIconSpinner={<span className="material-icons-round">info</span>}>
       Botón
     </Button>
   </div>
@@ -157,22 +156,23 @@ Los botones pueden ser grandes, medianos o chicos. El tamaño mediano es la opci
 
 ### Jerarquías
 
-Es importante establecer una jerarquía visual entre los botones dentro de la interfaz de usuario. Los botones pricipales tienen mayor impacto y debe ser utilizados para mostar con claridad la única acción principal dentro de la página.
-Estos pueden ir acompañados de otros tipos de botones con menor peso visual y cuya llamada a la acción tenga relación entre sí.
+Es importante establecer una diferencia de jerarquías entre los botones dentro de la interfaz para que las personas usuarias puedan completar una navegación, flujo o acción determinada. Los botones principales pueden ir acompañados de botones secundarios o de botones con menor jerarquía.
 
-<div className="button-container justify-content-center">
-  <Button type="secondary" outline={true}>
-    Cerrar
-  </Button>
-  <Button type="danger">
-    Eliminar
-  </Button>
-  <Button type="link">
-    Cancelar
-  </Button>
-  <Button type="primary">
-    Continuar
-  </Button>
+<div className="button-container">
+  <div class="modal d-block position-static" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header"><h4 class="modal-title">¡Importante!</h4></div>
+        <div class="modal-body"><p>Antes de realizar la ficha de salud, tené en cuenta haber realizado los pasos previos correspondientes.</p></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-link" data-dismiss="modal">
+            Volver atrás
+          </button>
+          <button type="button" class="btn btn-primary">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 ### Orden y alineación
@@ -193,7 +193,7 @@ Estos pueden ir acompañados de otros tipos de botones con menor peso visual y c
 <Row rowClass={"reverse-mobile"}>
   <Col items={2}>
 
-  ![completar](/componentes/botón/orden-alineacion-2.svg)
+  ![completar](/componentes/botón/orden-alineacion-1.svg)
 
   </Col>
   <Col items={2}>
@@ -236,4 +236,4 @@ Estos pueden ir acompañados de otros tipos de botones con menor peso visual y c
 
 [[no | No combinar botones primarios entre sí. Usar botones primarios con secundarios o de otro nivel jerárquico. ]]
 
-[[no | No utilizar un botón para navegar a otro lugar. Usar un enlace en su lugar. ]]
+[[no | No utilizar una etiqueta &lt;button&gt; para navegar a otra página. Usar en su lugar una etiqueta &lt;a&gt;.]]

@@ -398,4 +398,12 @@ main {
       justify-content: center;
     }
   }
+
+  &:has(.modal) {
+    margin: 0.75rem auto;
+  }
+
+  .modal-content {
+    box-shadow: 0 0 0 2px $grisulado-50;
+  }
 }
