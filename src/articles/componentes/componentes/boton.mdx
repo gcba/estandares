@@ -1,27 +1,21 @@
 ---
 menu: Botones
 title: Botones
-description: Los botones permiten a los usuarios realizar acciones o navegar a otra página, son el medio a través del cual interactúan. Éstos suelen usarse como parte de componentes o patrones más grandes, como formularios o cuadros de diálogo.
+description: Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él.
 position: 3
 ---
 
-import { Button } from "@gcba/obelisco"
+import { Button, Spinner } from "@gcba/obelisco"
 import { ButtonExample, ButtonSizeExample } from "../../../components/docs/ButtonExample"
 
 ## Tipos de botones
 
 ### Botones primarios
 
-Los botones primarios se usan generalmente para acciones principales y las denotadas como “positivas”.
+Los botones primarios se usan generalmente para acciones principales y las denotadas como "positivas". Debe haber un solo botón principal por página.
 
-<div className="content-3">
+<div className="button-container">
   <Button type="primary" size="large">
-    Botón
-  </Button>
-  <Button type="primary" size="default">
-    Botón
-  </Button>
-  <Button type="primary" size="small">
     Botón
   </Button>
 </div>
@@ -30,14 +24,8 @@ Los botones primarios se usan generalmente para acciones principales y las denot
 
 Los botones secundarios se usan para llamadas a la acción secundarias en una página. Se pueden usar, también, en combinación con botones primarios.
 
-<div className="content-3">
+<div className="button-container">
   <Button type="secondary" size="large">
-    Botón
-  </Button>
-  <Button type="secondary" size="default">
-    Botón
-  </Button>
-  <Button type="secondary" size="small">
     Botón
   </Button>
 </div>
@@ -46,14 +34,8 @@ Los botones secundarios se usan para llamadas a la acción secundarias en una p�
 
 Los botones de éxito son utilizados para avisar al usuario que se encuentra en el último paso antes de recibir una respuesta por parte del sistema o completar una navegación.
 
-<div className="content-3">
+<div className="button-container">
   <Button type="success" size="large">
-    Botón
-  </Button>
-  <Button type="success" size="default">
-    Botón
-  </Button>
-  <Button type="success" size="small">
     Botón
   </Button>
 </div>
@@ -62,14 +44,8 @@ Los botones de éxito son utilizados para avisar al usuario que se encuentra en 
 
 Están diseñados para que los usuarios piensen detenidamente antes de usarlos. Son utilizados en acciones permanentes e irreversibles que no pueden deshacerse.
 
-<div className="content-3">
+<div className="button-container">
   <Button type="danger" size="large">
-    Botón
-  </Button>
-  <Button type="danger" size="default">
-    Botón
-  </Button>
-  <Button type="danger" size="small">
     Botón
   </Button>
 </div>
@@ -78,107 +54,186 @@ Están diseñados para que los usuarios piensen detenidamente antes de usarlos. 
 
 Están diseñados para utilizar en acciones secundarias o de poca relevancia dentro de la interfaz. Se diferencian de los botones secundarios por su poco peso visual.
 
-<div className="content-3">
+<div className="button-container">
   <Button type="link" size="large">
-    Botón
-  </Button>
-  <Button type="link" size="default">
-    Botón
-  </Button>
-  <Button type="link" size="small">
-    Botón
-  </Button>
-</div>
-
-### Botones a 4 columnas
-
-Están diseñados para ser usados en un tamaño fijo de 4 columnas. Su uso es frecuente en mobile.
-
-<div className="btn-block-container">
-  <Button type="primary" size="large" className="btn-block">
-    Botón
-  </Button>
-</div>
-
-### Botones en caja
-
-Están diseñados para ser utilizados dentro de cajas, contenedores, o espacios para iniciar alguna acción, como el inicio de un trámite.
-
-<div className="content-2">
-  <div className="card">
-    <div className="card-body">
-      <Button type="primary" size="large" className="btn-block">
-        Botón
-      </Button>
-    </div>
-  </div>
-</div>
-
-### Botones con ícono
-
-En este tipo de botón el texto va acompañado de un ícono a la izquierda. Está permitido un ícono por botón y debe respetar tamaño y estilos
-
-<div className="content-3">
-  <Button type="primary" size="large" className="btn-icon">
-    <i className="bx bxs-car"></i>
-    Botón
-  </Button>
-  <Button type="primary" size="default" className="btn-icon">
-    <i className="bx bxs-car"></i>
-    Botón
-  </Button>
-  <Button type="primary" size="small" className="btn-icon">
-    <i className="bx bxs-car"></i>
     Botón
   </Button>
 </div>
 
 ### Botones con borde
 
-A diferencia del resto de los botones, éstos están delineados, lo cual les otorga menos jerarquía visual que los botones sólidos. Son utilizados para denotar menos énfasis y pueden combinarse con otros.
+A diferencia del resto de los botones, éstos están delineados, lo cual les otorga menos jerarquía visual que los botones sólidos. Son utilizados para denotar menos énfasis y pueden combinarse con otros estilos de botones.
 
-<div className="content-3">
-  <Button type="outline-primary" size="large">
+<div className="button-container">
+  <Button type="primary" size="large" isOutline>
     Botón
   </Button>
-  <Button type="outline-primary" size="default">
+  <Button type="secondary" size="large" isOutline>
     Botón
   </Button>
-  <Button type="outline-primary" size="small">
+  <Button type="success" size="large" isOutline>
+    Botón
+  </Button>
+  <Button type="danger" size="large" isOutline>
+    Botón
+  </Button>
+  <Button type="link" size="large" isOutline>
     Botón
   </Button>
 </div>
 
+### Botones con spinner
+
+Los botones con spinner comunican al usuario que una acción se está procesando y debe esperar.
+
+<div className="button-container justify-content-center">
+  <Button type="primary" size="large" isIconSpinner={<Spinner type="dark" size="small"></Spinner>}>
+    Botón
+  </Button>
+  <Button type="primary" size="large" isIconSpinner={<Spinner type="dark" size="small"></Spinner>} isOutline>
+    Botón
+  </Button>
+</div>
+
+### Botones expandibles
+
+Este botón expandible está construido con la clase btn-block para que se adapte a los distintos contenedores, tomando la medida del ancho de su elemento padre.
+
+<div className="button-container btn-block-container">
+  <Button type="primary" size="large" isBlock>
+    Botón
+  </Button>
+</div>
+
+<h2>Etiquetas e íconos</h2>
+
+Es importante que los botones cuenten con una etiqueta corta que describa su función, a menos que solo utilice un ícono que sea de comprensión universal y accesible para todos los usuarios.
+
+### Botón con etiqueta e ícono
+
+En caso de que se utilice un ícono, este no debe ser únicamente decorativo, sino que debe tener una asociación clara con el texto de la etiqueta.
+
+<div className="button-container">
+  <Button type="secondary" size="large" isIconSpinner={<i className="bx bx-search-alt-2"></i>}>
+    Botón
+  </Button>
+</div>
+
+### Botón sin etiqueta
+
+Si se desea crear un botón de acción de solo ícono, es posible ocultar la etiqueta y solo mostrar el ícono. Sin embargo, en este caso, es necesario que el ícono tenga una fuerte relación con la función del botón y, en caso de que el usuario requiera mayor información, deberá aparecer en un tooltip al pasar el cursor sobre el botón.
+
+<div className="button-container">
+  <Button type="link" size="large" isIconSpinner={<i className="bx bxs-plus-circle"></i>}></Button>
+</div>
+
+## Tamaños
+
+Los botones pueden ser grandes, medianos o chicos. El tamaño mediano es la opción predeterminada y más utilizada. La diferencia de tamaño se usan para dar jerarquía dentro de la página.
+
+<div className="button-container btn-size-container">
+  <div>
+    <h3 className="mb-3">Grande</h3>
+    <Button type="primary" size="large" isIconSpinner={<span className="material-icons-round">info</span>}>
+      Botón
+    </Button>
+  </div>
+  <div>
+    <h3 className="mb-3">Mediano</h3>
+    <Button type="primary" size="default" isIconSpinner={<span className="material-icons-round">info</span>}>
+      Botón
+    </Button>
+  </div>
+  <div>
+    <h3 className="mb-3">Chico</h3>
+    <Button type="primary" size="small" isIconSpinner={<span className="material-icons-round">info</span>}>
+      Botón
+    </Button>
+  </div>
+</div>
+
 ## Diseño y estructura (contexto de uso)
 
-Los botones tienen diferentes tamaños de implementación de acuerdo al orden de importancia de las acciones que aparecen dentro de una página. Las acciones principales se visualizarán en un orden de jerarquía mayor que el resto.
+### Jerarquías
+
+Es importante establecer una diferencia de jerarquías entre los botones dentro de la interfaz para que las personas usuarias puedan completar una navegación, flujo o acción determinada. Los botones principales pueden ir acompañados de botones secundarios o de botones con menor jerarquía.
+
+<div className="button-container">
+  <div class="modal d-block position-static" tabindex="-1" role="dialog" id="exampleModal">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header"><h4 class="modal-title">¡Importante!</h4></div>
+        <div class="modal-body"><p>Antes de realizar la ficha de salud, tené en cuenta haber realizado los pasos previos correspondientes.</p></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-link" data-dismiss="modal">
+            Volver atrás
+          </button>
+          <button type="button" class="btn btn-primary">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Orden y alineación
 
-En los modales los botones primarios siempre aparecen a la derecha. Si hay botones secundarios se muestran a la izquierda del botón primario. Cuando la acción principal implica un paso de navegación hacia adelante, como en un formulario, los botones se justifican a la derecha. Esta posición transmite la intención del “siguiente paso”.
+<Row>
+  <Col items={2}>
 
-![completar](/componentes/botón/composición-1.svg)
+  En los modales los botones primarios siempre aparecen a la derecha. Si hay botones secundarios se muestran a la izquierda del botón primario.
 
-![completar](/componentes/botón/composición-2.svg)
+  </Col>
+  <Col items={2}>
 
-En los bloques de texto los botones primarios siempre aparecen a la izquierda. Si hay botones secundarios aparecen a la derecha del botón primario. En acciones principales los botones se deben justificar a la izquierda respetando el orden de lectura.
+  ![completar](/componentes/botón/orden-alineacion-1.svg)
 
-![completar](/componentes/botón/composición-3.svg)
+  </Col>
+</Row>
+
+<Row rowClass={"reverse-mobile"}>
+  <Col items={2}>
+
+  ![completar](/componentes/botón/orden-alineacion-1.svg)
+
+  </Col>
+  <Col items={2}>
+
+  Cuando la acción principal implica un paso de navegación hacia adelante, como en un formulario, los botones se justifican a la derecha. Esta posición transmite la intención del "siguiente paso".
+
+  </Col>
+</Row>
+
+<Row>
+  <Col items={2}>
+
+  En los bloques de texto los botones primarios siempre aparecen a la izquierda. 
+
+  Si hay botones secundarios aparecen a la derecha del botón primario. 
+
+  En acciones principales los botones se deben justificar a la izquierda respetando el orden de lectura.
+
+  </Col>
+  <Col items={2}>
+
+  ![completar](/componentes/botón/orden-alineacion-3.svg)
+
+  </Col>
+</Row>
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Utilizar jerarquías visuales.** Debe quedar claro cuál es el botón de mayor importancia. Este puede ir acompañado de botones de énfasis medio y bajo que realizan acciones menos importantes.]]
+[[si | Utilizar jerarquías visuales. Debe quedar claro cuál es el botón de mayor importancia. Este puede ir acompañado de botones de énfasis medio y bajo que realizan acciones menos importantes. ]]
 
-[[si | **Enunciar acciones claras.** Usar verbos o frases de acción para indicarle al usuario lo que sucederá cuando se seleccione el botón. El texto debe ser corto y explicativo.]]
+[[si | Enunciar acciones claras. Usar verbos o frases de acción para indicarle al usuario lo que sucederá cuando se seleccione el botón. El texto debe ser corto y explicativo. ]]
 
-[[si | **Utilizar la menor cantidad de acciones en una pantalla** para poder enmarcar las acciones de los usuarios.]]
+[[si | Utilizar la menor cantidad de acciones en una pantalla para poder enmarcar las acciones de los usuarios. ]]
 
 ### Malas prácticas
 
-[[no | **Evitar el uso de demasiados botones en una página.**]]
+[[no | Evitar el uso de demasiados botones en una página. ]]
 
-[[no | **No combinar botones primarios entre sí.** Usar botones primarios con secundarios o de otro nivel jerárquico.]]
+[[no | No combinar botones primarios entre sí. Usar botones primarios con secundarios o de otro nivel jerárquico. ]]
 
-[[no | **No utilizar un botón para navegar a otro lugar.** Usar un enlace en su lugar.]]
+[[no | No utilizar una etiqueta &lt;button&gt; para navegar a otra página. Usar en su lugar una etiqueta &lt;a&gt;.]]

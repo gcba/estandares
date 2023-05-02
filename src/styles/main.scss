@@ -119,6 +119,12 @@ main {
       }
     }
 
+    .row.reverse-mobile {
+      @media screen and (max-width: 752px) {
+        flex-direction: column-reverse;
+      }
+    }
+
     .card {
       margin-bottom: $section-space-bottom / 2;
     }
@@ -383,13 +389,6 @@ main {
   }
 }
 
-.btn-block-container {
-  width: 340px;
-  max-width: 100%;
-  margin: 5rem auto;
-  pointer-events: none;
-}
-
 .opciones-box {
   width: 100%;
   height: 250px;
@@ -410,6 +409,33 @@ main {
   width: 100%;
   margin: 8rem auto;
   pointer-events: none;
+}
+
+.button-container {
+  @extend .content-3;
+  margin: 3.75rem auto;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &.btn-block-container {
+    max-width: 340px;
+  }
+
+  &.btn-size-container {
+    justify-content: space-between;
+    @media screen and (max-width: 592px) {
+      justify-content: center;
+    }
+  }
+
+  &:has(.modal) {
+    margin: 0.75rem auto;
+  }
+
+  .modal-content {
+    box-shadow: 0 0 0 2px $grisulado-50;
+  }
 }
 
 .content-row {
