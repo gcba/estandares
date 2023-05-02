@@ -1,61 +1,86 @@
 ---
 menu: Colapsables
 title: Colapsables
-description: Los colapsables permiten a los usuarios mostrar y ocultar secciones de contenido relacionado en una página.
+description: Los colapsables permiten mostrar y ocultar secciones de contenido relacionado en una página, pudiendo mejorar significativamente la experiencia de las personas usuarias.
 position: 4
 ---
 
 ## Tipos de colapsables
 
-### Colapsable de selección única
+### Colapsable predeterminado
 
-Se utilizan para brindarle a los usuarios información sobre un tema en particular. Generalmente los podemos encontrar en la sección de preguntas frecuentes de una página.
+El título del colapsable debe ser conciso y descriptivo sin perder claridad en su significado, ya que representa el encabezado de la sección y es el control para revelar el contenido.
 
-<div class="content-2">
-  <div class="accordion" id="accordionExample">
-    <div class="card">
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
       <button
-        class="card-header collapsed card-link accordion-card-icon"
+        className="card-header collapsed card-link accordion-card-icon"
         data-toggle="collapse"
         data-target="#collapseEight"
       >
-        Colapsable
+        Título
       </button>
-      <div id="collapseEight" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          Este es el área descriptiva de un colapsable de selección única. Una vez que se accione sobre el área de
-          títulos, se abrirá el componente mostrando el área descriptiva.
+      <div id="collapseEight" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
         </div>
       </div>
     </div>
   </div>
 </div>
 
-### Colapsable de selección múltiple
+### Colapsable con ícono
 
-Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo.
+El ícono debe ser utilizado como referencia visual para complementar el título del colapsable y así mejorar la comprensión del contenido.
 
-### Colapsable - Totalizador
-
-Se usa exclusivamente para realizar transacciones. Sirve para poder dar el detalle del pago que realiza la persona ciudadana, brindando transparencia y claridad.
-
-<div class="content-2">
-  <div class="accordion" id="accordionExample">
-    <div class="card">
-      <button class="card-header collapsed card-link card-info" data-toggle="collapse" data-target="#collapseFive">
-        <span class="collpase-title">Total:</span>
-        <br />
-        <span class="collpase-subtitle">$ 900</span>
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button
+        type="button"
+        className="card-header collapsed card-link"
+        data-toggle="collapse"
+        data-target="#collapseEight"
+      >
+        <i className="bx bx-sm align-top mr-1 bxs-user-circle"></i>
+        Título
       </button>
-      <div id="collapseFive" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          <small>BOLETA N° 2564-59879543</small>
-          <h4 class="mb-0">Solicitud de informes varios</h4>
-          <small>$ 900</small>
-          <hr />
-          <small>BOLETA N° 2564-59879543</small>
-          <h4 class="mb-0">Solicitud de informes varios</h4>
-          <small>$ 900</small>
+      <div id="collapseEight" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Colapsable con label y descripción
+
+El uso de estas variables es opcional para los colapsables. Ambas permiten añadir más información al componente en función de su contenido.
+
+<div className="content-2">
+  <div id="accordion">
+    <div className="accordion" id="accordionExample">
+      <div className="card">
+        <button
+          type="button"
+          className="card-header collapsed card-link"
+          data-toggle="collapse"
+          data-target="#collapseEight"
+        >
+          <i className="bx bx-sm align-top mr-1 bxs-user-circle"></i>
+          <span className="collapse-label">Label</span>
+          <h1 className="collpase-title">Título</h1>
+          <span className="collpase-subtitle">Descripción</span>
+        </button>
+        <div id="collapseEight" className="collapse" data-parent="#accordion">
+          <div className="card-body">
+            Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+            dentro de un colapsable.
+          </div>
         </div>
       </div>
     </div>
@@ -68,25 +93,165 @@ Se usa exclusivamente para realizar transacciones. Sirve para poder dar el detal
 
 Los grupos de colapsables de selección única permiten un solo colapsable abierto por vez. Cuando se acciona otro colapsable dentro del mismo grupo, éste se despliega mostrando el contenido, mientras que el último que estaba abierto procede a cerrarse.
 
-![completar](/componentes/colapsable/collapse_simple.png)
+<div className="content-2" id="accordion">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+        Título
+      </button>
+      <div id="collapseOne" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header card-link" data-toggle="collapse" data-target="#collapseTwo">
+        Título
+      </button>
+      <div id="collapseTwo" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
+        Título
+      </button>
+      <div id="collapseThree" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Colapsable de selección múltiple
 
 Los grupos de colapsables de selección múltiple permiten que varios colapsables estén abiertos al mismo tiempo sin límites de apertura.
 
-![completar](/componentes/colapsable/collapse_multiple.png)
+<div className="content-2">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header card-link" data-toggle="collapse" data-target="#collapseOne">
+        Título
+      </button>
+      <div id="collapseOne" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
+        Título
+      </button>
+      <div id="collapseTwo" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+    <div className="card">
+      <button className="card-header card-link" data-toggle="collapse" data-target="#collapseThree">
+        Título
+      </button>
+      <div id="collapseThree" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-### Colapsable - Totalizador
+### Colapsable con lista
 
-Este tipo de colapsables se visualizan de a uno por vez o por pantalla y al costado de la misma. No se pueden agrupar de a varios.
+Un colapsable puede mostrar contenido detallado en forma de lista con el objetivo de explayar la información que se encuentra en el encabezado del componente.
 
-![completar](/componentes/colapsable/collapse_totalizador.png)
+<div className="content-4">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header card-link card-info" data-toggle="collapse" data-target="#collapseFive">
+        <h1 className="collpase-title">Total:</h1>
+        <span className="collpase-subtitle">$ 450,00</span>
+      </button>
+      <div id="collapseFive" className="collapse show" data-parent="#accordion">
+        <div className="card-body">
+          <small className="text-success">$200,00</small>
+          <h4 className="mb-0">Solicitud de informes varios</h4>
+          <small>Boleta N° 2549-48758798</small>
+          <hr />
+          <small className="text-success">$250,00</small>
+          <h4 className="mb-0">Ecoparque</h4>
+          <small>Boleta N° 2549-48758798</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+Las personas usuarias también pueden interactuar con el contenido que despliega el colapsable para tomar una decisión.
+
+<div className="content-4">
+  <div className="accordion" id="accordionListExample">
+    <div className="card">
+      <button
+        type="button"
+        className="card-header card-link card-info"
+        data-toggle="collapse"
+        data-target="#collapseEight"
+      >
+        <h1 className="collpase-title">Tarjeta de crédito / débito</h1>
+        <span className="collpase-subtitle">VISA, MasterCard, AMEX, CABAL, Maestro</span>
+      </button>
+      <div id="collapseEight" className="collapse show" data-parent="#accordion">
+        <form className="card-body">
+          <div className="card-details">
+            <i className="bx bxl-visa"></i>
+            <div className="card-details-content">
+              <h4>Visa Débito ****1234</h4>
+              <small>Heraldo Paez</small>
+            </div>
+            <input type="radio" className="form-radio" name="credit_card" id="visa" />
+          </div>
+          <hr />
+          <div className="card-details">
+            <i className="bx bxl-mastercard"></i>
+            <div className="card-details-content">
+              <h4>MasterCard Crédito ****5678</h4>
+              <small>Heraldo Paez</small>
+            </div>
+            <input type="radio" className="form-radio" name="credit_card" id="master" />
+          </div>
+          <hr />
+          <div className="card-details">
+            <span className="material-icons-round">info</span>
+            <div className="card-details-content">
+              <h4>Nueva tarjeta de crédito</h4>
+            </div>
+            <input type="radio" className="form-radio" name="credit_card" id="new_card" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Usabilidad
 
 ### Buenas prácticas
 
 [[si | **Utilizar otros recursos o componentes antes de usar los colapsables.** Te sugerimos simplificar el contenido; dividir el contenido en varias páginas o mantener el contenido en una sola página separada por encabezados.]]
+[[si | **Mantener títulos breves y claros.** El encabezado es lo primero que capta la atención de la mayoría de los usuarios. Es fundamental que el contenido del colapsable se exprese de manera clara para que las personas usuarias puedan decidir si desean expandirlo o no.]]
 
 ### Malas prácticas
 
