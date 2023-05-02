@@ -325,6 +325,12 @@ main {
   pointer-events: none;
 }
 
+.content-4 {
+  width: 100%;
+  margin: 5rem auto;
+  pointer-events: none;
+}
+
 .content-bg {
   @extend .docs-example;
   border: 2px solid $grisulado-100;
