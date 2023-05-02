@@ -411,3 +411,30 @@ main {
   margin: 8rem auto;
   pointer-events: none;
 }
+
+.content-row {
+  @extend .content-column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  @media screen and (max-width: 592px) {
+    gap: 1rem;
+  }
+}
+
+.spinner-sizes-container {
+  @extend .docs-example;
+  @extend .content-row;
+  gap: 7rem;
+  flex-wrap: wrap;
+  padding: 3.125rem 0;
+  @media screen and (max-width: 592px) {
+    gap: 2rem;
+  }
+}
+
+.spinner-block-container {
+  width: 4rem;
+}
