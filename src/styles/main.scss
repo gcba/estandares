@@ -12,6 +12,10 @@ $section-space-bottom: spaceUnits(12);
 
 $separation-border: 1px solid $border-color;
 
+$do-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" style="fill:rgb(38, 135, 74);transform:;-ms-filter:"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.29 16.29 5.7 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0z"/></svg>');
+
+$dont-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" style="fill:rgb(201, 59, 59);transform:;-ms-filter:"><path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4.3 14.3c-.39.39-1.02.39-1.41 0L12 13.41 9.11 16.3c-.39.39-1.02.39-1.41 0-.39-.39-.39-1.02 0-1.41L10.59 12 7.7 9.11c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L12 10.59l2.89-2.89c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41L13.41 12l2.89 2.89c.38.38.38 1.02 0 1.41z"/></svg>');
+
 aside {
   height: 100%;
   position: relative;
@@ -146,24 +150,20 @@ main {
       &.do,
       &.dont {
         margin-bottom: spaceUnits(4);
+        display: flex;
+        align-items: start;
+        gap: spaceUnits(2);
 
         &::before {
-          @extend %box-icon;
-          font-size: 1.4rem;
-          display: inline;
-          vertical-align: text-bottom;
-          margin-right: spaceUnits(1);
+          height: 1.5rem;
         }
-        .custom-block-heading {
-          display: inline;
-        }
+
         &.do::before {
-          content: "\ea13";
-          color: $success;
+          content: $do-icon;
         }
+
         &.dont::before {
-          content: "\ec4f";
-          color: $danger;
+          content: $dont-icon;
         }
       }
 
