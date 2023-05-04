@@ -1,0 +1,85 @@
+---
+menu: Apps
+title: Apps
+description: Descubrí la guía de implementación y desarrollo para aplicaciones móviles.
+position: 6
+---
+
+## Requerimientos
+
+### Requerimientos de nivel API mínimos y obligatorios
+
+### Requerimientos de nivel API mínimos y obligatorios
+
+- **iOS**: SDK mínimo 11 y compilación iOS 13. Los proyectos deben desarrollarse
+  con la última versión de Swift disponible a la fecha y aplicaciones ya
+  desarrolladas deberán de actualizarse a Swift 4.2 (deseable 5+).
+  Las aplicaciones deberán de seguir los últimos lineamientos de Apple
+  como no utilizar UIWebView y en caso de permitir loguearse con redes sociales
+  también se deberá proveer autenticación con Apple
+
+- **Android**: SDK mínimo 21 y compilación mínimo 28. Los proyectos nuevos deseable
+  que estén en lenguaje Kotlin y compilados con la última versión de Android
+  disponible a la fecha.
+
+### Dependencias
+
+- Las aplicaciones deberán tener actualizadas todas las dependencias al día de la fecha de subida de una nueva versión para favorecer la actualización y/o mantenimiento progresivo de las aplicaciones y evitar vulnerabilidades.
+
+### Tamaño
+
+- El instalador de las aplicaciones no debe superar los 50 MB para Android y 100 MB para iOS.
+
+- No embeber imágenes y videos como contenido estático, las mismas se deben solicitar a demanda ya que hacen que las aplicaciones sean más pesadas.
+
+### Control de versiones
+
+- versión v 0.0.1: Resolución de bugs de versiones actuales.
+- versión v.0.1.0: Nueva funcionalidad dentro de la versión actual.
+- versión v.1.0.0: Representan un cambio sustancial respecto de la funcionalidad o de la estética actual del sitio.
+
+
+## Tipos de aplicaciones
+
+
+Según la naturaleza del negocio del activo se definen dos tipos:
+
+- **Oficiales**: son las apps que pertenecen a la familia de aplicaciones de Gobierno que cumplen con los lineamientos citados en este documento y están dirigidas a un público general de vecinos y vecinas de la ciudad.
+
+- **De uso interno**:  son aplicaciones que el Gobierno impulsa en stores alternativos de android y ios para uso interno de las áreas y se distribuyen por medio de permisos exclusivos.
+
+## Tecnologías homologadas
+
+Se plantea un conjunto  acotado de tecnologías recomendadas a utilizar para nuevos desarrollos:
+
+- Android Nativo
+
+- iOS Nativo
+
+- React Native
+
+Sólo mantenimiento y soporte:
+
+- Flutter
+
+- Ionic
+
+- Phonegap / Cordova
+
+De requerirse otro tipo de tecnologías se deberá consensuar  previamente con la Gerencia de Plataforma Digital para evaluar los costos posteriores de mantenimiento.
+
+
+## Seguridad
+
+- Toda clave (Token / Secret) que se guarde en la aplicación se debe encriptar, ofuscar y minificar.
+- La comunicación con los web services debe ser encriptada usando un certificado SSL/TLS
+- Solo se deben pedir los permisos mínimos y estrictamente los que son necesarios. Se debe informar al usuario el motivo del permiso.
+- Cada consulta a un web services debe viajar el token de sesión para autenticar del lado middle end que sea una sesión válida.
+- Todo dato que se le solicite al usuario debe ser guardado con seguridad.
+- Se deberá actualizar las IDE de desarrollo (Android Studio, xCode), dependencias, frameworks, APIS de desarrollo para evitar vulnerabilidades de seguridad.
+
+
+<!-- El área solicitante deberá definir el objetivo de la aplicación de forma clara y deberá producir una definición funcional con todo lo que requerirá la aplicación y su alcance.
+La gerencia de Plataforma Digital podrá otorgar recursos humanos para colaborar en el relevamiento de la definición funcional dependiendo de su disponibilidad.
+
+Para más información contacatarse con la gerencia de Plataforma Digital. -->

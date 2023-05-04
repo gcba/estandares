@@ -1,23 +1,27 @@
 ---
-menu: UI Kit
-title: UI kit
+menu: UI KIT
+title: UI KIT
 description: El UI KIT de Obelisco contiene los componentes y guía de estilos para implementar en tu proyecto.
 position: 1
 ---
 
 <Row>
   <Col items={2}>
-    <SimpleCard
-      title="UI kit"
-      description="Diseñá con nuestra librería de componentes en Figma."
-      href="/herramientas_y_recursos/UI_Kit_estandares.xd"
-    />
+    <a className="card card-horizontal" href="/herramientas_y_recursos/UI_KIT_Obelisco.fig">
+      <i className="bx bxs-download card-icon-left"></i>
+      <div className="card-body">
+        <h4 className="card-title">UI KIT en Figma</h4>
+        <p className="card-text">Descargá el archivo</p>
+      </div>
+    </a>
   </Col>
   <Col items={2}>
-    <SimpleCard
-      title="Enlace para devs"
-      description="Nuestra manera de compartir, organizar y colaborar pensando en los desarrolladores."
-      href="https://gcba.github.io/Obelisco/"
-    />
+    <a className="card card-horizontal" href="/herramientas_y_recursos/UI_Kit_estandares.xd">
+      <i className="bx bxs-download card-icon-left"></i>
+      <div className="card-body">
+        <h4 className="card-title">UI KIT en Adobe XD</h4>
+        <p className="card-text">Descargá el archivo</p>
+      </div>
+    </a>
   </Col>
 </Row>

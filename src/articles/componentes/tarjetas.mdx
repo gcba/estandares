@@ -1,0 +1,248 @@
+---
+menu: Tarjetas
+title: Tarjetas
+description: Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular.
+position: 20
+---
+
+## Tipos de tarjetas
+
+### Sin contenedor - Home
+
+Su único uso es en la Home de Buenos Aires, y nos direccionan a las temáticas principales.
+
+<div className="content-1">
+  <div class="card card-simple card-horizontal card-lg">
+    <img src="/componentes/card/ciudad.jpg" class="card-img-left" alt="descripción alternativa" />
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#">Ambiente, espacio público y edilicio</a>
+      </h4>
+      <p class="card-text">
+        Habilitaciones para el uso de la vía pública, espacios urbanos y servicios para el desarrollo sostenible.
+      </p>
+    </div>
+  </div>
+</div>
+
+### Con contenedor
+
+Tienen una jerarquía mayor a las tarjetas sin contenedor en el caso de utilizarlas en una misma página. Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+
+<div className="content-2">
+  <a class="card" href="#">
+    <div class="card-body">
+      <i class="bx bx-news card-icon"></i>
+      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+      </p>
+    </div>
+  </a>
+</div>
+
+### Sin contenedor
+
+Tienen una jerarquía menor a las tarjetas con contenedor en el caso de utilizarlas en una misma página. Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+
+<div className="content-2">
+  <div class="card card-simple">
+    <div class="card-body">
+      <i class="bx bx-news card-icon"></i>
+      <h4 class="card-title">
+        <a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</a>
+      </h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna
+      </p>
+    </div>
+  </div>
+</div>
+
+### Con contenedor - Horizontal - Chica
+
+Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+
+<div className="content-2">
+  <a class="card card-horizontal" href="#">
+    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
+    <div class="card-body">
+      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore
+      </p>
+    </div>
+  </a>
+</div>
+
+### Con contenedor - Horizontal - Mediana
+
+Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+
+<div className="content-2">
+  <a class="card card-horizontal card-lg" href="#">
+    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
+    <div class="card-body">
+      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore
+      </p>
+    </div>
+  </a>
+</div>
+
+### Con contenedor - Horizontal 6 columnas - Chica
+
+Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+
+<div className="content-1">
+  <a class="card card-horizontal" href="#">
+    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
+    <div class="card-body">
+      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      </p>
+    </div>
+  </a>
+</div>
+
+### Con contenedor - Horizontal 6 columnas - Mediana
+
+Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+
+<div className="content-1">
+  <a class="card card-horizontal card-lg" href="#">
+    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
+    <div class="card-body">
+      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      </p>
+    </div>
+  </a>
+</div>
+
+### Vertical
+
+Se utilizan para acceder a noticias, cursos, y otra información que requiera imagen, y dependen de un encabezado que las agrupe.
+
+<div class="content-2">
+  <a class="card" href="#">
+    <img src="/componentes/card/evento.jpg" class="card-img-top" alt="descripción alternativa" />
+    <div class="card-body">
+      <div class="mb-2">
+        <span class="badge badge-info">Etiqueta 1</span>
+        <span class="badge badge-info">Etiqueta 2</span>
+      </div>
+      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+      </p>
+    </div>
+    <div class="card-footer">
+      <small>Fecha de publicación: 10/10/2021</small>
+    </div>
+  </a>
+</div>
+
+### Evento
+
+Las tarjetas de eventos se utilizan para comunicar eventos o actividades que requieren seccionar la información e invitar a los usuarios a realizar una acción en una fecha y horario determinado. Dependen de un encabezado que las agrupe.
+
+<div class="content-2">
+  <a class="card" href="#">
+    <div class="card-event-top">
+      <img src="/componentes/card/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
+      <div class="card-event-img">
+        <img src="/componentes/card/evento-thumb.jpg" alt="descripción alternativa" />
+      </div>
+      <p class="card-event-name">Actividades y clases en polideportivos</p>
+    </div>
+    <div class="card-body">
+      <p class="card-headline">18 de Enero al 1 de Febrero</p>
+      <h4 class="card-title">Comienza una nueva edición de actividades en polideportivos</h4>
+    </div>
+  </a>
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Sin contenedor - Home
+
+En su disposición horizontal pueden organizarse solo 2 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/sin_contenedor_home.svg)
+
+### Con contenedor
+
+En su disposición horizontal pueden organizarse solo 3 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/con_contenedor.svg)
+
+### Sin contenedor
+
+En su disposición horizontal pueden organizarse con un mínimo de 3 y un máximo de 4 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/sin_contenedor2.svg)
+
+### Con contenedor - Horizontal - Chica
+
+En su disposición horizontal pueden organizarse solo 3 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/horizontal_chica.svg)
+
+### Con contenedor - Horizontal - Mediana
+
+En su disposición horizontal pueden organizarse solo 3 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/horizontal_mediana.svg)
+
+### Con contenedor - Horizontal 6 columnas - Chica
+
+En su disposición horizontal pueden organizarse solo 2 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/horizontal_6_chica.svg)
+
+### Con contenedor - Horizontal 6 columnas - Mediana
+
+En su disposición horizontal pueden organizarse solo 2 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+
+![completar](/componentes/card/horizontal_6_mediana.svg)
+
+### Vertical
+
+En su disposición horizontal pueden organizarse hasta 3 tarjetas por línea en desktop. Al truncar el layout como en mobile se agrupan para un desplazamiento horizontal.
+
+![completar](/componentes/card/vertical.svg)
+
+### Evento
+
+En su disposición horizontal pueden organizarse hasta 3 tarjetas por línea en desktop. Al truncar el layout como en mobile se agrupan para un desplazamiento horizontal.
+
+![completar](/componentes/card/vertical.svg)
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | **Usarlas en conjunto para resumir una idea más grande.** ]]
+
+[[si | **Utilizarlas como parte de una colección de contenedores similares,** y no una sola tarjeta aislada.]]
+
+[[si | **Usarlas de manera modular,** esto significa que pueden variar el orden en una colección sin romper el significado de ninguna tarjeta individual.]]
+
+[[si | **Tener en cuenta que las tarjetas son accionables** ya que se utilizan como un punto de acceso a información más detallada sobre el tema.]]
+
+[[si | **Usar títulos cortos de hasta 60 caracteres** con espacio, o el equivalente a 2 líneas de texto y enfocarlos en el valor que alguien obtendrá al interactuar con la tarjeta.]]
+
+[[si | **Usar bajadas cortas de hasta 100 caracteres** con espacio, o el equivalente a 3 líneas de texto y complementar el título profundizando el contexto.]]
+
+### Malas prácticas
+
+[[no | **No repetir imágenes, iconos, o texto** en las tarjetas de una colección. Esto hace que sea más difícil distinguirlas entre sí.]]
+
+[[no | **No mezclar tarjetas de diferente tipo** en una misma sección.]]
