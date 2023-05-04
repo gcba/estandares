@@ -14,8 +14,8 @@ import { Pagination } from "@gcba/obelisco"
 Se utilizan cuando hay un gran número de páginas. Cuando el número de páginas supera el límite máximo de visualización, se trunca uno de los botones con tres puntos suspensivos (…) para indicar que hay más páginas para navegar.
 
 <div className="content-column">
-  <Pagination pages={10} ariaLabel="Ejemplo de paginado numerado inicial" />
-  <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
+  <img src="/componentes/paginado/paginado-numerado-inicial.svg" alt="Ejemplo de paginado numerado inicial" />
+  <img src="/componentes/paginado/paginado-numerado-final.svg" alt="Ejemplo de paginado numerado final" />
 </div>
 
 Cuando la primera y la última página están alejadas por más de cinco páginas de la página actual, se usa el truncamiento doble.
@@ -53,15 +53,14 @@ Generalmente, se usan para páginas que poseen documentación sobre un tema part
 
 Los paginados siempre van centrados con respecto a la página. La cantidad máxima de botones a mostrar es de 9 páginas (incluidos los puntos suspensivos).
 
-![completar](/componentes/paginado/paginado-1.svg)
+![completar](/componentes/paginado/paginado.svg)
 
 ### Página inicial y final
 
 Ocultar el botón "Anterior" en la página inicial y el botón "Siguiente" en la última página.
 
 <div className="content-bg row justify-content-center mx-0">
-  <Pagination pages={10} ariaLabel="Ejemplo de paginado numerado inicial" />
-  <Pagination pages={10} default={9} ariaLabel="Ejemplo de paginado numerado final" />
+  <img src="/componentes/paginado/paginado-numerado.svg" alt="Ejemplo de paginado numerado inicial y final" />
 </div>
 
 ### Etiquetas
