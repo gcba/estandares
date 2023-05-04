@@ -1,0 +1,284 @@
+---
+menu: Navegación y pestañas
+title: Navegación y pestañas
+description: La navegación y pestañas se utilizan para organizar el contenido relacionado. Permiten a la persona usuaria navegar entre grupos de información que aparecen dentro de un mismo contexto, mostrando una sección por vez.
+position: 14
+---
+
+## Tipos de navegación y pestañas
+
+### Navegación horizontal simple
+
+Permite a las personas usuarias a navegar por las vistas sin salir de la página. Siempre contienen al menos dos elementos y una esta activa a la vez. Generalmente se utilizan en encabezados o secciones grandes.
+
+<div class="content-3">
+  <nav>
+    <ul class="nav flex-row nav-pills">
+      <li class="nav-item">
+        <a class="nav-link nav-link-lg active" href="#"><span>Navegación 1</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+### Navegación horizontal con borde
+
+Se agregan bordes cuando hay otros elementos en la página que a partir de su cercanía puedan confundir o interferir con el comportamiento de la navegación.
+
+<nav class="content-3 text">
+  <ul class="nav flex-row nav-pills">
+    <li class="nav-item">
+      <a class="nav-link border-link nav-link-lg active" href="#"><span>Navegación 1</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link border-link nav-link-lg" href="#"><span>Navegación 2</span></a>
+    </li>
+  </ul>
+</nav>
+
+### Navegación horizontal con ícono
+
+Los íconos se pueden mostrar en los elementos de la navegación cuando sean absolutamente necesarios: cuando agregar un valor esencial y tienen una fuerte asociación con la etiqueta.
+
+<nav class="content-3 text">
+  <ul class="nav flex-row nav-pills">
+    <li class="nav-item">
+      <a class="nav-link border-link nav-link-lg active" href="#">
+        <div class="nav-icon">
+          <i class='bx bxs-home' ></i>
+          <span>Navegación 1</span>
+        </div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link border-link nav-link-lg" href="#">
+        <div class="nav-icon">
+          <i class='bx bxs-bell' ></i>
+          <span>Navegación 2</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+### Navegación vertical
+
+La navegación vertical debe usarse cuando el espacio horizontal es más amplio y cuando la lista de secciones es mayor de lo que se puede presentar al usuario en un formato horizontal. También se pueden usar como anclas dentro del contenido en una sola página.
+
+<nav class="content-3 text">
+  <ul class="nav flex-column nav-pills nav-lg">
+    <li class="nav-item">
+      <a class="nav-link active-child" href="#">
+        <div class="nav-icon">
+          <i class="bx bxs-user-circle"></i>
+          <span>Secretaría de Innovación</span>
+        </div>
+      </a>
+      <ul class="nav flex-column nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active-child" href="#">
+            <div class="nav-icon">
+              <i class="bx bxs-user-circle"></i>
+              <span>Subsecretaría de Experiencia</span>
+            </div>
+          </a>
+          <ul class="nav flex-column nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <div class="nav-icon">
+                  <i class="bx bxs-user-circle"></i>
+                  <span>DGEDIG</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="nav-icon">
+                  <i class="bx bxs-user-circle"></i>
+                  <span>DGEDIG</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <div class="nav-icon">
+          <i class='bx bxs-building' ></i>
+          <span>Secretaría de Transporte</span>
+        </div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <div class="nav-icon">
+          <i class='bx bxs-building' ></i>
+          <span>Secretaría de Desarrollo Urbano</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+### Pestañas con ancho variable
+
+Las pestañas se pueden usar para organizar contenido como formularios, configuraciones y tableros para que un usuario no tenga que navegar fuera de su flujo de trabajo para completar su tarea.
+
+![completar](/componentes/navegacion/variable.svg)
+
+### Pestañas con ancho fijo 
+
+Se utilizan para organizar contenido de mayor jerarquía y cuando se requiere una lista de secciones acotada.
+
+![completar](/componentes/navegacion/fijo.svg)
+
+### Pestañas con ícono
+
+Los íconos se pueden mostrar en las pestañas cuando agregan un valor esencial y tienen una fuerte asociación con la etiqueta.
+
+![completar](/componentes/navegacion/conIcono.svg)
+
+## Tamaños
+
+### Grande
+
+<nav class="content-3 justify-content-center flex-wrap text">
+  <div>
+    <nav>
+      <ul class="nav flex-row nav-pills">
+        <li class="nav-item">
+          <a class="nav-link nav-link-lg border-link" href="#"><span>Navegación</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mt-2 mb-2">  
+    <nav class="tabs-slider px-0 ">
+      <ul class="nav nav-pills tabs">
+        <li class="nav-item">
+          <a class="nav-link nav-link-lg active" href="#">Pestaña grande</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div>  
+    <nav class="tabs-slider px-0 ">
+      <ul class="nav nav-pills tabs nav-box">
+        <li class="nav-item">
+          <a class="nav-link nav-link-lg active" href="#">Pestaña grande</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+### Mediano
+
+<nav class="content-3 justify-content-center flex-wrap text">
+  <div>
+    <nav>
+      <ul class="nav flex-row nav-pills">
+        <li class="nav-item">
+          <a class="nav-link nav-link border-link" href="#"><span>Navegación</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mt-2 mb-2">
+    <nav class="tabs-slider px-0 ">
+      <ul class="nav nav-pills tabs">
+        <li class="nav-item">
+          <a class="nav-link nav-link active" href="#">Pestaña grande</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <nav class="tabs-slider px-0 ">
+      <ul class="nav nav-pills tabs nav-box">
+        <li class="nav-item">
+          <a class="nav-link nav-link active" href="#">Pestaña grande</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+### Chico
+
+<nav class="content-3 justify-content-center flex-wrap text">
+  <div>
+    <nav>
+      <ul class="nav flex-row nav-pills">
+        <li class="nav-item">
+          <a class="nav-link nav-link-sm border-link" href="#"><span>Navegación</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mt-2 mb-2">
+    <nav class="tabs-slider px-0 ">
+      <ul class="nav nav-pills tabs">
+        <li class="nav-item">
+          <a class="nav-link nav-link-sm active" href="#">Pestaña grande</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <nav class="tabs-slider px-0 ">
+      <ul class="nav nav-pills tabs nav-box">
+        <li class="nav-item">
+          <a class="nav-link nav-link-sm active" href="#">Pestaña grande</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+## Diseño y estructura (contexto de uso)
+
+### Encabezados
+
+Las navegaciones pueden combinarse con otros componentes, como campos de formulario, botones y desplegables.
+
+![completar](/componentes/navegacion/anchoFijo.svg)
+
+### Pestañas desplazables
+
+Para los casos en donde la página requiere más pestañas o se necesita adaptar a un nuevo tamaño de navegador, las pestañas deben ser desplazables. Aparecen flechas izquierda y derecha para navegar a través de pestañas que no son visibles para el usuario en la página.
+
+<br />
+
+<br />
+
+![completar](/componentes/navegacion/desplazable.svg)
+
+![completar](/componentes/navegacion/desplazable-1.svg)
+
+Las pestañas pueden estar determinadas por botones o enlaces.
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | **Usar textos cortos en los enlaces de navegación.** Pueden ser textos derivados de los propios títulos de la página. Usar como máximo 2 palabras por enlace de navegación para que no requieran truncamiento]]
+
+[[si | **Utilizar íconos únicamente en los elementos del primer nivel en la navegación vertical.** Cualquier elemento de subnivel siempre debe ser solo de texto para garantizar una jerarquía visual clara.]]
+
+[[si | **Habilitar el desplazamiento horizontal en los diferentes tamaños del navegador si hay demasiadas pestañas.**]]
+
+[[si | **La navegación verticales se pueden usar como un ancla cuando se muestran accesos directos a secciones de contenido en una sola página.** Enumere los elementos de la navegación en el orden en que aparecen dentro del contenido. No utilice navegación horizontales para esta adaptación.]]
+
+### Malas prácticas
+
+[[no | **No trunque varios elementos solo para que encajen horizontalmente**]]
+
+[[no | **No use pestañas para reemplazar un flujo, use componentes de paginación en su lugar.**]]
+
+[[no | **No combine diferentes tamaños de pestañas dentro de la misma navegación.**]]

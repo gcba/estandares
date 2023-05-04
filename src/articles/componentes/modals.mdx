@@ -1,0 +1,94 @@
+---
+menu: Modales
+title: Modales
+description: Los modales son utilizados como ventanas emergentes para resaltar contenido importante en una página haciendo foco en una sola tarea o mensaje. También bloquean otras interacciones para los usuarios.
+position: 13
+---
+
+## Tipos de modales
+
+### Modal de confirmación
+
+Cuando un usuario necesita información adicional o contexto para tomar la decisión de qué acción realizar.
+
+<Example>
+  <div class="modal d-block" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal</h4>
+        </div>
+        <div class="modal-body">
+          <p>Esta es la descripción del modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-link" data-dismiss="modal">
+            Botón
+          </button>
+          <button type="button" class="btn btn-primary">
+            Botón
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" show"></div>
+</Example>
+
+### Modal de peligro
+
+Cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc.
+
+<Example class="content-3">
+  <div class="modal d-block" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal</h4>
+        </div>
+        <div class="modal-body">
+          <p>Esta es la descripción del modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Botón
+          </button>
+          <button type="button" class="btn btn-danger">
+            Botón
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" show"></div>
+</Example>
+
+## Diseño y estructura (contexto de uso)
+
+Un modal deshabilita el contenido de la página y enfoca la atención del usuario en una sola tarea o mensaje.
+
+![completar](/componentes/modals/modal.svg)
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | **Utilizar los modales para confirmar acciones o completar tareas** que requieran toda la atención.]]
+
+[[si | **Usarlos con moderación** ya que los diálogos interrumpen la acción del usuario.]]
+
+[[si | **Mostrar los modales como resultado de una acción realizada por el usuario** o (menos comúnmente) por inactividad.]]
+
+[[si | **Usar títulos simples y comunicar lo principal** que la persona usuaria está a punto de hacer. Lo ideal es que los títulos usen la misma frase o una similar a la llamada a la acción que llevó a alguien al cuadro de diálogo de alerta en primer lugar.]]
+
+[[si | **Mantener una coherencia textual entre el título del modal y las opciones para los próximos pasos.** Por ejemplo, si el título de un cuadro de diálogo es "Eliminar conversación", la etiqueta del botón de acción principal sería "Eliminar".]]
+
+[[si | **Apilar verticalmente los grupos de botones** cuando el espacio horizontal es limitado. Deben aparecer en orden ascendente según la importancia, con la acción más crítica en la parte inferior.]]
+
+### Malas prácticas
+
+[[no | **No sorprender al usuario,** no le muestres un modal automáticamente si no realizó ninguna acción previa.]]
+
+[[no | **Evitar hacer preguntas como** "¿Estás seguro de que deseas salir?" o "¿Querés cancelar?" son redundantes en la decisión que ya tomaron al realizar una acción previa. Esta frase también establece un conjunto de acciones de sí/no, lo que puede volverse confuso. En su lugar, reformulá el mensaje para centrarlo en el resultado o efecto.]]
+
+[[no | **Evitar el contenido largo que requiere desplazamiento.** El contenido extenso puede ser problemático porque empuja los botones fuera de la vista inicial del usuario, lo que puede causar confusión.]]
