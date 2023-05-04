@@ -5,8 +5,7 @@ description: Los botones permiten iniciar acciones o navegar a otras páginas. L
 position: 3
 ---
 
-import { Button, Spinner } from "@gcba/obelisco"
-import { ButtonExample, ButtonSizeExample } from "../../../components/docs/ButtonExample"
+import { Button } from "@gcba/obelisco"
 
 ## Tipos de botones
 
@@ -87,10 +86,27 @@ A diferencia del resto de los botones, éstos están delineados, lo cual les oto
 Los botones con spinner comunican al usuario que una acción se está procesando y debe esperar.
 
 <div className="button-container justify-content-center">
-  <Button type="primary" size="large" isIconSpinner={<Spinner type="dark" size="small"></Spinner>}>
+  <Button
+    type="primary"
+    size="large"
+    isIconSpinner={
+      <div className="spinner-border text-dark spinner-border-sm" role="status">
+        <span className="sr-only">Cargando...</span>
+      </div>
+    }
+  >
     Botón
   </Button>
-  <Button type="primary" size="large" isIconSpinner={<Spinner type="dark" size="small"></Spinner>} isOutline>
+  <Button
+    type="primary"
+    size="large"
+    isIconSpinner={
+      <div className="spinner-border text-dark spinner-border-sm" role="status">
+        <span className="sr-only">Cargando...</span>
+      </div>
+    }
+    isOutline
+  >
     Botón
   </Button>
 </div>
@@ -162,13 +178,19 @@ Es importante establecer una diferencia de jerarquías entre los botones dentro 
   <div class="modal d-block position-static" tabindex="-1" role="dialog" id="exampleModal">
     <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
-        <div class="modal-header"><h4 class="modal-title">¡Importante!</h4></div>
-        <div class="modal-body"><p>Antes de realizar la ficha de salud, tené en cuenta haber realizado los pasos previos correspondientes.</p></div>
+        <div class="modal-header">
+          <h4 class="modal-title">¡Importante!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Antes de realizar la ficha de salud, tené en cuenta haber realizado los pasos previos correspondientes.</p>
+        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-link" data-dismiss="modal">
             Volver atrás
           </button>
-          <button type="button" class="btn btn-primary">Continuar</button>
+          <button type="button" class="btn btn-primary">
+            Continuar
+          </button>
         </div>
       </div>
     </div>
@@ -180,12 +202,12 @@ Es importante establecer una diferencia de jerarquías entre los botones dentro 
 <Row>
   <Col items={2}>
 
-  En los modales los botones primarios siempre aparecen a la derecha. Si hay botones secundarios se muestran a la izquierda del botón primario.
+En los modales los botones primarios siempre aparecen a la derecha. Si hay botones secundarios se muestran a la izquierda del botón primario.
 
   </Col>
   <Col items={2}>
 
-  ![completar](/componentes/botón/orden-alineacion-1.svg)
+![completar](/componentes/botón/orden-alineacion-1.svg)
 
   </Col>
 </Row>
@@ -193,12 +215,12 @@ Es importante establecer una diferencia de jerarquías entre los botones dentro 
 <Row rowClass={"reverse-mobile"}>
   <Col items={2}>
 
-  ![completar](/componentes/botón/orden-alineacion-1.svg)
+![completar](/componentes/botón/orden-alineacion-1.svg)
 
   </Col>
   <Col items={2}>
 
-  Cuando la acción principal implica un paso de navegación hacia adelante, como en un formulario, los botones se justifican a la derecha. Esta posición transmite la intención del "siguiente paso".
+Cuando la acción principal implica un paso de navegación hacia adelante, como en un formulario, los botones se justifican a la derecha. Esta posición transmite la intención del "siguiente paso".
 
   </Col>
 </Row>
@@ -206,16 +228,16 @@ Es importante establecer una diferencia de jerarquías entre los botones dentro 
 <Row>
   <Col items={2}>
 
-  En los bloques de texto los botones primarios siempre aparecen a la izquierda. 
+En los bloques de texto los botones primarios siempre aparecen a la izquierda.
 
-  Si hay botones secundarios aparecen a la derecha del botón primario. 
+Si hay botones secundarios aparecen a la derecha del botón primario.
 
-  En acciones principales los botones se deben justificar a la izquierda respetando el orden de lectura.
+En acciones principales los botones se deben justificar a la izquierda respetando el orden de lectura.
 
   </Col>
   <Col items={2}>
 
-  ![completar](/componentes/botón/orden-alineacion-3.svg)
+![completar](/componentes/botón/orden-alineacion-3.svg)
 
   </Col>
 </Row>
