@@ -22,7 +22,7 @@ export const ButtonExample = (props: { variant: ButtonType; showDisabled: boolea
         con foco
       </Button>
       {showDisabled && (
-        <Button type={variant} size={size} disabled={true}>
+        <Button type={variant} size={size} isDisabled>
           Deshabilitado
         </Button>
       )}
