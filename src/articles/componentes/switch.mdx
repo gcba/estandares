@@ -1,0 +1,97 @@
+---
+menu: Switch
+title: Switch
+description: Los switchs permiten que las personas usuarias alternen entre dos estados posibles, como “prendido” y “apagado”. Su efecto es automático y no necesita de una confirmación como es en el caso de un Checkbox.
+position: 20
+---
+
+## Tipos de switch
+
+### Sin label
+
+Se utilizan cuando el espacio está condensado. Suele aparecer en línea con otros componentes o contenido, por ejemplo dentro de tablas.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-1.png" />
+</div>
+
+### Con label
+
+Es el tamaño predefinido. Este switch lo podemos utilizar como componente principal y por lo general lleva una etiqueta que indique el estado en el que se encuentra el mismo.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-2.png" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Prendido y apagado
+
+Se utilizan para dos posibles estados: prendido y apagado.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-3.png" />
+</div>
+
+### Deshabilitado
+
+Cuando el switch está en estado deshabilitado, se debe mostrar de igual manera para que la persona usuaria sepa que en algún momento el componente podría habilitarse. Sin embargo, más allá de que la persona no pueda interactuar con el switch el mismo debería mostrar si está “prendido” o “apagado” para comunicar el feedback de la acción aplicada.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-4.png" />
+</div>
+
+### Énfasis
+
+Si necesitamos que el switch tenga mayor jerarquía visual, debemos utilizarlo en su versión celeste. En cambio, la versión en gris es óptima cuando el componente no es la parte central de la interfaz.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-5.png" />
+</div>
+
+### Agrupación de tipos de switch
+
+Se pueden utilizar y agrupar los distintos “Tipos de switch”.
+Podemos tener un switch principal que le de la orden al resto de la agrupación, ya sea para “Prender” o “Apagar”. En caso de que algún switch del grupo cambie de estado, el principal debe quedar apagado.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-6.png" />
+</div>
+
+<div align="center" class="mt-3">
+  <img src="/componentes/switch/imagen-7.png" />
+</div>
+
+### Contenido para switch sin label
+
+Cuando utilizamos un switch sin label, en alguna parte debería aparecer un título que contextualice a qué le vamos a aplicar el estado.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-8.png" />
+</div>
+
+### Palabras que comuniquen la acción
+
+Utilizar palabras como "encendido" y "apagado" para comunicar el estado interactivo en el que se encuentra el componente.
+
+<div align="center" class="mt-5">
+  <img src="/componentes/switch/imagen-9.png" />
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar el switch para indicarle a la persona usuaria un estado de persistencia, como “prendido” y “apagado”. ]]
+
+[[si | Utilizar una breve descripción (1 a 3 palabras) para la etiqueta del componente. ]]
+
+[[si | Considerar si la etiqueta del componente debe usar un verbo o un sustantivo para mantener la consistencia entre los switchs. ]]
+
+### Malas prácticas
+
+[[no | No utilizar el switch para estados parciales. Además de generar confusión, las API de accesibilidad no cuentan con este estado. ]]
+
+[[no | No utilizar un switch si los cambios que este componente representa no tendrán un efecto inmediato. En ese caso, utilizar un checkbox. ]]
+
+[[no | Evitar usar el switch cuando existe solo una opción para llevar a cabo una acción de confirmación. Por ejemplo, si le preguntamos a la persona usuaria si quiere recibir alertas por correo electrónico y desea confirmar dicha acción, no deberíamos recurrir al switch. ]]
