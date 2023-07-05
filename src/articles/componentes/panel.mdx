@@ -1,0 +1,133 @@
+---
+menu: Panel
+title: Panel
+description: Los paneles son agrupaciones de elementos que tienen una relación entre si. Por definición no son accionables, sino que dependen de otros elementos que tengan dicha funcionalidad.
+position: 17
+---
+
+## Tipos de paneles
+
+### Panel chico simple
+
+Sirven para mostrar información sobre una temática particular. No son accionables, es por eso que no poseen ningún tipo de fondo que actúe como contenedor de la información.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-chico.svg" alt="Panel chico simple" />
+</div>
+
+### Panel chico con accionables o enlace
+
+Además de brindar información, las personas usuarias tienen la posibilidad de realizar algún tipo de acción correspondiente al contexto en el que se presente el panel.
+
+<div className="content-row gap-2 gap-5-row-mobile">
+  <img
+    src="/componentes/panel/panel-chico-accionable.svg"
+    alt="Panel chico con accionables"
+    className="d-inline-block"
+  />
+  <img src="/componentes/panel/panel-chico-enlace.svg" alt="Panel chico con enlace" className="d-inline-block" />
+</div>
+
+### Panel chico con lista de enlaces
+
+Sirven para listar contenido relacionado y efectuar alguna acción determinada, como por ejemplo: descargar un archivo o abrir la información en una nueva pestaña.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-chico-lista.svg" alt="Panel chico con lista de enlaces" />
+</div>
+
+### Panel chico con lista de descargas
+
+Puede utilizarse para descargas de archivos relacionados al contenido principal y poder darle más visibilidad y jerarquía que con una lista de enlaces.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-chico-lista-descarga.svg" alt="Panel chico con lista de descargas" />
+</div>
+
+### Panel grande
+
+Se utiliza para destacar información relevante que requiera alguna acción por parte de las personas usuarias. Estos paneles pueden disponerse de forma tanto vertical como horizontal.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-grande.svg" alt="Panel grande" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Contenedores y fondos
+
+Los paneles pueden estar contenidos con un fondo únicamente si están compuestos de al menos un elemento que permita el llamado a la acción. En el caso de los paneles simples, sería incorrecto el uso de fondos ya que pueden generar confusión a las personas usuarias por su similitud a un componente tipo tarjeta.
+
+Por definición el componente de paneles no tienen ningún estado (hover, active, focus), ya que su función es agrupar diferentes elementos y relacionarlos entre si.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-1.svg" alt="Contenedores y fondos" />
+</div>
+
+### Grupo de paneles
+
+Los paneles pueden agruparse entre sí para informar sobre determinado contenido. Estos grupos tienen que ser de un máximo de **3 paneles chicos**, un máximo de **2 paneles verticales grandes** y **1 panel horizontal grande** para que la estructura conformada sea armoniosa y el contenido detallado en la descripción no se desborde.
+
+Además, los grupos de paneles tiene disponer del mismo elemento para llamar a la acción. No debe utilizarse, en un mismo grupo, diferentes tipos de botones en cada panel.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-2.svg" alt="Grupo de paneles" />
+</div>
+
+En el caso de que haya menos de 3 paneles, no se debe modificar su tamaño y debe mantener la estructura del componente, ó si el contenido es de suma relevancia también se pueden utilizar 2 paneles grande vertical ó 1 panel grande horizontal.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-3.svg" alt="Grupo de paneles" />
+</div>
+
+Al utilizar un **grupo de paneles chicos simples**, la recomendación es agruparlos dentro de un contenedor y utilizar un titular para dar la sensación a las personas usuarias de que esa información esta allí para comunicar algo que destaca por sobre el resto.
+
+Recordar que no se debe agregar un fondo a los paneles simples individualmente ya que puede generar confusión con la funcionalidad de las tarjetas.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-4.svg" alt="Grupo de paneles" />
+</div>
+
+### Paneles con listas
+
+Los paneles con listas se utilizan en el "sidebar" de la interfaz para brindarle a las personas usuarias información adicional y complementaria.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-5.svg" alt="Paneles con listas" />
+</div>
+
+### Imágenes en paneles
+
+El uso de imágenes en los paneles chicos es opcional. La imagen es un refuerzo visual que ayuda a las personas usuarias a entender el contexto o reforzar la información. En caso de utilizar imágenes recordar siempre **completar el atributo alt="..."**
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-6.svg" alt="Imágenes en paneles" />
+</div>
+
+En los paneles grandes, existe la posibilidad de tener una imagen o video. Esta elección es de acuerdo a el contenido que se quiera comunicar a las personas usuarias.
+
+<div className="content-column">
+  <img src="/componentes/panel/panel-diseno-7.svg" alt="Imágenes en paneles" />
+</div>
+
+## Usabilidad y accesibilidad
+
+### Buenas prácticas
+
+[[si | **Utilizar el mismo componente para llamar a la acción en un grupo de paneles chicos.** ]]
+
+[[si | **Agregar el atributo alt="..." a las imágenes de los paneles** ]]
+
+[[si | **Agrupar los paneles chicos simples en un mismo contenedor** permite que las personas usuarias lo perciban como material o información destacada. ]]
+
+[[si | **Utilice los paneles grandes para destacar la información mas relevante de la página.** ]]
+
+[[si | **Utilice los paneles tipo lista, siempre en el sidebar o como último contenido dentro de una página.** Ubicarlos en otra sección puede perjudicar la comprensión y la continuidad de la lectura de las personas usuarias. ]]
+
+### Malas prácticas
+
+[[no |**No utilice fondos en paneles chicos simples** ya que pueden confundir a las personas usuarias y asociar el mismo comportamiento que tienen las tarjetas. ]]
+
+[[no |**No utilice contenedores de colores que generen problemas de accesibilidad con respecto al contraste que tiene el fondo con el texto.** Además tiene que asegurarse de que no haya una competencia jerárquica con respecto a resto de los elementos dentro de los paneles. ]]
+
+[[no |**No utilice más de 3 paneles chicos en una misma fila.** Esto puede generar desbordamientos de texto que impidan una interfaz simple y limpia. ]]

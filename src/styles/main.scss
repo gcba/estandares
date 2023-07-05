@@ -467,3 +467,20 @@ main {
 .spinner-block-container {
   width: 4rem;
 }
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-5-row-mobile {
+  @media screen and (max-width: 1120px) {
+    row-gap: 3rem;
+  }
+}
