@@ -1,94 +1,80 @@
 ---
-menu: Modales
-title: Modales
-description: Los modales son utilizados como ventanas emergentes para resaltar contenido importante en una página haciendo foco en una sola tarea o mensaje. También bloquean otras interacciones para los usuarios.
+menu: Modal
+title: Modal
+description: Los modales muestran información importante que las personas usuarias deben reconocer. Aparecen en forma de ventana sobre la interfaz y bloquean el flujo de trabajo hasta que se selecciona una acción.
 position: 13
 ---
 
 ## Tipos de modales
 
+### Modal de reconocimiento
+
+Estos modales comunican información importante que las personas usuarias deben reconocer. Poseen un único botón principal que debe estar ubicado del lado derecho del componente.
+
+Los modales de reconocimiento pueden ser descartados haciendo clic en la acción principal, presionando la tecla ESC en el teclado o mismo haciendo clic por fuera del modal.
+
+<div align="center" className="mt-5">
+  <img src="/componentes/modals/modal-1.png" />
+</div>
+
 ### Modal de confirmación
 
-Cuando un usuario necesita información adicional o contexto para tomar la decisión de qué acción realizar.
+Son utilizados para validar las decisiones de las personas usuarias. Este tipo de modal requiere que se realice una acción para que el mismo se complete y se cierre. Posee botones de cancelación y de acción principal. El botón secundario se debe ubicar a la izquierda y el botón principal a la derecha.
 
-<Example>
-  <div class="modal d-block" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal</h4>
-        </div>
-        <div class="modal-body">
-          <p>Esta es la descripción del modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-link" data-dismiss="modal">
-            Botón
-          </button>
-          <button type="button" class="btn btn-primary">
-            Botón
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class=" show"></div>
-</Example>
+Los modales de confirmación son persistentes hasta que se descartan haciendo clic en la acción principal, en el botón secundario, presionando la tecla ESC en el teclado o mismo haciendo clic por fuera del modal.
+
+<div align="center" className="mt-5">
+  <img src="/componentes/modals/modal-2.png" />
+</div>
 
 ### Modal de peligro
 
-Cuando un usuario necesita confirmar una acción que afectará sus datos o experiencia de una manera potencialmente negativa, como eliminar archivos, descartar un pago, cancelar un formulario, etc.
+Son utilizados cuando una persona usuaria necesita confirmar una decisión que afectará su experiencia de manera negativa o irreversible. En este modal el botón principal se reemplaza por un botón de peligro y se descarta de la misma forma que los modales de confirmación.
 
-<Example class="content-3">
-  <div class="modal d-block" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Modal</h4>
-        </div>
-        <div class="modal-body">
-          <p>Esta es la descripción del modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Botón
-          </button>
-          <button type="button" class="btn btn-danger">
-            Botón
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class=" show"></div>
-</Example>
+<div align="center" className="mt-5">
+  <img src="/componentes/modals/modal-3.png" />
+</div>
 
 ## Diseño y estructura (contexto de uso)
 
-Un modal deshabilita el contenido de la página y enfoca la atención del usuario en una sola tarea o mensaje.
+### Título como único mensaje
 
-![completar](/componentes/modals/modal.svg)
+El título del modal puede incluír el mensaje completo para asegurar la claridad visual del componente y que la descripción no comunique información repetitiva. Incluso puede cotener una volanta para anteceder el título.
+
+<div align="center" className="mt-5">
+  <img src="/componentes/modals/modal-4.png" />
+</div>
+
+### Estado focus
+
+Cuando un modal se abre, el foco inicial debe estar en la primera ubicación que acepte la entrada de información de una persona usuaria. Por ejemplo, si el modal contiene un formulario, el enfoque debe establecerse automáticamente en el primer campo.
+
+Sin embargo, el uso de formularios dentro de los modales es opcional. Si se trata de un modal que no posee campos, el foco debe estar en el botón principal y permanecer en el cuadro de diálogo hasta que la persona usuaria lo cierre.
+
+<div align="center" className="mt-5">
+  <img src="/componentes/modals/modal-5.png" />
+</div>
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Utilizar los modales para confirmar acciones o completar tareas** que requieran toda la atención.]]
+[[si | Utilizar los modales para confirmar acciones o completar tareas que requieran toda la atención de la persona usuaria.]]
 
-[[si | **Usarlos con moderación** ya que los diálogos interrumpen la acción del usuario.]]
+[[si | Usar los modales con moderación ya que interrumpen el flujo de trabajo hasta que se seleccione una acción.]]
 
-[[si | **Mostrar los modales como resultado de una acción realizada por el usuario** o (menos comúnmente) por inactividad.]]
+[[si | Mostrar los modales como resultado de la acción de una persona usuaria. Por ejemplo, tocar un botón, un enlace o un ícono.]]
 
-[[si | **Usar títulos simples y comunicar lo principal** que la persona usuaria está a punto de hacer. Lo ideal es que los títulos usen la misma frase o una similar a la llamada a la acción que llevó a alguien al cuadro de diálogo de alerta en primer lugar.]]
+[[si | Usar títulos simples que comuniquen claramente el efecto principal de la acción que esté a punto de realizar una persona. Lo ideal es que los títulos usen la misma frase o una similar a la llamada a la acción que llevó a alguien al cuadro de diálogo en primer lugar.]]
 
-[[si | **Mantener una coherencia textual entre el título del modal y las opciones para los próximos pasos.** Por ejemplo, si el título de un cuadro de diálogo es "Eliminar conversación", la etiqueta del botón de acción principal sería "Eliminar".]]
-
-[[si | **Apilar verticalmente los grupos de botones** cuando el espacio horizontal es limitado. Deben aparecer en orden ascendente según la importancia, con la acción más crítica en la parte inferior.]]
+[[si | Mantener una coherencia textual entre el título del modal y las opciones para los próximos pasos. Por ejemplo, si el título de un cuadro de diálogo es "Eliminar conversación", la etiqueta del botón de la acción principal sería "Eliminar".]]
 
 ### Malas prácticas
 
-[[no | **No sorprender al usuario,** no le muestres un modal automáticamente si no realizó ninguna acción previa.]]
+[[no | No sorprender a la persona usuaria, no mostrar un modal automáticamente si no realizó ninguna acción previa.]]
 
-[[no | **Evitar hacer preguntas como** "¿Estás seguro de que deseas salir?" o "¿Querés cancelar?" son redundantes en la decisión que ya tomaron al realizar una acción previa. Esta frase también establece un conjunto de acciones de sí/no, lo que puede volverse confuso. En su lugar, reformulá el mensaje para centrarlo en el resultado o efecto.]]
+[[no | Evitar hacer preguntas como "¿Estás seguro de que deseas salir?" o "¿Querés cancelar?". Son redundantes en la decisión que ya tomó la persona al realizar una acción previa. Esta frase también establece un conjunto de acciones de sí/no, lo que puede volverse confuso. En su lugar, reformule el mensaje para centrarlo en el resultado o efecto.]]
 
-[[no | **Evitar el contenido largo que requiere desplazamiento.** El contenido extenso puede ser problemático porque empuja los botones fuera de la vista inicial del usuario, lo que puede causar confusión.]]
+[[no | Evitar el contenido largo que requiera desplazamiento. El contenido extenso puede ser problemático porque empuja los botones fuera de la vista inicial del usuario, lo que puede causar confusión.]]
+
+[[no | No mostrar más de un modal a la vez. Si la situación requiere una secuencia de decisiones, considere utilizar un diseño diferente.]]
