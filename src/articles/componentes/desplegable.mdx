@@ -7,11 +7,11 @@ position: 5
 
 ## Tipos de desplegables
 
-### Desplegable sin borde.
+### Desplegable sin borde
 
 Se utilizan para componer organismos donde se establezcan múltiples desplegables dentro de un mismo contenedor. Al carecer de bordes visibles, se integran de manera más fluida en el diseño general.
 
-<div class="content-3">
+<div className="content-3">
   <img src="/componentes/desplegable/sin-borde.svg" alt="desplegable sin borde" />
 </div>
 
@@ -19,7 +19,7 @@ Se utilizan para componer organismos donde se establezcan múltiples desplegable
 
 Se utilizan para entrar en secciones con jerarquías más importantes y suelen usarse junto con otros desplegables del mismo estilo para agrupar información de la misma temática. Este componente presenta un borde visible a su alrededor otorgándole un aspecto más distintivo y resaltado dentro del diseño.
 
-<div class="content-3">
+<div className="content-3">
   <img src="/componentes/desplegable/con-borde.svg" alt="desplegable con borde" />
 </div>
 
@@ -27,7 +27,7 @@ Se utilizan para entrar en secciones con jerarquías más importantes y suelen u
 
 El ícono utilizado puede ser una referencia visual para complementar el título del desplegable y así darle más información sobre el contexto a la persona usuaria. 
 
-<div class="content-3">
+<div className="content-3">
   <img src="/componentes/desplegable/con-icono.svg" alt="desplegable con ícono" />
 </div>
 
@@ -35,72 +35,72 @@ El ícono utilizado puede ser una referencia visual para complementar el título
 
 Los desplegables pueden ser grandes, medianos o chicos. El tamaño mediano es la opción predeterminada y más utilizada.
 
-<div class="content-3 mt-5 justify-content-between align-items-start flex-wrap">
-  <div class="dropdown mb-3 mr-2"> 
-    <h3 class="mb-3">Grande</h3>
+<div className="content-3 mt-5 justify-content-between align-items-start flex-wrap">
+  <div className="dropdown mb-3 mr-2"> 
+    <h3 className="mb-3">Grande</h3>
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+      className="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
       data-toggle="dropdown"
       aria-haspopup="true"
       aria-expanded="false"
     >
       Desplegable
     </button>
-    <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">
+    <div className="dropdown-menu">
+      <button className="dropdown-item" type="button">
         Opción 1
       </button>
-      <button class="dropdown-item" type="button">
+      <button className="dropdown-item" type="button">
         Opción 2
       </button>
-      <button class="dropdown-item" type="button">
+      <button className="dropdown-item" type="button">
         Opción 3
       </button>
     </div>
   </div>
-  <div class="dropdown mb-3 mr-2">
-    <h3 class="mb-3">Mediano</h3>
+  <div className="dropdown mb-3 mr-2">
+    <h3 className="mb-3">Mediano</h3>
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border dropdown-toggle"
+      className="btn btn-dropdown btn-dropdown-border dropdown-toggle"
       data-toggle="dropdown"
       aria-haspopup="true"
       aria-expanded="false"
     >
       Desplegable
     </button>
-    <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">
+    <div className="dropdown-menu">
+      <button className="dropdown-item" type="button">
         Opción 1
       </button>
-      <button class="dropdown-item" type="button">
+      <button className="dropdown-item" type="button">
         Opción 2
       </button>
-      <button class="dropdown-item" type="button">
+      <button className="dropdown-item" type="button">
         Opción 3
       </button>
     </div>
   </div>
-  <div class="dropdown mb-3 mr-2">
-    <h3 class="mb-3">Chico</h3>
+  <div className="dropdown mb-3 mr-2">
+    <h3 className="mb-3">Chico</h3>
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
+      className="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
       data-toggle="dropdown"
       aria-haspopup="true"
       aria-expanded="false"
     >
       Desplegable
     </button>
-    <div class="dropdown-menu">
-      <button class="dropdown-item" type="button">
+    <div className="dropdown-menu">
+      <button className="dropdown-item" type="button">
         Opción 1
       </button>
-      <button class="dropdown-item" type="button">
+      <button className="dropdown-item" type="button">
         Opción 2
       </button>
-      <button class="dropdown-item" type="button">
+      <button className="dropdown-item" type="button">
         Opción 3
       </button>
     </div>
@@ -113,18 +113,18 @@ Los desplegables pueden ser grandes, medianos o chicos. El tamaño mediano es la
 
 Las opciones de selección única permiten a las personas usuarias elegir una opción a la vez. De manera predeterminada, el desplegable muestra el nombre de la lista que agrupa las opciones. Cuando la persona usuaria selecciona una opción de la lista, el desplegable se cierra y el texto de la opción seleccionada reemplaza el nombre de la lista.
 
-<div class="content-3 align-items-start flex-wrap flex-lg-nowrap gap-2 justify-content-center mt-4">
-  <div class="w-75 w-lg-50">
-    <img src="/componentes/desplegable/desplegable-radio.svg" alt="desplegables seleccion unica"  class="m-0 w-100"/>
+<div className="content-3 align-items-start flex-wrap flex-lg-nowrap gap-2 justify-content-center mt-4">
+  <div className="w-75 w-lg-50">
+    <img src="/componentes/desplegable/desplegable-radio.svg" alt="desplegables seleccion unica"  className="m-0 w-100"/>
   </div>
-  <div class="w-75 w-lg-50">
-    <img src="/componentes/desplegable/desplegable-radio-ok.svg" alt="desplegable con opcion unica seleccionada"  class="m-0 w-100"/>
+  <div className="w-75 w-lg-50">
+    <img src="/componentes/desplegable/desplegable-radio-ok.svg" alt="desplegable con opcion unica seleccionada"  className="m-0 w-100"/>
   </div>
 </div>
 
 Cuando el desplegable se encuentra expandido, cada opción debe tener la misma altura que el encabezado del componente.
 
-<div class="text-center pt-3 pb-2">
+<div className="text-center pt-3 pb-2">
   <img src="/componentes/desplegable/sizes.svg" alt="Medidas de desplegables" />
 </div>
 
@@ -132,12 +132,12 @@ Cuando el desplegable se encuentra expandido, cada opción debe tener la misma a
 
 Las opciones de selección múltiple permiten a las personas usuarias seleccionar varias opciones para filtrar rápidamente el contenido que desean ver. Cada opción posee una casilla de verificación del lado izquierdo del texto. El desplegable permanece abierto mientras la persona usuaria selecciona las opciones. El componente se cierra si la persona hace clic en el encabezado del mismo o fuera del desplegable, dejando entre paréntesis la cantidad de ítems que fueron elegidos.
 
-<div class="content-3 align-items-start flex-wrap flex-lg-nowrap gap-2 justify-content-center mt-4">
-  <div class="w-75 w-lg-50">
-      <img src="/componentes/desplegable/desplegable-check.svg" alt="desplegables checkbox"  class="w-100 mt-2"/>
+<div className="content-3 align-items-start flex-wrap flex-lg-nowrap gap-2 justify-content-center mt-4">
+  <div className="w-75 w-lg-50">
+      <img src="/componentes/desplegable/desplegable-check.svg" alt="desplegables checkbox"  className="w-100 mt-2"/>
   </div>
-  <div class="w-75 w-lg-50">
-    <img src="/componentes/desplegable/desplegable-check-ok.svg" alt="desplegable con opcion checkbox seleccionada"  class=" w-100 mt-2"/>
+  <div className="w-75 w-lg-50">
+    <img src="/componentes/desplegable/desplegable-check-ok.svg" alt="desplegable con opcion checkbox seleccionada"  className=" w-100 mt-2"/>
   </div>
 </div>
 
@@ -145,10 +145,10 @@ Las opciones de selección múltiple permiten a las personas usuarias selecciona
 
 Se aconseja mantener los textos de los desplegables y de las opciones cortos y concisos. Los textos no deben ocupar más de una línea. El ancho máximo determinado para los desplegables es de 4 (cuatro) columnas.  
 
-<div class="pt-3 pb-5">
-  <div class="card py-3 px-4 m-auto w-fit-content">
-    <div class="d-flex justify-content-center">
-      <img src="/componentes/desplegable/grid.svg" alt="Maximo de columnas que ocupa un desplegable" class="" />
+<div className="pt-3 pb-5">
+  <div className="card py-3 px-4 m-auto w-fit-content">
+    <div className="d-flex justify-content-center">
+      <img src="/componentes/desplegable/grid.svg" alt="Maximo de columnas que ocupa un desplegable" className="" />
     </div>
   </div>
 </div>
@@ -157,9 +157,9 @@ El tamaño del desplegable se adaptará a la cantidad de caracteres que contenga
 
 ### Con información adaptable
 
-<div class="gap-2 d-flex flex-wrap">
-  <img src="/componentes/desplegable/modalidad.svg" alt="Desplegable con texto corto" class="m-0"/>
-  <img src="/componentes/desplegable/tipo-de-info.svg" alt="Desplegable con texto largo" class="m-0"/>
+<div className="gap-2 d-flex flex-wrap">
+  <img src="/componentes/desplegable/modalidad.svg" alt="Desplegable con texto corto" className="m-0"/>
+  <img src="/componentes/desplegable/tipo-de-info.svg" alt="Desplegable con texto largo" className="m-0"/>
 </div>
 
 ### Con información que supera las 4 columnas
@@ -170,10 +170,10 @@ El tamaño del desplegable se adaptará a la cantidad de caracteres que contenga
 
 Los desplegables se agrupan en una disposición horizontal y pueden combinarse con Botones y Navegación en esa misma dirección. Utilizar un tamaño uniforme al combinar los desplegables con otros componentes, le brinda más flexibilidad y estructura al diseño. Por ejemplo, si utiliza un desplegable mediano, también deberá utilizar botones del mismo tamaño. 
 
-<div class="content-3 align-items-start flex-wrap gap-2 justify-content-center mt-4">
-  <img src="/componentes/desplegable/comb-1.svg" alt="desplegables seleccion unica" class="m-0"/>
-  <img src="/componentes/desplegable/comb-2.svg" alt="desplegable seleccion multiple" class="m-0"/>
-  <img src="/componentes/desplegable/comb-3.svg" alt="boton de aplicar filtros" class="m-0"/>
+<div className="content-3 align-items-start flex-wrap gap-2 justify-content-center mt-4">
+  <img src="/componentes/desplegable/comb-1.svg" alt="desplegables seleccion unica" className="m-0"/>
+  <img src="/componentes/desplegable/comb-2.svg" alt="desplegable seleccion multiple" className="m-0"/>
+  <img src="/componentes/desplegable/comb-3.svg" alt="boton de aplicar filtros" className="m-0"/>
 </div>
 
 ## Usabilidad
