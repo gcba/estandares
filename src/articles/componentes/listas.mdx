@@ -1,0 +1,113 @@
+---
+menu: Listas
+title: Listas
+description: Las listas se utilizan para agrupar una serie de elementos relacionados. Los elementos de una lista pueden comenzar con un número o una viñeta. Para listas que presentan un orden secuencial de pasos, utilizamos la Lista de pasos.
+position: 10
+---
+
+## Lista de pasos
+
+Sirve para acompañar de forma visual una secuencia de pasos. No tiene ninguna funcionalidad ni estados, sólo informa a la persona usuaria lo que sucederá llegada la instancia correspondiente de un proceso. Este componente tiene distintas variantes que se utilizan en función de las necesidades de jerarquía, contraste, dispositivo, y cantidad de pasos.
+
+<h2>Tamaño</h2>
+
+Hay tres tipos de tamaño de pasos: grande, mediano y chico. Todos los pasos deben tener el mismo tamaño para una lista cohesiva. Se puede optar por un tamaño a partir de variables como el espacio disponible en la página, jerarquía en relación con otros elementos, necesidad de contraste y accesibilidad.
+* En desktop: el componente ocupa 8 columnas (712 px de ancho como máximo)
+* En Mobile: el componente ocupa la totalidad de las columnas del dispositivo
+
+### Grande
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-grande.svg" alt="Lista de pasos - Tamaño grande" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-grande-mobile.svg" alt="Lista de pasos - Tamaño grande" className="d-sm-none" />
+</div>
+
+### Mediano
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-mediano.svg" alt="Lista de pasos - Tamaño mediano" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-mediano-mobile.svg" alt="Lista de pasos - Tamaño mediano" className="d-sm-none" />
+</div>
+
+### Chico
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-chico.svg" alt="Lista de pasos - Tamaño chico" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-chico-mobile.svg" alt="Lista de pasos - Tamaño chico" className="d-sm-none" />
+</div>
+
+<h2>Estilo</h2>
+
+Dentro de las variantes con número y sin número, existen pasos con relleno y con borde. El estilo por defecto es con relleno. En casos donde el fondo de la página es oscuro se recomienda el estilo con borde para dar contraste y más peso visual en relación al color de fondo.
+
+### Con relleno
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-mediano.svg" alt="Lista de pasos con relleno" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-mediano-mobile.svg" alt="Lista de pasos con relleno" className="d-sm-none" />
+</div>
+
+### Con borde
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-borde.svg" alt="Lista de pasos con borde" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-borde-mobile.svg" alt="Lista de pasos con borde" className="d-sm-none" />
+</div>
+
+<h2>Con número</h2>
+
+Los pasos existen en dos variantes principales: con número y sin número. Esta última se utiliza para reforzar visualmente la idea de un orden lógico secuencial para la persona usuaria. Cuando la cantidad de pasos es mayor a 9, se deben utilizar los pasos sin número. 
+
+### Con número y relleno
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-numero.svg" alt="Lista de pasos con número y relleno" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-numero-mobile.svg" alt="Lista de pasos con número y relleno" className="d-sm-none" />
+</div>
+
+### Con número y borde
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-numero-borde.svg" alt="Lista de pasos con número y borde" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-numero-borde-mobile.svg" alt="Lista de pasos con número y borde" className="d-sm-none" />
+</div>
+
+<h2>Sin línea</h2>
+
+En el caso de tratarse del último paso de la lista, éste debe ir sin la línea unificadora. 
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/paso-ultimo.svg" alt="Lista de pasos - Último paso" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/paso-ultimo-mobile.svg" alt="Lista de pasos - Último paso" className="d-sm-none" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+Para construir esta lista, cada componente de forma individual irá debajo de otro para visualizar esta progresión y así transmitir una secuencialidad.
+
+<div className="mt-4 mb-5 mx-auto">
+  <img src="/componentes/lista-de-pasos/lista-de-pasos.svg" alt="Lista de pasos" className="d-sm-block d-none" />
+  <img src="/componentes/lista-de-pasos/lista-de-pasos-mobile.svg" alt="Lista de pasos" className="d-sm-none" />
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar títulos claros y concisos. Usar verbos o frases de acción para indicar a la persona usuaria lo que sucederá en cada paso. Se sugiere utilizar una variante del componente de tamaño más pequeña si el título ocupa más de 1 línea. ]]
+
+[[si | Utilizar bajadas con textos sintéticos y generales. De esta forma si cambian los detalles del proceso, la descripción seguirá teniendo sentido para la persona usuaria. ]]
+
+[[si | Usar la menor cantidad de pasos posibles para no abrumar a la persona usuaria. Si luego en el flujo verá más información, limitar la lista de pasos a una síntesis del proceso a realizar. ]]
+
+### Malas prácticas
+
+[[no | No utilizar cuando el proceso o tareas a realizar no tienen un orden lógico o útil para completarse, por ejemplo cuando es una lista de requisitos. ]]
+
+[[no | No utilizar este componente si el proceso tiene sólo un paso. ]]
+
+[[no | No utilizar el componente sólo con el título. Siempre debe contener, aunque mínima, una bajada explicativa. ]]
+
+[[no | No utilizar este componente para procesos o formularios de varias páginas. Para estos casos usar el componente "[Pasos de un formulario](https://gcba.github.io/estandares/componentes/paso-a-paso/)". ]]
+
+[[no | No incluir componentes como listas informativas, bulleteados y botones dentro de la lista de pasos. La bajada debe consistir sólo en un párrafo de texto, y si es necesario puede poseer enlaces dentro del mismo. ]]
