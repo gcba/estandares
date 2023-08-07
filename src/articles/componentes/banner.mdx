@@ -1,0 +1,86 @@
+---
+menu: Banner
+title: Banner
+description: Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo.
+position: 2
+---
+
+## Tipos de banner
+
+Las opciones de banner se diferencian por su color y contraste entre fondo y contenido. Existen banner claros y oscuros. En ambos casos la descripción informa a la persona sobre un tema particular y los íconos (relacionado con el mensaje) ayudan a las personas a escanear más rápido el contenido y reforzar el concepto.
+
+### Banner oscuro
+
+Este banner tiene fondo oscuro (Grisulado 90) y letras blancas. Se utiliza mayormente en contextos donde hay mucho texto y fondos claros, para irrumpir con un pleno de color.
+
+### Banner claro
+
+Este banner tiene fondo claro (Grisulado 5) y letras oscuras (Grisulado 90). Se utiliza mayormente en contextos donde hay contaminación visual, para generar una pausa.
+
+### Banner con enlace
+
+En las opciones con enlace la descripción se muestra centrada y no posee ícono.
+En cuanto a la cantidad de texto el banner con enlace no deberá superar una línea en su versión desktop y tres líneas en versión mobile.
+
+<div className="content-column">
+  <img src="/componentes/banner/banner-link-dark.svg" alt="Banner oscuro con enlace" className="d-sm-inline-block d-none img-fluid" />
+  <img src="/componentes/banner/banner-link-dark-mobile.svg" alt="Banner oscuro con enlace" className="d-sm-none img-fluid" />
+  <img src="/componentes/banner/banner-link.svg" alt="Banner claro con enlace" className="d-sm-inline-block d-none img-fluid" />
+  <img src="/componentes/banner/banner-link-mobile.svg" alt="Banner claro con enlace" className="d-sm-none img-fluid" />
+</div>
+
+### Banner con un botón
+
+En las opciones con un botón la descripción se alinea a la izquierda y lleva un ícono a la izquierda de ser necesario. En este caso lleva un botón secundario para comunicar la acción.
+Si el texto que se incluye en el banner con un botón supera una línea en su versión desktop este se truncará, así como en su versión mobile si supera las 3 líneas.
+
+<div className="content-column">
+  <img src="/componentes/banner/banner-button-dark.svg" alt="Banner oscuro con un botón" className="d-sm-inline-block d-none img-fluid" />
+  <img src="/componentes/banner/banner-button-dark-mobile.svg" alt="Banner oscuro con un botón" className="d-sm-none img-fluid" />
+  <img src="/componentes/banner/banner-button.svg" alt="Banner claro con un botón" className="d-sm-inline-block d-none img-fluid" />
+  <img src="/componentes/banner/banner-button-mobile.svg" alt="Banner claro con un botón" className="d-sm-none img-fluid" />
+</div>
+
+### Banner con dos botones
+
+En las opciones con dos botones la descripción se alinea a la izquierda y lleva un ícono a la izquierda de ser necesario. En este caso lleva un botón primario seguido de un secundario. 
+Si el texto que se incluye en el banner con un botón supera una línea en su versión desktop este se truncará, así como en su versión mobile si supera las 3 líneas. 
+
+<div className="content-column">
+  <img src="/componentes/banner/banner-buttons-dark.svg" alt="Banner oscuro con dos botones" className="d-sm-inline-block d-none img-fluid" />
+  <img src="/componentes/banner/banner-buttons-dark-mobile.svg" alt="Banner oscuro con dos botones" className="d-sm-none img-fluid" />
+  <img src="/componentes/banner/banner-buttons.svg" alt="Banner claro con dos botones" className="d-sm-inline-block d-none img-fluid" />
+  <img src="/componentes/banner/banner-buttons-mobile.svg" alt="Banner claro con dos botones" className="d-sm-none img-fluid" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Uso de banner en cuerpo de página
+
+Los banners pueden disponibilizarse en cualquier parte de la página y funcionan como un elemento más para mostrar información. Al desplazarse junto a los demás elementos, al *scrollear*, los banners no son descartables. (Ej: “Lanzamos una nueva versión de nuestro sistema de diseño”)
+
+### Uso de banner fijado
+
+Algunos mensajes requieren cierto compromiso del usuario y deben mostrarse hasta que este dé su consentimiento. Estos son métodos de mensajería altamente invasivos, por lo tanto, deben usarse con mesura. Estos mensajes se pueden fijar solo en la parte inferior de la pantalla (EJ: “Aviso de privacidad de Cookies”).
+
+### Uso de iconografía
+
+El uso de iconografía no es obligatorio, y su utilización debe acompañar conceptualmente cada mensaje. Hay que poner especial atención en no usar íconos de carácter semántico (información, error, advertencia, éxito y similares) que puedan confundir los banners con alertas.
+
+<div className="content-column">
+  <img src="/componentes/banner/banner.svg" alt="Banner" />
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | **Ser conciso y disponer acciones claras.**  Dar un mensaje breve para captar la atención del usuario y proveer acciones claras para que profundice en el tema. ]]
+
+[[si | **Ser consciente del uso de la iconografía.** Es muy importante utilizar íconos para anclar conceptualmente el mensaje y prescindir del uso de íconos de contenido semántico. ]]
+
+[[si | **Considerar los banners como “mensajes no semánticos”.** Este tipo de componentes se caracterizan por poder mostrar diverso contenido y deben poder diferenciarse fácilmente de una alerta de estado del sistema. ]]
+
+### Malas prácticas
+
+[[no | **No abusar de fijar banners en la parte inferior.** Este tipo de banners influyen en la navegación del usuario. Un banner que requiere una acción para que desaparezca podría abrumar o molestar. ]]
