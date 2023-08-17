@@ -169,7 +169,8 @@ export const getNavigation = (): NavItem[] => {
     fakeNode(2, "Guía de estilos", "/guías_de_estilos"),
     fakeNode(3, "Componentes", "/componentes"),
     fakeNode(4, "Contenido", "/contenido"),
-    fakeNode(5, "Herramientas y recursos", "/herramientas_y_recursos")
+    fakeNode(5, "Herramientas y recursos", "/herramientas_y_recursos"),
+    fakeNode(6, "Desplegables", "/componentes/desplegables")
   )
 
   nodes
