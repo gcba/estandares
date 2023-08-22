@@ -1,6 +1,203 @@
 ---
 menu: De selección
 title: De selección
-description: Los desplegables tienen la apariencia de un botón pero al interactuar con ellos permiten seleccionar una opción dentro de un menú.
+description: Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente.
 position: 6
 ---
+
+## Tipos de desplegables
+
+### Desplegable sin borde
+
+Se utilizan para componer organismos donde se establezcan múltiples desplegables dentro de un mismo contenedor. Al carecer de bordes visibles, se integran de manera más fluida en el diseño general.
+
+<div className="content-3">
+  <img src="/componentes/desplegable/sin-borde.svg" alt="desplegable sin borde" />
+</div>
+
+### Desplegable con borde
+
+Se utilizan para entrar en secciones con jerarquías más importantes y suelen usarse junto con otros desplegables del mismo estilo para agrupar información de la misma temática. Este componente presenta un borde visible a su alrededor otorgándole un aspecto más distintivo y resaltado dentro del diseño.
+
+<div className="content-3">
+  <img src="/componentes/desplegable/con-borde.svg" alt="desplegable con borde" />
+</div>
+
+### Desplegable con ícono
+
+El ícono utilizado puede ser una referencia visual para complementar el título del desplegable y así darle más información sobre el contexto a la persona usuaria. 
+
+<div className="content-3">
+  <img src="/componentes/desplegable/con-icono.svg" alt="desplegable con ícono" />
+</div>
+
+## Tamaños
+
+Los desplegables pueden ser grandes, medianos o chicos. El tamaño mediano es la opción predeterminada y más utilizada.
+
+<div className="content-3 mt-5 justify-content-between align-items-start flex-wrap">
+  <div className="dropdown mb-3 mr-2"> 
+    <h3 className="mb-3">Grande</h3>
+    <button
+      type="button"
+      className="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Desplegable
+    </button>
+    <div className="dropdown-menu">
+      <button className="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button className="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button className="dropdown-item" type="button">
+        Opción 3
+      </button>
+    </div>
+  </div>
+  <div className="dropdown mb-3 mr-2">
+    <h3 className="mb-3">Mediano</h3>
+    <button
+      type="button"
+      className="btn btn-dropdown btn-dropdown-border dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Desplegable
+    </button>
+    <div className="dropdown-menu">
+      <button className="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button className="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button className="dropdown-item" type="button">
+        Opción 3
+      </button>
+    </div>
+  </div>
+  <div className="dropdown mb-3 mr-2">
+    <h3 className="mb-3">Chico</h3>
+    <button
+      type="button"
+      className="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      Desplegable
+    </button>
+    <div className="dropdown-menu">
+      <button className="dropdown-item" type="button">
+        Opción 1
+      </button>
+      <button className="dropdown-item" type="button">
+        Opción 2
+      </button>
+      <button className="dropdown-item" type="button">
+        Opción 3
+      </button>
+    </div>
+  </div>
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Desplegable de selección única
+
+Las opciones de selección única permiten a las personas usuarias elegir una opción a la vez. De manera predeterminada, el desplegable muestra el nombre de la lista que agrupa las opciones. Cuando la persona usuaria selecciona una opción de la lista, el desplegable se cierra y el texto de la opción seleccionada reemplaza el nombre de la lista.
+
+<div className="content-3 align-items-start flex-wrap flex-lg-nowrap gap-2 justify-content-center mt-4">
+  <div className="w-75 w-lg-50">
+    <img src="/componentes/desplegable/desplegable-radio.svg" alt="desplegables seleccion unica"  className="m-0 w-100"/>
+  </div>
+  <div className="w-75 w-lg-50">
+    <img src="/componentes/desplegable/desplegable-radio-ok.svg" alt="desplegable con opcion unica seleccionada"  className="m-0 w-100"/>
+  </div>
+</div>
+
+Cuando el desplegable se encuentra expandido, cada opción debe tener la misma altura que el encabezado del componente.
+
+<div className="text-center pt-3 pb-2">
+  <img src="/componentes/desplegable/sizes.svg" alt="Medidas de desplegables" />
+</div>
+
+### Desplegable de selección múltiple
+
+Las opciones de selección múltiple permiten a las personas usuarias seleccionar varias opciones para filtrar rápidamente el contenido que desean ver. Cada opción posee una casilla de verificación del lado izquierdo del texto. El desplegable permanece abierto mientras la persona usuaria selecciona las opciones. El componente se cierra si la persona hace clic en el encabezado del mismo o fuera del desplegable, dejando entre paréntesis la cantidad de ítems que fueron elegidos.
+
+<div className="content-3 align-items-start flex-wrap flex-lg-nowrap gap-2 justify-content-center mt-4">
+  <div className="w-75 w-lg-50">
+      <img src="/componentes/desplegable/desplegable-check.svg" alt="desplegables checkbox"  className="w-100 mt-2"/>
+  </div>
+  <div className="w-75 w-lg-50">
+    <img src="/componentes/desplegable/desplegable-check-ok.svg" alt="desplegable con opcion checkbox seleccionada"  className=" w-100 mt-2"/>
+  </div>
+</div>
+
+### Contenidos de los desplegables
+
+Se aconseja mantener los textos de los desplegables y de las opciones cortos y concisos. Los textos no deben ocupar más de una línea. El ancho máximo determinado para los desplegables es de 4 (cuatro) columnas.  
+
+<div className="pt-3 pb-5">
+  <div className="card py-3 px-4 m-auto w-fit-content">
+    <div className="d-flex justify-content-center">
+      <img src="/componentes/desplegable/grid.svg" alt="Maximo de columnas que ocupa un desplegable" className="" />
+    </div>
+  </div>
+</div>
+
+El tamaño del desplegable se adaptará a la cantidad de caracteres que contenga el mismo. En caso de no poder resumir la información, superando esta el ancho máximo de 4 columnas, se truncará el texto cortando la última palabra y agregando tres (3) puntos que denoten la continuidad de dicha información.
+
+### Con información adaptable
+
+<div className="gap-2 d-flex flex-wrap">
+  <img src="/componentes/desplegable/modalidad.svg" alt="Desplegable con texto corto" className="m-0"/>
+  <img src="/componentes/desplegable/tipo-de-info.svg" alt="Desplegable con texto largo" className="m-0"/>
+</div>
+
+### Con información que supera las 4 columnas
+
+<img src="/componentes/desplegable/truncado.svg" alt="Desplegable con texto truncado" />
+
+### Desplegables combinables
+
+Los desplegables se agrupan en una disposición horizontal y pueden combinarse con Botones y Navegación en esa misma dirección. Utilizar un tamaño uniforme al combinar los desplegables con otros componentes, le brinda más flexibilidad y estructura al diseño. Por ejemplo, si utiliza un desplegable mediano, también deberá utilizar botones del mismo tamaño. 
+
+<div className="content-3 align-items-start flex-wrap gap-2 justify-content-center mt-4">
+  <img src="/componentes/desplegable/comb-1.svg" alt="desplegables seleccion unica" className="m-0"/>
+  <img src="/componentes/desplegable/comb-2.svg" alt="desplegable seleccion multiple" className="m-0"/>
+  <img src="/componentes/desplegable/comb-3.svg" alt="boton de aplicar filtros" className="m-0"/>
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Limitar a 15 la cantidad de opciones para elegir dentro de un desplegable.]]
+
+[[si | El ancho mínimo que se debe contemplar para los desplegables es de 2 columnas (154px).]]
+
+[[si | Utilizar los desplegables para navegación o filtros, en donde se inicia una acción basada en la selección.]]
+
+[[si | Priorizar las opciones en un orden lógico colocando la opción más seleccionada en la parte superior.]]
+
+[[si | Alinear el desplegable con prioridad a la izquierda. En caso de no tener espacio suficiente para alinear desde la izquierda, alinear a la derecha.]]
+
+[[si | Alinear el componente al centro cuando los espacios en la pantalla sean reducidos.]]
+
+### Malas prácticas
+
+[[no | No anidar un desplegable dentro de otro.]]
+
+[[no | No utilizar un desplegable si solo hay dos opciones para elegir. En ese caso, utilizar una casilla de selección única.]]
+
+[[no | No usar los desplegables para mostrar información demasiado compleja. Mantenga las opciones lo más sencillas posible.]]
+
+[[no | No utilizar un desplegable si la mayor parte de su experiencia se basa en formularios. En ese caso, considere usar un selector. ]]
