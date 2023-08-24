@@ -1,0 +1,75 @@
+---
+menu: De navegación
+title: Desplegables de navegación
+description: Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal.
+position: 6
+---
+
+## Tipos de desplegables de navegación
+
+El objetivo de los desplegables de navegación es reducir la carga cognitiva de la persona usuaria proporcionando un acceso rápido a las opciones más relevantes y revelando opciones más detalladas a modo de cascada cuando se requiera. 
+
+### Desplegables en encabezado de página
+
+Despliega opciones de navegación dentro de un encabezado. Puede contener opciones en un segundo nivel que aparezcan a modo de cascada. Las opciones **pueden estar alineadas a la derecha o a la izquierda del botón disparador** según el espacio disponible y el dispositivo. 
+
+<div className="content-3">
+  <img src="/componentes/desplegable/dropdown-menu-page.svg" alt="Desplegable de navegación" />
+</div>
+
+### Desplegables en navegación horizontal
+
+En este contexto el menú desplegable puede mostrar opciones con íconos y cascadas. Según el dispositivo la cascada será vertical u horizontal.
+
+<div className="content-3">
+  <img src="/componentes/desplegable/dropdown-menu-horizontal.svg" alt="Desplegable de navegación" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+<h2>Disposición</h2>
+
+### En encabezado de página
+
+Dentro de un encabezado de página las opciones desplegadas deben ocupar un ancho fijo de 4 columnas. En mobile, deben ocupar un ancho fijo de 2 columnas. 
+
+<div className="content-row">
+  <img src="/componentes/desplegable/dropdown-menu-position1.svg" alt="Desplegable de navegación" />
+  <img src="/componentes/desplegable/dropdown-menu-position2.svg" alt="Desplegable de navegación" />
+</div>
+
+### En navegación horizontal
+
+Dentro de la navegación horizontal los desplegables se agrupan de forma horizontal formando una fila. En desktop, se deben ubicar uno al lado del otro ocupando un máximo de 8 columnas.  En mobile, se deben organizar de forma vertical uno debajo del otro. 
+
+<div className="content-row">
+  <img src="/componentes/desplegable/dropdown-menu-position3.svg" alt="Desplegable de navegación" />
+  <img src="/componentes/desplegable/dropdown-menu-position4.svg" alt="Desplegable de navegación" />
+  <img src="/componentes/desplegable/dropdown-menu-position5.svg" alt="Desplegable de navegación" />
+  <img src="/componentes/desplegable/dropdown-menu-position6.svg" alt="Desplegable de navegación" />
+</div>
+
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar los desplegables de navegación para navegar hacia otras secciones de una web. ]]
+
+[[si | Utilizar textos cortos en las opciones de navegación. En un encabezado de página utilizar un máximo de 2 palabras por opción. En una navegación horizontal (por ejemplo, en una página de área) utilizar un máximo de 2 líneas de texto por opción. ]]
+
+[[si | Utilizar íconos únicamente en los elementos del primer nivel de navegación. ]]
+
+[[si | Utilizar un máximo de 5 opciones dentro de un desplegable de navegación. Si existen más opciones, agrupar las similares en una cascada. ]]
+
+### Malas prácticas
+
+[[no | Para los casos en los que se requiera filtrar y/o seleccionar información, utilizar el componente [Desplegables de selección](https://gcba.github.io/estandares/componentes/desplegables/desplegables_seleccion/).]]
+
+[[no | No truncar el texto de las opciones de navegación. ]]
+
+[[no | No colocar un desplegable al lado del otro dentro de una navegación horizontal en mobile. Los mismos deben ordenarse de manera vertical. ]]
+
+[[no | No utilizar la opción de “Cerrar sesión” dentro del desplegable en una navegación horizontal. ]]
+
+[[no | No utilizar íconos en las opciones que se encuentran dentro de una cascada. ]]
