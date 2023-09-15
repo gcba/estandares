@@ -47,7 +47,7 @@
   "devDependencies": {
     "eslint-config-react-app": "^5.2.1",
     "gatsby-remark-custom-blocks": "^2.3.13",
-    "gatsby-transformer-remark": "^2.8.42",
+    "gatsby-transformer-remark": "^5.25.1",
     "prettier": "2.0.5",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
