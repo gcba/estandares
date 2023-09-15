@@ -1,82 +1,103 @@
 ---
-menu: Enlaces
-title: Enlaces
-description: Los enlaces son hipervínculos que facilitan la navegación dentro de una misma página web como también para acceder a páginas externas o a más información.
+menu: Enlace
+title: Enlace
+description: Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas.  
 position: 8
 ---
 
-## Tipos de enlaces
+## Tipos de enlace
 
-### Default
+Los enlaces facilitan la accesibilidad a contenido adicional y aseguran que las personas usuarias puedan comprender y utilizar efectivamente las rutas de navegación propuestas. Los enlaces pueden estar dentro de un párrafo o separados del mismo en una estructura de lista.
+<br />
 
-Es el enlace en su estado principal y lo utilizamos para enlazar un contenido que no se encuentra en la página actual pero sí dentro del mismo sitio.
+![completar](/componentes/enlace/tiposDeEnlaces.svg)
 
-![completar](/componentes/enlace/enlace.svg)
+### Predeterminado
 
-### Anclas
+Se utiliza para enlazar contenido que se encuentra dentro del mismo sitio. Se puede utilizar para navegar dentro de una misma página como ancla, o para correos electrónicos y direcciones. 
 
-Se usan en grupo y funcionan a modo de índice relacionándose con contenido en otra parte de la página.
+<div class="text-center pt-5 pb-3">
 
-![completar](/componentes/enlace/anclas.svg)
+  ![completar](/componentes/enlace/Enlace-predeterminado.svg)
 
-### Accesos
-
-Los utilizamos para ver más información dentro del mismo sitio. Por ejemplo, "Ver más noticias".
-
-![completar](/componentes/enlace/accesos.svg)
+</div>
 
 ### Externo
 
-Identificamos al enlace con un **ícono** para indicar que el vínculo se trata de un sitio externo.
+Se utiliza para enlazar contenido a un sitio web externo por fuera del dominio actual. 
 
-![completar](/componentes/enlace/externo.svg)
+<div class="text-center pt-5 pb-3">
 
-### Descarga
+  ![completar](/componentes/enlace/Enlace-externo.svg)
 
-Identificamos al enlace con un **ícono** de descarga para indicar que al accionar sobre **él podremos** descargar un archivo.
+</div>
 
-![completar](/componentes/enlace/descarga.svg)
+### De acceso
+
+Se utiliza para ver más información dentro de una sección de un mismo sitio. Por ejemplo, "Ver más noticias".
+
+<div class="text-center pt-5 pb-3">
+
+  ![completar](/componentes/enlace/Enlace-de-acceso.svg)
+
+</div>
+
+### De descarga
+
+Se utiliza para indicar la descarga de un recurso.
+
+<div class="text-center pt-5 pb-3">
+
+  ![completar](/componentes/enlace/Enlace-de-descarga.svg)
+
+</div>
 
 ## Diseño y estructura (contexto de uso)
 
-Los enlaces se muestran de distintas formas según su estado en relación al mouse (hover, on click y focus); a interacciones previas (visitado, no visitado); como también según las características de lo vinculado (externo: si queda por fuera de la web de Buenos Aires).
+Los enlaces cuentan con dos tamaños (grande y chico) para desktop y mobile, y con cuatro estados: predeterminado, sobre, en foco y visitado. Se pueden colocar dentro y fuera de un párrafo de texto, y agruparse dentro de una <NoRedirectLink textLink="Lista de enlaces" />.
 
-### Enlace default en párrafos
+<div class="d-flex gap-3">
 
-Pueden variar según el hipervínculo del enlace al que vaya.
+![completar](/componentes/enlace/grande.svg)
 
-![completar](/componentes/enlace/enlace-parrafo.svg)
+![completar](/componentes/enlace/chico.svg)
 
-### Enlace externo en párrafos
+</div>
 
-Pueden variar según el hipervínculo del enlace al que vaya.
+![completar](/componentes/enlace/estados.svg)
 
-![completar](/componentes/enlace/enlace-externo.svg)
+### Enlace dentro de un párrafo
+<br />
 
-### Enlace anclas
+![completar](/componentes/enlace/enlace-parrafo-1.svg)
 
-Se ubican al comienzo de un sitio, para anclar a un encabezado de esa misma página.
+### Enlace fuera de un párrafo
+<br />
 
-![completar](/componentes/enlace/enlace-ancla.svg)
-
-### Descarga
-
-Se suelen utilizar al finalizar una pantalla para poder descargar esos archivos relacionados.
-
-![completar](/componentes/enlace/enlace-descarga.svg)
+![completar](/componentes/enlace/enlace-externo1.svg)
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Proporcionar información clara.** Identificar los enlaces externos o el tipo de archivo en el caso de no ser un enlace a un HTML para que la persona pueda anticipar lo que va a abrir.]]
+[[si | El texto de un enlace tiene que ser conciso y explicativo. Debe representar su propósito con claridad de modo que se entienda el destino del vínculo.]]
 
-[[si | **Usar textos cortos y auto explicativos.** El texto de un enlace tiene que ser explicativo y representar claramente su propósito de modo que se entienda el destino del vínculo.]]
+[[si | Incluir los enlaces al comienzo o final de las oraciones para facilitar la lectura.]]
 
-[[si | **Considerar incluir los enlaces al comienzo o final de las oraciones** para facilitar su lectura.]]
+[[si | Elegir el tipo de enlace adecuado según la navegación propuesta. ]]
 
 ### Malas prácticas
 
-[[no | **Excederse en la cantidad de enlaces.** Los enlaces tienen una carga cognitiva y afectan a la lectura. Se sugiere limitarse a un enlace por oración para simplificar el mensaje.]]
+[[no | No utilizar demasiados enlaces dentro de un párrafo. Los enlaces agregan carga cognitiva y afectan a la lectura. Se sugiere limitarse a un enlace por oración para simplificar el mensaje.]]
 
-[[no | **No utilizar los enlaces como botones.** Diferenciar su funcionalidad, ya que los botones son llamados a una acción y los enlaces, hipervínculos.]]
+[[no | No utilizar los enlaces como botones porque cumplen funciones diferentes. Los botones son llamados a la acción y los enlaces son hipervínculos.]]
+
+[[no | No usar enlaces con textos ambiguos «click aquí » o «más información»; la persona usuaria debe saber exactamente adónde se dirigirá al hacer click el enlace.]]
+
+[[no | No utilizar textos de enlace en negritas. Tampoco utilizar signos de puntuación.]]
+
+[[no | No escribir TODO EN MAYÚSCULAS; dificulta la lectura y por convención web, sería como gritar o levantar la voz. Para más información ver la sección de <a href="https://gcba.github.io/estandares/contenido/comunicar-con-claridad/" target="_blank">Contenidos</a>.]]
+
+[[no | No quitar el ícono que acompaña a los enlaces externos, de acceso y de descarga. Se utilizan como refuerzo semántico del tipo de enlace.]]
+
+import NoRedirectLink from '../../components/docs/Link.tsx';
