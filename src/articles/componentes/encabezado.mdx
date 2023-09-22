@@ -1,50 +1,102 @@
 ---
-menu: Encabezado de página
-title: Encabezado de página
-description: El encabezado (o header en inglés) se ubica en la parte superior de la página y es lo primero que visualiza el usuario al acceder al sitio web. Debe ser consistente y mostrarse en todas las páginas del sitio. 
-position: 7
+menu: Header (encabezado)
+title: Header (encabezado)
+description: El header es una sección ubicada en la parte superior de la página que contiene  elementos y componentes relacionados a la navegación. Su función es permitir que la persona usuaria pueda navegar y acceder intuitivamente a las diferentes secciones de un sitio. 
+position: 10
 ---
 
-## Encabezado
+## Tipos de header
 
-Cuenta con los accesos relevantes para que el ciudadano pueda acceder de forma fácil a determinado contenido.
+El header de Buenos Aires cuenta con los elementos de navegación relevantes para que el ciudadano pueda acceder de forma fácil a determinado contenido.
 
-Contiene el logo del Gobierno de la Ciudad de Buenos Aires, un menú de navegación para chatear con Boti, un buscador y el acceso a tu cuenta. Una vez iniciada la sesión, la persona usuaria puede acceder a sus notificaciones y a “Mi actividad”.
-
-## Tipos de encabezados
-
-### Desktop sin logueo  
+#### Desktop sin logueo / Predeterminado
 
 <div align="center" className="mt-5">
-  <img src="/componentes/encabezado/encabezado_de_pagina_1.svg" />
+  <img src="/componentes/encabezado/header_1.svg" alt="Encabezado Desktop sin logueo / Predeterminado" />
 </div>
 
-### Desktop con logueo
+#### Desktop sin logueo / Con menú
 
 <div align="center" className="mt-5">
-  <img src="/componentes/encabezado/encabezado_de_pagina_2.svg" />
+  <img src="/componentes/encabezado/header_2.svg" alt="Encabezado Desktop sin logueo / Con menú" />
 </div>
 
-### Mobile predeterminado  
+#### Desktop con logueo / Predeterminado
 
 <div align="center" className="mt-5">
-  <img src="/componentes/encabezado/encabezado_de_pagina_3.svg" />
+  <img src="/componentes/encabezado/header_3.svg" alt="Encabezado Desktop con logueo / Predeterminado" />
 </div>
 
-### Mobile desplegado
+#### Desktop con logueo / Con menú
 
 <div align="center" className="mt-5">
-  <img src="/componentes/encabezado/encabezado_de_pagina_4.svg" />
+  <img src="/componentes/encabezado/header_4.svg" alt="Encabezado Desktop con logueo / Con menú" />
 </div>
 
-### Mobile buscador activo
+#### Mobile sin logueo
 
 <div align="center" className="mt-5">
-  <img src="/componentes/encabezado/encabezado_de_pagina_5.svg" />
+  <img src="/componentes/encabezado/header_5.svg" alt="Encabezado Mobile sin logueo" />
+</div>
+
+#### Mobile con logueo
+
+<div align="center" className="mt-5">
+  <img src="/componentes/encabezado/header_6.svg" alt="Encabezado Mobile con logueo" />
+</div>
+
+## Anatomía
+
+El header contiene el logo del Gobierno de la Ciudad de Buenos Aires, la navegación principal, un buscador y un acceso a la cuenta del perfil ciudadano. Una vez iniciada la sesión, la persona usuaria puede acceder a través de un menú desplegable a secciones relacionadas con su perfil. Dependiendo de la necesidad y el caso particular, se puede prescindir de algunos de estos elementos. 
+
+### Logo 
+
+En la esquina izquierda del header se ubica el Logo del Gobierno de la Ciudad de Buenos Aires. Al hacer clic, se redirige a la página de inicio. Debe aparecer obligatoriamente en todas las versiones de header y contar con una etiqueta img con el atributo alt="Inicio".
+
+### Navegación principal
+
+Es una [navegación horizontal](https://gcba.github.io/estandares/componentes/navegacion/) que contiene enlaces a las secciones clave sitio. En mobile, o si hay más de cuatro enlaces, se agrupan dentro de un menú desplegable. 
+
+### Menú desplegable  
+
+Es un [desplegable de navegación](https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/) que se usa en mobile, y en desktop cuando hay más de cuatro enlaces o los mismos tienen una extensión que supera el área designada. Siempre se ubica a la derecha del logo, y puede contener secciones de navegación en cascada. 
+
+### Buscador
+
+Permite que la persona usuaria busque contenido dentro del sitio. Se utiliza dentro del header  cuando no hay un buscador en el cuerpo de la página. En mobile se despliega hacia abajo en forma de cajón al hacer clic en el botón de lupa.
+
+### Botón de acceso
+
+Es un [botón](https://gcba.github.io/estandares/componentes/boton/) para acceder a la cuenta de perfil del ciudadano. En desktop se muestra con un ícono y una etiqueta, y en mobile se muestra sólo con ícono en un contenedor de ancho fijo.
+
+### Desplegable de perfil
+
+Cuando la persona usuaria inicia sesión en su perfil, se suma al header un menú desplegable  con distintos enlaces a secciones relacionadas con el perfil ciudadano como “Notificaciones” o “Cerrar sesión”. En desktop, el botón del desplegable presenta un ícono con el nombre de usuario, y en mobile sólo un ícono en un contenedor de ancho fijo.
+
+## Especificaciones
+
+El header siempre debe mantener los márgenes y espaciados especificados. De esta forma se genera una consistencia a través de todas las páginas que ayuda a la persona usuaria a navegar los contenidos de forma accesible e intuitiva. 
+
+<div align="center" className="mt-5">
+  <img src="/componentes/encabezado/header_7.svg" alt="Encabezado - Especificaciones" />
 </div>
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Debe encabezar todas las páginas del sitio web.** ]]
+[[si | Utilizar el header en todas las páginas del sitio web para generar una navegación consistente e intuitiva para la persona usuaria.  ]]
+
+[[si | Mantener los textos de los enlaces de la navegación principal lo más cortos, concisos y explicativos posibles. Se recomienda un máximo de dos palabras por enlace. Para más información sobre los enlaces de navegación, consultar [Navegación y pestañas](https://gcba.github.io/estandares/componentes/navegacion/).  ]]
+
+### Malas prácticas
+
+[[no | No utilizar el header en otro lugar de la página que no sea el extremo superior.  ]]
+
+[[no | No alterar la ubicación de cada uno de los componentes del header, ya que el orden corresponde a una lógica de navegación que debe mantenerse en todas las páginas del sitio. ]]
+
+[[no | No incorporar el buscador en el header si en el cuerpo de la página ya existe uno. ]]
+
+[[no | No combinar la navegación principal con el menú desplegable. Sólo incorporar el menú si hay más de cuatro secciones o si sus textos ocupan más del espacio establecido. ]]
+
+[[no | No incluir secciones relacionadas con el perfil en la navegación principal. Las mismas deben incluirse dentro del desplegable de perfil del ciudadano al iniciar sesión. ]]
