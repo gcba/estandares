@@ -3,6 +3,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 import * as _ from "lodash"
 import "../styles/main.scss"
+import "../styles/header.scss"
 
 import { Sidebar } from "./includes/Sidebar"
 import { TableOfContents } from "./includes/TableOfContent"
@@ -32,10 +33,39 @@ const Layout = (props: any) => {
       <a href="#content" className="sr-only sr-only-focusable">
         Pasar al contenido principal
       </a>
+      <header className="navbar navbar-light sticky-header">
+        <div className="container">
+          <img className="header-logo-obelisco" src="/Obelisco-logo.svg" alt="Ciudad de Buenos Aires" />
+          <button className="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="nav nav-pills">
+              <li className="nav-item">
+                <a href="https://gcba.github.io/#seccion-obelisco" className="nav-link">
+                  <span>Qué es Obelisco</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="https://gcba.github.io/#seccion-herramientas" className="nav-link"><span>Herramientas</span></a>
+              </li>
+              <li className="nav-item">
+                <a href="https://gcba.github.io/#seccion-nosotros" className="nav-link"><span>Quiénes somos</span></a>
+              </li>
+              <li className="nav-item">
+                <a href="https://gcba.github.io/#seccion-noticias" className="nav-link">
+                  <span>Noticias</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
       <div className="d-block d-md-none">
         <Sidebar current={path} navigation={navigation} />
       </div>
-      <div className="container">
+      <div className="container main-container">
         <div className="row">
           <div className="col-md-3 d-none d-md-block">
             <Sidebar current={path} navigation={navigation} />
