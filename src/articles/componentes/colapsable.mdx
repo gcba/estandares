@@ -9,7 +9,7 @@ position: 5
 
 ### Colapsable predeterminado
 
-El título del colapsable debe ser conciso y descriptivo sin perder claridad en su significado, ya que representa el encabezado de la sección y es el control para revelar el contenido.
+El título del colapsable debe ser conciso y descriptivo sin perder claridad en su significado, ya que representa el encabezado de la sección y es el control para revelar el contenido. 
 
 <div className="content-2">
   <div className="accordion" id="accordionExample">
@@ -88,6 +88,42 @@ El uso de estas variables es opcional para los colapsables. Ambas permiten añad
 </div>
 
 ## Diseño y estructura (contexto de uso)
+
+### Color del colapsable
+
+Los colapsables pueden ser de color gris o blanco dependiendo del contraste con el fondo del cuerpo, para garantizar la legibilidad y la accesibilidad de la información que contiene. 
+
+<div className="content-2" id="accordion">
+  <div className="accordion" id="accordionExample">
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+        <i class="bx bxs-user-circle"></i>
+        Título
+      </button>
+      <div id="collapseOne" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="accordion accordion-white" id="accordionExample">
+    <div className="card">
+      <button className="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
+        <i class="bx bxs-user-circle"></i>
+        Título
+      </button>
+      <div id="collapseOne" className="collapse" data-parent="#accordion">
+        <div className="card-body">
+          Esta es la descripción que se encuentra dentro de un colapsable. Esta es la descripción que se encuentra
+          dentro de un colapsable.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Colapsable de selección única
 
@@ -249,6 +285,8 @@ Las personas usuarias también pueden interactuar con el contenido que despliega
 [[si | **Mantener títulos breves y claros.** El encabezado es lo primero que capta la atención de la mayoría de los usuarios. Es fundamental que el contenido del colapsable se exprese de manera clara para que las personas usuarias puedan decidir si desean expandirlo o no.]]
 
 ### Malas prácticas
+
+[[no | **No utilizar un colapsable del mismo color del fondo de la página.** Para fondos grises utilizar colapsables blancos, y para fondo blanco utilizar colapsables grises.]]
 
 [[no | **No utilizar un colapsable para el contenido que es necesario que esté visible.** No ocultarlo dentro de un colapsable.]]
 
