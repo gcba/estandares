@@ -71,6 +71,24 @@ El header siempre debe mantener los márgenes y espaciados especificados. De est
   <img src="/componentes/encabezado/header_6.svg" alt="Encabezado - Especificaciones" />
 </div>
 
+<h2>Accesibilidad</h2>
+
+<h3>Enlace «Saltar al contenido principal»</h3>
+
+Para asegurar la navegación por lectores de pantalla o teclado, es necesario incluir un enlace oculto que le permita a la persona usuaria saltar el contenido del Header e ir directamente al cuerpo de la página.
+
+<div className="my-3 p-4 bg-light rounded-lg box-shadow-grisulado-50">
+  <p className="text-info font-weight-bold small">Código HTML</p>
+  <div className="font-italic">
+    <p className="mb-0">&lt;header class="navbar navbar-light navbar-expand-lg" role="banner"&gt;</p>
+    <p className="mb-0 ml-3">&lt;a href="#main" class="skip-to-main-content-link"&gt;Saltar al contenido principal&lt;/a&gt;</p>
+    <p className="mb-0 ml-3">.  .  .  </p>
+    <p className="mb-0">&lt;/header&gt;</p>
+    <br />
+    <p className="mb-0">&lt;main id="main"&gt; &lt;/main&gt;</p>
+  </div>
+</div>
+
 ## Usabilidad
 
 ### Buenas prácticas
