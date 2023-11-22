@@ -1,0 +1,131 @@
+---
+menu: Destacado
+title: Destacado
+description: Los destacados permiten resaltar contenido relevante que requiere un nivel jerárquico mayor al resto de la información. Se usa para captar la atención de la persona usuaria incorporando imágenes, accionables y otros elementos interactivos.
+position: 8
+---
+
+## Tipos de destacado
+
+### Destacado banner
+
+Ocupa el 100 % del ancho de la página siguiendo las grillas de Obelisco. Puede tener fondo primario y secundario, e incluir contenido multimedia como una imagen o video.
+
+<div className="grisulado-50-container content-column gap-4">
+  <img src="/componentes/destacado/Destacado-Banner-Imagen.svg" alt="Destacado banner con imagen" className="img-fluid m-0" />
+  <img src="/componentes/destacado/Destacado-Banner-Texto.svg" alt="Destacado banner con texto" className="img-fluid m-0" />
+</div>
+
+### Destacado conjunto
+
+Se usa como un par de destacados que ocupan cada uno el 50 % del ancho de la página siguiendo las grillas de Obelisco. No llevan fondo, contienen 1 accionable, y pueden incluir contenido multimedia como una imagen o video. El par de destacados siempre debe tener el mismo tipo de accionable (por ejemplo, dos de enlace). Solo se puede utilizar 1 destacado conjunto por página. 
+
+<div className="grisulado-50-container content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Conjunto-1.svg" alt="Destacado conjunto" className="img-fluid m-0" />
+  <img src="/componentes/destacado/Destacado-Conjunto-2.svg" alt="Destacado conjunto" className="img-fluid m-0" />
+</div>
+
+### Destacado lateral
+
+Ocupa 4 columnas según las grillas de Obelisco, y está ubicado en el lateral derecho del cuerpo de la página. En mobile se adapta al ancho completo de la grilla del dispositivo, quedando por encima del contenido y después del encabezado. Puede tener fondo primario o secundario, y no incluye contenido multimedia. Solo se puede utilizar 1 destacado lateral por página. Si convive con otro componente como un mapa, se ubica en primer lugar. 
+
+<div className="grisulado-50-container content-row">
+  <img src="/componentes/destacado/Destacado-Lateral-1.svg" alt="Destacado lateral" className="img-fluid m-0" />
+</div>
+
+### Destacado mobile
+
+En mobile, todos los destacados se comportan de esta manera (a excepción del destacado lateral). Ocupa el 100 % del ancho del dispositivo. Puede tener fondo primario y secundario, e incluir contenido multimedia como una imagen o video.
+
+<div className="grisulado-50-container content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Mobile-Primario.svg" alt="Destacado mobile primario" className="img-fluid m-0" />
+  <img src="/componentes/destacado/Destacado-Mobile-Secundario.svg" alt="Destacado mobile secundario" className="img-fluid m-0" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Multimedia
+
+Un destacado puede incluir una imagen o un video acompañando al contenido y a la acción del destacado. El elemento principal o focal de la imagen deben situarse en el centro de la misma, ya que al adaptarse al mobile la imagen del Destacado se recorta de los lados. La relación de aspecto de la imagen debe ser 16:9.
+
+<div className="grisulado-50-container content-row gap-4">
+  <img src="/componentes/destacado/Tipo-Imagen.svg" alt="Imagen de destacado" className="img-fluid m-0" />
+  <img src="/componentes/destacado/Tipo-Video.svg" alt="Video de destacado" className="img-fluid m-0" />
+</div>
+
+### Contenido
+
+Los destacados incluyen obligatoriamente un título y una bajada descriptiva. La descripción debe ser breve y concisa. 
+
+### Accionables
+
+Los destacados contienen obligatoriamente al menos un accionable que invita a la persona usuaria a hacer algo; este puede ser un CTA (Call to Action o Llamado a la Acción), un enlace externo, un acceso o un botón de descarga.
+
+#### Con 2 botones
+
+Todos los destacados, a excepción del destacado conjunto y el destacado lateral, pueden llevar 2 CTAs de ser necesario: un botón primario y un botón secundario.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Banner.svg" alt="Destacado con 2 botones" className="img-fluid m-0" />
+</div>
+
+#### Con 1 botón
+
+Todos los destacados pueden llevar 1 CTA de ser necesario: un botón primario.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Conjunto-3.svg" alt="Destacado con 1 botón" className="img-fluid m-0" />
+  <img src="/componentes/destacado/Destacado-Conjunto-4.svg" alt="Destacado con 1 botón" className="img-fluid m-0" />
+</div>
+
+#### Con enlace externo
+
+Todos los destacados pueden llevar un enlace externo que te redirige a una página por fuera del entorno de Buenos Aires.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Banner-enlace.svg" alt="Destacado con enlace externo" className="img-fluid m-0" />
+</div>
+
+#### Con acceso
+
+Todos los destacados pueden llevar un acceso que te redirige a una página de área dentro del entorno de Buenos Aires.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Banner-acceso.svg" alt="Destacado con acceso" className="img-fluid m-0" />
+</div>
+
+#### Con botón de descaga
+
+Se utiliza cuando es necesario descargar cualquier tipo de contenido dentro del destacado. No es posible tener más de un botón de descarga o armar una lista de botones de descarga dentro del destacado.
+
+<div className="grisulado-50-container content-row gap-4">
+  <img src="/componentes/destacado/Destacado-Banner-descarga.svg" alt="Destacado con botón de descarga" className="img-fluid m-0" />
+</div>
+
+
+<h2>Accesibilidad</h2>
+
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar destacados para captar la atención del usuario hacia información jerárquica de la página. ]]
+
+[[si | Mantener los textos de los accionables lo más cortos y concisos posibles. Se recomienda un máximo de tres palabras. ]]
+
+[[si | Utilizar el destacado lateral únicamente en páginas simples o de noticias. ]]
+
+[[si | Utilizar el destacado banner y el destacado conjunto sólo en páginas de área. ]]
+
+### Malas prácticas
+
+[[no | No utilizar el componente si no hay contenido relevante para destacar. Para modular contenido de la misma jerarquía, se sugiere utilizar [Tarjetas](https://gcba.github.io/estandares/componentes/tarjetas/). ]]
+
+[[no | No incorporar otros contenidos al destacado como subtítulos, otros tipos de enlaces o accionables. Sólo utilizar las variantes propuestas. ]]
+
+[[no | No utilizar más de un destacado lateral por página. ]]
+
+[[no | No utilizar más de un destacado banner y dos destacados conjuntos por página. ]]
+
+[[no | No combinar diferentes tipos de accionables cuando se utiliza un par de destacados conjuntos. ]]
