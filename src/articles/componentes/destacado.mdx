@@ -20,7 +20,7 @@ Ocupa el 100 % del ancho de la página siguiendo las grillas de Obelisco. Puede 
 
 Se usa como un par de destacados que ocupan cada uno el 50 % del ancho de la página siguiendo las grillas de Obelisco. No llevan fondo, contienen 1 accionable, y pueden incluir contenido multimedia como una imagen o video. El par de destacados siempre debe tener el mismo tipo de accionable (por ejemplo, dos de enlace). Solo se puede utilizar 1 destacado conjunto por página. 
 
-<div className="grisulado-50-container content-row gap-4">
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
   <img src="/componentes/destacado/Destacado-Conjunto-1.svg" alt="Destacado conjunto" className="img-fluid m-0" />
   <img src="/componentes/destacado/Destacado-Conjunto-2.svg" alt="Destacado conjunto" className="img-fluid m-0" />
 </div>
@@ -59,7 +59,7 @@ Los destacados incluyen obligatoriamente un título y una bajada descriptiva. La
 
 ### Accionables
 
-Los destacados contienen obligatoriamente al menos un accionable que invita a la persona usuaria a hacer algo; este puede ser un CTA (Call to Action o Llamado a la Acción), un enlace externo, un acceso o un botón de descarga.
+Los destacados contienen obligatoriamente al menos un accionable que invita a la persona usuaria a hacer algo; este puede ser un CTA (*Call to Action* o *Llamado a la Acción*), un enlace externo, un acceso o un botón de descarga.
 
 #### Con 2 botones
 
@@ -105,6 +105,33 @@ Se utiliza cuando es necesario descargar cualquier tipo de contenido dentro del 
 
 <h2>Accesibilidad</h2>
 
+### Imagen del destacado
+
+La imagen del destacado debe contar con un atributo *alt* que contenga un texto breve que describa la imagen para lectores de pantalla. En el caso de imágenes decorativas, se recomienda no omitir el atributo *alt*, sino dejarlo vacío.
+
+### Video del destacado
+
+Es recomendable que el video del destacado contenga dentro de su etiqueta &lt;video&gt;&lt;/video&gt;, una etiqueta &lt;track /&gt;. Esto permite especificar pistas de texto cronometradas en formato WebVTT para poder gestionar audiodescripciones o subtítulos. 
+
+<div className="my-3 p-4 bg-light rounded-lg box-shadow-grisulado-50">
+  <p className="text-info font-weight-bold small">Código HTML</p>
+  <div className="font-italic">
+    <p className="mb-0">&lt;p class="sr-only"&gt;Buenos Aires se escribe en plural&lt;/p&gt;</p>
+    <p className="mb-0">&lt;video class="card-img" controls=""&gt;</p>
+    <p className="mb-0 ml-3">&lt;source src="panel/videoBuenosAires.mp4" type="video/mp4" /&gt;</p>
+    <p className="mb-0 ml-3">&lt;track /&gt;</p>
+    <p className="mb-0 ml-4">src="panel/videoBuenosAires.vtt"</p>
+    <p className="mb-0 ml-4">default=""</p>
+    <p className="mb-0 ml-4">kind="captions"</p>
+    <p className="mb-0 ml-4">srclang="es"</p>
+    <p className="mb-0 ml-3">/&gt;</p>
+    <p className="mb-0 ml-3">&lt;p&gt;</p>
+    <p className="mb-0 ml-4">Su navegador no soporta vídeos HTML5. Puedes ver el video haciendo clic en</p>
+    <p className="mb-0 ml-4">&lt;a href="panel/videoBuenosAires.mp4"&gt;este enlace&lt;/a&gt;.</p>
+    <p className="mb-0 ml-3">&lt;/p&gt;</p>
+    <p className="mb-0">&lt;/video&gt;</p>
+  </div>
+</div>
 
 ## Usabilidad
 
