@@ -48,6 +48,8 @@ En mobile, todos los destacados se comportan de esta manera (a excepción del de
 
 Un destacado puede incluir una imagen o un video acompañando al contenido y a la acción del destacado. El elemento principal o focal de la imagen deben situarse en el centro de la misma, ya que al adaptarse al mobile la imagen del Destacado se recorta de los lados. La relación de aspecto de la imagen debe ser 16:9.
 
+Cuando se inserte un video, se deben eliminar los atributos *width* y *height* de la etiqueta &lt;iframe&gt;. Además, se debe agregar la clase "card-img". La etiqueta &lt;iframe&gt; debe tener un atributo *title* que contenga un texto relacionado con la información del elemento.
+
 <div className="grisulado-50-container content-row gap-4">
   <img src="/componentes/destacado/Tipo-Imagen.svg" alt="Imagen de destacado" className="img-fluid m-0" />
   <img src="/componentes/destacado/Tipo-Video.svg" alt="Video de destacado" className="img-fluid m-0" />
