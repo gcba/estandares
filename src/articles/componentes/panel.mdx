@@ -2,7 +2,7 @@
 menu: Panel
 title: Panel
 description: Los paneles son agrupaciones de elementos que tienen una relación entre si. Por definición no son accionables, sino que dependen de otros elementos que tengan dicha funcionalidad.
-position: 18
+position: 19
 ---
 
 ## Tipos de paneles
@@ -44,14 +44,6 @@ Puede utilizarse para descargas de archivos relacionados al contenido principal 
   <img src="/componentes/panel/panel-chico-lista-descarga.svg" alt="Panel chico con lista de descargas" />
 </div>
 
-### Panel grande
-
-Se utiliza para destacar información relevante que requiera alguna acción por parte de las personas usuarias. Estos paneles pueden disponerse de forma tanto vertical como horizontal.
-
-<div className="content-column">
-  <img src="/componentes/panel/panel-grande.svg" alt="Panel grande" />
-</div>
-
 ## Diseño y estructura (contexto de uso)
 
 ### Contenedores y fondos
@@ -66,7 +58,7 @@ Por definición el componente de paneles no tienen ningún estado (hover, active
 
 ### Grupo de paneles
 
-Los paneles pueden agruparse entre sí para informar sobre determinado contenido. Estos grupos tienen que ser de un máximo de **3 paneles chicos**, un máximo de **2 paneles verticales grandes** y **1 panel horizontal grande** para que la estructura conformada sea armoniosa y el contenido detallado en la descripción no se desborde.
+Los paneles pueden agruparse entre sí para informar sobre determinado contenido. Estos grupos tienen que ser de un máximo de **3 paneles chicos**, para que la estructura conformada sea armoniosa y el contenido detallado en la descripción no se desborde.
 
 Además, los grupos de paneles tiene disponer del mismo elemento para llamar a la acción. No debe utilizarse, en un mismo grupo, diferentes tipos de botones en cada panel.
 
@@ -74,7 +66,7 @@ Además, los grupos de paneles tiene disponer del mismo elemento para llamar a l
   <img src="/componentes/panel/panel-diseno-2.svg" alt="Grupo de paneles" />
 </div>
 
-En el caso de que haya menos de 3 paneles, no se debe modificar su tamaño y debe mantener la estructura del componente, ó si el contenido es de suma relevancia también se pueden utilizar 2 paneles grande vertical ó 1 panel grande horizontal.
+En el caso de que haya menos de 3 paneles, no se debe modificar su tamaño y debe mantener la estructura del componente, ó si el contenido es de suma relevancia también se pueden utilizar 2 destacados conjunto ó 1 destacado banner.
 
 <div className="content-column">
   <img src="/componentes/panel/panel-diseno-3.svg" alt="Grupo de paneles" />
@@ -104,12 +96,6 @@ El uso de imágenes en los paneles chicos es opcional. La imagen es un refuerzo 
   <img src="/componentes/panel/panel-diseno-6.svg" alt="Imágenes en paneles" />
 </div>
 
-En los paneles grandes, existe la posibilidad de tener una imagen o video. Esta elección es de acuerdo a el contenido que se quiera comunicar a las personas usuarias.
-
-<div className="content-column">
-  <img src="/componentes/panel/panel-diseno-7.svg" alt="Imágenes en paneles" />
-</div>
-
 ## Usabilidad y accesibilidad
 
 ### Buenas prácticas
@@ -119,8 +105,6 @@ En los paneles grandes, existe la posibilidad de tener una imagen o video. Esta 
 [[si | **Agregar el atributo alt="..." a las imágenes de los paneles** ]]
 
 [[si | **Agrupar los paneles chicos simples en un mismo contenedor** permite que las personas usuarias lo perciban como material o información destacada. ]]
-
-[[si | **Utilice los paneles grandes para destacar la información mas relevante de la página.** ]]
 
 [[si | **Utilice los paneles tipo lista, siempre en el sidebar o como último contenido dentro de una página.** Ubicarlos en otra sección puede perjudicar la comprensión y la continuidad de la lectura de las personas usuarias. ]]
 

@@ -1,0 +1,64 @@
+---
+menu: Bloque de trámite
+title: Bloque de trámite
+description: Este componente se utiliza dentro de una página informativa de trámite e indica el estado del mismo. Desde él, la persona usuaria puede iniciar el trámite o ver en qué instancia se encuentra.
+position: 4
+---
+
+## Tipos de bloque de trámite
+
+### Predeterminado
+
+El bloque incluye un título y un botón primario a modo de llamado a la acción.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-column gap-4">
+  <img src="/componentes/bloque_de_tramite/bloque_iniciar_tramite_1.svg" alt="Bloque de trámite - Predeterminado" className="img-fluid m-0" />
+</div>
+
+### Con descripción
+
+El bloque incluye un título, una breve bajada descriptiva y un botón primario a modo de llamado a la acción. 
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-column gap-4">
+  <img src="/componentes/bloque_de_tramite/bloque_iniciar_tramite_2.svg" alt="Bloque de trámite - Con descripción" className="img-fluid m-0" />
+</div>
+
+### Con barra de progreso
+
+El bloque incluye un título, una barra de progreso y un botón primario a modo de llamado a la acción. 
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-column gap-4">
+  <img src="/componentes/bloque_de_tramite/bloque_iniciar_tramite_3.svg" alt="Bloque de trámite - Con barra de progreso" className="img-fluid m-0" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Color del bloque de trámite
+
+El boque de trámite puede tener un fondo primario o secundario. El que se utiliza por defecto es el fondo secundario, que coincide con el color del encabezado de la página.
+
+<div className="grisulado-50-container content-row gap-4">
+  <img src="/componentes/bloque_de_tramite/bloque_iniciar_tramite_4.svg" alt="Bloque de trámite" className="img-fluid m-0" />
+  <img src="/componentes/bloque_de_tramite/bloque_iniciar_tramite_5.svg" alt="Bloque de trámite" className="img-fluid m-0" />
+</div>
+
+### Uso
+
+El bloque de trámite ocupa 4 columnas en desktop y se ubica a la derecha del cuerpo de la página del trámite. Tiene un comportamiento sticky, que acompaña el scroll del usuario. En mobile, el bloque ocupa todo el ancho disponible y se ubica debajo del encabezado de la página y antes del contenido del cuerpo.  
+
+<div className="content-column gap-4">
+  <img src="/componentes/bloque_de_tramite/bloque_uso_1.svg" alt="Bloque de trámite - Desktop" className="img-fluid m-0" />
+  <img src="/componentes/bloque_de_tramite/bloque_uso_2.svg" alt="Bloque de trámite - Mobile" className="img-fluid m-0" />
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar el componente para otorgar información y una acción relevante dentro de una página de trámite. ]]
+
+### Malas prácticas
+
+[[no | No utilizar este componente en otra página que no sea la plantilla de trámite. ]]
+
+[[no | No utilizar este componente para destacar información. Para ese caso, utilizar el componente [Destacado](https://gcba.github.io/estandares/componentes/destacado/). ]]
