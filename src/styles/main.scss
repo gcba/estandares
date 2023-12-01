@@ -468,6 +468,10 @@ main {
   width: 4rem;
 }
 
+.gap-4 {
+  gap: 2rem;
+}
+
 .gap-3 {
   gap: 1rem;
 }
@@ -486,4 +490,15 @@ main {
 }
 .box-shadow-grisulado-50 {
   box-shadow: 0 0 0 2px $grisulado-50;
+}
+
+.grisulado-50-container {
+  background-color: $grisulado-50;
+  border-radius: 0.5rem;
+  padding: 40px 0;
+}
+
+.grisulado-10-container {
+  @extend .grisulado-50-container;
+  background-color: $grisulado-10;
 }
