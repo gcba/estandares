@@ -1,248 +1,127 @@
 ---
 menu: Tarjetas
 title: Tarjetas
-description: Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular.
+description: Las tarjetas son componentes accionables que actúan como punto de entrada a información más detallada sobre un tema. Se utilizan en grupo para comunicar contenido que requiere de cierto tipo de categorización y jerarquización visual. Pueden contener texto, imágenes e íconos.
 position: 24
 ---
 
 ## Tipos de tarjetas
 
-### Sin contenedor - Home
+### Tarjeta vertical - Predeterminada
 
-Su único uso es en la Home de Buenos Aires, y nos direccionan a las temáticas principales.
+Estas tarjetas organizan su contenido de forma vertical. Pueden contar con una imagen o un ícono en caja. 
 
-<div className="content-1">
-  <div class="card card-simple card-horizontal card-lg">
-    <img src="/componentes/card/ciudad.jpg" class="card-img-left" alt="descripción alternativa" />
-    <div class="card-body">
-      <h4 class="card-title">
-        <a href="#">Ambiente, espacio público y edilicio</a>
-      </h4>
-      <p class="card-text">
-        Habilitaciones para el uso de la vía pública, espacios urbanos y servicios para el desarrollo sostenible.
-      </p>
-    </div>
-  </div>
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4 align-items-center">
+  <img src="/componentes/card/card_1.svg" alt="Tarjeta vertical con imagen" className="img-fluid m-0" />
+  <img src="/componentes/card/card_2.svg" alt="Tarjeta vertical con ícono" className="img-fluid m-0" />
 </div>
 
-### Con contenedor
+### Tarjeta vertical - De noticia
 
-Tienen una jerarquía mayor a las tarjetas sin contenedor en el caso de utilizarlas en una misma página. Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+Estas tarjetas se utilizan para modular contenido de noticias en páginas simples y páginas de área. Contienen un máximo de 2 [etiquetas](https://gcba.github.io/estandares/componentes/etiquetas/), un título, una bajada, y una nota con la fecha de publicación. 
 
-<div className="content-2">
-  <a class="card" href="#">
-    <div class="card-body">
-      <i class="bx bx-news card-icon"></i>
-      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-      </p>
-    </div>
-  </a>
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4 align-items-center">
+  <img src="/componentes/card/card_3.svg" alt="Tarjeta vertical de noticia" className="img-fluid m-0" />
 </div>
 
-### Sin contenedor
+### Tarjeta vertical - De agenda
 
-Tienen una jerarquía menor a las tarjetas con contenedor en el caso de utilizarlas en una misma página. Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+Las tarjetas de agenda se utilizan para mostrar información sobre un evento. Incluyen un título, una bajada breve, y un bloque de información con la fecha y hora. De ser necesario, puede incluir una sobrelínea.
 
-<div className="content-2">
-  <div class="card card-simple">
-    <div class="card-body">
-      <i class="bx bx-news card-icon"></i>
-      <h4 class="card-title">
-        <a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</a>
-      </h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna
-      </p>
-    </div>
-  </div>
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4 align-items-center">
+  <img src="/componentes/card/card_4.svg" alt="Tarjeta vertical de agenda" className="img-fluid m-0" />
 </div>
 
-### Con contenedor - Horizontal - Chica
+### Tarjeta horizontal - Predeterminada
 
-Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+Estas tarjetas organizan su contenido de forma horizontal. Pueden contar con una imagen, un ícono en caja o ser solo de texto. Pueden tener un ancho fijo de 6 columnas o de 4 columnas.
 
-<div className="content-2">
-  <a class="card card-horizontal" href="#">
-    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
-    <div class="card-body">
-      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore
-      </p>
-    </div>
-  </a>
+<div className="grisulado-50-container content-column gap-4">
+  <img src="/componentes/card/card_5.svg" alt="Tarjeta horizontal con ícono" className="img-fluid m-0" />
+  <img src="/componentes/card/card_6.svg" alt="Tarjeta horizontal con ícono sin borde" className="img-fluid m-0" />
+  <img src="/componentes/card/card_7.svg" alt="Tarjeta horizontal con ícono" className="img-fluid m-0" />
+  <img src="/componentes/card/card_8.svg" alt="Tarjeta horizontal con ícono sin borde" className="img-fluid m-0" />
 </div>
 
-### Con contenedor - Horizontal - Mediana
+### Tarjeta horizontal - Temática
 
-Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
+Estas tarjetas se utilizan en la página principal de Buenos Aires, y redirigen a trámites y servicios del Gobierno de la Ciudad.
 
-<div className="content-2">
-  <a class="card card-horizontal card-lg" href="#">
-    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
-    <div class="card-body">
-      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore
-      </p>
-    </div>
-  </a>
-</div>
-
-### Con contenedor - Horizontal 6 columnas - Chica
-
-Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
-
-<div className="content-1">
-  <a class="card card-horizontal" href="#">
-    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
-    <div class="card-body">
-      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-      </p>
-    </div>
-  </a>
-</div>
-
-### Con contenedor - Horizontal 6 columnas - Mediana
-
-Se utilizan para acceder a información y dependen de un encabezado que las agrupe.
-
-<div className="content-1">
-  <a class="card card-horizontal card-lg" href="#">
-    <img src="/componentes/card/paseobajo-wide.png" class="card-img-left" alt="descripción alternativa" />
-    <div class="card-body">
-      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-      </p>
-    </div>
-  </a>
-</div>
-
-### Vertical
-
-Se utilizan para acceder a noticias, cursos, y otra información que requiera imagen, y dependen de un encabezado que las agrupe.
-
-<div class="content-2">
-  <a class="card" href="#">
-    <img src="/componentes/card/evento.jpg" class="card-img-top" alt="descripción alternativa" />
-    <div class="card-body">
-      <div class="mb-2">
-        <span class="badge badge-info">Etiqueta 1</span>
-        <span class="badge badge-info">Etiqueta 2</span>
-      </div>
-      <h4 class="card-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</h4>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-      </p>
-    </div>
-    <div class="card-footer">
-      <small>Fecha de publicación: 10/10/2021</small>
-    </div>
-  </a>
-</div>
-
-### Evento
-
-Las tarjetas de eventos se utilizan para comunicar eventos o actividades que requieren seccionar la información e invitar a los usuarios a realizar una acción en una fecha y horario determinado. Dependen de un encabezado que las agrupe.
-
-<div class="content-2">
-  <a class="card" href="#">
-    <div class="card-event-top">
-      <img src="/componentes/card/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
-      <div class="card-event-img">
-        <img src="/componentes/card/evento-thumb.jpg" alt="descripción alternativa" />
-      </div>
-      <p class="card-event-name">Actividades y clases en polideportivos</p>
-    </div>
-    <div class="card-body">
-      <p class="card-headline">18 de Enero al 1 de Febrero</p>
-      <h4 class="card-title">Comienza una nueva edición de actividades en polideportivos</h4>
-    </div>
-  </a>
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4 align-items-center">
+  <img src="/componentes/card/card_9.svg" alt="Tarjeta horizontal temática" className="img-fluid m-0" />
 </div>
 
 ## Diseño y estructura (contexto de uso)
 
-### Sin contenedor - Home
+### Imágenes
 
-En su disposición horizontal pueden organizarse solo 2 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+La imagen de la tarjeta vertical debe tener una proporción 16:9, con un tamaño recomendado de 340x190px. La imagen de la tarjeta horizontal debe tener una proporción 1:1, con un tamaño recomendado de 64x64px. 
 
-![completar](/componentes/card/sin_contenedor_home.svg)
+<div className="grisulado-10-container box-shadow-grisulado-50 content-column gap-4 align-items-center">
+  <img src="/componentes/card/card_10.svg" alt="Tarjeta horizontal" className="img-fluid m-0" />
+  <img src="/componentes/card/card_1.svg" alt="Tarjeta vertical" className="img-fluid m-0" />
+</div>
 
-### Con contenedor
+### Ícono en caja
 
-En su disposición horizontal pueden organizarse solo 3 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+Los íconos en caja tienen un tamaño de 64x64px. Siempre deben mantener el color predeterminado, y referirse al contenido de la tarjeta.
 
-![completar](/componentes/card/con_contenedor.svg)
+<div className="grisulado-10-container box-shadow-grisulado-50 content-column gap-4 align-items-center">
+  <img src="/componentes/card/card_5.svg" alt="Tarjeta horizontal" className="img-fluid m-0" />
+  <img src="/componentes/card/card_2.svg" alt="Tarjeta vertical" className="img-fluid m-0" />
+</div>
 
-### Sin contenedor
+### Modulación
 
-En su disposición horizontal pueden organizarse con un mínimo de 3 y un máximo de 4 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+Las tarjetas y sus variantes cuentan con un ancho fijo establecido. Dependiendo del tipo y el dispositivo, se modulan de diferentes maneras. La separación vertical y horizontal entre tarjetas para desktop es de 32px, y la separación vertical para mobile es de 16px. 
 
-![completar](/componentes/card/sin_contenedor2.svg)
+En desktop, las tarjetas verticales pueden agruparse hasta un máximo de 3 por línea. 
 
-### Con contenedor - Horizontal - Chica
+<div className="my-5">
+  <img src="/componentes/card/card_11.svg" alt="Tarjetas" className="img-fluid m-0" />
+</div>
 
-En su disposición horizontal pueden organizarse solo 3 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+En desktop, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea, mientras que las de 6 columnas pueden hasta un máximo de 2 por línea.
 
-![completar](/componentes/card/horizontal_chica.svg)
+<div className="my-5">
+  <img src="/componentes/card/card_12.svg" alt="Tarjetas" className="img-fluid m-0 mb-4" />
+  <img src="/componentes/card/card_13.svg" alt="Tarjetas" className="img-fluid m-0" />
+</div>
 
-### Con contenedor - Horizontal - Mediana
+En mobile, todas las tarjetas van una debajo de la otra y ocupan el ancho total de la grilla del dispositivo.
 
-En su disposición horizontal pueden organizarse solo 3 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+<div className="my-5">
+  <img src="/componentes/card/card_14.svg" alt="Tarjetas" className="img-fluid m-0" />
+</div>
 
-![completar](/componentes/card/horizontal_mediana.svg)
+En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar su visualización.
 
-### Con contenedor - Horizontal 6 columnas - Chica
+<div className="my-5">
+  <img src="/componentes/card/card_15.svg" alt="Tarjetas" className="img-fluid m-0" />
+</div>
 
-En su disposición horizontal pueden organizarse solo 2 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
 
-![completar](/componentes/card/horizontal_6_chica.svg)
+## Accesibilidad
 
-### Con contenedor - Horizontal 6 columnas - Mediana
+### Imagen de la tarjeta
 
-En su disposición horizontal pueden organizarse solo 2 por línea en desktop. Al truncar el layout como en mobile se apilan una por debajo de la otra.
+La imagen de las tarjetas debe contener un atributo alt que describa brevemente la imagen. Esto será relevante para personas que utilicen lector de pantalla y también dará contexto en caso de que la imagen no pudiera cargarse. Si la imagen es decorativa, el atributo alt deberá permanecer vacío (sin texto alguno o espacios). Ejemplo: alt=“”
 
-![completar](/componentes/card/horizontal_6_mediana.svg)
-
-### Vertical
-
-En su disposición horizontal pueden organizarse hasta 3 tarjetas por línea en desktop. Al truncar el layout como en mobile se agrupan para un desplazamiento horizontal.
-
-![completar](/componentes/card/vertical.svg)
-
-### Evento
-
-En su disposición horizontal pueden organizarse hasta 3 tarjetas por línea en desktop. Al truncar el layout como en mobile se agrupan para un desplazamiento horizontal.
-
-![completar](/componentes/card/vertical.svg)
 
 ## Usabilidad
 
 ### Buenas prácticas
 
-[[si | **Usarlas en conjunto para resumir una idea más grande.** ]]
+[[si | Utilizar la variante de tarjeta correspondiente al contenido. ]]
 
-[[si | **Utilizarlas como parte de una colección de contenedores similares,** y no una sola tarjeta aislada.]]
+[[si | Utilizar un máximo de 60 caracteres para los títulos de las tarjetas. Los títulos deben ser simples, concisos y representativos del contenido al que se navegará. ]]
 
-[[si | **Usarlas de manera modular,** esto significa que pueden variar el orden en una colección sin romper el significado de ninguna tarjeta individual.]]
-
-[[si | **Tener en cuenta que las tarjetas son accionables** ya que se utilizan como un punto de acceso a información más detallada sobre el tema.]]
-
-[[si | **Usar títulos cortos de hasta 60 caracteres** con espacio, o el equivalente a 2 líneas de texto y enfocarlos en el valor que alguien obtendrá al interactuar con la tarjeta.]]
-
-[[si | **Usar bajadas cortas de hasta 100 caracteres** con espacio, o el equivalente a 3 líneas de texto y complementar el título profundizando el contexto.]]
+[[si | Utilizar un máximo de 100 caracteres para las descripciones de las tarjetas. Las descripciones deben ser simples, concisas y representativas del contenido al que se navegará. ]]
 
 ### Malas prácticas
 
-[[no | **No repetir imágenes, iconos, o texto** en las tarjetas de una colección. Esto hace que sea más difícil distinguirlas entre sí.]]
+[[no | No repetir imágenes, íconos o texto en las tarjetas de una colección. Repetir los contenidos genera carga cognitiva en el usuario y no es amigable para los lectores de pantalla. ]]
 
-[[no | **No mezclar tarjetas de diferente tipo** en una misma sección.]]
+[[no | No combinar tarjetas de diferente tipo en una misma colección. ]]
+
+[[no | No alterar el ancho de las tarjetas ni la cantidad de tarjetas por línea establecida para cada variante. ]]
