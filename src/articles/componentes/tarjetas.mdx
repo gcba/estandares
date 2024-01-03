@@ -107,6 +107,26 @@ En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar
 
 La imagen de las tarjetas debe contener un atributo alt que describa brevemente la imagen. Esto será relevante para personas que utilicen lector de pantalla y también dará contexto en caso de que la imagen no pudiera cargarse. Si la imagen es decorativa, el atributo alt deberá permanecer vacío (sin texto alguno o espacios). Ejemplo: alt=“”
 
+### Encabezados
+
+Para una correcta organización jerárquica de encabezados, se recomienda que en el caso que el grupo de tarjetas no contenga un título con etiqueta &lt;h2&gt; que las preceda, se agregue el mismo con la clase "sr-only".
+
+<div className="my-3 p-4 bg-light rounded-lg box-shadow-grisulado-50 text-break">
+  <p className="text-info font-weight-bold small">Código HTML</p>
+  <div className="font-italic">
+    <p className="mb-0">&lt;h2 class="sr-only"&gt;Encabezado de grupo de tarjetas&lt;/h2&gt;</p>
+    <p className="mb-0">&lt;div class="container"&gt;</p>
+    <p className="mb-0 ml-3">&lt;div class="card-deck max-cards-3 card-column"&gt;</p>
+    <p className="mb-0 ml-4 pl-2">&lt;div class="card card-horizontal"&gt;</p>
+    <p className="mb-0 ml-5">...</p>
+    <p className="mb-0 ml-4 pl-2">&lt;/div&gt;</p>
+    <p className="mb-0 ml-4 pl-2">&lt;div class="card card-horizontal"&gt;</p>
+    <p className="mb-0 ml-5">...</p>
+    <p className="mb-0 ml-4 pl-2">&lt;/div&gt;</p>
+    <p className="mb-0 ml-3">&lt;/div&gt;</p>
+    <p className="mb-0">&lt;/div&gt;</p>
+  </div>
+</div>
 
 ## Usabilidad
 
