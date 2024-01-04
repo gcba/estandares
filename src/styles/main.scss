@@ -502,3 +502,7 @@ main {
   @extend .grisulado-50-container;
   background-color: $grisulado-10;
 }
+
+.pointer-none {
+  pointer-events: none;
+}
