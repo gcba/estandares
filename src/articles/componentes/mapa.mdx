@@ -48,9 +48,26 @@ Redirige al Mapa Interactivo de Buenos Aires en una nueva pestaña. Siempre mant
 
 ## Accesibilidad
 
-### Imagen de mapa
+### Navegación por teclado
 
-Es necesario ocultar/saltar la imagen del mapa para lectores de pantalla o teclado. Esto evita que repita la ubicación y pase la persona usuaria directamente al botón de "Cómo llego".
+Incluir la propiedad tabIndex={-1} en el iframe. Esta configuración garantiza que, al navegar con el teclado, el mapa se omita al moverse al siguiente elemento. Esta práctica no solo mejora la accesibilidad, sino que también optimiza la experiencia para las personas usuarias que dependen de la navegación por teclado.
+
+<div className="my-3 p-4 bg-light rounded-lg box-shadow-grisulado-50 text-break">
+  <p className="text-info font-weight-bold small">Código HTML</p>
+  <div className="font-italic">
+    <p className="mb-0">&lt;iframe</p>
+    <p className="mb-0 ml-3">src="https://www.example123.com"</p>
+    <p className="mb-0 ml-3">width="600"</p>
+    <p className="mb-0 ml-3">height="146"</p>
+    <p className="mb-0 ml-3">title="Mapa de como llegar"</p>
+    <p className="mb-0 ml-3">style="border: 0;"</p>
+    <p className="mb-0 ml-3">allowFullScreen</p>
+    <p className="mb-0 ml-3">loading="lazy"</p>
+    <p className="mb-0 ml-3">tabIndex={-1}</p>
+    <p className="mb-0 ml-3">referrerPolicy="no-referrer-when-downgrade"&gt;</p>
+    <p className="mb-0 ">{'</iframe>'}</p>
+  </div>
+</div>
 
 ## Usabilidad
 
