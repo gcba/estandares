@@ -1,0 +1,84 @@
+---
+menu: Mapa
+title: Mapa
+description: El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones.
+position: 14
+---
+
+## Tipos de mapa
+
+### Mapa lateral
+
+En desktop ocupa 4 columnas y se encuentra a la derecha del cuerpo. Muestra la ubicación de un (1) lugar a remarcar en una página de noticias o en una pagina simple. Puede convivir con un <a href="/componentes/destacado/" rel="noreferrer" title="Enlace a componente destacado" >destacado</a>, ubicándose siempre debajo del mismo. 
+
+<div class="content-row">
+  <img src="/componentes/mapa/mapa-lateral.svg" alt="Lista de enlaces" class="img-fluid"  />
+</div>
+
+### Mapa de bloque institucional
+
+En desktop ocupa 6 columnas y se encuentra dentro del bloque institucional. Muestra la dirección de un organismo de gobierno. Se utiliza en páginas de área, antes del footer. 
+
+<div class="content-row">
+  <img src="/componentes/mapa/mapa-bloque.svg" alt="Lista de enlaces" class="img-fluid"  />
+</div>
+
+### Mapa mobile
+
+En mobile, el componente tiene un tamaño único y ocupa el 100 % de las columnas disponibles, tanto para mapa lateral, como para el mapa de bloque institucional.
+
+<div class="content-row">
+  <img src="/componentes/mapa/mapa-mobile.svg" alt="Lista de enlaces" class="img-fluid"  />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+### Ubicación
+
+El mapa cuenta con un título y una descripción editable donde se coloca la dirección
+a remarcar.
+
+### Mapa
+
+Es un elemento embebido del Mapa Interactivo de Buenos Aires que marca la ubicación del lugar y brinda contexto geográfico de sus alrededores. 
+
+### Botón de “Cómo llego”
+
+Redirige al Mapa Interactivo de Buenos Aires en una nueva pestaña. Siempre mantiene el mismo texto para familiarizar a la persona usuaria con la acción. 
+
+## Accesibilidad
+
+### Navegación por teclado
+
+Incluir la propiedad tabIndex={-1} en el iframe. Esta configuración garantiza que, al navegar con el teclado, el mapa se omita al moverse al siguiente elemento. Esta práctica no solo mejora la accesibilidad, sino que también optimiza la experiencia para las personas usuarias que dependen de la navegación por teclado.
+
+<div className="my-3 p-4 bg-light rounded-lg box-shadow-grisulado-50 text-break">
+  <p className="text-info font-weight-bold small">Código HTML</p>
+  <div className="font-italic">
+    <p className="mb-0">&lt;iframe</p>
+    <p className="mb-0 ml-3">src="https://www.example123.com"</p>
+    <p className="mb-0 ml-3">width="600"</p>
+    <p className="mb-0 ml-3">height="146"</p>
+    <p className="mb-0 ml-3">title="Mapa de como llegar"</p>
+    <p className="mb-0 ml-3">style="border: 0;"</p>
+    <p className="mb-0 ml-3">allowFullScreen</p>
+    <p className="mb-0 ml-3">loading="lazy"</p>
+    <p className="mb-0 ml-3">tabIndex={-1}</p>
+    <p className="mb-0 ml-3">referrerPolicy="no-referrer-when-downgrade"&gt;</p>
+    <p className="mb-0 ">{'</iframe>'}</p>
+  </div>
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar la variante de mapa que corresponda al tipo de página.]]
+
+[[si | Respetar que el único espacio editable sea la dirección o ubicación a remarcar. El resto del wording del componente debe mantenerse.]]
+
+### Malas prácticas
+
+[[no | No utilizar el mapa de bloque institucional dentro del cuerpo de páginas simples, páginas de libro y/o páginas de noticias.]]
+
+[[no | No usar más de un (1) mapa lateral o de bloque institucional.]]
