@@ -1,0 +1,121 @@
+---
+menu: Tablas
+title: Tablas
+description: La tabla muestra datos organizados y estructurados en filas y columnas. Se utiliza para categorizar y comparar contenido relacionado. Este componente permite escanear más fácilmente información compleja. 
+position: 27
+---
+
+## Tipos de tabla
+
+<div class="list-informative">
+  <ul class="list-informative-bullet">
+    <li>Tabla al 100 %: ocupa el total de la grilla de 12 columnas de Obelisco y se utiliza en desktop.</li>
+    <li>Tabla al 75 %: ocupa 8 columnas de la grilla de Obelisco y se utiliza en desktop. </li>
+    <li>Tabla mobile: ocupa el total del ancho del dispositivo y se utiliza para dispositivos móviles, incluyendo tablet. </li>
+  </ul>
+</div>
+
+<div className="d-flex flex-row justify-content-center pt-5">
+
+  ![completar](/componentes/tabla/complete-table.svg)
+
+</div>
+
+## Anatomía
+
+La tabla se compone de celdas y filas con diferentes variantes según el contenido. 
+
+### Celdas de encabezado
+
+Dan cuenta de los datos que aparecerán dentro de la columna. Puede contar con un subtítulo breve como asistencia. En caso de superar los caracteres máximos, el texto se trunca. Todas se alinean a la izquierda. 
+
+![completar](/componentes/tabla/table-head.svg)
+
+### Celdas de contenido
+
+Pueden contener diferentes tipos de información como texto, números, etiquetas, enlaces y botones (CTAs). 
+
+<div class="row">
+  <div class="col-12 col-md-6 m-0">
+
+![completar](/componentes/tabla/table-text.svg)    
+  
+  </div>
+  <div class="col-12 col-md-6 m-0">
+
+![completar](/componentes/tabla/table-number.svg)    
+  
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6 m-0">
+
+![completar](/componentes/tabla/table-tag.svg)    
+  
+  </div>
+  <div class="col-12 col-md-6 m-0">
+
+![completar](/componentes/tabla/table-link.svg)    
+  
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6 m-0">
+
+![completar](/componentes/tabla/table-button.svg)    
+  
+  </div>
+  <div class="col-12 col-md-6 m-0">
+
+![completar](/componentes/tabla/table-icon.svg)    
+  
+  </div>
+</div>
+
+### Fila de tabla
+
+Puede estar conformada por celdas de contenido o celdas de encabezado. Tienen un ancho fijo para todos los tamaños de la tabla y, cuando no se muestra completa, aparece la barra de desplazamiento para visualizar el resto del contenido. Pueden tener fondo primario o secundario para generar un patrón de cebra que facilite la legibilidad. Esta diferencia de fondo genera un contraste que ayuda al ojo a seguir la información de la fila sin perderla de vista. 
+
+![completar](/componentes/tabla/table-file.svg)
+
+## Especificaciones
+
+### Comportamiento de scroll
+
+En mobile, o cuando se pasa el tamaño máximo del contenedor especificado dentro de la grilla desktop, la tabla de scrollea horizontalmente. 
+
+![completar](/componentes/tabla/mobile.svg) 
+
+### Combinación con otros componentes
+
+Las tablas pueden combinarse como organismo con otros componentes como buscadores, filtros, <a href="/componentes/boton/" target="_blank" rel="noreferrer">botones</a>, <a href="/componentes/desplegables/desplegables_navegacion/" target="_blank" rel="noreferrer">desplegables</a> y <a href="/componentes/paginado/" target="_blank" rel="noreferrer">paginado</a>. Se sugiere disponerlos de la manera ilustrada respetando los espaciados. 
+
+![completar](/componentes/tabla/group-table.svg) 
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Utilizar la menor cantidad de columnas en una tabla para disminuir la carga cognitiva de la persona usuaria y facilitar la legibilidad en dispositivos pequeños. Se sugiere incluir un máximo de 5 columnas por tabla (sin contar la casilla de selección o checkbox).]]
+
+[[si | Si se utiliza una tabla con el patrón de cebra, alternando entre filas de contenido con fondo de color primario y fondo de color secundario, la primera fila de contenido siempre debe tener fondo de color primario para distinguirse de la fila de encabezado.]]
+
+[[si | Los textos de las celdas deben ser breves y dar cuenta del tipo de datos que aparecerán luego en la tabla.]]
+
+[[si | Las celdas de contenido de texto tienen un máximo de 105 caracteres permitidos. No se recomienda superar este límite, ya que podría romper la estructura de la tabla.]]
+
+[[si | Las celdas de encabezado se alinean a la izquierda. Los títulos tienen un máximo de 55 caracteres y los subtítulos tienen un máximo de 65 caracteres; en caso de superar el máximo permitido, los textos se truncarán.]]
+
+[[si | Las celdas de contenido numérico se alinean a la derecha, exceptuando las fechas y números de teléfono. Las fechas y números de teléfono se consideran celdas de texto aunque estén o no expresadas en números.]]
+
+### Malas prácticas
+
+[[no | No utilizar la tabla si no se tienen al menos 2 columnas de información.]]
+
+[[no | No utilizar la tabla para estructurar contenido a modo de grilla. Para estructurar información relacionada se sugiere utilizar tarjetas o listas. ]]
+
+[[no | No combinar diferentes tipos de enlaces en una misma columna. ]]
+
+[[no | No combinar botones primarios con botones de ícono en una misma tabla. ]]
+
+[[no | No utilizar botones de descarga en una tabla. En ese caso, utilizar enlaces de descarga. ]]
