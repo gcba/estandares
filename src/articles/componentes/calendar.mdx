@@ -1,0 +1,81 @@
+---
+menu: Calendario
+title: Calendario
+description: El calendario es una representación visual en forma de tabla que exhibe eventos y fechas importantes correspondientes a los días de la semana de un mes determinado.
+position: 6
+---
+
+## Tipos de calendario
+
+* Calendario desktop: ocupa 4 columnas de la grilla desktop de Obelisco.
+
+* Calendario mobile: ocupa el total del ancho del dispositivo y se utiliza para dispositivos móviles.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/calendario/Calendario.svg" alt="Calendario" className="img-fluid m-0" />
+</div>
+
+## Diseño y estructura (contexto de uso)
+
+El calendario está compuesto por un encabezado con el mes y año, una fila con los días de la semana, y 6 filas disponibles para los días del mes según corresponda. También, cuenta con una lista de referencias de las fechas seleccionadas.
+
+
+### Encabezado
+
+Contiene el mes y el año del calendario.
+
+### Fila de días de la semana
+
+Están todos los días de la semana representados por la inicial de cada día y siempre lleva fondo secundario. 
+
+### Fila de días del mes
+
+Contiene los números de todos los días del mes. Los días pueden estar seleccionados para resaltar la fecha necesaria, en gris claro para mostrar los días de meses anteriores/siguientes, u ocultos.
+
+### Referencia de una fecha del calendario
+
+Señala las fechas seleccionadas dentro del calendario a modo de lista. Cuando hay más de 5 ítems en la lista, es recomendable utilizar un colapsable para reducir la carga cognitiva de la persona usuaria.
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/calendario/Calendario-list.svg" alt="Calendario con lista" className="img-fluid m-0" />
+  <img src="/componentes/calendario/Calendario-accordion.svg" alt="Calendario con colapsable" className="img-fluid m-0" />
+</div>
+
+Las referencias de cada uno de los ítems listados en los calendarios pueden clasificarse por color. En este caso, las referencias cromáticas se alinean a la izquierda y se agrupan en un contenedor en la parte superior de la página y contar con el título Referencias. 
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4 pb-0 align-items-end">
+  <img src="/componentes/calendario/Referencias-desktop.svg" alt="Referencias - desktop" className="img-fluid m-0" />
+  <img src="/componentes/calendario/Referencias-mobile.svg" alt="Referencias - mobile" className="img-fluid m-0" />
+</div>
+
+### Colores de las referencias
+
+Cuando hay más de dos referencias dentro de un mismo calendario, se puede utilizar la paleta de colores de [detalles cromáticos](https://gcba.github.io/estandares/gu%C3%ADas_de_estilos/paleta_de_colores/). Se debe cambiar el color de la tipografía al color de texto primario para garantizar un contraste óptimo. 
+
+### Disposición
+
+En mobile, los calendarios se apilan uno debajo del otro con una separación de 32px. En desktop, los calendarios se ordenan horizontalmente en filas de 3 con una separación vertical de 32px entre agrupaciones. 
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4">
+  <img src="/componentes/calendario/Disposicion-mobile.svg" alt="Disposicion - mobile" className="img-fluid m-0" />
+</div>
+
+<div className="grisulado-10-container box-shadow-grisulado-50 content-row gap-4 pb-0 align-items-end">
+  <img src="/componentes/calendario/Disposicion-desktop.svg" alt="Disposicion - desktop" className="img-fluid m-0" />
+</div>
+
+## Usabilidad
+
+### Buenas prácticas
+
+[[si | Para cada fecha seleccionada/referenciada utilizar un Title que identifique a qué hace mención. ]]
+
+[[si | Mantener la menor cantidad de referencias posibles. En caso de que un evento tenga dos días consecutivos, utilizar el formato: “**20, 21.** Primeros dos días de Carnaval”. Si el evento cuenta con más de dos días consecutivos, utilizar el formato: “**20 al 25.** Carnaval”.  ]]
+
+[[si | En caso de requerir los colapsables, todos los calendarios que aparezcan en una misma agrupación y tengan fechas activas deberán llevar colapsables. ]]
+
+### Malas prácticas
+
+[[no | No utilizar calendarios con colapsable combinados con los calendarios con lista, esto puede romper el contenido y la diagramación de la página. ]]
+
+[[no | No incluir textos largos entre las referencias. Es importante limitar el contenido al nombre o título de lo que se señale. ]]
