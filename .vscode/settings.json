@@ -5,7 +5,5 @@
     "source.fixAll.stylelint": "explicit"
   },
   "editor.tabSize": 2,
-  "conventionalCommits.scopes": [
-    "src\\components\\includes\\TableOfContent.tsx"
-  ]
+
 }
