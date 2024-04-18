@@ -23,6 +23,14 @@ export const TableOfContents = (props: TableOfContentsProps) => {
 
   return (
     <div className="contents">
+      
+      {/* Renderizar el div adicional si la condición se cumple */}
+      {(hasPaletteItem || hasTypographyItem) && (
+        <div className="alert alert-primary" role="alert">
+          <p>Esta es la descripción de una alerta de advertencia.</p>
+        </div>
+      )}
+
       <div className="contents-title">Contenido en esta página</div>
       <ul className="list-unstyled">
         {props.items.map((item) => (
@@ -31,13 +39,6 @@ export const TableOfContents = (props: TableOfContentsProps) => {
           </li>
         ))}
       </ul>
-
-      {/* Renderizar el div adicional si la condición se cumple */}
-      {(hasPaletteItem || hasTypographyItem) && (
-        <div className="alert alert-primary" role="alert">
-          <p>Esta es la descripción de una alerta de advertencia.</p>
-        </div>
-      )}
     </div>
   );
 };
