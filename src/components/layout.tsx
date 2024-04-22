@@ -55,9 +55,9 @@ const Layout = (props: any) => {
                 <Lead>{page.description}</Lead>
               </header>
 
-              {path == '/guías_de_estilos/paleta_de_colores/' && <TableOfContentsAlert alertText={"Estamos trabajando en la paleta de colores, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
+              {path == '/estandares/guías_de_estilos/paleta_de_colores/' && <TableOfContentsAlert alertText={"Estamos trabajando en la paleta de colores, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
 
-              {path == '/guías_de_estilos/tipografia/' && <TableOfContentsAlert alertText={" Estamos trabajando en la escala tipográfica, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
+              {path == '/estandares/guías_de_estilos/tipografia/' && <TableOfContentsAlert alertText={" Estamos trabajando en la escala tipográfica, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
 
               {!isIndex && !!pageContent && <TableOfContents items={pageContent} />}
 
