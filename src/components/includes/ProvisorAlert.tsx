@@ -7,7 +7,7 @@ interface TableOfContentsProps_Alert {
 export const TableOfContentsAlert = (props: TableOfContentsProps_Alert) => {
   return (
     <div className="alert alert-primary mb-5" role="alert">
-      <p><strong>Esta guía de estilo se encuentra en revisión</strong> {props.alertText}</p>
+      <p><strong>Esta guía de estilo se encuentra en revisión.</strong> {props.alertText}</p>
     </div>
 
   );
