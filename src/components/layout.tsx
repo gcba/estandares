@@ -71,7 +71,22 @@ const Layout = (props: any) => {
             <Sidebar current={path} navigation={navigation} />
           </div>
           <div className="col-md-8 offset-md-1">
-            <main id="content">
+            <div className="alert alert-info mb-0 mt-4" role="alert">
+              <strong>
+                En Obelisco, 
+              </strong> actualmente estamos trabajando en la migración de Bootstrap 4 a Bootstrap 5.
+              
+              <br/>
+              
+              Mantente informado de los detalles y, si tienes alguna duda, no dudes en consultar a nuestro equipo:
+              
+              <br/>
+              
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                equipoobelisco@buenosaires.gob.ar
+              </a>
+            </div>
+            <main id="content" className="pt-5">
               <header>
                 {isIndex && (
                   <img
