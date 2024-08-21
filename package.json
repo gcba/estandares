@@ -13,7 +13,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@gcba/obelisco": "^1.55.0",
+    "@gcba/obelisco": "^1.58.0",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.4",
     "@popperjs/core": "^2.5.4",

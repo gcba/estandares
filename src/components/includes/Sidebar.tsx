@@ -13,7 +13,7 @@ export const Sidebar = (props: SidebarProps) => {
   return (
     <aside>
       <div>
-        <img src={withPrefix("/obelisco.svg")} alt="Logo del sistema de diseño Obelisco" width="180" />
+        {/* <img src={withPrefix("/obelisco.svg")} alt="Logo del sistema de diseño Obelisco" width="180" /> */}
         <nav>
           <a className="nav-link nav-mobile-trigger collapsed" data-toggle="collapse" href="#sidebar-nav">
             Acerca de Obelisco
