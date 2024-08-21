@@ -86,7 +86,7 @@ const Layout = (props: any) => {
               </strong>{" "}
               Si sos parte de los colaboradores del GCBA y necesitás más información sobre los proximos cambios,{" "}
               <a href="mailto:equipoobelisco@buenosaires.gob.ar">contáctanos vía mail</a>. Si querés reportar algún
-              problema o resolver una duda, podés abrir en un{" "}
+              problema o resolver una duda, podés abrir un{" "}
               <a
                 href="https://github.com/gcba/Obelisco/issues"
                 target="_blank"
