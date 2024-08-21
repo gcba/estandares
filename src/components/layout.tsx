@@ -36,8 +36,13 @@ const Layout = (props: any) => {
       <header className="navbar navbar-light sticky-header">
         <div className="container">
           <img className="header-logo-obelisco" src="/Obelisco-logo.svg" alt="Ciudad de Buenos Aires" />
-          <button className="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false">
+          <button
+            className="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+          >
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,10 +53,14 @@ const Layout = (props: any) => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="https://gcba.github.io/#seccion-herramientas" className="nav-link"><span>Herramientas</span></a>
+                <a href="https://gcba.github.io/#seccion-herramientas" className="nav-link">
+                  <span>Herramientas</span>
+                </a>
               </li>
               <li className="nav-item">
-                <a href="https://gcba.github.io/#seccion-nosotros" className="nav-link"><span>Quiénes somos</span></a>
+                <a href="https://gcba.github.io/#seccion-nosotros" className="nav-link">
+                  <span>Quiénes somos</span>
+                </a>
               </li>
               <li className="nav-item">
                 <a href="https://gcba.github.io/#seccion-noticias" className="nav-link">
@@ -73,17 +82,18 @@ const Layout = (props: any) => {
           <div className="col-md-8 offset-md-1">
             <div className="alert alert-info mb-0 mt-4" role="alert">
               <strong>
-                En Obelisco, 
-              </strong> actualmente estamos trabajando en la migración de Bootstrap 4 a Bootstrap 5.
-              
-              <br/>
-              
-              Mantente informado de los detalles y, si tienes alguna duda, no dudes en consultar a nuestro equipo:
-              
-              <br/>
-              
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                equipoobelisco@buenosaires.gob.ar
+                Estamos trabajando en la migración de nuestra librería de componentes de Bootstrap 4 a Bootstrap 5.
+              </strong>{" "}
+              Si sos parte de los colaboradores del GCBA y necesitás más información sobre los proximos cambios,{" "}
+              <a href="mailto:equipoobelisco@buenosaires.gob.ar">contáctanos vía mail</a>. Si querés reportar algún
+              problema o resolver una duda, podés abrir en un{" "}
+              <a
+                href="https://github.com/gcba/Obelisco/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visitar issues de github"
+              >
+                issue en GitHub.
               </a>
             </div>
             <main id="content" className="pt-5">
