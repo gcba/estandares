@@ -16,6 +16,7 @@ import { Color } from "./docs/Color"
 import { Card, SimpleCard } from "./docs/Card"
 import { getNavigation, getPrevAndNext } from "../utils/navigation"
 import { withPrefix } from "gatsby"
+import { TableOfContentsAlert } from "./includes/ProvisorAlert"
 
 const Layout = (props: any) => {
   const { pageContext, children } = props
@@ -108,7 +109,13 @@ const Layout = (props: any) => {
                 <h1>{page.title}</h1>
                 <Lead>{page.description}</Lead>
               </header>
+
+              {path == '/estandares/guías_de_estilos/paleta_de_colores/' && <TableOfContentsAlert alertText={"Estamos trabajando en la paleta de colores, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
+
+              {path == '/estandares/guías_de_estilos/tipografia/' && <TableOfContentsAlert alertText={" Estamos trabajando en la escala tipográfica, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
+
               {!isIndex && !!pageContent && <TableOfContents items={pageContent} />}
+
 
               <article>
                 <MdxContent>{children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}</MdxContent>
