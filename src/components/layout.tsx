@@ -36,7 +36,7 @@ const Layout = (props: any) => {
       </a>
       <header className="navbar navbar-light sticky-header">
         <div className="container">
-          <img className="header-logo-obelisco" src="./Obelisco-logo.svg" alt="Ciudad de Buenos Aires" />
+          <img className="header-logo-obelisco" src="/Obelisco-logo.svg" alt="Ciudad de Buenos Aires" />
           <button
             className="navbar-toggler collapsed"
             data-toggle="collapse"
