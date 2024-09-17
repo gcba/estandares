@@ -506,3 +506,14 @@ main {
 .pointer-none {
   pointer-events: none;
 }
+
+.custon-container-table {
+  .table {
+    margin: 0 !important;
+  }
+}
+
+.hr-custom {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0;
+}
