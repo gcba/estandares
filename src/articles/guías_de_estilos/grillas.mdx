@@ -1,116 +1,226 @@
 ---
 menu: Grillas
 title: Grillas
-description: La grilla es la base para colocar elementos en la pantalla. Diseñar con una grilla ayuda a crear interfaces organizadas y fáciles de usar.
+description: La grilla es una estructura base que organiza elementos en una interfaz. Sirve para definir las secciones de un producto digital y distribuir los elementos internos asegurando la legibilidad, la usabilidad y la accesibilidad del contenido.
 position: 3
 ---
 
-## Unidad mínima
+## ¿Por qué usar una grilla?
 
 <Row><Col items={2}>
 
-### 4 x 4 píxeles
+<span class="material-icons-round">
+dashboard
+</span>
 
-Se toma como punto de partida el número 4, (4 px) para generar una cuadrícula, un espacio de trabajo divisible por este número.
+###### Coherencia visual
 
-Columnas, espaciados, grillas, son reglamentados por este número.
-
-Este numero 4, nos da como resultado múltiples usos, a la hora de separar y armar composiciones dentro del diseño.
-
-Se toma como variable 2 rem, 32 px, entre columnas.
+Estandariza la disposición y alineación de los elementos de una interfaz.
 
 </Col><Col items={2}>
 
-![completar](/guía-de-estilos/grillas/1.svg)
+<span class="material-icons-round">
+devices
+</span>
 
-</Col></Row>
+###### Escalabilidad
 
-## Composición
-
-![completar](/guía-de-estilos/grillas/2.svg)
-
-1. Unidad mínima: Medida mínima para generar la cuadrícula.
-2. Ancho medianil: Distancia entre cada columna que compone la grilla.
-
-## Área de trabajo
-
-Los datos proporcionados para web son máximos, a partir de proporciones web más grandes, anchos, se agrandan los márgenes, de izquierda y derecha, manteniendo proporciones dentro del espacio de trabajo.
-
-<Row><Col items={2}>
-
-![completar](/guía-de-estilos/grillas/3.svg)
-
-</Col><Col items={2}>
-
-![completar](/guía-de-estilos/grillas/4.svg)
-
-</Col></Row>
-
-## Glosario
-
-<Row><Col items={2}>
-
-![completar](/guía-de-estilos/grillas/5.svg)
-
-**Columnas**
-
-Es la estructura que sostiene el sistema. Disponemos de 12 columnas fijas.
-
-</Col><Col items={2}>
-
-![completar](/guía-de-estilos/grillas/6.svg)
-
-**Medianiles**
-
-Son los espacios entre columnas, tienen un valor fijo de 32 px.
+Facilita la adaptación de la interfaz en diferentes dispositivos y resoluciones.
 
 </Col></Row>
 
 <Row><Col items={2}>
 
-![completar](/guía-de-estilos/grillas/7.svg)
+<span class="material-icons-round">
+ads_click
+</span>
 
-**Márgenes**
+###### Familiaridad
 
-Es el área exterior de la cuadricula.
+Proporciona caminos claros e intuitivos a la persona usuaria al interactuar con el producto.
 
 </Col><Col items={2}>
 
-![completar](/guía-de-estilos/grillas/8.svg)
+<span class="material-icons-round">
+visibility
+</span>
 
-**Áreas de diseño**
+###### Legibilidad
 
-Es la zona de diseño, que contiene a los componentes y los cuerpos de texto.
+Genera jerarquías para la percepción de los contenidos en grupos o módulos. 
 
 </Col></Row>
 
-## Área de diseño
+## Fundamentos constructivos
 
-Las áreas de diseño o layout del sistema permite cuatro formas posibles a la hora de disponer los elementos.
-
-![completar](/guía-de-estilos/grillas/9.svg)
-
-1. (8 : 4) columnas
-2. (4 : 8) columnas
-3. (3 : 3 : 3 : 3) columnas
-4. (4 : 4 : 4) columnas
-
-## Mesa de trabajo
-
-### Web - Large (1366x768)
-
-![completar](/guía-de-estilos/grillas/10.svg)
+Creamos una grilla que sigue [principios de diseño centrados en el usuario](https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/), utilizando patrones conocidos y validados que aseguren que la información sea comprensible. Al idear nuestros estilos, nos apoyamos en [leyes UX](https://lawsofux.com/es/) y en [principios de la Gestalt](https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/gestalt/).
 
 <Row><Col items={2}>
 
-### Tableta Android (768x1024)
+###### Ley de Fitts
 
-![completar](/guía-de-estilos/grillas/11.svg)
+<hr class="hr-custom"/>
+
+Refuerza la disposición de los elementos interactivos, optimizando su colocación para que sean más fáciles y rápidos de alcanzar.
 
 </Col><Col items={2}>
 
-### Móvil Android (360x640)
+###### Ley de Miller
 
-![completar](/guía-de-estilos/grillas/12.svg)
+<hr class="hr-custom"/>
+
+Favorece la agrupación y estructura del contenido de forma modular, permitiendo que la persona usuaria procese la información en bloques más manejables.
 
 </Col></Row>
+
+<Row><Col items={2}>
+
+###### Ley de Hick
+
+<hr class="hr-custom"/>
+
+Permite organizar los contenidos de forma más clara, lo que reduce la complejidad visual y facilita las decisiones de la persona usuaria.
+
+</Col><Col items={2}>
+
+###### Ley de Proximidad
+
+<hr class="hr-custom"/>
+
+Facilita el control del espaciado entre elementos de manera coherente, reforzando las relaciones visuales y jerárquicas entre los componentes de la interfaz.
+
+</Col></Row>
+
+## Anatomía
+
+Obelisco utiliza una grilla de columnas para las interfaces de sus productos digitales. La grilla se compone de:
+
+- **Columnas:** es la unidad vertical de la grilla donde se colocan y organizan los contenidos.
+- **Calles (_Gutters_ en Inglés):** es el espacio que sirve para separar las columnas entre sí, y por lo tanto, modulan el contenido de forma horizontal. En Obelisco, el ancho de las calles está definido según cada _breakpoint_.
+- **Márgenes:** mantienen centrado el contenedor visible y evitan que elementos clave estén demasiado cerca del borde de una ventana.
+
+![completar](/guía-de-estilos/grillas/anatomia_grilla.svg)
+
+### Usos
+
+La mayoría de los componentes están construidos en función de la grilla y se deben colocar sobre las columnas.
+
+<Row><Col items={2}>
+
+![completar](/guía-de-estilos/grillas/columnas.svg)
+
+[[si | Colocar los componentes sobre las columnas.]]
+
+</Col><Col items={2}>
+
+![completar](/guía-de-estilos/grillas/columnas-1.svg)
+
+[[no | No colocar componentes sobre las calles.]]
+
+</Col></Row>
+
+<Row><Col items={2}>
+
+![completar](/guía-de-estilos/grillas/columnas-2.svg)
+
+[[si | Ubicar los componentes dentro del área de columnas.]]
+
+</Col><Col items={2}>
+
+![completar](/guía-de-estilos/grillas/columnas-3.svg)
+
+[[no | No colocar componentes sobre los márgenes.]]
+
+</Col></Row>
+
+## Breakpoints
+
+Un *breakpoint* es un punto específico en el que el diseño de una página cambia para adaptarse a diferentes tamaños de pantalla (*viewports*). Esto permite que el contenido se ajuste de manera adecuada a dispositivos grandes y pequeños, asegurando que la experiencia del usuario sea siempre óptima.
+
+<div class="responsive-scroll custon-container-table" tabindex="0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" class="tb-text">Breakpoint</th>
+        <th scope="col" class="tb-text">Dimensiones</th>
+        <th scope="col" class="tb-text">Ancho máximo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Texto Extra small</td>
+        <td>&lt; 576px</td>
+        <td>100 %</td>
+      </tr>
+      <tr>
+        <td>Small</td>
+        <td>&#8805; 576px</td>
+        <td>540px</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>&#8805; 768px</td>
+        <td>720px</td>
+      </tr>
+      <tr>
+        <td>Large</td>
+        <td>&#8805; 992px</td>
+        <td>960px</td>
+      </tr>
+      <tr>
+        <td>Extra large</td>
+        <td>&#8805; 1200px</td>
+        <td>1140px</td>
+      </tr>
+      <tr>
+        <td>Extra extra large</td>
+        <td>&#8805; 1400px</td>
+        <td>1320px</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Dispositivos
+
+Si bien la grilla se adapta a cualquier tamaño de pantalla, contamos con medidas estándar que facilitan proceso de diseño e implementación. 
+
+- **Desktop (1366 x 1024 px)**: 12 columnas
+- **Tablet (768 x 1194 px)**: 6 columnas
+- **Mobile (360 x 640 px)**: 2 columnas
+
+![completar](/guía-de-estilos/grillas/dispositivos.svg)
+
+## Comportamiento
+
+La grilla de Obelisco tiene un comportamiento responsivo basado en porcentajes, donde existen secciones definidas que ocupan siempre el mismo espacio, y otras secciones que van cambiando según el tamaño de la ventana, asegurando la distribución del contenido.
+
+### Páginas de ancho completo
+
+En esta distribución, el contenido de una página utilizando la grilla de Obelisco ocupa el 100 % del ancho del contenedor.
+
+![completar](/guía-de-estilos/grillas/ancho-completo.svg)
+
+### Páginas con una sección lateral
+
+En esta distribución, el contenido de una página utilizando la grilla de Obelisco está dividido en 2 secciones: una columna lateral que ocupa un tercio &frac13; de la página, y el cuerpo de la página que ocupa dos tercios &frac23;.
+
+<Row><Col items={2}>
+
+![completar](/guía-de-estilos/grillas/lateral-1.svg)
+
+</Col><Col items={2}>
+
+![completar](/guía-de-estilos/grillas/lateral-2.svg)
+
+</Col></Row>
+
+### Páginas en dispositivos móviles
+
+En dispositivos móviles, el contenido de una página se organiza con otra estructura para asegurar el entendimiento de la información. En pantallas de tamaños tablet o mobile, las secciones se colocan una debajo de la otra y no existen secciones laterales.
+
+![completar](/guía-de-estilos/grillas/mobile.svg)
+
+## Accesibilidad
+
+De acuerdo al [Criterio de Éxito 1.4.10 Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html), es requisito que las grillas responsivas respondan al tamaño de la ventana del navegador sin perder información o funcionalidad. 
