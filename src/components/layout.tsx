@@ -83,23 +83,21 @@ const Layout = (props: any) => {
           <div className="col-md-8 offset-md-1">
             <div className="alert alert-info mb-0 mt-4" role="alert">
               <strong>
-                Estamos trabajando en la migración de nuestra librería de componentes de Bootstrap 4 a Bootstrap 5 en {" "}           
                 <a href="https://gcba.github.io/Obelisco-V2/getting-started"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="Visitar Obelisco v2">Obelisco V2</a>.
+                  title="Visitar Obelisco v2">Obelisco V2
+                </a> ya está disponible. Si sos parte de los colaboradores de GCBA y necesitás más información,{" "}
+                <a href="mailto:equipoobelisco@buenosaires.gob.ar">contáctanos vía mail
+                </a>. Si querés reportar algún problema o resolver una duda, podés abrir un{" "}
+                <a
+                  href="https://github.com/gcba/Obelisco/issues"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visitar issues de github">
+                  issue en GitHub.
+                </a>
               </strong>{" "}
-              Si sos parte de los colaboradores del GCBA y necesitás más información sobre los proximos cambios,{" "}
-              <a href="mailto:equipoobelisco@buenosaires.gob.ar">contáctanos vía mail</a>. Si querés reportar algún
-              problema o resolver una duda, podés abrir un{" "}
-              <a
-                href="https://github.com/gcba/Obelisco/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Visitar issues de github"
-              >
-                issue en GitHub.
-              </a>
             </div>
             <main id="content" className="pt-5">
               <header>
