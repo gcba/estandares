@@ -50,22 +50,7 @@ const Layout = (props: any) => {
             <ul className="nav nav-pills">
               <li className="nav-item">
                 <a href="https://gcba.github.io/#seccion-obelisco" className="nav-link">
-                  <span>Qué es Obelisco</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="https://gcba.github.io/#seccion-herramientas" className="nav-link">
-                  <span>Herramientas</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="https://gcba.github.io/#seccion-nosotros" className="nav-link">
-                  <span>Quiénes somos</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="https://gcba.github.io/#seccion-noticias" className="nav-link">
-                  <span>Noticias</span>
+                  <span>Obelisco V2</span>
                 </a>
               </li>
             </ul>
