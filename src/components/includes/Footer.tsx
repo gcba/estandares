@@ -9,7 +9,7 @@ export const Footer = () => {
           <h4>Formá parte de la comunidad</h4>
           <ul className="list-inline">
             <li className="list-inline-item redes-items">
-              <a href="mailto:dgexperienciadigital@gmail.com">
+              <a href="mailto:equipoobelisco@buenosaires.gob.ar">
                 <i className="bx bx-mail-send"></i>
                 Correo
               </a>
