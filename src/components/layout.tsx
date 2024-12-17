@@ -65,7 +65,7 @@ const Layout = (props: any) => {
               </li>
               <li className="nav-item">
                 <a href="https://gcba.github.io/#seccion-noticias" className="nav-link">
-                  <span>Noticias</span>
+                  <span>Obelisco V2</span>
                 </a>
               </li>
             </ul>
