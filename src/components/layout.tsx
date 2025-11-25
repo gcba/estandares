@@ -36,7 +36,11 @@ const Layout = (props: any) => {
       </a>
       <header className="navbar navbar-light sticky-header">
         <div className="container">
-          <img className="header-logo-obelisco" src="https://gcba.github.io/Obelisco-V2/images/logo_obelisco.svg" alt="Ciudad de Buenos Aires" />
+          <img
+            className="header-logo-obelisco"
+            src="https://gcba.github.io/Obelisco-V2/images/logo_obelisco.svg"
+            alt="Ciudad de Buenos Aires"
+          />
           <button
             className="navbar-toggler collapsed"
             data-toggle="collapse"
@@ -82,22 +86,18 @@ const Layout = (props: any) => {
           </div>
           <div className="col-md-8 offset-md-1">
             <div className="alert alert-info mb-0 mt-4" role="alert">
-              <strong>
-                <a href="https://gcba.github.io/Obelisco-V2/getting-started"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visitar Obelisco v2">Obelisco V2
-                </a> ya está disponible. Si sos parte de los colaboradores de GCBA y necesitás más información,{" "}
-                <a href="mailto:equipoobelisco@buenosaires.gob.ar">contáctanos vía mail
-                </a>. Si querés reportar algún problema o resolver una duda, podés abrir un{" "}
-                <a
-                  href="https://github.com/gcba/Obelisco/issues"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Visitar issues de github">
-                  issue en GitHub.
-                </a>
-              </strong>{" "}
+              <strong>Obelisco V2 ya está disponible. </strong>
+              Si sos parte de los colaboradores de GCBA y necesitás más información,{" "}
+              <a href="mailto:equipoobelisco@buenosaires.gob.ar">contáctanos vía mail</a>. Si querés reportar algún
+              problema o resolver una duda, podés abrir un{" "}
+              <a
+                href="https://github.com/gcba/Obelisco/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visitar issues de github"
+              >
+                issue en GitHub.
+              </a>
             </div>
             <main id="content" className="pt-5">
               <header>
@@ -112,12 +112,23 @@ const Layout = (props: any) => {
                 <Lead>{page.description}</Lead>
               </header>
 
-              {path == '/estandares/guías_de_estilos/paleta_de_colores/' && <TableOfContentsAlert alertText={"Estamos trabajando en la paleta de colores, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
+              {path == "/estandares/guías_de_estilos/paleta_de_colores/" && (
+                <TableOfContentsAlert
+                  alertText={
+                    "Estamos trabajando en la paleta de colores, por lo que surgirán cambios que afectarán a todo el sistema de diseño."
+                  }
+                />
+              )}
 
-              {path == '/estandares/guías_de_estilos/tipografia/' && <TableOfContentsAlert alertText={" Estamos trabajando en la escala tipográfica, por lo que surgirán cambios que afectarán a todo el sistema de diseño."} />}
+              {path == "/estandares/guías_de_estilos/tipografia/" && (
+                <TableOfContentsAlert
+                  alertText={
+                    " Estamos trabajando en la escala tipográfica, por lo que surgirán cambios que afectarán a todo el sistema de diseño."
+                  }
+                />
+              )}
 
               {!isIndex && !!pageContent && <TableOfContents items={pageContent} />}
-
 
               <article>
                 <MdxContent>{children ? children : <MDXRenderer>{pageContext.body}</MDXRenderer>}</MdxContent>
